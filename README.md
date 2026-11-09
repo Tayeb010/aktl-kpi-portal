@@ -15,10 +15,9 @@ Supabase, protected by row-level security rules in `supabase/setup.sql`.
 
 | File | What it is |
 |---|---|
-| `index.html`, `styles.css`, `app.js` | The website (no build step) |
-| `config.js` | Supabase project URL and public (publishable) key |
+| `site/` | The website (no build step): `index.html`, `styles.css`, `app.js`, `config.js` |
 | `supabase/setup.sql` | Database tables, security rules and admin functions |
-| `_headers` | Security headers for Cloudflare Pages |
+| `site/_headers` | Security headers for Cloudflare Pages |
 
 ## One-time setup
 
@@ -29,7 +28,7 @@ Supabase, protected by row-level security rules in `supabase/setup.sql`.
    turn off "Allow new users to sign up". Only the admin creates accounts.
 3. **Cloudflare Pages**: Workers & Pages > Create > Pages > Connect to Git >
    choose this repository. Framework preset: None. Build command: empty.
-   Build output directory: `/`. Deploy.
+   Build output directory: `site`. Deploy.
 4. Sign in with login ID `tayeb` and your admin password. Upload the SQR file,
    publish, then go to People and create the DSR logins.
 
