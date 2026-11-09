@@ -281,7 +281,7 @@ function viewDsr(code, opt) {
   ${stampHtml()}
   <article class="card hero">
     <div class="row1"><div><div class="lbl">${T('trx')}</div><div class="small muted">${T('trxSub')}</div></div><span class="chip ${stt.c}">${T(stt.k)}</span></div>
-    <div class="big num">${nf(d.active)} <small>/ ${nf(d.target)}</small></div>
+    <div class="main"><div class="big num">${nf(d.active)} <small>/ ${nf(d.target)}</small></div><div class="ring ${stt.c}" style="--p:${Math.min(100, c.pct * 100).toFixed(1)}"><b class="num">${pf(c.pct)}</b></div></div>
     <div class="bar" role="img" aria-label="${pf(c.pct)} of target"><i class="${stt.c}" style="width:${barW(c.pct)}"></i></div>
     <div class="facts">
       <div><span>${T('achieved')}</span><b class="num">${nf(d.active)}</b></div>
