@@ -1,0 +1,9 @@
+{
+  // Cloudflare Workers: serve only the website folder as static files.
+  "name": "aktl-kpi-portal",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./site",
+    "not_found_handling": "single-page-application"
+  }
+}

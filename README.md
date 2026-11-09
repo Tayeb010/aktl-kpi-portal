@@ -26,9 +26,9 @@ Supabase, protected by row-level security rules in `supabase/setup.sql`.
    admin password, and press Run.
 2. **Turn off self sign-up**: Supabase > Authentication > Sign In / Providers >
    turn off "Allow new users to sign up". Only the admin creates accounts.
-3. **Cloudflare Pages**: Workers & Pages > Create > Pages > Connect to Git >
-   choose this repository. Framework preset: None. Build command: empty.
-   Build output directory: `site`. Deploy.
+3. **Cloudflare**: Workers & Pages > Create > import this repository. Deploy
+   command `npx wrangler deploy`. `wrangler.jsonc` tells it to serve the `site`
+   folder only.
 4. Sign in with login ID `tayeb` and your admin password. Upload the SQR file,
    publish, then go to People and create the DSR logins.
 
