@@ -1,0 +1,44 @@
+name: Publish KPI update
+
+# Runs when a data/<kpi>/latest.json changes on main (SQR, Trade Visibility, ...),
+# or by hand from the Actions tab ("Run workflow"), which republishes every KPI.
+on:
+  push:
+    branches: [main]
+    paths: ['data/*/latest.json']
+  workflow_dispatch:
+
+concurrency:
+  group: publish-kpi
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install
+        run: npm install --prefix tools --no-audit --no-fund @supabase/supabase-js@2.45.4
+      - name: Find changed KPI files
+        id: files
+        run: |
+          if [ "${{ github.event_name }}" = "push" ] && git cat-file -e "${{ github.event.before }}^{commit}" 2>/dev/null; then
+            files=$(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" -- 'data/*/latest.json' | tr '\n' ' ')
+          else
+            files=$(ls data/*/latest.json | tr '\n' ' ')
+          fi
+          echo "files=$files" >> "$GITHUB_OUTPUT"
+          echo "Publishing: $files"
+      - name: Publish to Supabase
+        if: steps.files.outputs.files != ''
+        run: node tools/kpi.cjs publish ${{ steps.files.outputs.files }}
+        env:
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}

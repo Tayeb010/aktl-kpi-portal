@@ -1,8 +1,15 @@
-/* AKTL KPI Portal: SQR Excel reader.
+/* AKTL KPI Portal: KPI Excel reader (SQR and Trade Visibility).
  * Shared by the website's Upload page (browser) and the GitHub publisher
  * (tools/sqr.mjs, Node), so both read a file exactly the same way.
  *
- * Understands two layouts:
+ * Trade Visibility ("TV"): a "DSR Summury" sheet (BCD POS, 1st Time Visit RT,
+ *   2 Times Visit Retail) plus a "Retail Wise" sheet listing the POS still to visit:
+ *   "Pending" = needs 1st and 2nd visit, "1st Times Done" = needs 2nd visit only.
+ *   POS with both visits done are removed from that sheet. Each POS must be visited twice.
+ *   DSRs are matched to logins by DSR number (e.g. "AKTL (Sitakunda) DSR 01" = "DSR-01").
+ *   Retailer MSISDNs are cut to the last 4 digits.
+ *
+ * SQR understands two layouts:
  *   "summary": a "Summury"/summary sheet keyed by DSR Name (C2S Target, QR Target, ...)
  *              plus a retailer sheet with DSR Profile Code + COMPLETED Amount.
  *   "dsrwise": the older "DSR Wise" + "Retail Wise" layout keyed by DSR Profile Code.
@@ -70,6 +77,7 @@ const LABEL = Object.assign(
   Object.fromEntries(SUMMARY.map(f => [f[0], f[2]])),
   { trxRet: 'Retailers with a completed transaction', zeroTk: 'Retailers with no completed transaction' }
 );
+const KPI_NAME = { SQR: 'SQR · Super QR', TV: 'Trade Visibility' };
 
 function sheets(wb, XLSX) {
   return wb.SheetNames.map(sn => ({ sn, rows: XLSX.utils.sheet_to_json(wb.Sheets[sn], { header: 1, defval: null, raw: true, blankrows: false }) }));
@@ -86,9 +94,14 @@ function readPeriod(texts) {
 }
 const titleText = (rows, hi) => rows.slice(0, hi).flat().filter(c => typeof c === 'string');
 
-function parse(wb, XLSX, fileName) {
+const dsrNo = s => { const m = String(s == null ? '' : s).match(/dsr\D{0,3}(\d+)\s*$/i) || String(s == null ? '' : s).match(/(\d+)\s*$/); return m ? +m[1] : null; };
+
+/* opts.dsrIndex: [{ code, name }] of DSRs already known (from the live SQR data); used to match Trade Visibility rows. */
+function parse(wb, XLSX, fileName, opts) {
   const all = sheets(wb, XLSX);
-  const out = { fileName, format: null, issues: [], mapping: [], period: null, dsrs: {}, retailers: {}, retCount: 0, sheetDsr: null, sheetRet: null };
+  const tv = all.find(s => findHeader(s.rows, H => H.includes('bcd pos') && H.some(h => h.startsWith('1st time visit'))));
+  if (tv) return parseTv(all, tv, { fileName, kpi: 'TV', format: 'tv', issues: [], mapping: [], period: null, dsrs: {}, retailers: {}, retCount: 0, sheetDsr: null, sheetRet: null }, (opts && opts.dsrIndex) || []);
+  const out = { fileName, kpi: 'SQR', format: null, issues: [], mapping: [], period: null, dsrs: {}, retailers: {}, retCount: 0, sheetDsr: null, sheetRet: null };
   const old = all.find(s => findHeader(s.rows, H => H.includes('dsr profile code') && H.includes('retailer trxn active')));
   if (old) return parseDsrWise(all, old, out);
   const sum = all.find(s => findHeader(s.rows, H => H.includes('dsr name') && H.includes('retailer trxn active') && !H.includes('dsr profile code')));
@@ -169,6 +182,76 @@ function parseSummary(all, sum, out) {
   return out;
 }
 
+/* ---------- Trade Visibility: DSR Summury + Retail Wise ---------- */
+const TV_FIELDS = [
+  ['pos', ['bcd pos'], 'BCD POS (each needs 2 visits)', 1],
+  ['v1', ['1st time visit rt (bdc)', '1st time visit rt (bcd)', '1st time visit rt', '1st time visit retail'], '1st visit done', 1],
+  ['v2', ['2 times visit retail (bcd)', '2 times visit retail (bdc)', '2 times visit retail', '2nd time visit retail'], '2nd visit done', 1]
+];
+function parseTv(all, sum, out, index) {
+  out.sheetDsr = sum.sn;
+  const h = findHeader(sum.rows, H => H.includes('bcd pos'));
+  const col = names => { for (const n of names) { const i = h.H.indexOf(n); if (i >= 0) return i; } return h.H.findIndex(x => names.some(n => x.startsWith(n.split(' (')[0]))); };
+  out.mapping = TV_FIELDS.map(f => { const c = col(f[1]); return { k: f[0], label: f[2], req: !!f[3], col: c, header: c >= 0 ? h.raw[c] : null }; });
+  out.mapping.filter(m => m.req && m.col < 0).forEach(m => out.issues.push({ t: 'err', m: `Required column missing in "${sum.sn}": "${TV_FIELDS.find(f => f[0] === m.k)[1][0]}".` }));
+  const ni = h.H.indexOf('dsr name') >= 0 ? h.H.indexOf('dsr name') : 0;
+  const byNo = {}; index.forEach(d => { const n = dsrNo(d.name); if (n != null) byNo[n] = d; });
+  if (!index.length) out.issues.push({ t: 'err', m: 'Publish an SQR file first: Trade Visibility rows are matched to DSR logins through the SQR DSR list.' });
+  const ret = all.find(s => s !== sum && findHeader(s.rows, H => H.includes('tv remarks')));
+  if (!ret) out.issues.push({ t: 'warn', m: 'No "Retail Wise" sheet with a "TV Remarks" column found. DSRs will not see which POS to visit.' });
+  if (out.issues.some(i => i.t === 'err')) return out;
+
+  const nameToCode = {};
+  let badNum = 0, skipped = 0;
+  sum.rows.slice(h.hi + 1).forEach((r, k) => {
+    if (!r || r.every(v => v == null || v === '')) return;
+    const raw = String(r[ni] == null ? '' : r[ni]).trim();
+    if (!raw || /total/i.test(raw)) { skipped++; return; }
+    const n = dsrNo(raw), known = n != null ? byNo[n] : null;
+    if (!known) { out.issues.push({ t: 'warn', m: `"${raw}" does not match any DSR in the SQR data, so it was skipped.` }); return; }
+    if (out.dsrs[known.code]) { out.issues.push({ t: 'err', m: `${raw} appears twice in "${sum.sn}" (row ${h.hi + k + 2}).` }); return; }
+    const d = { code: known.code, name: known.name };
+    out.mapping.forEach(m => { let v = num(r[m.col]); if (isNaN(v)) { badNum++; v = 0; } d[m.k] = v; });
+    d.rem1 = Math.max(0, d.pos - d.v1); d.rem2 = Math.max(0, d.pos - d.v2);
+    if (d.v2 > d.v1 || d.v1 > d.pos) out.issues.push({ t: 'warn', m: `${raw}: visit counts look wrong (POS ${d.pos}, 1st ${d.v1}, 2nd ${d.v2}).` });
+    nameToCode[norm(raw)] = known.code;
+    out.dsrs[known.code] = d;
+  });
+  if (skipped) out.issues.push({ t: 'warn', m: `${skipped} row(s) without a DSR name were skipped (for example a total row).` });
+  if (badNum) out.issues.push({ t: 'warn', m: `${badNum} summary cell(s) had text where a number was expected and were read as 0.` });
+  if (!Object.keys(out.dsrs).length) { out.issues.push({ t: 'err', m: 'No DSR rows could be matched in the summary.' }); return out; }
+  Object.values(out.dsrs).forEach(d => { out.retailers[d.code] = []; });
+
+  if (ret) {
+    out.sheetRet = ret.sn;
+    const rh = findHeader(ret.rows, H => H.includes('tv remarks'));
+    const ix = n => rh.H.indexOf(n);
+    const c = { dsr: ix('dsr no') >= 0 ? ix('dsr no') : ix('dsr name'), name: ix('retailer name'), msisdn: ix('ret_msisdn') >= 0 ? ix('ret_msisdn') : ix('retailer code'), rem: ix('tv remarks') };
+    const orphan = new Set(), odd = new Set();
+    ret.rows.slice(rh.hi + 1).forEach(r => {
+      if (!r || r[c.dsr] == null || r[c.dsr] === '') return;
+      const raw = String(r[c.dsr]).trim();
+      const code = nameToCode[norm(raw)] || (byNo[dsrNo(raw)] && out.dsrs[byNo[dsrNo(raw)].code] ? byNo[dsrNo(raw)].code : null);
+      if (!code) { orphan.add(raw); return; }
+      const rem = norm(r[c.rem]);
+      const st = /pending/.test(rem) ? 'p' : /1st/.test(rem) ? 'f' : null;
+      if (!st) { odd.add(String(r[c.rem])); return; }
+      const ms = String(r[c.msisdn] == null ? '' : r[c.msisdn]).replace(/\D/g, '');
+      out.retailers[code].push({ name: String(r[c.name] == null ? '' : r[c.name]).trim(), id: ms ? ms.slice(-4) : '', st });
+      out.retCount++;
+    });
+    if (orphan.size) out.issues.push({ t: 'warn', m: `POS rows for ${[...orphan].join(', ')} did not match a DSR and were ignored.` });
+    if (odd.size) out.issues.push({ t: 'warn', m: `Rows with an unknown TV remark were skipped: ${[...odd].slice(0, 5).join(', ')}.` });
+    // Cross-check: Pending rows = POS - 1st visits; 1st-done rows = 1st - 2nd visits
+    Object.values(out.dsrs).forEach(d => {
+      const it = out.retailers[d.code], p = it.filter(x => x.st === 'p').length, f = it.filter(x => x.st === 'f').length;
+      if (p !== d.rem1) out.issues.push({ t: 'warn', m: `${d.name}: summary says ${d.rem1} POS need the 1st visit, "${ret.sn}" lists ${p} as Pending.` });
+      if (f !== d.v1 - d.v2) out.issues.push({ t: 'warn', m: `${d.name}: summary says ${d.v1 - d.v2} POS need only the 2nd visit, "${ret.sn}" lists ${f} as 1st Times Done.` });
+    });
+  }
+  return out;
+}
+
 /* ---------- older layout: DSR Wise + Retail Wise ---------- */
 function parseDsrWise(all, dSheet, out) {
   out.format = 'dsrwise'; out.sheetDsr = dSheet.sn;
@@ -212,5 +295,5 @@ function parseDsrWise(all, dSheet, out) {
   return out;
 }
 
-return { parse, FIELDS, SUMMARY, LABEL, MIN_TK };
+return { parse, dsrNo, FIELDS, SUMMARY, TV_FIELDS, LABEL, KPI_NAME, MIN_TK };
 });

@@ -1,0 +1,3848 @@
+{
+ "kpi": "TV",
+ "fileName": "Trade_Visibility.xlsx",
+ "format": "tv",
+ "period": null,
+ "builtAt": "2026-11-10T08:06:05.281Z",
+ "issues": [],
+ "figures": [
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_1",
+   "name": "DSR-01",
+   "data": {
+    "pos": 45,
+    "v1": 41,
+    "v2": 10,
+    "rem1": 4,
+    "rem2": 35
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_2",
+   "name": "DSR-02",
+   "data": {
+    "pos": 65,
+    "v1": 35,
+    "v2": 1,
+    "rem1": 30,
+    "rem2": 64
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_3",
+   "name": "DSR-03",
+   "data": {
+    "pos": 70,
+    "v1": 65,
+    "v2": 50,
+    "rem1": 5,
+    "rem2": 20
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_4",
+   "name": "DSR-05",
+   "data": {
+    "pos": 100,
+    "v1": 90,
+    "v2": 14,
+    "rem1": 10,
+    "rem2": 86
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_5",
+   "name": "DSR-06",
+   "data": {
+    "pos": 44,
+    "v1": 42,
+    "v2": 3,
+    "rem1": 2,
+    "rem2": 41
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_6",
+   "name": "DSR-07",
+   "data": {
+    "pos": 44,
+    "v1": 36,
+    "v2": 22,
+    "rem1": 8,
+    "rem2": 22
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_7",
+   "name": "DSR-08",
+   "data": {
+    "pos": 38,
+    "v1": 12,
+    "v2": 2,
+    "rem1": 26,
+    "rem2": 36
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_8",
+   "name": "DSR-09",
+   "data": {
+    "pos": 85,
+    "v1": 54,
+    "v2": 1,
+    "rem1": 31,
+    "rem2": 84
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_9",
+   "name": "DSR-11",
+   "data": {
+    "pos": 59,
+    "v1": 45,
+    "v2": 5,
+    "rem1": 14,
+    "rem2": 54
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_10",
+   "name": "DSR-12",
+   "data": {
+    "pos": 36,
+    "v1": 35,
+    "v2": 35,
+    "rem1": 1,
+    "rem2": 1
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_11",
+   "name": "DSR-13",
+   "data": {
+    "pos": 96,
+    "v1": 82,
+    "v2": 47,
+    "rem1": 14,
+    "rem2": 49
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_12",
+   "name": "DSR-14",
+   "data": {
+    "pos": 57,
+    "v1": 30,
+    "v2": 2,
+    "rem1": 27,
+    "rem2": 55
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_13",
+   "name": "DSR-15",
+   "data": {
+    "pos": 47,
+    "v1": 38,
+    "v2": 14,
+    "rem1": 9,
+    "rem2": 33
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_14",
+   "name": "DSR-16",
+   "data": {
+    "pos": 53,
+    "v1": 47,
+    "v2": 6,
+    "rem1": 6,
+    "rem2": 47
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_15",
+   "name": "DSR-17",
+   "data": {
+    "pos": 55,
+    "v1": 51,
+    "v2": 0,
+    "rem1": 4,
+    "rem2": 55
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_16",
+   "name": "DSR-18",
+   "data": {
+    "pos": 55,
+    "v1": 43,
+    "v2": 21,
+    "rem1": 12,
+    "rem2": 34
+   }
+  }
+ ],
+ "retailers": [
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_1",
+   "items": [
+    {
+     "name": "Odoy Farmache",
+     "id": "5012",
+     "st": "f"
+    },
+    {
+     "name": "Tanha Telecom",
+     "id": "4150",
+     "st": "p"
+    },
+    {
+     "name": "Rubel Store",
+     "id": "1214",
+     "st": "f"
+    },
+    {
+     "name": "Roufa Telecom and Electronics",
+     "id": "1654",
+     "st": "f"
+    },
+    {
+     "name": "Niloy Store",
+     "id": "9506",
+     "st": "f"
+    },
+    {
+     "name": "Tahia Enterprise",
+     "id": "6623",
+     "st": "f"
+    },
+    {
+     "name": "Salauddin Store",
+     "id": "6831",
+     "st": "f"
+    },
+    {
+     "name": "Jabed Store",
+     "id": "8778",
+     "st": "f"
+    },
+    {
+     "name": "Jononi Telecom-2",
+     "id": "4139",
+     "st": "f"
+    },
+    {
+     "name": "Shahdat Store",
+     "id": "4156",
+     "st": "p"
+    },
+    {
+     "name": "Joynal Store",
+     "id": "6271",
+     "st": "f"
+    },
+    {
+     "name": "Joynal Store",
+     "id": "2611",
+     "st": "f"
+    },
+    {
+     "name": "Saddam Store",
+     "id": "2672",
+     "st": "f"
+    },
+    {
+     "name": "Bismillah 2",
+     "id": "0257",
+     "st": "f"
+    },
+    {
+     "name": "Hashem Store",
+     "id": "7481",
+     "st": "f"
+    },
+    {
+     "name": "Abu Store Urban",
+     "id": "8231",
+     "st": "f"
+    },
+    {
+     "name": "Moin Telecom Urban",
+     "id": "8232",
+     "st": "f"
+    },
+    {
+     "name": "Bismillah Store",
+     "id": "8278",
+     "st": "f"
+    },
+    {
+     "name": "Bikash  Telecom",
+     "id": "0986",
+     "st": "f"
+    },
+    {
+     "name": "Shilpi Telecom",
+     "id": "4961",
+     "st": "f"
+    },
+    {
+     "name": "GR14 Osman Telecom",
+     "id": "1967",
+     "st": "f"
+    },
+    {
+     "name": "Modina Telecom",
+     "id": "0577",
+     "st": "f"
+    },
+    {
+     "name": "Sopna Studio & computer park",
+     "id": "9610",
+     "st": "p"
+    },
+    {
+     "name": "Toslim Telecom",
+     "id": "3435",
+     "st": "f"
+    },
+    {
+     "name": "Jafar Store",
+     "id": "3436",
+     "st": "f"
+    },
+    {
+     "name": "Rajakar Stor",
+     "id": "2957",
+     "st": "f"
+    },
+    {
+     "name": "Four Star Telecom",
+     "id": "5239",
+     "st": "f"
+    },
+    {
+     "name": "Hakim Store",
+     "id": "5240",
+     "st": "f"
+    },
+    {
+     "name": "Joy Store",
+     "id": "9605",
+     "st": "f"
+    },
+    {
+     "name": "Belal Store",
+     "id": "7954",
+     "st": "f"
+    },
+    {
+     "name": "Hasen Store",
+     "id": "2270",
+     "st": "f"
+    },
+    {
+     "name": "Fayja Telecom",
+     "id": "8821",
+     "st": "f"
+    },
+    {
+     "name": "B.K. Sohel Telecom",
+     "id": "6392",
+     "st": "p"
+    },
+    {
+     "name": "Aklima telecom",
+     "id": "7718",
+     "st": "f"
+    },
+    {
+     "name": "Sajid Mobile Banking",
+     "id": "2882",
+     "st": "f"
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_2",
+   "items": [
+    {
+     "name": "Suparna telecom",
+     "id": "0347",
+     "st": "f"
+    },
+    {
+     "name": "GULF TRAVELS & TELECOM",
+     "id": "3685",
+     "st": "f"
+    },
+    {
+     "name": "Nobi Store",
+     "id": "5010",
+     "st": "f"
+    },
+    {
+     "name": "Jamal Store",
+     "id": "4162",
+     "st": "p"
+    },
+    {
+     "name": "T.i Pharmecy",
+     "id": "9260",
+     "st": "p"
+    },
+    {
+     "name": "Shipon telecom",
+     "id": "9446",
+     "st": "f"
+    },
+    {
+     "name": "Sheba Telecom",
+     "id": "7418",
+     "st": "p"
+    },
+    {
+     "name": "Jaifa Store",
+     "id": "8242",
+     "st": "p"
+    },
+    {
+     "name": "S.M. telecom",
+     "id": "8760",
+     "st": "f"
+    },
+    {
+     "name": "Fantasy Telecom",
+     "id": "9542",
+     "st": "f"
+    },
+    {
+     "name": "Alam Store",
+     "id": "4129",
+     "st": "f"
+    },
+    {
+     "name": "Alam Traders",
+     "id": "2600",
+     "st": "p"
+    },
+    {
+     "name": "Jhorna Telecom",
+     "id": "2632",
+     "st": "f"
+    },
+    {
+     "name": "Kumira Lighting",
+     "id": "2288",
+     "st": "p"
+    },
+    {
+     "name": "Mahin Telecom",
+     "id": "5912",
+     "st": "f"
+    },
+    {
+     "name": "Ebrahim Store",
+     "id": "7715",
+     "st": "f"
+    },
+    {
+     "name": "Shahinur Telecom",
+     "id": "1814",
+     "st": "f"
+    },
+    {
+     "name": "MAA TELECOM",
+     "id": "2991",
+     "st": "p"
+    },
+    {
+     "name": "Jonal store",
+     "id": "6344",
+     "st": "f"
+    },
+    {
+     "name": "Four Star Telecom",
+     "id": "7482",
+     "st": "p"
+    },
+    {
+     "name": "Abid Telecom-1",
+     "id": "7483",
+     "st": "p"
+    },
+    {
+     "name": "Sohag Departmental Store",
+     "id": "4543",
+     "st": "p"
+    },
+    {
+     "name": "Joy Ma baba Store",
+     "id": "3102",
+     "st": "p"
+    },
+    {
+     "name": "Madina Pharmacy",
+     "id": "8859",
+     "st": "p"
+    },
+    {
+     "name": "Nosiba Stor",
+     "id": "8863",
+     "st": "p"
+    },
+    {
+     "name": "Riaz Store",
+     "id": "2907",
+     "st": "p"
+    },
+    {
+     "name": "Ananna Telecom",
+     "id": "1176",
+     "st": "f"
+    },
+    {
+     "name": "B R B Department Store",
+     "id": "1187",
+     "st": "f"
+    },
+    {
+     "name": "Milon Telecom",
+     "id": "1190",
+     "st": "p"
+    },
+    {
+     "name": "Ma-Baba Telecom",
+     "id": "1436",
+     "st": "f"
+    },
+    {
+     "name": "GR14 Comit IT Mai",
+     "id": "1440",
+     "st": "p"
+    },
+    {
+     "name": "ARAFAT PARMASI",
+     "id": "6330",
+     "st": "f"
+    },
+    {
+     "name": "Jashim Store",
+     "id": "6389",
+     "st": "f"
+    },
+    {
+     "name": "Islam Telecom",
+     "id": "6391",
+     "st": "f"
+    },
+    {
+     "name": "Ma Gif",
+     "id": "3086",
+     "st": "p"
+    },
+    {
+     "name": "Sabbir Store",
+     "id": "0653",
+     "st": "f"
+    },
+    {
+     "name": "Shilpi Telecom",
+     "id": "9789",
+     "st": "p"
+    },
+    {
+     "name": "AKTL.STK.BP2",
+     "id": "7748",
+     "st": "f"
+    },
+    {
+     "name": "FANTASY TELECOM",
+     "id": "7750",
+     "st": "f"
+    },
+    {
+     "name": "Four Star Telecom",
+     "id": "9612",
+     "st": "p"
+    },
+    {
+     "name": "Joynal Store",
+     "id": "3392",
+     "st": "f"
+    },
+    {
+     "name": "salam store",
+     "id": "2953",
+     "st": "f"
+    },
+    {
+     "name": "Shilpi Telecom",
+     "id": "2993",
+     "st": "f"
+    },
+    {
+     "name": "Store 2",
+     "id": "7180",
+     "st": "p"
+    },
+    {
+     "name": "Suban telecom",
+     "id": "4461",
+     "st": "f"
+    },
+    {
+     "name": "PROSHANTO",
+     "id": "9878",
+     "st": "f"
+    },
+    {
+     "name": "Ma Baba Telecom",
+     "id": "9953",
+     "st": "f"
+    },
+    {
+     "name": "Amzad Store",
+     "id": "9955",
+     "st": "f"
+    },
+    {
+     "name": "Sheba Telecom",
+     "id": "0030",
+     "st": "p"
+    },
+    {
+     "name": "Rahaman kornar",
+     "id": "0056",
+     "st": "f"
+    },
+    {
+     "name": "Mustafiz Computer",
+     "id": "0072",
+     "st": "f"
+    },
+    {
+     "name": "Habib Tel",
+     "id": "1845",
+     "st": "p"
+    },
+    {
+     "name": "Jony Store",
+     "id": "6888",
+     "st": "p"
+    },
+    {
+     "name": "Farhan Store",
+     "id": "7510",
+     "st": "p"
+    },
+    {
+     "name": "Mohon Tel",
+     "id": "8072",
+     "st": "p"
+    },
+    {
+     "name": "S S Confectionery",
+     "id": "3448",
+     "st": "f"
+    },
+    {
+     "name": "Minhaj Store",
+     "id": "0894",
+     "st": "p"
+    },
+    {
+     "name": "Jononi Store",
+     "id": "1603",
+     "st": "p"
+    },
+    {
+     "name": "Rafiq Store",
+     "id": "1749",
+     "st": "f"
+    },
+    {
+     "name": "Brothers Gallery",
+     "id": "1773",
+     "st": "f"
+    },
+    {
+     "name": "Sami Ielecom",
+     "id": "7834",
+     "st": "p"
+    },
+    {
+     "name": "RSE AKTL Sitakunda",
+     "id": "8826",
+     "st": "f"
+    },
+    {
+     "name": "Imam Telecom 3",
+     "id": "2896",
+     "st": "p"
+    },
+    {
+     "name": "Jahangir Stor",
+     "id": "0842",
+     "st": "p"
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_3",
+   "items": [
+    {
+     "name": "Sojib Store",
+     "id": "7789",
+     "st": "f"
+    },
+    {
+     "name": "Nur Uddin Store",
+     "id": "5019",
+     "st": "f"
+    },
+    {
+     "name": "Modina Telecom",
+     "id": "5846",
+     "st": "f"
+    },
+    {
+     "name": "Kamrul Store",
+     "id": "7915",
+     "st": "f"
+    },
+    {
+     "name": "Apon Store",
+     "id": "2601",
+     "st": "f"
+    },
+    {
+     "name": "Tarek Telecom",
+     "id": "6775",
+     "st": "f"
+    },
+    {
+     "name": "King",
+     "id": "0283",
+     "st": "f"
+    },
+    {
+     "name": "A.R Telecom",
+     "id": "0611",
+     "st": "f"
+    },
+    {
+     "name": "Sattar Electronics",
+     "id": "4583",
+     "st": "p"
+    },
+    {
+     "name": "Nonai Store",
+     "id": "4047",
+     "st": "f"
+    },
+    {
+     "name": "J.T.M Telecom & Furniture",
+     "id": "4091",
+     "st": "f"
+    },
+    {
+     "name": "Bahar Telecom",
+     "id": "0362",
+     "st": "f"
+    },
+    {
+     "name": "Imran Store",
+     "id": "3335",
+     "st": "p"
+    },
+    {
+     "name": "Brothers Telecom & Stationary",
+     "id": "5792",
+     "st": "f"
+    },
+    {
+     "name": "Bata Bazar",
+     "id": "9761",
+     "st": "p"
+    },
+    {
+     "name": "Bismillah Hotel",
+     "id": "9981",
+     "st": "f"
+    },
+    {
+     "name": "Islam",
+     "id": "9982",
+     "st": "f"
+    },
+    {
+     "name": "Refat Stor",
+     "id": "1122",
+     "st": "p"
+    },
+    {
+     "name": "Kalam Store",
+     "id": "1760",
+     "st": "f"
+    },
+    {
+     "name": "Farvz Store",
+     "id": "6395",
+     "st": "p"
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_4",
+   "items": [
+    {
+     "name": "Nitto Priojonio Kornar",
+     "id": "9026",
+     "st": "f"
+    },
+    {
+     "name": "faruk Store",
+     "id": "7922",
+     "st": "f"
+    },
+    {
+     "name": "Shohid Store",
+     "id": "5037",
+     "st": "f"
+    },
+    {
+     "name": "Would Touch Tel",
+     "id": "4181",
+     "st": "f"
+    },
+    {
+     "name": "Rada Madab Store",
+     "id": "1036",
+     "st": "f"
+    },
+    {
+     "name": "Sohel Store",
+     "id": "1230",
+     "st": "f"
+    },
+    {
+     "name": "Tarek store",
+     "id": "1670",
+     "st": "f"
+    },
+    {
+     "name": "Joy Store",
+     "id": "9473",
+     "st": "f"
+    },
+    {
+     "name": "Al Amin Store",
+     "id": "9475",
+     "st": "p"
+    },
+    {
+     "name": "Foyja Telecom",
+     "id": "9482",
+     "st": "f"
+    },
+    {
+     "name": "Hakkani Corporation",
+     "id": "9484",
+     "st": "f"
+    },
+    {
+     "name": "Rubel Store",
+     "id": "9496",
+     "st": "f"
+    },
+    {
+     "name": "Haroun Store",
+     "id": "4172",
+     "st": "f"
+    },
+    {
+     "name": "GR14 Sharma Store",
+     "id": "4182",
+     "st": "f"
+    },
+    {
+     "name": "Masum Store",
+     "id": "4196",
+     "st": "p"
+    },
+    {
+     "name": "Asma Store",
+     "id": "4199",
+     "st": "f"
+    },
+    {
+     "name": "Sujan Store",
+     "id": "7490",
+     "st": "f"
+    },
+    {
+     "name": "Hasan Store",
+     "id": "3230",
+     "st": "f"
+    },
+    {
+     "name": "Lakey Store",
+     "id": "0946",
+     "st": "f"
+    },
+    {
+     "name": "Ismail Store",
+     "id": "6280",
+     "st": "f"
+    },
+    {
+     "name": "Haji Ahmodur Rahman Telecom",
+     "id": "9450",
+     "st": "p"
+    },
+    {
+     "name": "VI VI STORE",
+     "id": "1820",
+     "st": "f"
+    },
+    {
+     "name": "Roni Telecom",
+     "id": "8448",
+     "st": "f"
+    },
+    {
+     "name": "Arafath Store",
+     "id": "0618",
+     "st": "f"
+    },
+    {
+     "name": "Joynal Store",
+     "id": "0621",
+     "st": "f"
+    },
+    {
+     "name": "Sakib khan",
+     "id": "4050",
+     "st": "f"
+    },
+    {
+     "name": "Zafor St",
+     "id": "3133",
+     "st": "f"
+    },
+    {
+     "name": "Dipu store",
+     "id": "8853",
+     "st": "f"
+    },
+    {
+     "name": "Babor Store  statinary",
+     "id": "8289",
+     "st": "f"
+    },
+    {
+     "name": "Biplub Store",
+     "id": "9056",
+     "st": "f"
+    },
+    {
+     "name": "Belal Store",
+     "id": "9066",
+     "st": "p"
+    },
+    {
+     "name": "Joy Store",
+     "id": "9152",
+     "st": "f"
+    },
+    {
+     "name": "Kamrul Uddin Chowdhury",
+     "id": "9193",
+     "st": "f"
+    },
+    {
+     "name": "RashelST",
+     "id": "3008",
+     "st": "f"
+    },
+    {
+     "name": "Arif Store",
+     "id": "2920",
+     "st": "f"
+    },
+    {
+     "name": "Bismillah Mobile Cen",
+     "id": "3320",
+     "st": "p"
+    },
+    {
+     "name": "Ema Enterprice",
+     "id": "0916",
+     "st": "f"
+    },
+    {
+     "name": "Shilpi Telecom",
+     "id": "4909",
+     "st": "f"
+    },
+    {
+     "name": "Kamal Store",
+     "id": "3875",
+     "st": "p"
+    },
+    {
+     "name": "Siraj Telecom",
+     "id": "9785",
+     "st": "f"
+    },
+    {
+     "name": "Niloy telecom",
+     "id": "7688",
+     "st": "f"
+    },
+    {
+     "name": "Shanti Phar",
+     "id": "7719",
+     "st": "f"
+    },
+    {
+     "name": "shohel store",
+     "id": "7743",
+     "st": "f"
+    },
+    {
+     "name": "Jamal Store",
+     "id": "6735",
+     "st": "p"
+    },
+    {
+     "name": "Saiful Store",
+     "id": "6775",
+     "st": "f"
+    },
+    {
+     "name": "Roshni Telecom",
+     "id": "6794",
+     "st": "f"
+    },
+    {
+     "name": "Khoka Store",
+     "id": "2959",
+     "st": "f"
+    },
+    {
+     "name": "AL AMIN STORE",
+     "id": "2972",
+     "st": "f"
+    },
+    {
+     "name": "Tamanna Store",
+     "id": "0725",
+     "st": "f"
+    },
+    {
+     "name": "Special Promo code_BP02",
+     "id": "0765",
+     "st": "f"
+    },
+    {
+     "name": "Farbaz  Telecom",
+     "id": "0791",
+     "st": "f"
+    },
+    {
+     "name": "Ataur Rahaman S",
+     "id": "0792",
+     "st": "f"
+    },
+    {
+     "name": "Belal Store",
+     "id": "0793",
+     "st": "f"
+    },
+    {
+     "name": "Alim Store",
+     "id": "0795",
+     "st": "p"
+    },
+    {
+     "name": "Didar Store",
+     "id": "3265",
+     "st": "f"
+    },
+    {
+     "name": "Hashem Store",
+     "id": "3268",
+     "st": "f"
+    },
+    {
+     "name": "Bikash  Telecom",
+     "id": "3269",
+     "st": "f"
+    },
+    {
+     "name": "Didar Store",
+     "id": "5221",
+     "st": "f"
+    },
+    {
+     "name": "S M STORE",
+     "id": "5246",
+     "st": "f"
+    },
+    {
+     "name": "All you need",
+     "id": "9884",
+     "st": "f"
+    },
+    {
+     "name": "Bismillah omeo",
+     "id": "9887",
+     "st": "f"
+    },
+    {
+     "name": "",
+     "id": "9911",
+     "st": "p"
+    },
+    {
+     "name": "Null",
+     "id": "9912",
+     "st": "f"
+    },
+    {
+     "name": "FNF Mobile Center",
+     "id": "9928",
+     "st": "f"
+    },
+    {
+     "name": "sohag teleom",
+     "id": "9942",
+     "st": "f"
+    },
+    {
+     "name": "SK Online Service",
+     "id": "9943",
+     "st": "f"
+    },
+    {
+     "name": "Saiful",
+     "id": "9988",
+     "st": "f"
+    },
+    {
+     "name": "GPH TV",
+     "id": "0866",
+     "st": "f"
+    },
+    {
+     "name": "Salam store",
+     "id": "0750",
+     "st": "f"
+    },
+    {
+     "name": "Harun Store",
+     "id": "8089",
+     "st": "f"
+    },
+    {
+     "name": "Ashik Store",
+     "id": "5010",
+     "st": "f"
+    },
+    {
+     "name": "Rakib Store",
+     "id": "9680",
+     "st": "f"
+    },
+    {
+     "name": "Rhisul Store",
+     "id": "0898",
+     "st": "f"
+    },
+    {
+     "name": "Semol Stor",
+     "id": "3132",
+     "st": "f"
+    },
+    {
+     "name": "Online Center",
+     "id": "7428",
+     "st": "f"
+    },
+    {
+     "name": "Azmir Telecom",
+     "id": "1390",
+     "st": "f"
+    },
+    {
+     "name": "Babor Store",
+     "id": "1612",
+     "st": "f"
+    },
+    {
+     "name": "Ronzu Bitan",
+     "id": "1762",
+     "st": "f"
+    },
+    {
+     "name": "S.B Telecom-2",
+     "id": "7824",
+     "st": "f"
+    },
+    {
+     "name": "Alam Traders",
+     "id": "8832",
+     "st": "f"
+    },
+    {
+     "name": "Shams Telecom",
+     "id": "5986",
+     "st": "f"
+    },
+    {
+     "name": "RAJES Tel",
+     "id": "2851",
+     "st": "f"
+    },
+    {
+     "name": "Ibrahim Store",
+     "id": "2852",
+     "st": "f"
+    },
+    {
+     "name": "Rasel Telecom",
+     "id": "0835",
+     "st": "f"
+    },
+    {
+     "name": "Harun brothers",
+     "id": "0843",
+     "st": "p"
+    },
+    {
+     "name": "Halk Store",
+     "id": "0844",
+     "st": "f"
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_5",
+   "items": [
+    {
+     "name": "RASHA TELECOM",
+     "id": "5042",
+     "st": "f"
+    },
+    {
+     "name": "ROHIM STORE",
+     "id": "5049",
+     "st": "f"
+    },
+    {
+     "name": "RONI TEL",
+     "id": "5445",
+     "st": "f"
+    },
+    {
+     "name": "TIPU TEL",
+     "id": "1032",
+     "st": "f"
+    },
+    {
+     "name": "Shilpi Telecom",
+     "id": "1034",
+     "st": "f"
+    },
+    {
+     "name": "MAHEDI TEI",
+     "id": "1038",
+     "st": "f"
+    },
+    {
+     "name": "GR14  Nizam  Store",
+     "id": "1243",
+     "st": "f"
+    },
+    {
+     "name": "Jafor Store",
+     "id": "9724",
+     "st": "f"
+    },
+    {
+     "name": "Patama Tel",
+     "id": "9454",
+     "st": "f"
+    },
+    {
+     "name": "University Engineering",
+     "id": "5171",
+     "st": "f"
+    },
+    {
+     "name": "MONSUR STORE",
+     "id": "8823",
+     "st": "f"
+    },
+    {
+     "name": "PROMES TEL",
+     "id": "4175",
+     "st": "f"
+    },
+    {
+     "name": "Rahul",
+     "id": "4006",
+     "st": "f"
+    },
+    {
+     "name": "Taspia Telecom",
+     "id": "6755",
+     "st": "f"
+    },
+    {
+     "name": "MULANA TEL",
+     "id": "6757",
+     "st": "f"
+    },
+    {
+     "name": "Jafor Store",
+     "id": "6758",
+     "st": "f"
+    },
+    {
+     "name": "Lee Store",
+     "id": "3090",
+     "st": "p"
+    },
+    {
+     "name": "JASIM STORE",
+     "id": "3151",
+     "st": "f"
+    },
+    {
+     "name": "Lucky Sweets",
+     "id": "2985",
+     "st": "f"
+    },
+    {
+     "name": "Kamal Store",
+     "id": "2892",
+     "st": "f"
+    },
+    {
+     "name": "Shamim Enterprise",
+     "id": "9836",
+     "st": "f"
+    },
+    {
+     "name": "Joinal Store",
+     "id": "2798",
+     "st": "f"
+    },
+    {
+     "name": "Sohel Store",
+     "id": "2799",
+     "st": "f"
+    },
+    {
+     "name": "Iqbal Telecom Center",
+     "id": "2801",
+     "st": "f"
+    },
+    {
+     "name": "Shamim Enterprice",
+     "id": "4950",
+     "st": "f"
+    },
+    {
+     "name": "Arafath Store Urban",
+     "id": "1891",
+     "st": "f"
+    },
+    {
+     "name": "Noyan Tel",
+     "id": "8293",
+     "st": "f"
+    },
+    {
+     "name": "Al Karim Telecom",
+     "id": "9086",
+     "st": "f"
+    },
+    {
+     "name": "Alauddin St",
+     "id": "2882",
+     "st": "f"
+    },
+    {
+     "name": "Rahaman So",
+     "id": "3002",
+     "st": "f"
+    },
+    {
+     "name": "Retina Telecom",
+     "id": "2844",
+     "st": "f"
+    },
+    {
+     "name": "Ma Telecom",
+     "id": "0672",
+     "st": "f"
+    },
+    {
+     "name": "Faria Telecom",
+     "id": "9194",
+     "st": "f"
+    },
+    {
+     "name": "Kopil Store",
+     "id": "7166",
+     "st": "f"
+    },
+    {
+     "name": "Tamriz  Media",
+     "id": "9838",
+     "st": "f"
+    },
+    {
+     "name": "SABBIR",
+     "id": "9889",
+     "st": "f"
+    },
+    {
+     "name": "Sohid",
+     "id": "0035",
+     "st": "f"
+    },
+    {
+     "name": "Jonota Store",
+     "id": "3368",
+     "st": "p"
+    },
+    {
+     "name": "Bhundhu Store",
+     "id": "7374",
+     "st": "f"
+    },
+    {
+     "name": "Tomal Tel",
+     "id": "0749",
+     "st": "f"
+    },
+    {
+     "name": "Arfa Telecom",
+     "id": "7827",
+     "st": "f"
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_6",
+   "items": [
+    {
+     "name": "Mamun Store",
+     "id": "1042",
+     "st": "f"
+    },
+    {
+     "name": "Sohag Departmental Store",
+     "id": "1661",
+     "st": "f"
+    },
+    {
+     "name": "Smart Telecom",
+     "id": "1678",
+     "st": "f"
+    },
+    {
+     "name": "Korshid Store",
+     "id": "4187",
+     "st": "f"
+    },
+    {
+     "name": "Sohag Departmental Store",
+     "id": "2803",
+     "st": "f"
+    },
+    {
+     "name": "Rahaman kornar",
+     "id": "3114",
+     "st": "p"
+    },
+    {
+     "name": "Rahaman kornar",
+     "id": "8295",
+     "st": "f"
+    },
+    {
+     "name": "Faruk Telecom",
+     "id": "3004",
+     "st": "p"
+    },
+    {
+     "name": "Khokon Enterprise",
+     "id": "2438",
+     "st": "f"
+    },
+    {
+     "name": "Nirola Store",
+     "id": "0593",
+     "st": "p"
+    },
+    {
+     "name": "ety telecom",
+     "id": "9960",
+     "st": "f"
+    },
+    {
+     "name": "Harun Store",
+     "id": "0073",
+     "st": "f"
+    },
+    {
+     "name": "Roju Store",
+     "id": "8726",
+     "st": "f"
+    },
+    {
+     "name": "Habib Store",
+     "id": "5363",
+     "st": "p"
+    },
+    {
+     "name": "Umayer Store",
+     "id": "6092",
+     "st": "p"
+    },
+    {
+     "name": "Harun Tel",
+     "id": "4230",
+     "st": "f"
+    },
+    {
+     "name": "Kamal And Brothers",
+     "id": "9972",
+     "st": "p"
+    },
+    {
+     "name": "Jisan photo",
+     "id": "8400",
+     "st": "f"
+    },
+    {
+     "name": "Idris Telecom",
+     "id": "1615",
+     "st": "f"
+    },
+    {
+     "name": "Kamal Store",
+     "id": "7861",
+     "st": "p"
+    },
+    {
+     "name": "GULF TRAVELS TELECOM",
+     "id": "8837",
+     "st": "f"
+    },
+    {
+     "name": "Islam Telecom",
+     "id": "8838",
+     "st": "p"
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_7",
+   "items": [
+    {
+     "name": "S.M.D Store",
+     "id": "8618",
+     "st": "p"
+    },
+    {
+     "name": "Sujon Store",
+     "id": "3756",
+     "st": "p"
+    },
+    {
+     "name": "Shofi Store",
+     "id": "1236",
+     "st": "p"
+    },
+    {
+     "name": "Liton Sowdagor",
+     "id": "2470",
+     "st": "f"
+    },
+    {
+     "name": "Sumon Store",
+     "id": "6632",
+     "st": "f"
+    },
+    {
+     "name": "GR14 Zia Store",
+     "id": "6914",
+     "st": "p"
+    },
+    {
+     "name": "NAZMUL TELECOM",
+     "id": "7919",
+     "st": "f"
+    },
+    {
+     "name": "EVAN COOLING CORNER",
+     "id": "7926",
+     "st": "f"
+    },
+    {
+     "name": "ASHRAF TELECOM",
+     "id": "7990",
+     "st": "f"
+    },
+    {
+     "name": "Towhid & Son's",
+     "id": "9480",
+     "st": "p"
+    },
+    {
+     "name": "Jany Store",
+     "id": "4178",
+     "st": "p"
+    },
+    {
+     "name": "Joynal Store",
+     "id": "5581",
+     "st": "p"
+    },
+    {
+     "name": "Mahin Telecom",
+     "id": "3557",
+     "st": "p"
+    },
+    {
+     "name": "Parvez Tel",
+     "id": "0328",
+     "st": "p"
+    },
+    {
+     "name": "Modi Store",
+     "id": "8666",
+     "st": "p"
+    },
+    {
+     "name": "Masud Store",
+     "id": "8670",
+     "st": "p"
+    },
+    {
+     "name": "siddik store",
+     "id": "8671",
+     "st": "f"
+    },
+    {
+     "name": "Rashid Store",
+     "id": "9059",
+     "st": "p"
+    },
+    {
+     "name": "Biplub St",
+     "id": "9082",
+     "st": "p"
+    },
+    {
+     "name": "Firoz Store",
+     "id": "3328",
+     "st": "p"
+    },
+    {
+     "name": "Asma Telecom",
+     "id": "2847",
+     "st": "p"
+    },
+    {
+     "name": "Monowar telecom",
+     "id": "1430",
+     "st": "p"
+    },
+    {
+     "name": "ASHRAF UDDIN",
+     "id": "0580",
+     "st": "p"
+    },
+    {
+     "name": "Atik telecom",
+     "id": "5018",
+     "st": "p"
+    },
+    {
+     "name": "Sumaiya Telecom",
+     "id": "9707",
+     "st": "f"
+    },
+    {
+     "name": "M/s Asraf Telecom",
+     "id": "9780",
+     "st": "f"
+    },
+    {
+     "name": "Sohag Store",
+     "id": "6741",
+     "st": "p"
+    },
+    {
+     "name": "Mamun Telecom",
+     "id": "6742",
+     "st": "p"
+    },
+    {
+     "name": "Joynal Store",
+     "id": "9630",
+     "st": "p"
+    },
+    {
+     "name": "Shilpe Mobile dot com - 2",
+     "id": "7168",
+     "st": "f"
+    },
+    {
+     "name": "Joydeb Store",
+     "id": "9845",
+     "st": "p"
+    },
+    {
+     "name": "Mir Electronic",
+     "id": "9933",
+     "st": "p"
+    },
+    {
+     "name": "Kobir Store",
+     "id": "6266",
+     "st": "p"
+    },
+    {
+     "name": "Joshi Tel",
+     "id": "9092",
+     "st": "p"
+    },
+    {
+     "name": "Rakib Telcom",
+     "id": "2862",
+     "st": "f"
+    },
+    {
+     "name": "Luta Abir",
+     "id": "0830",
+     "st": "p"
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_8",
+   "items": [
+    {
+     "name": "Lokman Store",
+     "id": "3513",
+     "st": "p"
+    },
+    {
+     "name": "ALFA STORE",
+     "id": "4671",
+     "st": "f"
+    },
+    {
+     "name": "Ishaq Store",
+     "id": "5404",
+     "st": "f"
+    },
+    {
+     "name": "GR14 Shahabuddin Store",
+     "id": "5407",
+     "st": "p"
+    },
+    {
+     "name": "SAYEM TEL",
+     "id": "5418",
+     "st": "p"
+    },
+    {
+     "name": "Mainoul Store",
+     "id": "5424",
+     "st": "f"
+    },
+    {
+     "name": "Rana Store",
+     "id": "5437",
+     "st": "f"
+    },
+    {
+     "name": "S K Tel",
+     "id": "3769",
+     "st": "p"
+    },
+    {
+     "name": "Nizame Tel",
+     "id": "9716",
+     "st": "f"
+    },
+    {
+     "name": "Kalam Store",
+     "id": "1041",
+     "st": "f"
+    },
+    {
+     "name": "Ali Agger Store",
+     "id": "4987",
+     "st": "p"
+    },
+    {
+     "name": "Jononi Store",
+     "id": "9457",
+     "st": "f"
+    },
+    {
+     "name": "Didar talecom",
+     "id": "7921",
+     "st": "f"
+    },
+    {
+     "name": "Nizam Store",
+     "id": "7948",
+     "st": "f"
+    },
+    {
+     "name": "Arfan Telecom 2",
+     "id": "8827",
+     "st": "f"
+    },
+    {
+     "name": "NIZAM TEL",
+     "id": "9510",
+     "st": "p"
+    },
+    {
+     "name": "Pushpo Telecom-2",
+     "id": "4192",
+     "st": "p"
+    },
+    {
+     "name": "NAZROUL STORE",
+     "id": "4194",
+     "st": "f"
+    },
+    {
+     "name": "Paharika Store",
+     "id": "3164",
+     "st": "f"
+    },
+    {
+     "name": "Salim Coling corner-2",
+     "id": "9456",
+     "st": "f"
+    },
+    {
+     "name": "LITON STORE",
+     "id": "5056",
+     "st": "f"
+    },
+    {
+     "name": "Akbar Store",
+     "id": "3182",
+     "st": "f"
+    },
+    {
+     "name": "Zia Store",
+     "id": "2987",
+     "st": "f"
+    },
+    {
+     "name": "TISHA TELECOM",
+     "id": "2989",
+     "st": "p"
+    },
+    {
+     "name": "Imam Telecom",
+     "id": "9333",
+     "st": "p"
+    },
+    {
+     "name": "Rafa Teleco",
+     "id": "5487",
+     "st": "f"
+    },
+    {
+     "name": "Mahin Store",
+     "id": "1067",
+     "st": "f"
+    },
+    {
+     "name": "White Halk",
+     "id": "0881",
+     "st": "f"
+    },
+    {
+     "name": "Mahin Store",
+     "id": "8163",
+     "st": "p"
+    },
+    {
+     "name": "Faruk Teleco",
+     "id": "7492",
+     "st": "f"
+    },
+    {
+     "name": "Jononi Store",
+     "id": "2806",
+     "st": "p"
+    },
+    {
+     "name": "Jononi Store",
+     "id": "2808",
+     "st": "f"
+    },
+    {
+     "name": "Nobi Telacom",
+     "id": "6249",
+     "st": "f"
+    },
+    {
+     "name": "Hakim Store Urban",
+     "id": "8641",
+     "st": "p"
+    },
+    {
+     "name": "Ma Ar Dowa Stl Jony Dey",
+     "id": "5054",
+     "st": "f"
+    },
+    {
+     "name": "Alam Depart Store Joshim hossain",
+     "id": "5055",
+     "st": "f"
+    },
+    {
+     "name": "Helal Tel  Gift",
+     "id": "3121",
+     "st": "f"
+    },
+    {
+     "name": "Mahin Telecom",
+     "id": "8823",
+     "st": "p"
+    },
+    {
+     "name": "Helal Store  Pho",
+     "id": "8300",
+     "st": "f"
+    },
+    {
+     "name": "Helal Tel  Gift",
+     "id": "8301",
+     "st": "p"
+    },
+    {
+     "name": "KarimST",
+     "id": "3006",
+     "st": "f"
+    },
+    {
+     "name": "Shilpi Telecom",
+     "id": "3025",
+     "st": "f"
+    },
+    {
+     "name": "Jahid Store",
+     "id": "3034",
+     "st": "f"
+    },
+    {
+     "name": "Shawon Telecom",
+     "id": "0829",
+     "st": "p"
+    },
+    {
+     "name": "Milon Telecom",
+     "id": "0988",
+     "st": "f"
+    },
+    {
+     "name": "Salim Coling corner",
+     "id": "1177",
+     "st": "f"
+    },
+    {
+     "name": "Jal Pari Digital Gallery",
+     "id": "4999",
+     "st": "f"
+    },
+    {
+     "name": "GR14 Jahangir Telecom",
+     "id": "0620",
+     "st": "f"
+    },
+    {
+     "name": "F1 Telecom",
+     "id": "0720",
+     "st": "f"
+    },
+    {
+     "name": "GR14 Ahamedia IT Store",
+     "id": "1970",
+     "st": "f"
+    },
+    {
+     "name": "Amdad Store",
+     "id": "0653",
+     "st": "f"
+    },
+    {
+     "name": "Abdul al mamun",
+     "id": "6332",
+     "st": "f"
+    },
+    {
+     "name": "Mahir t.com01",
+     "id": "6363",
+     "st": "p"
+    },
+    {
+     "name": "Shosi Enterpris",
+     "id": "5761",
+     "st": "f"
+    },
+    {
+     "name": "Shamim Store",
+     "id": "0673",
+     "st": "f"
+    },
+    {
+     "name": "Mosaraf Store",
+     "id": "0674",
+     "st": "p"
+    },
+    {
+     "name": "Rubel Store",
+     "id": "3871",
+     "st": "p"
+    },
+    {
+     "name": "DR Trading",
+     "id": "2442",
+     "st": "p"
+    },
+    {
+     "name": "Driver Store",
+     "id": "1405",
+     "st": "p"
+    },
+    {
+     "name": "Joynal enter",
+     "id": "6768",
+     "st": "p"
+    },
+    {
+     "name": "Chaya Nir",
+     "id": "7172",
+     "st": "f"
+    },
+    {
+     "name": "Rasha Teleco",
+     "id": "3279",
+     "st": "p"
+    },
+    {
+     "name": "Najim Store",
+     "id": "9846",
+     "st": "p"
+    },
+    {
+     "name": "Fashion Fair",
+     "id": "9848",
+     "st": "f"
+    },
+    {
+     "name": "ARFIN",
+     "id": "9898",
+     "st": "f"
+    },
+    {
+     "name": "Nizam",
+     "id": "9908",
+     "st": "p"
+    },
+    {
+     "name": "Nishat",
+     "id": "9909",
+     "st": "f"
+    },
+    {
+     "name": "Ishaq Store-2",
+     "id": "0002",
+     "st": "p"
+    },
+    {
+     "name": "Azmir Talecom",
+     "id": "0063",
+     "st": "f"
+    },
+    {
+     "name": "Mahin Telecom",
+     "id": "3990",
+     "st": "p"
+    },
+    {
+     "name": "Halka Vai",
+     "id": "9292",
+     "st": "p"
+    },
+    {
+     "name": "Ma Baba Store",
+     "id": "3045",
+     "st": "p"
+    },
+    {
+     "name": "Ovi Mobile Dot Com",
+     "id": "7998",
+     "st": "f"
+    },
+    {
+     "name": "Hanif pharmecy",
+     "id": "7831",
+     "st": "f"
+    },
+    {
+     "name": "Alim Store",
+     "id": "6400",
+     "st": "f"
+    },
+    {
+     "name": "Jony Telecome",
+     "id": "6401",
+     "st": "f"
+    },
+    {
+     "name": "Arfan Telecom",
+     "id": "6402",
+     "st": "p"
+    },
+    {
+     "name": "Mohammad Store",
+     "id": "0505",
+     "st": "f"
+    },
+    {
+     "name": "Tanisha Store",
+     "id": "0530",
+     "st": "p"
+    },
+    {
+     "name": "Safiul Store",
+     "id": "7418",
+     "st": "f"
+    },
+    {
+     "name": "Arafat photo",
+     "id": "1591",
+     "st": "p"
+    },
+    {
+     "name": "Amzad store",
+     "id": "1592",
+     "st": "f"
+    },
+    {
+     "name": "Anan St",
+     "id": "0839",
+     "st": "f"
+    },
+    {
+     "name": "Mahin St",
+     "id": "0863",
+     "st": "f"
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_9",
+   "items": [
+    {
+     "name": "Kobir Tel",
+     "id": "7262",
+     "st": "f"
+    },
+    {
+     "name": "SUKUMAR STORE",
+     "id": "7911",
+     "st": "f"
+    },
+    {
+     "name": "MULANA TEL",
+     "id": "5412",
+     "st": "f"
+    },
+    {
+     "name": "Chobi Colling",
+     "id": "4272",
+     "st": "f"
+    },
+    {
+     "name": "Rafiq Brothers",
+     "id": "3616",
+     "st": "f"
+    },
+    {
+     "name": "Barua Store",
+     "id": "1240",
+     "st": "f"
+    },
+    {
+     "name": "Vai Vai Store",
+     "id": "7282",
+     "st": "f"
+    },
+    {
+     "name": "Jamal Store",
+     "id": "1681",
+     "st": "f"
+    },
+    {
+     "name": "Sadek Store",
+     "id": "1682",
+     "st": "p"
+    },
+    {
+     "name": "MOHAMODEYA LIB",
+     "id": "7922",
+     "st": "f"
+    },
+    {
+     "name": "TAMIM STORE",
+     "id": "7940",
+     "st": "f"
+    },
+    {
+     "name": "MOHIN STORE",
+     "id": "4204",
+     "st": "f"
+    },
+    {
+     "name": "AKTL (Sitakunda)BP 7",
+     "id": "0115",
+     "st": "p"
+    },
+    {
+     "name": "Mosaraf Store",
+     "id": "5062",
+     "st": "f"
+    },
+    {
+     "name": "Raju Store",
+     "id": "8143",
+     "st": "f"
+    },
+    {
+     "name": "Barun Store",
+     "id": "6538",
+     "st": "f"
+    },
+    {
+     "name": "Ujjal Store 17",
+     "id": "8817",
+     "st": "f"
+    },
+    {
+     "name": "Saslman store",
+     "id": "8818",
+     "st": "f"
+    },
+    {
+     "name": "Sakil Store",
+     "id": "8819",
+     "st": "f"
+    },
+    {
+     "name": "Joynal Tel  poto",
+     "id": "8302",
+     "st": "p"
+    },
+    {
+     "name": "Intercom Telecom",
+     "id": "8303",
+     "st": "f"
+    },
+    {
+     "name": "Alam Depart Store",
+     "id": "8304",
+     "st": "p"
+    },
+    {
+     "name": "Shaha Store",
+     "id": "8309",
+     "st": "p"
+    },
+    {
+     "name": "Poshpho Telecom",
+     "id": "8561",
+     "st": "p"
+    },
+    {
+     "name": "Rokomari Store",
+     "id": "3032",
+     "st": "f"
+    },
+    {
+     "name": "Prottoy telecom",
+     "id": "0805",
+     "st": "f"
+    },
+    {
+     "name": "K.B ENTERPRISE",
+     "id": "2838",
+     "st": "p"
+    },
+    {
+     "name": "Bhai Bhai Telecom",
+     "id": "2979",
+     "st": "p"
+    },
+    {
+     "name": "Sohid Store",
+     "id": "0688",
+     "st": "f"
+    },
+    {
+     "name": "JAYNAL HWMI HAL",
+     "id": "6331",
+     "st": "f"
+    },
+    {
+     "name": "Akash Store",
+     "id": "5040",
+     "st": "f"
+    },
+    {
+     "name": "Sanzida Berities Store",
+     "id": "5046",
+     "st": "p"
+    },
+    {
+     "name": "Jane Alam Store",
+     "id": "6748",
+     "st": "f"
+    },
+    {
+     "name": "Raj Telecom",
+     "id": "6761",
+     "st": "f"
+    },
+    {
+     "name": "Mobaile touch 2",
+     "id": "6769",
+     "st": "f"
+    },
+    {
+     "name": "Food Garden",
+     "id": "9637",
+     "st": "p"
+    },
+    {
+     "name": "Joynal Store",
+     "id": "3283",
+     "st": "f"
+    },
+    {
+     "name": "Safi Store",
+     "id": "4441",
+     "st": "f"
+    },
+    {
+     "name": "Antika Store",
+     "id": "9852",
+     "st": "f"
+    },
+    {
+     "name": "Arafat",
+     "id": "9861",
+     "st": "p"
+    },
+    {
+     "name": "Null",
+     "id": "9915",
+     "st": "p"
+    },
+    {
+     "name": "ETY TELECOM",
+     "id": "9965",
+     "st": "f"
+    },
+    {
+     "name": "Ujjal Store 39",
+     "id": "0039",
+     "st": "f"
+    },
+    {
+     "name": "Kishan Store",
+     "id": "0040",
+     "st": "f"
+    },
+    {
+     "name": "Rifat Store",
+     "id": "0065",
+     "st": "f"
+    },
+    {
+     "name": "Saddam Store",
+     "id": "0067",
+     "st": "f"
+    },
+    {
+     "name": "Raj Telecom",
+     "id": "0068",
+     "st": "f"
+    },
+    {
+     "name": "Alom",
+     "id": "5562",
+     "st": "f"
+    },
+    {
+     "name": "Raju Telecom",
+     "id": "7212",
+     "st": "p"
+    },
+    {
+     "name": "Sazzasd Store",
+     "id": "5042",
+     "st": "f"
+    },
+    {
+     "name": "Dipok Sen",
+     "id": "1977",
+     "st": "f"
+    },
+    {
+     "name": "Shakil store",
+     "id": "1587",
+     "st": "f"
+    },
+    {
+     "name": "Shakil store",
+     "id": "1588",
+     "st": "p"
+    },
+    {
+     "name": "Lee Store",
+     "id": "0854",
+     "st": "f"
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_10",
+   "items": [
+    {
+     "name": "Ovi telecom",
+     "id": "0390",
+     "st": "p"
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_11",
+   "items": [
+    {
+     "name": "Akash store",
+     "id": "9435",
+     "st": "f"
+    },
+    {
+     "name": "Nail Store",
+     "id": "5048",
+     "st": "f"
+    },
+    {
+     "name": "Jononi Store",
+     "id": "5436",
+     "st": "f"
+    },
+    {
+     "name": "Maa Telecom",
+     "id": "4177",
+     "st": "p"
+    },
+    {
+     "name": "Monir Enterprise",
+     "id": "1056",
+     "st": "f"
+    },
+    {
+     "name": "Hares Telecom",
+     "id": "2409",
+     "st": "f"
+    },
+    {
+     "name": "Bhuian Telecom",
+     "id": "1695",
+     "st": "f"
+    },
+    {
+     "name": "ZAKIR STORE",
+     "id": "8819",
+     "st": "f"
+    },
+    {
+     "name": "Mir Telecom",
+     "id": "9461",
+     "st": "p"
+    },
+    {
+     "name": "Rubel Store",
+     "id": "9465",
+     "st": "f"
+    },
+    {
+     "name": "Intel Telicom",
+     "id": "7496",
+     "st": "p"
+    },
+    {
+     "name": "AKTER STORE",
+     "id": "3221",
+     "st": "f"
+    },
+    {
+     "name": "Momin Telecom",
+     "id": "8723",
+     "st": "f"
+    },
+    {
+     "name": "Sohel Store",
+     "id": "8558",
+     "st": "p"
+    },
+    {
+     "name": "KURSHID STORE",
+     "id": "6759",
+     "st": "p"
+    },
+    {
+     "name": "La Halua Store",
+     "id": "0860",
+     "st": "f"
+    },
+    {
+     "name": "Robi_VRBP",
+     "id": "3165",
+     "st": "f"
+    },
+    {
+     "name": "M/s Hashem Store",
+     "id": "2982",
+     "st": "f"
+    },
+    {
+     "name": "Harun Store",
+     "id": "5791",
+     "st": "f"
+    },
+    {
+     "name": "Mahin Telecom",
+     "id": "4517",
+     "st": "p"
+    },
+    {
+     "name": "Afsar Store",
+     "id": "7651",
+     "st": "p"
+    },
+    {
+     "name": "Sohel Departmental",
+     "id": "7536",
+     "st": "f"
+    },
+    {
+     "name": "Baba Telecom",
+     "id": "6545",
+     "st": "f"
+    },
+    {
+     "name": "Odoy Farmache Urban",
+     "id": "8633",
+     "st": "f"
+    },
+    {
+     "name": "Coton Tel",
+     "id": "3127",
+     "st": "p"
+    },
+    {
+     "name": "Coton Tel",
+     "id": "8313",
+     "st": "f"
+    },
+    {
+     "name": "Mostofa St",
+     "id": "9089",
+     "st": "f"
+    },
+    {
+     "name": "Ma telecom",
+     "id": "2869",
+     "st": "f"
+    },
+    {
+     "name": "WAHIDtel",
+     "id": "0818",
+     "st": "f"
+    },
+    {
+     "name": "Sarwar Auto Pass",
+     "id": "0725",
+     "st": "f"
+    },
+    {
+     "name": "Monjur Store",
+     "id": "2957",
+     "st": "p"
+    },
+    {
+     "name": "JEWEL STOOR",
+     "id": "6358",
+     "st": "f"
+    },
+    {
+     "name": "Khokan Fashon 2",
+     "id": "3885",
+     "st": "p"
+    },
+    {
+     "name": "Nirola Store",
+     "id": "9724",
+     "st": "f"
+    },
+    {
+     "name": "Shanti Phar",
+     "id": "9777",
+     "st": "f"
+    },
+    {
+     "name": "Emon Telec",
+     "id": "6807",
+     "st": "p"
+    },
+    {
+     "name": "Food Garden",
+     "id": "9216",
+     "st": "f"
+    },
+    {
+     "name": "GR14 K.B ENTERPRISE",
+     "id": "0746",
+     "st": "f"
+    },
+    {
+     "name": "MAMON STOOR",
+     "id": "0810",
+     "st": "f"
+    },
+    {
+     "name": "Chowdhury  Store",
+     "id": "7203",
+     "st": "f"
+    },
+    {
+     "name": "Kalam Store",
+     "id": "1394",
+     "st": "f"
+    },
+    {
+     "name": "Tamanna Tele",
+     "id": "5229",
+     "st": "f"
+    },
+    {
+     "name": "Student Library",
+     "id": "9832",
+     "st": "f"
+    },
+    {
+     "name": "Ovi Store",
+     "id": "9971",
+     "st": "p"
+    },
+    {
+     "name": "Shamim Store",
+     "id": "0010",
+     "st": "f"
+    },
+    {
+     "name": "Korim Store",
+     "id": "8545",
+     "st": "p"
+    },
+    {
+     "name": "Salam Store",
+     "id": "7617",
+     "st": "f"
+    },
+    {
+     "name": "Helal Tel",
+     "id": "1790",
+     "st": "p"
+    },
+    {
+     "name": "Ma Baba Telecom",
+     "id": "8829",
+     "st": "f"
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_12",
+   "items": [
+    {
+     "name": "EDRESS STORE",
+     "id": "5432",
+     "st": "p"
+    },
+    {
+     "name": "MIZAN STORE",
+     "id": "3614",
+     "st": "f"
+    },
+    {
+     "name": "Shajan Store",
+     "id": "9729",
+     "st": "p"
+    },
+    {
+     "name": "Rakib Telecom",
+     "id": "9485",
+     "st": "p"
+    },
+    {
+     "name": "Rakib Store",
+     "id": "1147",
+     "st": "f"
+    },
+    {
+     "name": "Rajon Telecom",
+     "id": "4047",
+     "st": "p"
+    },
+    {
+     "name": "DotCom Enterprice",
+     "id": "8829",
+     "st": "f"
+    },
+    {
+     "name": "GR14  Sujan Store",
+     "id": "4162",
+     "st": "p"
+    },
+    {
+     "name": "Ma Hardware",
+     "id": "4206",
+     "st": "p"
+    },
+    {
+     "name": "Najim Store",
+     "id": "4211",
+     "st": "f"
+    },
+    {
+     "name": "Dedar Store",
+     "id": "4216",
+     "st": "f"
+    },
+    {
+     "name": "Salaudeen Store",
+     "id": "4217",
+     "st": "f"
+    },
+    {
+     "name": "Mazmul Store",
+     "id": "7500",
+     "st": "p"
+    },
+    {
+     "name": "Deb Telecom 2",
+     "id": "4383",
+     "st": "f"
+    },
+    {
+     "name": "Sohel Store",
+     "id": "9471",
+     "st": "f"
+    },
+    {
+     "name": "Sakib Telicom",
+     "id": "9473",
+     "st": "p"
+    },
+    {
+     "name": "Shakil Telecom",
+     "id": "9474",
+     "st": "f"
+    },
+    {
+     "name": "Al-Modina Telecom",
+     "id": "2952",
+     "st": "p"
+    },
+    {
+     "name": "Rofiq Store",
+     "id": "2992",
+     "st": "p"
+    },
+    {
+     "name": "AKTL Mirsharai D - 15",
+     "id": "2999",
+     "st": "f"
+    },
+    {
+     "name": "Raju St.",
+     "id": "7533",
+     "st": "f"
+    },
+    {
+     "name": "SUZAN STORE",
+     "id": "7534",
+     "st": "p"
+    },
+    {
+     "name": "SUZAN STORE",
+     "id": "6547",
+     "st": "p"
+    },
+    {
+     "name": "Ma Telecom Urban",
+     "id": "4942",
+     "st": "f"
+    },
+    {
+     "name": "Imran Store Urban",
+     "id": "8649",
+     "st": "p"
+    },
+    {
+     "name": "Tamim St Urban",
+     "id": "8668",
+     "st": "p"
+    },
+    {
+     "name": "Kamal Store Urban",
+     "id": "8218",
+     "st": "f"
+    },
+    {
+     "name": "Joy Baba Tel",
+     "id": "3139",
+     "st": "f"
+    },
+    {
+     "name": "Ma  Baba Tel",
+     "id": "3140",
+     "st": "p"
+    },
+    {
+     "name": "Ma Tel",
+     "id": "8318",
+     "st": "f"
+    },
+    {
+     "name": "MamunST",
+     "id": "3013",
+     "st": "f"
+    },
+    {
+     "name": "Shohid Store",
+     "id": "2919",
+     "st": "p"
+    },
+    {
+     "name": "S A Tel",
+     "id": "0952",
+     "st": "p"
+    },
+    {
+     "name": "Dalim Store",
+     "id": "3880",
+     "st": "f"
+    },
+    {
+     "name": "Nijam Store",
+     "id": "3881",
+     "st": "f"
+    },
+    {
+     "name": "Karim Store",
+     "id": "7729",
+     "st": "f"
+    },
+    {
+     "name": "Sabuj Telecom",
+     "id": "6783",
+     "st": "f"
+    },
+    {
+     "name": "P K Telecom",
+     "id": "9597",
+     "st": "p"
+    },
+    {
+     "name": "Mamoni  Stor",
+     "id": "9599",
+     "st": "p"
+    },
+    {
+     "name": "Kamal Store",
+     "id": "2927",
+     "st": "f"
+    },
+    {
+     "name": "SAPLA TEL",
+     "id": "2999",
+     "st": "f"
+    },
+    {
+     "name": "Rony Store",
+     "id": "0754",
+     "st": "f"
+    },
+    {
+     "name": "Shilpi Telecom",
+     "id": "0807",
+     "st": "f"
+    },
+    {
+     "name": "Hamdan Store",
+     "id": "3251",
+     "st": "f"
+    },
+    {
+     "name": "ABBAS",
+     "id": "9903",
+     "st": "p"
+    },
+    {
+     "name": "Rakib Store",
+     "id": "9936",
+     "st": "p"
+    },
+    {
+     "name": "Arafat telecom Rb",
+     "id": "9946",
+     "st": "f"
+    },
+    {
+     "name": "SK online service AR",
+     "id": "9948",
+     "st": "p"
+    },
+    {
+     "name": "Hrday",
+     "id": "0014",
+     "st": "p"
+    },
+    {
+     "name": "Kamal",
+     "id": "0015",
+     "st": "p"
+    },
+    {
+     "name": "Rahim Store",
+     "id": "0060",
+     "st": "p"
+    },
+    {
+     "name": "Masum Store",
+     "id": "6749",
+     "st": "p"
+    },
+    {
+     "name": "Deb Telecom",
+     "id": "3792",
+     "st": "f"
+    },
+    {
+     "name": "Ma Hardware-2",
+     "id": "6404",
+     "st": "p"
+    },
+    {
+     "name": "FM Enterprise",
+     "id": "6425",
+     "st": "f"
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_13",
+   "items": [
+    {
+     "name": "POLASH STORE-2",
+     "id": "5017",
+     "st": "f"
+    },
+    {
+     "name": "Baccu Store",
+     "id": "9730",
+     "st": "p"
+    },
+    {
+     "name": "SALIM STORE",
+     "id": "1244",
+     "st": "f"
+    },
+    {
+     "name": "Mamun  Story",
+     "id": "6461",
+     "st": "f"
+    },
+    {
+     "name": "Mohon Telecom",
+     "id": "9494",
+     "st": "f"
+    },
+    {
+     "name": "Shahana Store",
+     "id": "4208",
+     "st": "f"
+    },
+    {
+     "name": "Jamal Store",
+     "id": "4219",
+     "st": "f"
+    },
+    {
+     "name": "forhad telec",
+     "id": "0356",
+     "st": "f"
+    },
+    {
+     "name": "Mahi Tel",
+     "id": "3136",
+     "st": "f"
+    },
+    {
+     "name": "Harun Store",
+     "id": "8820",
+     "st": "f"
+    },
+    {
+     "name": "Almas Telecom",
+     "id": "9072",
+     "st": "f"
+    },
+    {
+     "name": "Shilpi Telecom",
+     "id": "3036",
+     "st": "f"
+    },
+    {
+     "name": "Didar Store",
+     "id": "2935",
+     "st": "p"
+    },
+    {
+     "name": "POLASH STORE",
+     "id": "3293",
+     "st": "f"
+    },
+    {
+     "name": "Rahaman Stoe",
+     "id": "3305",
+     "st": "p"
+    },
+    {
+     "name": "Shilpi Telecom",
+     "id": "4934",
+     "st": "f"
+    },
+    {
+     "name": "Rubel Store",
+     "id": "0728",
+     "st": "p"
+    },
+    {
+     "name": "Shahana Store-2",
+     "id": "9220",
+     "st": "f"
+    },
+    {
+     "name": "Imran Store",
+     "id": "9600",
+     "st": "f"
+    },
+    {
+     "name": "Rashid Store",
+     "id": "7205",
+     "st": "f"
+    },
+    {
+     "name": "Milon Telecom",
+     "id": "1420",
+     "st": "f"
+    },
+    {
+     "name": "Sohel Store",
+     "id": "1425",
+     "st": "p"
+    },
+    {
+     "name": "Imam Enterprize",
+     "id": "5260",
+     "st": "f"
+    },
+    {
+     "name": "Siful Telecom",
+     "id": "9864",
+     "st": "p"
+    },
+    {
+     "name": "Ma Store",
+     "id": "9950",
+     "st": "p"
+    },
+    {
+     "name": "Kasem Store",
+     "id": "5956",
+     "st": "f"
+    },
+    {
+     "name": "Jamshed Store",
+     "id": "3347",
+     "st": "f"
+    },
+    {
+     "name": "Babor Store",
+     "id": "4179",
+     "st": "p"
+    },
+    {
+     "name": "Arif Telecom and Mobile Service",
+     "id": "1628",
+     "st": "f"
+    },
+    {
+     "name": "Nur Alam",
+     "id": "2855",
+     "st": "p"
+    },
+    {
+     "name": "Sakl Store",
+     "id": "2858",
+     "st": "f"
+    },
+    {
+     "name": "RATUL Store",
+     "id": "2859",
+     "st": "f"
+    },
+    {
+     "name": "Rakib Tel",
+     "id": "2861",
+     "st": "f"
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_14",
+   "items": [
+    {
+     "name": "JASIM UDDIN & BROTHERS",
+     "id": "4342",
+     "st": "f"
+    },
+    {
+     "name": "Ripon  Telecom",
+     "id": "3758",
+     "st": "f"
+    },
+    {
+     "name": "Kasem Store",
+     "id": "3766",
+     "st": "f"
+    },
+    {
+     "name": "Noorudden Store",
+     "id": "4183",
+     "st": "f"
+    },
+    {
+     "name": "Kobir Store",
+     "id": "1588",
+     "st": "p"
+    },
+    {
+     "name": "Vhuiyan Enterprise",
+     "id": "6911",
+     "st": "f"
+    },
+    {
+     "name": "Islam Store",
+     "id": "8227",
+     "st": "f"
+    },
+    {
+     "name": "Adorsho Library",
+     "id": "4163",
+     "st": "f"
+    },
+    {
+     "name": "SAEID SAMIR AKSA",
+     "id": "4180",
+     "st": "f"
+    },
+    {
+     "name": "Kanchon Store",
+     "id": "4210",
+     "st": "f"
+    },
+    {
+     "name": "Bikash Store",
+     "id": "4213",
+     "st": "f"
+    },
+    {
+     "name": "ST Telecom-3",
+     "id": "7494",
+     "st": "f"
+    },
+    {
+     "name": "Nasir Store",
+     "id": "9475",
+     "st": "f"
+    },
+    {
+     "name": "Ikbal Store",
+     "id": "3289",
+     "st": "f"
+    },
+    {
+     "name": "Alok Telecom",
+     "id": "5496",
+     "st": "f"
+    },
+    {
+     "name": "Rahman store",
+     "id": "7499",
+     "st": "f"
+    },
+    {
+     "name": "Towhid Store",
+     "id": "7510",
+     "st": "f"
+    },
+    {
+     "name": "M Y TELECOM",
+     "id": "6553",
+     "st": "p"
+    },
+    {
+     "name": "Chandon Stor",
+     "id": "9169",
+     "st": "f"
+    },
+    {
+     "name": "S.M.D Store",
+     "id": "2931",
+     "st": "f"
+    },
+    {
+     "name": "Jasim Uddin Brother -2",
+     "id": "1430",
+     "st": "f"
+    },
+    {
+     "name": "ALI TELECOM",
+     "id": "5757",
+     "st": "f"
+    },
+    {
+     "name": "Ifat  Store",
+     "id": "2451",
+     "st": "f"
+    },
+    {
+     "name": "Hasnath Store",
+     "id": "1401",
+     "st": "f"
+    },
+    {
+     "name": "Post in center",
+     "id": "6718",
+     "st": "f"
+    },
+    {
+     "name": "Ramjan Store",
+     "id": "6719",
+     "st": "f"
+    },
+    {
+     "name": "ARAFAT TELECOM",
+     "id": "6789",
+     "st": "f"
+    },
+    {
+     "name": "Kobir Store",
+     "id": "9221",
+     "st": "f"
+    },
+    {
+     "name": "Adhorso Hardware",
+     "id": "9229",
+     "st": "f"
+    },
+    {
+     "name": "Shova Sajib Decorators",
+     "id": "9603",
+     "st": "f"
+    },
+    {
+     "name": "SHOTORUPA ELECTRONICS",
+     "id": "2989",
+     "st": "f"
+    },
+    {
+     "name": "Adhorsho Library",
+     "id": "0787",
+     "st": "f"
+    },
+    {
+     "name": "PINKEY FASHION",
+     "id": "3296",
+     "st": "f"
+    },
+    {
+     "name": "RAKIB STORE",
+     "id": "9865",
+     "st": "f"
+    },
+    {
+     "name": "Aziz Hardwar",
+     "id": "9866",
+     "st": "p"
+    },
+    {
+     "name": "Fentashi Telecom-2",
+     "id": "9879",
+     "st": "f"
+    },
+    {
+     "name": "Shohid",
+     "id": "0019",
+     "st": "p"
+    },
+    {
+     "name": "Munna",
+     "id": "0020",
+     "st": "f"
+    },
+    {
+     "name": "ALTAF STORE",
+     "id": "0021",
+     "st": "p"
+    },
+    {
+     "name": "MIAJAN BHUIYAN STATIONARY",
+     "id": "6860",
+     "st": "f"
+    },
+    {
+     "name": "Alok Telecom",
+     "id": "3088",
+     "st": "f"
+    },
+    {
+     "name": "ARAFAT STORE",
+     "id": "3724",
+     "st": "f"
+    },
+    {
+     "name": "Famous Telecom",
+     "id": "7961",
+     "st": "f"
+    },
+    {
+     "name": "TS  STORE",
+     "id": "8385",
+     "st": "f"
+    },
+    {
+     "name": "JAHED STORE",
+     "id": "1270",
+     "st": "f"
+    },
+    {
+     "name": "Saimon store",
+     "id": "2884",
+     "st": "p"
+    },
+    {
+     "name": "ISLAMIA LIBRARY",
+     "id": "0857",
+     "st": "f"
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_15",
+   "items": [
+    {
+     "name": "Abdur Rab",
+     "id": "7931",
+     "st": "f"
+    },
+    {
+     "name": "Jarin Store",
+     "id": "8619",
+     "st": "f"
+    },
+    {
+     "name": "Jononi Telecom",
+     "id": "5015",
+     "st": "f"
+    },
+    {
+     "name": "Nobi Telecom",
+     "id": "5406",
+     "st": "f"
+    },
+    {
+     "name": "Chowdarey Tel",
+     "id": "5427",
+     "st": "f"
+    },
+    {
+     "name": "Faruk Store",
+     "id": "8916",
+     "st": "p"
+    },
+    {
+     "name": "S.B. Store",
+     "id": "9477",
+     "st": "f"
+    },
+    {
+     "name": "Harun Store",
+     "id": "4160",
+     "st": "f"
+    },
+    {
+     "name": "Bismillah Store",
+     "id": "4698",
+     "st": "p"
+    },
+    {
+     "name": "SAMME TEL",
+     "id": "9455",
+     "st": "f"
+    },
+    {
+     "name": "MULANA TEL",
+     "id": "2976",
+     "st": "f"
+    },
+    {
+     "name": "Salaudden Store",
+     "id": "2982",
+     "st": "f"
+    },
+    {
+     "name": "MOULANA  TEL",
+     "id": "3154",
+     "st": "f"
+    },
+    {
+     "name": "Belal Store",
+     "id": "2983",
+     "st": "f"
+    },
+    {
+     "name": "yasen Stor",
+     "id": "2496",
+     "st": "f"
+    },
+    {
+     "name": "Kobir Store",
+     "id": "7503",
+     "st": "f"
+    },
+    {
+     "name": "Arif Enterprise Urban",
+     "id": "8651",
+     "st": "f"
+    },
+    {
+     "name": "Tamannan Telecom Urban",
+     "id": "8653",
+     "st": "f"
+    },
+    {
+     "name": "Samol Telecom",
+     "id": "1355",
+     "st": "f"
+    },
+    {
+     "name": "Almas Telecom",
+     "id": "9063",
+     "st": "f"
+    },
+    {
+     "name": "Atiqul Store",
+     "id": "9074",
+     "st": "f"
+    },
+    {
+     "name": "Modina Telecom",
+     "id": "3028",
+     "st": "f"
+    },
+    {
+     "name": "Faruk Mobile Center",
+     "id": "3318",
+     "st": "f"
+    },
+    {
+     "name": "Hoque Tel",
+     "id": "0920",
+     "st": "f"
+    },
+    {
+     "name": "Zakir Store (2)",
+     "id": "4936",
+     "st": "f"
+    },
+    {
+     "name": "Faruk Store",
+     "id": "0616",
+     "st": "f"
+    },
+    {
+     "name": "Rafi Store",
+     "id": "0617",
+     "st": "f"
+    },
+    {
+     "name": "Faruk Store",
+     "id": "6349",
+     "st": "f"
+    },
+    {
+     "name": "iQBALStore",
+     "id": "5775",
+     "st": "f"
+    },
+    {
+     "name": "jolil telecom",
+     "id": "5786",
+     "st": "f"
+    },
+    {
+     "name": "Habib Store",
+     "id": "7709",
+     "st": "f"
+    },
+    {
+     "name": "Rahena Telecom",
+     "id": "7715",
+     "st": "f"
+    },
+    {
+     "name": "Four Star Telecom",
+     "id": "9196",
+     "st": "f"
+    },
+    {
+     "name": "Chobi Colling",
+     "id": "9605",
+     "st": "f"
+    },
+    {
+     "name": "Jononi Store",
+     "id": "2939",
+     "st": "f"
+    },
+    {
+     "name": "Rajon Store",
+     "id": "2974",
+     "st": "f"
+    },
+    {
+     "name": "Manik Telecom",
+     "id": "0797",
+     "st": "f"
+    },
+    {
+     "name": "Polash",
+     "id": "7207",
+     "st": "f"
+    },
+    {
+     "name": "Brother's Telecom",
+     "id": "1428",
+     "st": "f"
+    },
+    {
+     "name": "Kalam Store",
+     "id": "5238",
+     "st": "f"
+    },
+    {
+     "name": "Nabil",
+     "id": "9868",
+     "st": "f"
+    },
+    {
+     "name": "Mustafiz Computer",
+     "id": "9869",
+     "st": "f"
+    },
+    {
+     "name": "Student Library",
+     "id": "9870",
+     "st": "f"
+    },
+    {
+     "name": "Null",
+     "id": "9919",
+     "st": "f"
+    },
+    {
+     "name": "Munna",
+     "id": "0022",
+     "st": "f"
+    },
+    {
+     "name": "R N Tredas",
+     "id": "4236",
+     "st": "p"
+    },
+    {
+     "name": "Saim Tel",
+     "id": "9600",
+     "st": "f"
+    },
+    {
+     "name": "Dulal Store",
+     "id": "7938",
+     "st": "f"
+    },
+    {
+     "name": "Habib Store",
+     "id": "3378",
+     "st": "f"
+    },
+    {
+     "name": "Kamal Tel",
+     "id": "6633",
+     "st": "f"
+    },
+    {
+     "name": "Ba14 Abu Taher",
+     "id": "1758",
+     "st": "f"
+    },
+    {
+     "name": "Ma Jonony Telecome",
+     "id": "7845",
+     "st": "f"
+    },
+    {
+     "name": "Jononi Store",
+     "id": "7846",
+     "st": "f"
+    },
+    {
+     "name": "Nuruddin Store",
+     "id": "0820",
+     "st": "f"
+    },
+    {
+     "name": "Shofi Store",
+     "id": "0833",
+     "st": "p"
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_16",
+   "items": [
+    {
+     "name": "Rakib Tel",
+     "id": "5515",
+     "st": "f"
+    },
+    {
+     "name": "UTTARA MEDICAL",
+     "id": "8851",
+     "st": "f"
+    },
+    {
+     "name": "Ratry Telecom",
+     "id": "6772",
+     "st": "f"
+    },
+    {
+     "name": "Jony Store",
+     "id": "8190",
+     "st": "p"
+    },
+    {
+     "name": "Sharmin Telecom",
+     "id": "5493",
+     "st": "p"
+    },
+    {
+     "name": "Helal store",
+     "id": "8134",
+     "st": "p"
+    },
+    {
+     "name": "Rony Stor",
+     "id": "2733",
+     "st": "f"
+    },
+    {
+     "name": "Mohin Store",
+     "id": "4572",
+     "st": "p"
+    },
+    {
+     "name": "Joy Telecom",
+     "id": "4066",
+     "st": "f"
+    },
+    {
+     "name": "Bismillah Telecom",
+     "id": "4067",
+     "st": "f"
+    },
+    {
+     "name": "Palash Store",
+     "id": "4069",
+     "st": "p"
+    },
+    {
+     "name": "Aminul Store",
+     "id": "2881",
+     "st": "f"
+    },
+    {
+     "name": "MOBILE GALLERY",
+     "id": "0440",
+     "st": "f"
+    },
+    {
+     "name": "Shaha Alam Store",
+     "id": "3066",
+     "st": "f"
+    },
+    {
+     "name": "Jonony Telecom",
+     "id": "3094",
+     "st": "f"
+    },
+    {
+     "name": "Masud Enterpris",
+     "id": "5755",
+     "st": "f"
+    },
+    {
+     "name": "Karim Store",
+     "id": "2436",
+     "st": "p"
+    },
+    {
+     "name": "Ismail Store",
+     "id": "1375",
+     "st": "f"
+    },
+    {
+     "name": "Nazim Telecom",
+     "id": "1429",
+     "st": "p"
+    },
+    {
+     "name": "Jonony Telecom",
+     "id": "6784",
+     "st": "f"
+    },
+    {
+     "name": "Ohona Mobile",
+     "id": "2967",
+     "st": "p"
+    },
+    {
+     "name": "Anower Store",
+     "id": "0763",
+     "st": "f"
+    },
+    {
+     "name": "Intel Telecom-1",
+     "id": "1434",
+     "st": "p"
+    },
+    {
+     "name": "Mohan Telecom",
+     "id": "9951",
+     "st": "f"
+    },
+    {
+     "name": "Saiful",
+     "id": "0025",
+     "st": "f"
+    },
+    {
+     "name": "Sahin",
+     "id": "0026",
+     "st": "f"
+    },
+    {
+     "name": "Online Shop",
+     "id": "0055",
+     "st": "p"
+    },
+    {
+     "name": "Jononi Store",
+     "id": "0062",
+     "st": "f"
+    },
+    {
+     "name": "Habib Store",
+     "id": "6717",
+     "st": "f"
+    },
+    {
+     "name": "Habib Store",
+     "id": "5981",
+     "st": "f"
+    },
+    {
+     "name": "Joshim Store",
+     "id": "4121",
+     "st": "f"
+    },
+    {
+     "name": "Kalam Story",
+     "id": "7563",
+     "st": "p"
+    },
+    {
+     "name": "Shakib Telecom",
+     "id": "2873",
+     "st": "f"
+    },
+    {
+     "name": "Hasan Stor",
+     "id": "2888",
+     "st": "p"
+    }
+   ]
+  }
+ ]
+}

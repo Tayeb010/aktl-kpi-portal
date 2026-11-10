@@ -19,8 +19,9 @@ Supabase, protected by row-level security rules in `supabase/setup.sql`.
 | `site/sqr-parse.js` | SQR Excel reader, shared by the Upload page and the publisher |
 | `supabase/setup.sql` | Database tables, security rules and admin functions |
 | `supabase/update-01-github-publisher.sql` | One-time update for databases set up before the publisher existed |
-| `tools/sqr.cjs` | Publisher: `build` turns the Excel into `data/sqr/latest.json`, `publish` sends it to Supabase |
-| `.github/workflows/publish-sqr.yml` | Publishes automatically when `data/sqr/latest.json` changes on `main` |
+| `tools/kpi.cjs` | Publisher: `build` turns an Excel into `data/<kpi>/latest.json`, `publish` sends it to Supabase |
+| `.github/workflows/publish-kpi.yml` | Publishes automatically when a `data/<kpi>/latest.json` changes on `main` |
+| `supabase/update-02-trade-visibility.sql` | Optional update: Trade Visibility in the DSRs' Team tab |
 | `site/_headers` | Security headers for Cloudflare Pages |
 
 ## One-time setup
@@ -38,10 +39,19 @@ Supabase, protected by row-level security rules in `supabase/setup.sql`.
 
 Every push to `main` updates the live site automatically.
 
+## KPIs
+
+- **SQR · Super QR**: transaction-active retailers (300 Tk+) against the C2S target, QR visibility.
+- **Trade Visibility**: every BCD POS must be visited 2 times. The file's "Retail Wise" sheet lists
+  POS still to visit: "Pending" = needs 1st and 2nd visit, "1st Times Done" = needs 2nd visit only.
+  DSRs are matched by number ("AKTL (Sitakunda) DSR 01" = "DSR-01"); MSISDNs are cut to the last 4 digits.
+
+Each KPI has its own section on the home and team pages, with a "See details" button.
+
 ## Updating the KPIs
 
-**Option A: send the Excel to Claude.** Claude runs `node tools/sqr.cjs build <file.xlsx>`,
-checks the result, and pushes `data/sqr/latest.json`. The GitHub Action then publishes it.
+**Option A: send the Excel to Claude.** Claude runs `node tools/kpi.cjs build <file.xlsx>`,
+checks the result, and pushes `data/<kpi>/latest.json`. The GitHub Action then publishes it.
 Only figures and retailer lists are stored; retailer EL phone numbers are never saved.
 
 **Option B: the website.** Sign in as admin > Upload > choose the file > Publish.

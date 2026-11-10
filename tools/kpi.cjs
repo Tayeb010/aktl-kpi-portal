@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-/* AKTL KPI Portal: SQR publisher.
+/* AKTL KPI Portal: KPI publisher (SQR, Trade Visibility).
  *
- *   node tools/sqr.cjs build <file.xlsx> [data/sqr/latest.json]
+ *   node tools/kpi.cjs build <file.xlsx> [out.json]
  *     Reads the Excel with the same reader as the website (site/sqr-parse.js),
- *     stops on any required-column error, and writes a JSON file with the
- *     figures and retailer lists only (no phone numbers).
+ *     detects the KPI, stops on any required-column error, and writes
+ *     data/<kpi>/latest.json with figures and retailer lists only (no phone numbers).
  *
- *   node tools/sqr.cjs publish [data/sqr/latest.json]
+ *   node tools/kpi.cjs publish <data/<kpi>/latest.json> [...more]
  *     Publishes that JSON to Supabase as the new live SQR update. DSRs missing
  *     from the file keep their current figures, like the website's Upload page.
  *     Needs env SUPABASE_SECRET_KEY (secret / service_role key). Runs in GitHub Actions.
@@ -16,7 +16,7 @@ const fs = require('fs');
 const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const SQR = require(path.join(ROOT, 'site', 'sqr-parse.js'));
-const DEFAULT_JSON = path.join(ROOT, 'data', 'sqr', 'latest.json');
+const jsonFor = kpi => path.join(ROOT, 'data', String(kpi).toLowerCase(), 'latest.json');
 
 const pct = (a, b) => (b ? Math.round((a / b) * 100) + '%' : '-');
 const die = m => { console.error('\nERROR: ' + m); process.exit(1); };
@@ -26,18 +26,29 @@ function build(xlsxPath, outPath) {
   const XLSX = require('xlsx');
   const wb = XLSX.read(fs.readFileSync(xlsxPath), { type: 'buffer' });
   const fileName = path.basename(xlsxPath).replace(/^[0-9a-f]{8}-/, '');
-  const r = SQR.parse(wb, XLSX, fileName);
-  console.log(`File: ${fileName}  ·  layout: ${r.format || 'unknown'}  ·  sheets: ${r.sheetDsr || '-'} / ${r.sheetRet || '-'}`);
+  const sqrJson = jsonFor('SQR');
+  const dsrIndex = fs.existsSync(sqrJson) ? JSON.parse(fs.readFileSync(sqrJson, 'utf8')).figures.map(f => ({ code: f.code, name: f.name })) : [];
+  const r = SQR.parse(wb, XLSX, fileName, { dsrIndex });
+  console.log(`File: ${fileName}  ·  KPI: ${r.kpi}  ·  layout: ${r.format || 'unknown'}  ·  sheets: ${r.sheetDsr || '-'} / ${r.sheetRet || '-'}`);
   console.log(`Period: ${r.period ? `${r.period.from} to ${r.period.to}${r.period.pulled ? ' (pulled ' + r.period.pulled + ')' : ''}` : 'not found'}`);
   r.issues.forEach(i => console.log(`  [${i.t.toUpperCase()}] ${i.m}`));
   if (r.issues.some(i => i.t === 'err')) die('Fix the errors above, nothing was written.');
   const figures = Object.values(r.dsrs).map(d => { const data = Object.assign({}, d); delete data.code; delete data.name; return { code: d.code, name: d.name, data }; })
     .sort((a, b) => String(a.name).localeCompare(String(b.name), undefined, { numeric: true }));
   const retailers = figures.map(f => ({ code: f.code, items: r.retailers[f.code] || [] }));
-  const out = { kpi: 'SQR', fileName, format: r.format, period: r.period, builtAt: new Date().toISOString(), issues: r.issues, figures, retailers };
-  outPath = outPath || DEFAULT_JSON;
+  const out = { kpi: r.kpi, fileName, format: r.format, period: r.period, builtAt: new Date().toISOString(), issues: r.issues, figures, retailers };
+  outPath = outPath || jsonFor(r.kpi);
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
   fs.writeFileSync(outPath, JSON.stringify(out, null, 1) + '\n');
+  if (r.kpi === 'TV') {
+    console.log(`\n${'DSR'.padEnd(10)} ${'POS'.padStart(5)} ${'1st done'.padStart(9)} ${'2nd done'.padStart(9)} ${'need both'.padStart(10)} ${'need 2nd'.padStart(9)}`);
+    let P = 0, V1 = 0, V2 = 0;
+    figures.forEach(f => { const d = f.data, it = r.retailers[f.code] || []; P += d.pos; V1 += d.v1; V2 += d.v2;
+      console.log(`${f.name.padEnd(10)} ${String(d.pos).padStart(5)} ${(d.v1 + ' ' + pct(d.v1, d.pos)).padStart(9)} ${(d.v2 + ' ' + pct(d.v2, d.pos)).padStart(9)} ${String(it.filter(x => x.st === 'p').length).padStart(10)} ${String(it.filter(x => x.st === 'f').length).padStart(9)}`); });
+    console.log(`${'TOTAL'.padEnd(10)} ${String(P).padStart(5)} ${(V1 + ' ' + pct(V1, P)).padStart(9)} ${(V2 + ' ' + pct(V2, P)).padStart(9)}`);
+    console.log(`\n${figures.length} DSRs, ${r.retCount} POS still to visit -> ${path.relative(ROOT, outPath)}`);
+    return;
+  }
   console.log(`\n${'DSR'.padEnd(10)} ${'Active/Target'.padStart(14)} ${'%'.padStart(5)} ${'QR vis'.padStart(10)} ${'Super QR Tk'.padStart(12)}`);
   let A = 0, T = 0, Q = 0, QT = 0, S = 0;
   figures.forEach(f => { const d = f.data; A += d.active; T += d.target; Q += d.qrSuccess; QT += d.qrTarget; S += d.sqrAmt || 0;
@@ -47,8 +58,7 @@ function build(xlsxPath, outPath) {
 }
 
 async function publish(jsonPath) {
-  jsonPath = jsonPath || DEFAULT_JSON;
-  if (!fs.existsSync(jsonPath)) die(`${jsonPath} not found.`);
+  if (!jsonPath || !fs.existsSync(jsonPath)) die(`${jsonPath} not found.`);
   const key = process.env.SUPABASE_SECRET_KEY;
   if (!key) die('SUPABASE_SECRET_KEY is not set. Add it in GitHub > Settings > Secrets and variables > Actions.');
   const cfg = fs.readFileSync(path.join(ROOT, 'site', 'config.js'), 'utf8').match(/supabaseUrl:\s*'([^']+)'/);
@@ -84,10 +94,10 @@ async function publish(jsonPath) {
   const accounts = must(await sb.from('profiles').select('dsr_code').eq('role', 'dsr'));
   const withLogin = new Set(accounts.map(a => a.dsr_code));
   const noLogin = figures.filter(f => !withLogin.has(f.code)).map(f => f.name);
-  if (noLogin.length) console.log(`No login yet for: ${noLogin.join(', ')} (create them on the People page).`);
+  if (noLogin.length && (j.kpi || 'SQR') === 'SQR') console.log(`No login yet for: ${noLogin.join(', ')} (create them on the People page).`);
 }
 
-const [cmd, a, b] = process.argv.slice(2);
-if (cmd === 'build') build(a, b);
-else if (cmd === 'publish') publish(a).catch(e => die(e.message || String(e)));
-else { console.log('Usage:\n  node tools/sqr.cjs build <file.xlsx> [out.json]\n  node tools/sqr.cjs publish [data/sqr/latest.json]'); process.exit(cmd ? 1 : 0); }
+const [cmd, ...args] = process.argv.slice(2);
+if (cmd === 'build') build(args[0], args[1]);
+else if (cmd === 'publish') (async () => { if (!args.length) die('Give one or more data/<kpi>/latest.json files.'); for (const f of args) await publish(f); })().catch(e => die(e.message || String(e)));
+else { console.log('Usage:\n  node tools/kpi.cjs build <file.xlsx> [out.json]\n  node tools/kpi.cjs publish data/<kpi>/latest.json [...]'); process.exit(cmd ? 1 : 0); }

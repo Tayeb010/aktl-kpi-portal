@@ -38,8 +38,8 @@ const ROLE_LABEL = { admin: 'Admin', viewall: 'Manager / supervisor', dso: 'DSO'
 
 /* ---------- Bangla / English labels for DSR screens ---------- */
 const TX = {
-  en: { home: 'Home', retailersTab: 'Retailers', team: 'Team', trx: 'Transaction active retailers', trxSub: 'Retailers with 300 Tk+ C2S via Super QR, against your C2S target', achieved: 'Achieved', target: 'Target', remaining: 'Remaining', qr: 'QR visibility', share: 'Super QR share of C2S', hasReq: 'Retailers with a request', ofRet: 'of retailers', sqrAmt: 'Super QR amount', trxRetSub: '{n} retailers transacted', zeroTk: 'Retailers at 0 Tk', zeroSub: 'no completed Super QR yet', fWrong: 'Wrong QR', fOut: 'Outside 100m', fLate: 'Late photo', req: 'Requests completed', ticket: 'avg ticket', inc: 'SQR incentive', vis: 'Visibility', trxInc: 'Transaction', checks: 'QR Visibility checks', totRet: 'Total retailers', c2sT: '300 Tk C2S target', visDone: 'QR visibility done', visRem: 'Visibility remaining', visHead: 'QR visibility', visSub: 'QR visibility target = all your retailers', trxTot: 'Transaction vs total retailers', trxTotSub: '300 Tk+ retailers out of all retailers', trxC2s: 'Transaction vs C2S target', trxC2sSub: '300 Tk+ retailers against C2S target retailers', dsrAch: 'DSRs achieved C2S target', dsrAchSub: 'DSRs with transaction ≥ C2S target', vmLate: '15 min late photo', vmWrong: 'Wrong QR placed', vmOut: 'Placed outside 100m', wrong: 'Wrong QR placed', outside: 'Placed outside 100m', late: 'Photo 15+ min after visit', split: 'Robi vs Cirkle', active: 'Active retailers', requests: 'Requests', sqr: 'Super QR Tk', c2s: 'C2S Tk', period: 'Period', updated: 'Updated', myReport: 'My report image', stA: 'Achieved', stP: 'In progress', stB: 'Behind', need: 'needs Tk {n} more', tdone: '300 Tk done', noqr: 'QR Visibility missing', fNeed: 'Need Tk', fQr: 'QR Visibility missing', fDone: 'Done', fAll: 'All', retHead: 'Retailers to push', retLead: 'Closest to the 300 Tk target first. Each one you finish adds 1 to your achievement.', teamHead: 'Team summary', dsrsDone: 'DSRs at target', noRet: 'No retailers in this list.', of: 'of', allRet: 'See all {n} retailers', notYet: 'Your figures are not published yet. Check again after the next update.', signOut: 'Sign out' },
-  bn: { home: 'হোম', retailersTab: 'রিটেইলার', team: 'টিম', trx: 'লেনদেন সক্রিয় রিটেইলার', trxSub: 'Super QR দিয়ে ৩০০ টাকা+ C2S করা রিটেইলার', achieved: 'অর্জন', target: 'টার্গেট', remaining: 'বাকি', qr: 'QR দৃশ্যমানতা', share: 'C2S-এ Super QR অংশ', hasReq: 'রিকোয়েস্ট করা রিটেইলার', ofRet: 'রিটেইলারের', sqrAmt: 'Super QR টাকা', trxRetSub: '{n} রিটেইলার লেনদেন করেছে', zeroTk: '০ টাকার রিটেইলার', zeroSub: 'এখনো Super QR সম্পন্ন হয়নি', fWrong: 'ভুল QR', fOut: '১০০ মি. বাইরে', fLate: 'দেরিতে ছবি', req: 'সম্পন্ন রিকোয়েস্ট', ticket: 'গড় টিকেট', inc: 'SQR ইনসেনটিভ', vis: 'দৃশ্যমানতা', trxInc: 'লেনদেন', checks: 'QR দৃশ্যমানতা যাচাই', totRet: 'মোট রিটেইলার', c2sT: '৩০০ টাকা C2S টার্গেট', visDone: 'QR দৃশ্যমানতা সম্পন্ন', visRem: 'দৃশ্যমানতা বাকি', visHead: 'QR দৃশ্যমানতা', visSub: 'QR দৃশ্যমানতা টার্গেট = আপনার সব রিটেইলার', trxTot: 'মোট রিটেইলারের বিপরীতে লেনদেন', trxTotSub: 'সব রিটেইলারের মধ্যে ৩০০ টাকা+ রিটেইলার', trxC2s: 'C2S টার্গেটের বিপরীতে লেনদেন', trxC2sSub: 'C2S টার্গেট রিটেইলারের বিপরীতে ৩০০ টাকা+ রিটেইলার', dsrAch: 'C2S টার্গেট অর্জনকারী DSR', dsrAchSub: 'লেনদেন ≥ C2S টার্গেট', vmLate: '১৫ মিনিট দেরিতে ছবি', vmWrong: 'ভুল QR লাগানো', vmOut: '১০০ মিটারের বাইরে', wrong: 'ভুল QR লাগানো', outside: '১০০ মিটারের বাইরে', late: 'ভিজিটের ১৫+ মিনিট পরে ছবি', split: 'Robi বনাম Cirkle', active: 'সক্রিয় রিটেইলার', requests: 'রিকোয়েস্ট', sqr: 'Super QR টাকা', c2s: 'C2S টাকা', period: 'সময়কাল', updated: 'আপডেট', myReport: 'আমার রিপোর্ট ছবি', stA: 'অর্জিত', stP: 'চলমান', stB: 'পিছিয়ে', need: 'আরও {n} টাকা দরকার', tdone: '৩০০ টাকা পূর্ণ', noqr: 'QR দৃশ্যমানতা নেই', fNeed: 'টাকা বাকি', fQr: 'QR দৃশ্যমানতা নেই', fDone: 'পূর্ণ', fAll: 'সব', retHead: 'যেসব রিটেইলারে কাজ বাকি', retLead: '৩০০ টাকার সবচেয়ে কাছের রিটেইলার আগে। প্রতিটি পূর্ণ হলে আপনার অর্জন ১ বাড়বে।', teamHead: 'টিম সারাংশ', dsrsDone: 'টার্গেট পূর্ণ DSR', noRet: 'এই তালিকায় কোনো রিটেইলার নেই।', of: 'এর মধ্যে', allRet: 'সব {n} রিটেইলার দেখুন', notYet: 'আপনার তথ্য এখনো প্রকাশ হয়নি। পরের আপডেটের পর আবার দেখুন।', signOut: 'সাইন আউট' }
+  en: { home: 'Home', retailersTab: 'Retailers', team: 'Team', trx: 'Transaction active retailers', trxSub: 'Retailers with 300 Tk+ C2S via Super QR, against your C2S target', achieved: 'Achieved', target: 'Target', remaining: 'Remaining', qr: 'QR visibility', share: 'Super QR share of C2S', hasReq: 'Retailers with a request', ofRet: 'of retailers', sqrAmt: 'Super QR amount', trxRetSub: '{n} retailers transacted', zeroTk: 'Retailers at 0 Tk', zeroSub: 'no completed Super QR yet', fWrong: 'Wrong QR', fOut: 'Outside 100m', fLate: 'Late photo', req: 'Requests completed', ticket: 'avg ticket', inc: 'SQR incentive', vis: 'Visibility', trxInc: 'Transaction', checks: 'QR Visibility checks', kpi: 'KPI', sqrName: 'SQR · Super QR', tvName: 'Trade Visibility', seeSqr: 'See SQR details', seeTv: 'See Trade Visibility details', tvVisits: 'POS visits', tvSub: 'Every BCD POS must be visited 2 times', pos: 'BCD POS', v1: '1st visit done', v2: '2nd visit done', r1: '1st visit remaining', r2: '2nd visit remaining', bothDone: 'POS with both visits done', needBoth: 'Need 1st + 2nd visit', need2: 'Need 2nd visit', tvList: 'POS to visit', tvLead: 'Pending POS need both visits. POS with both visits done are not listed.', st1: '1st + 2nd visit pending', st2: '2nd visit pending', noTv: 'Trade Visibility figures are not published yet.', noSqr: 'SQR figures are not published yet.', tvRankBy: 'By % of POS with 2nd visit done', totPos: 'Total BCD POS', posNeedBoth: 'POS needing both visits', needOnly2: '{n} need only the 2nd visit', totRet: 'Total retailers', c2sT: '300 Tk C2S target', visDone: 'QR visibility done', visRem: 'Visibility remaining', visHead: 'QR visibility', visSub: 'QR visibility target = all your retailers', trxTot: 'Transaction vs total retailers', trxTotSub: '300 Tk+ retailers out of all retailers', trxC2s: 'Transaction vs C2S target', trxC2sSub: '300 Tk+ retailers against C2S target retailers', dsrAch: 'DSRs achieved C2S target', dsrAchSub: 'DSRs with transaction ≥ C2S target', vmLate: '15 min late photo', vmWrong: 'Wrong QR placed', vmOut: 'Placed outside 100m', wrong: 'Wrong QR placed', outside: 'Placed outside 100m', late: 'Photo 15+ min after visit', split: 'Robi vs Cirkle', active: 'Active retailers', requests: 'Requests', sqr: 'Super QR Tk', c2s: 'C2S Tk', period: 'Period', updated: 'Updated', myReport: 'My report image', stA: 'Achieved', stP: 'In progress', stB: 'Behind', need: 'needs Tk {n} more', tdone: '300 Tk done', noqr: 'QR Visibility missing', fNeed: 'Need Tk', fQr: 'QR Visibility missing', fDone: 'Done', fAll: 'All', retHead: 'Retailers to push', retLead: 'Closest to the 300 Tk target first. Each one you finish adds 1 to your achievement.', teamHead: 'Team summary', dsrsDone: 'DSRs at target', noRet: 'No retailers in this list.', of: 'of', allRet: 'See all {n} retailers', notYet: 'Your figures are not published yet. Check again after the next update.', signOut: 'Sign out' },
+  bn: { home: 'হোম', retailersTab: 'রিটেইলার', team: 'টিম', trx: 'লেনদেন সক্রিয় রিটেইলার', trxSub: 'Super QR দিয়ে ৩০০ টাকা+ C2S করা রিটেইলার', achieved: 'অর্জন', target: 'টার্গেট', remaining: 'বাকি', qr: 'QR দৃশ্যমানতা', share: 'C2S-এ Super QR অংশ', hasReq: 'রিকোয়েস্ট করা রিটেইলার', ofRet: 'রিটেইলারের', sqrAmt: 'Super QR টাকা', trxRetSub: '{n} রিটেইলার লেনদেন করেছে', zeroTk: '০ টাকার রিটেইলার', zeroSub: 'এখনো Super QR সম্পন্ন হয়নি', fWrong: 'ভুল QR', fOut: '১০০ মি. বাইরে', fLate: 'দেরিতে ছবি', req: 'সম্পন্ন রিকোয়েস্ট', ticket: 'গড় টিকেট', inc: 'SQR ইনসেনটিভ', vis: 'দৃশ্যমানতা', trxInc: 'লেনদেন', checks: 'QR দৃশ্যমানতা যাচাই', kpi: 'KPI', sqrName: 'SQR · Super QR', tvName: 'ট্রেড ভিজিবিলিটি', seeSqr: 'SQR বিস্তারিত দেখুন', seeTv: 'ট্রেড ভিজিবিলিটি বিস্তারিত দেখুন', tvVisits: 'POS ভিজিট', tvSub: 'প্রতিটি BCD POS-এ ২ বার ভিজিট করতে হবে', pos: 'BCD POS', v1: '১ম ভিজিট সম্পন্ন', v2: '২য় ভিজিট সম্পন্ন', r1: '১ম ভিজিট বাকি', r2: '২য় ভিজিট বাকি', bothDone: 'দুই ভিজিট সম্পন্ন POS', needBoth: '১ম + ২য় ভিজিট দরকার', need2: '২য় ভিজিট দরকার', tvList: 'যেসব POS-এ ভিজিট বাকি', tvLead: 'পেন্ডিং POS-এ দুই ভিজিটই দরকার। দুই ভিজিট সম্পন্ন POS তালিকায় নেই।', st1: '১ম + ২য় ভিজিট বাকি', st2: '২য় ভিজিট বাকি', noTv: 'ট্রেড ভিজিবিলিটির তথ্য এখনো প্রকাশ হয়নি।', noSqr: 'SQR তথ্য এখনো প্রকাশ হয়নি।', tvRankBy: '২য় ভিজিট সম্পন্ন POS-এর % অনুযায়ী', totPos: 'মোট BCD POS', posNeedBoth: 'দুই ভিজিট দরকার এমন POS', needOnly2: '{n}টিতে শুধু ২য় ভিজিট দরকার', totRet: 'মোট রিটেইলার', c2sT: '৩০০ টাকা C2S টার্গেট', visDone: 'QR দৃশ্যমানতা সম্পন্ন', visRem: 'দৃশ্যমানতা বাকি', visHead: 'QR দৃশ্যমানতা', visSub: 'QR দৃশ্যমানতা টার্গেট = আপনার সব রিটেইলার', trxTot: 'মোট রিটেইলারের বিপরীতে লেনদেন', trxTotSub: 'সব রিটেইলারের মধ্যে ৩০০ টাকা+ রিটেইলার', trxC2s: 'C2S টার্গেটের বিপরীতে লেনদেন', trxC2sSub: 'C2S টার্গেট রিটেইলারের বিপরীতে ৩০০ টাকা+ রিটেইলার', dsrAch: 'C2S টার্গেট অর্জনকারী DSR', dsrAchSub: 'লেনদেন ≥ C2S টার্গেট', vmLate: '১৫ মিনিট দেরিতে ছবি', vmWrong: 'ভুল QR লাগানো', vmOut: '১০০ মিটারের বাইরে', wrong: 'ভুল QR লাগানো', outside: '১০০ মিটারের বাইরে', late: 'ভিজিটের ১৫+ মিনিট পরে ছবি', split: 'Robi বনাম Cirkle', active: 'সক্রিয় রিটেইলার', requests: 'রিকোয়েস্ট', sqr: 'Super QR টাকা', c2s: 'C2S টাকা', period: 'সময়কাল', updated: 'আপডেট', myReport: 'আমার রিপোর্ট ছবি', stA: 'অর্জিত', stP: 'চলমান', stB: 'পিছিয়ে', need: 'আরও {n} টাকা দরকার', tdone: '৩০০ টাকা পূর্ণ', noqr: 'QR দৃশ্যমানতা নেই', fNeed: 'টাকা বাকি', fQr: 'QR দৃশ্যমানতা নেই', fDone: 'পূর্ণ', fAll: 'সব', retHead: 'যেসব রিটেইলারে কাজ বাকি', retLead: '৩০০ টাকার সবচেয়ে কাছের রিটেইলার আগে। প্রতিটি পূর্ণ হলে আপনার অর্জন ১ বাড়বে।', teamHead: 'টিম সারাংশ', dsrsDone: 'টার্গেট পূর্ণ DSR', noRet: 'এই তালিকায় কোনো রিটেইলার নেই।', of: 'এর মধ্যে', allRet: 'সব {n} রিটেইলার দেখুন', notYet: 'আপনার তথ্য এখনো প্রকাশ হয়নি। পরের আপডেটের পর আবার দেখুন।', signOut: 'সাইন আউট' }
 };
 const T = (k, v) => { let s = (TX[st.lang] || TX.en)[k] || TX.en[k] || k; if (v) for (const x in v) s = s.replace('{' + x + '}', v[x]); return s; };
 
@@ -47,12 +47,12 @@ const T = (k, v) => { let s = (TX[st.lang] || TX.en)[k] || TX.en[k] || k; if (v)
 const st = {
   booting: true, profile: null, loginErr: null, loginId: '',
   settings: { summary: false, mode: 'totals' },
-  live: null, dsrs: {}, rets: {}, team: null,
+  live: null, dsrs: {}, rets: {}, team: null, tv: { live: null, dsrs: {}, rets: {} }, teamTv: null,
   batches: [], accounts: [], devices: {}, edits: [],
   lang: lsGet('aktl-lang') || 'en', loadedAt: 0
 };
 const ui = {
-  tab: null, viewDsr: null, retFilter: 'need', confirm: null,
+  tab: null, viewDsr: null, detail: null, retFilter: 'need', tvFilter: 'p', confirm: null,
   corr: { code: '', k: 'active', val: '', reason: '' },
   imgs: {}, modal: null, busy: false, saving: false,
   editAcct: null, creds: null, newRole: 'dsr'
@@ -60,6 +60,8 @@ const ui = {
 let pending = null;
 
 const dsrList = () => Object.values(st.dsrs).sort((a, c) => natural(a.name, c.name));
+const tvList = () => Object.values(st.tv.dsrs).sort((a, c) => natural(a.name, c.name));
+const kpiState = k => k === 'TV' ? st.tv : st;   // { live, dsrs, rets }
 const initials = n => { const m = String(n).match(/(\d+)\s*$/); if (m) return m[1].slice(-2); return String(n).split(/\s+/).map(w => w[0] || '').join('').slice(0, 2).toUpperCase(); };
 
 /* ---------- calculations ---------- */
@@ -101,13 +103,14 @@ const I = {
   data: '<ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/>',
   people: '<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/>',
   back: '<path d="M15 5l-7 7 7 7"/>',
+  next: '<path d="M5 12h14M13 6l6 6-6 6"/>',
   file: '<path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/>'
 };
 const ic = n => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${I[n]}</svg>`;
 
 function tabsFor(p) {
   if (!p) return [];
-  if (p.role === 'dsr') return [['home', T('home'), 'home'], ['retailers', T('retailersTab'), 'store']].concat(st.settings.summary ? [['team', T('team'), 'team']] : []);
+  if (p.role === 'dsr') return [['home', T('home'), 'home']].concat(st.settings.summary ? [['team', T('team'), 'team']] : []);
   if (p.role === 'admin') return [['team', 'Team', 'team'], ['upload', 'Upload', 'upload'], ['reports', 'Reports', 'image'], ['data', 'Data', 'data'], ['people', 'People', 'people']];
   return [['team', 'Team', 'team']];
 }
@@ -159,28 +162,33 @@ function must(res) { if (res.error) throw res.error; return res.data; }
 
 async function loadData() {
   const p = st.profile;
-  const [sets, live] = await Promise.all([
+  const [sets, lives] = await Promise.all([
     sb.from('settings').select('key,value'),
-    sb.from('batches').select('id,file_name,period,carried,published_at').eq('kpi', 'SQR').eq('is_live', true).maybeSingle()
+    sb.from('batches').select('id,kpi,file_name,period,carried,published_at').eq('is_live', true)
   ]);
   (must(sets) || []).forEach(r => {
     if (r.key === 'dsr_summary') st.settings.summary = r.value === true;
     if (r.key === 'dsr_summary_mode') st.settings.mode = r.value === 'ranked' ? 'ranked' : 'totals';
   });
-  st.live = must(live) || null;
+  const L = must(lives) || [];
+  st.live = L.find(b => b.kpi === 'SQR') || null;
+  st.tv = { live: L.find(b => b.kpi === 'TV') || null, dsrs: {}, rets: {} };
   st.dsrs = {}; st.rets = {};
-  if (st.live) {
+  const byId = {}; if (st.live) byId[st.live.id] = st; if (st.tv.live) byId[st.tv.live.id] = st.tv;
+  const ids = Object.keys(byId);
+  if (ids.length) {
     const [f, r] = await Promise.all([
-      sb.from('dsr_figures').select('dsr_code,dsr_name,data').eq('batch_id', st.live.id),
-      sb.from('retailers').select('dsr_code,items').eq('batch_id', st.live.id)
+      sb.from('dsr_figures').select('batch_id,dsr_code,dsr_name,data').in('batch_id', ids),
+      sb.from('retailers').select('batch_id,dsr_code,items').in('batch_id', ids)
     ]);
-    (must(f) || []).forEach(x => { st.dsrs[x.dsr_code] = Object.assign({}, x.data, { code: x.dsr_code, name: x.dsr_name }); });
-    (must(r) || []).forEach(x => { st.rets[x.dsr_code] = x.items || []; });
+    (must(f) || []).forEach(x => { byId[x.batch_id].dsrs[x.dsr_code] = Object.assign({}, x.data, { code: x.dsr_code, name: x.dsr_name }); });
+    (must(r) || []).forEach(x => { byId[x.batch_id].rets[x.dsr_code] = x.items || []; });
   }
-  st.team = null;
+  st.team = null; st.teamTv = null;
   if (p.role === 'dsr' && st.settings.summary) {
-    const t = await sb.rpc('team_summary');
+    const [t, v] = await Promise.all([sb.rpc('team_summary'), st.tv.live ? sb.rpc('team_summary', { p_kpi: 'TV' }) : Promise.resolve({ data: null })]);
     if (!t.error) st.team = t.data;
+    if (!v.error && v.data && v.data.totals && v.data.totals.pos != null) st.teamTv = v.data;   // needs supabase/update-02
   }
   if (p.role === 'admin') await loadAdmin();
   st.loadedAt = Date.now();
@@ -188,7 +196,7 @@ async function loadData() {
 
 async function loadAdmin() {
   const [b, a, d, e] = await Promise.all([
-    sb.from('batches').select('id,file_name,period,carried,published_at,is_live').eq('kpi', 'SQR').order('published_at', { ascending: false }).limit(30),
+    sb.from('batches').select('id,kpi,file_name,period,carried,published_at,is_live').order('published_at', { ascending: false }).limit(30),
     sb.from('profiles').select('*').order('name'),
     sb.from('devices').select('user_id,device_name,last_seen'),
     sb.from('corrections').select('*').order('changed_at', { ascending: false }).limit(100)
@@ -217,18 +225,20 @@ function render() {
   if (!ui.tab || !tabs.some(t => t[0] === ui.tab)) ui.tab = tabs[0][0];
   let body = '';
   if (p.role === 'dsr') {
-    body = ui.tab === 'home' ? viewDsr(p.dsr_code, {}) : ui.tab === 'retailers' ? viewRetailers(p.dsr_code) : viewTeam(true);
-  } else if (ui.viewDsr && st.dsrs[ui.viewDsr]) {
-    body = viewDsr(ui.viewDsr, { back: true });
+    if (ui.tab === 'team') body = viewTeamDsr();
+    else body = ui.detail === 'sqr' ? viewDsr(p.dsr_code, { back: T('home') }) : ui.detail === 'tv' ? viewTvDsr(p.dsr_code, { back: T('home') }) : viewDsrHome(p.dsr_code);
+  } else if (ui.tab === 'team') {
+    if (ui.viewDsr) body = ui.detail === 'tv' ? viewTvDsr(ui.viewDsr, { back: 'Trade Visibility ranking', staff: true }) : viewDsr(ui.viewDsr, { back: 'SQR ranking', staff: true });
+    else body = ui.detail === 'sqr' ? viewTeam(false) : ui.detail === 'tv' ? viewTvTeam(false) : viewOverview();
   } else {
-    body = ({ team: () => viewTeam(false), upload: viewUpload, reports: viewReports, data: viewData, people: viewPeople }[ui.tab] || (() => viewTeam(false)))();
+    body = ({ upload: viewUpload, reports: viewReports, data: viewData, people: viewPeople }[ui.tab] || viewOverview)();
   }
   app.innerHTML = `
   <header class="top"><div class="wrap">
-    <div class="brand"><div class="mark">AK</div><div style="min-width:0"><b>AKTL Sitakunda</b><small>KPI Portal · SQR</small></div></div>
+    <div class="brand"><div class="mark">AK</div><div style="min-width:0"><b>AKTL Sitakunda</b><small>KPI Portal · SQR · Trade Visibility</small></div></div>
     <button class="who" data-act="askout" title="${T('signOut')}"><span class="av">${esc(initials(p.name))}</span><span>${esc(p.name)}</span></button>
   </div></header>
-  <nav class="tabbar" aria-label="Sections"><div class="wrap"><div class="tabs">${tabs.map(t => `<button data-act="tab" data-v="${t[0]}" ${ui.tab === t[0] && !ui.viewDsr ? 'aria-current="page"' : ''}>${ic(t[2])}<span>${esc(t[1])}</span></button>`).join('')}</div></div></nav>
+  <nav class="tabbar${tabs.length > 1 ? '' : ' solo'}" aria-label="Sections"><div class="wrap"><div class="tabs">${tabs.map(t => `<button data-act="tab" data-v="${t[0]}" ${ui.tab === t[0] ? 'aria-current="page"' : ''}>${ic(t[2])}<span>${esc(t[1])}</span></button>`).join('')}</div></div></nav>
   <main><div class="wrap stack">${body}</div></main>
   ${ui.modal ? viewModal() : ''}`;
 }
@@ -247,27 +257,32 @@ function viewLogin() {
   </div></div></main>`;
 }
 
-function stampHtml() {
-  return `<div class="stamp"><span>${T('period')}: <b>${esc(periodText(st.live))}</b></span><span>${T('updated')}: <b>${esc(fmtTime(st.live && st.live.published_at))}</b></span></div>`;
+function stampHtml(b) {
+  b = b === undefined ? st.live : b;
+  if (!b) return '';
+  const p = b.period || {};
+  return `<div class="stamp">${p.from && p.to ? `<span>${T('period')}: <b>${esc(periodText(b))}</b></span>` : ''}<span>${T('updated')}: <b>${esc(fmtTime(b.published_at))}</b></span></div>`;
 }
+const backBtn = label => `<div><button class="btn ghost" data-act="back">${ic('back')} ${esc(label)}</button></div>`;
+const kpiTitle = (name, b) => `<div class="kpititle"><span class="kpitag">${T('kpi')}</span><h2>${esc(name)}</h2>${stampHtml(b)}</div>`;
 
 function viewDsr(code, opt) {
   const d = code && st.dsrs[code];
   const p = st.profile;
   if (!d) {
-    return `<section class="hello"><div class="av">${esc(initials(p.name))}</div><div class="grow"><h1>${esc(p.name)}</h1></div>${langToggle()}</section>
+    return `${opt.back ? backBtn(opt.back) : ''}<section class="hello"><div class="av">${esc(initials(p.name))}</div><div class="grow"><h1>${esc(p.name)}</h1></div>${langToggle()}</section>
       <div class="card empty">${p.role === 'dsr' ? T('notYet') : 'This DSR is not in the published data.'}</div>`;
   }
   const c = calc(d), stt = status(c.pct);
   const flag = (v, k) => `<div class="${v > 0 ? 'hit' : ''}"><b class="num">${v || 0}</b><span>${T(k)}</span></div>`;
   return `
-  ${opt.back ? `<div><button class="btn ghost" data-act="back">${ic('back')} All DSRs</button></div>` : ''}
+  ${opt.back ? backBtn(opt.back) : ''}
   <section class="hello">
     <div class="av">${esc(initials(d.name))}</div>
     <div class="grow"><h1>${esc(d.name)}</h1><p>${esc(d.code)}</p></div>
     ${langToggle()}
   </section>
-  ${stampHtml()}
+  ${kpiTitle(T('sqrName'), st.live)}
   <article class="card hero">
     <div class="row1"><div><div class="lbl">${T('trx')}</div><div class="small muted">${T('trxSub')}</div></div><span class="chip ${stt.c}">${T(stt.k)}</span></div>
     <div class="main"><div class="big num">${nf(d.active)} <small>/ ${nf(d.target)}</small></div><div class="ring ${stt.c}" style="--p:${Math.min(100, c.pct * 100).toFixed(1)}"><b class="num">${pf(c.pct)}</b></div></div>
@@ -299,7 +314,7 @@ function viewDsr(code, opt) {
       <tr><td>${T('c2s')}</td><td class="r num">${nf(d.robiC2s)}</td><td class="r num">${nf(d.cirC2s)}</td></tr>
     </tbody></table></div></article>` : ''}
   </div>
-  ${opt.back ? `<article class="card"><h3>${T('retHead')}</h3>${retailerList(code)}</article>` : retailerPreview(code)}
+  <article class="card"><h3>${T('retHead')}</h3><p class="small muted" style="margin:2px 0 0">${T('retLead')}</p>${retailerList(code)}</article>
   <div class="actions"><button class="btn primary" data-act="myreport" data-v="${esc(code)}">${ic('image')} ${T('myReport')}</button>${p.role !== 'dsr' ? `<button class="btn" data-act="copytext" data-v="${esc(code)}">Copy WhatsApp text</button>` : ''}</div>`;
 }
 const langToggle = () => `<div class="seg" role="group" aria-label="Language"><button data-act="lang" data-v="en" aria-pressed="${st.lang === 'en'}">EN</button><button data-act="lang" data-v="bn" aria-pressed="${st.lang === 'bn'}">বাং</button></div>`;
@@ -320,38 +335,21 @@ function retailerList(code) {
   const pills = [['need', 'fNeed'], ['qr', 'fQr'], ['done', 'fDone'], ['all', 'fAll']].map(x => `<button class="pill" data-act="rf" data-v="${x[0]}" aria-pressed="${f === x[0]}">${T(x[1])} · ${cnt[x[0]]}</button>`).join('');
   return `<div class="pills" style="margin-top:10px">${pills}</div><div class="list">${l.length ? l.map(retRow).join('') : `<div class="empty">${T('noRet')}</div>`}</div>`;
 }
-function retailerPreview(code) {
-  const all = st.rets[code] || [];
-  if (!all.length) return '';
-  const need = all.filter(r => !r.done).sort((a, b) => a.rem - b.rem), done = all.length - need.length;
-  return `<article class="card"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap"><h3>${T('retHead')}</h3><span class="small muted num">${T('tdone')}: ${done} / ${all.length}</span></div><p class="small muted" style="margin:2px 0 0">${T('retLead')}</p>
-  <div class="list">${need.length ? need.slice(0, 5).map(retRow).join('') : `<div class="empty">${T('noRet')}</div>`}</div>
-  <div class="actions" style="margin-top:8px"><button class="btn" data-act="tab" data-v="retailers">${ic('store')} ${T('allRet', { n: all.length })}</button></div></article>`;
-}
-function viewRetailers(code) {
-  return `<section><h1 style="font-size:24px">${T('retHead')}</h1><p class="muted small" style="margin:4px 0 0">${T('retLead')}</p></section><article class="card">${retailerList(code)}</article>`;
-}
-
 function viewTeam(forDsr) {
-  if (!st.live) return emptyPublished();
+  if (!st.live) return (forDsr ? '' : backBtn('Team overview')) + emptyPublished();
   let t, ranking;
   if (forDsr) {
-    if (!st.team) return `<div class="card empty">Team summary is not available right now.</div>`;
+    if (!st.team) return `${kpiTitle(T('sqrName'), st.live)}<div class="card empty">Team summary is not available right now.</div>`;
     t = st.team.totals || {}; ranking = st.team.ranking || null;
   } else {
     t = localTotals(); ranking = dsrList().map(d => d);
   }
-  const tp = t.target ? t.active / t.target : 0, p = st.profile;
-  if (!t.retailers) t = Object.assign({}, t, { retailers: t.qrTarget });   // QR target = number of retailers
+  const p = st.profile;
   const rows = ranking ? ranking.map(d => ({ d, c: calc(d) })).sort((a, c) => c.c.pct - a.c.pct || (c.d.active || 0) - (a.d.active || 0)) : null;
   return `
-  <section><h1 style="font-size:24px">${forDsr ? T('teamHead') : 'Team performance'}</h1><div style="margin-top:4px">${stampHtml()}</div></section>
-  <div class="tiles">
-    ${t.retailers ? `<article class="card tile"><div class="lbl">${T('trxTot')}</div><div class="v num">${nf(t.active)} <small>/ ${nf(t.retailers)}</small></div><div class="bar sm"><i style="width:${barW(t.active / t.retailers)}"></i></div><p class="num">${pf(t.active / t.retailers)} · ${T('trxTotSub')}</p></article>` : ''}
-    <article class="card tile"><div class="lbl">${T('trxC2s')}</div><div class="v num">${nf(t.active)} <small>/ ${nf(t.target)}</small></div><div class="bar sm"><i class="${status(tp).c}" style="width:${barW(tp)}"></i></div><p class="num">${pf(tp)} · ${T('trxC2sSub')}</p></article>
-    <article class="card tile"><div class="lbl">${T('qr')}</div><div class="v num">${pf(t.qrTarget ? t.qrSuccess / t.qrTarget : 0)}</div><p class="num">${nf(t.qrSuccess)} / ${nf(t.qrTarget)}</p></article>
-    <article class="card tile"><div class="lbl">${T('dsrAch')}</div><div class="v num">${nf(t.atTarget)} <small>/ ${nf(t.n)}</small></div><div class="bar sm"><i class="${status(t.n ? t.atTarget / t.n : 0).c}" style="width:${barW(t.n ? t.atTarget / t.n : 0)}"></i></div><p class="num">${T('dsrAchSub')}</p></article>
-  </div>
+  ${forDsr ? '' : backBtn('Team overview')}
+  ${kpiTitle(T('sqrName'), st.live)}
+  ${sqrTeamTiles(t)}
   ${rows ? `<article class="card"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap"><h2>DSR ranking</h2><span class="small muted">By % of C2S target${forDsr ? '' : ' · tap a DSR to open'}</span></div>
     <div class="list">${rows.map((x, i) => {
       const s = status(x.c.pct);
@@ -359,18 +357,145 @@ function viewTeam(forDsr) {
       return forDsr ? `<div class="rank">${inner}</div>` : `<button class="rank" data-act="open" data-v="${esc(x.d.code)}">${inner}</button>`;
     }).join('')}</div></article>` : ''}`;
 }
+function sqrTeamTiles(t) {
+  const tp = t.target ? t.active / t.target : 0;
+  if (!t.retailers) t = Object.assign({}, t, { retailers: t.qrTarget });   // QR target = number of retailers
+  return `<div class="tiles">
+    ${t.retailers ? `<article class="card tile"><div class="lbl">${T('trxTot')}</div><div class="v num">${nf(t.active)} <small>/ ${nf(t.retailers)}</small></div><div class="bar sm"><i style="width:${barW(t.active / t.retailers)}"></i></div><p class="num">${pf(t.active / t.retailers)} · ${T('trxTotSub')}</p></article>` : ''}
+    <article class="card tile"><div class="lbl">${T('trxC2s')}</div><div class="v num">${nf(t.active)} <small>/ ${nf(t.target)}</small></div><div class="bar sm"><i class="${status(tp).c}" style="width:${barW(tp)}"></i></div><p class="num">${pf(tp)} · ${T('trxC2sSub')}</p></article>
+    <article class="card tile"><div class="lbl">${T('qr')}</div><div class="v num">${pf(t.qrTarget ? t.qrSuccess / t.qrTarget : 0)}</div><p class="num">${nf(t.qrSuccess)} / ${nf(t.qrTarget)}</p></article>
+    <article class="card tile"><div class="lbl">${T('dsrAch')}</div><div class="v num">${nf(t.atTarget)} <small>/ ${nf(t.n)}</small></div><div class="bar sm"><i class="${status(t.n ? t.atTarget / t.n : 0).c}" style="width:${barW(t.n ? t.atTarget / t.n : 0)}"></i></div><p class="num">${T('dsrAchSub')}</p></article>
+  </div>`;
+}
 function emptyPublished() {
   return `<div class="card empty">Nothing is published yet.${st.profile.role === 'admin' ? ' Go to <b>Upload</b> to publish the first SQR file.' : ''}</div>`;
+}
+
+/* =====================================================================
+   KPI sections: home summaries with "See details", Trade Visibility pages
+   ===================================================================== */
+const tvCalc = d => ({ p1: d.pos ? d.v1 / d.pos : 0, p2: d.pos ? d.v2 / d.pos : 0, rem1: Math.max(0, (d.pos || 0) - (d.v1 || 0)), rem2: Math.max(0, (d.pos || 0) - (d.v2 || 0)) });
+const ring = (pct, cls, label) => `<div class="ring ${cls}" style="--p:${Math.min(100, pct * 100).toFixed(1)}"><b class="num">${label || pf(pct)}</b></div>`;
+const moreBtn = (k, label) => `<button class="btn more" data-act="detail" data-v="${k}"><span>${esc(label)}</span>${ic('next')}</button>`;
+const visitRow = (label, done, total, pct) => `<div class="vrow"><div class="vtop"><span>${esc(label)}</span><b class="num">${nf(done)} / ${nf(total)} · ${pf(pct)}</b></div><div class="bar sm"><i class="${status(pct).c}" style="width:${barW(pct)}"></i></div></div>`;
+
+function viewDsrHome(code) {
+  const p = st.profile, d = st.dsrs[code], t = st.tv.dsrs[code];
+  let sqr = `<div class="card empty">${T('noSqr')}</div>`;
+  if (d) {
+    const c = calc(d), s1 = status(c.pct);
+    sqr = `<article class="card hero">
+      <div class="row1"><div><div class="lbl">${T('trx')}</div><div class="small muted">${T('trxSub')}</div></div><span class="chip ${s1.c}">${T(s1.k)}</span></div>
+      <div class="main"><div class="big num">${nf(d.active)} <small>/ ${nf(d.target)}</small></div>${ring(c.pct, s1.c)}</div>
+      <div class="facts f3">
+        <div><span>${T('totRet')}</span><b class="num">${nf(d.retailers)}</b></div>
+        <div class="rem"><span>${T('remaining')}</span><b class="num">${nf(c.rem)}</b></div>
+        <div><span>${T('qr')}</span><b class="num">${nf(d.qrSuccess)}/${nf(d.qrTarget)}</b></div>
+      </div>
+      ${moreBtn('sqr', T('seeSqr'))}
+    </article>`;
+  }
+  let tv = `<div class="card empty">${T('noTv')}</div>`;
+  if (t) {
+    const c = tvCalc(t), s2 = status(c.p2), it = st.tv.rets[code] || [];
+    tv = `<article class="card hero tvh">
+      <div class="row1"><div><div class="lbl">${T('tvVisits')}</div><div class="small muted">${T('tvSub')}</div></div><span class="chip ${s2.c}">${pf(c.p2)} ${T('v2').toLowerCase()}</span></div>
+      <div class="main"><div class="big num">${nf(t.v2)} <small>/ ${nf(t.pos)}</small></div>${ring(c.p2, s2.c)}</div>
+      ${visitRow(T('v1'), t.v1, t.pos, c.p1)}${visitRow(T('v2'), t.v2, t.pos, c.p2)}
+      <div class="facts f2">
+        <div class="rem"><span>${T('needBoth')}</span><b class="num">${nf(it.length ? it.filter(x => x.st === 'p').length : c.rem1)}</b></div>
+        <div class="rem"><span>${T('need2')}</span><b class="num">${nf(it.length ? it.filter(x => x.st === 'f').length : t.v1 - t.v2)}</b></div>
+      </div>
+      ${moreBtn('tv', T('seeTv'))}
+    </article>`;
+  }
+  return `
+  <section class="hello"><div class="av">${esc(initials(d ? d.name : p.name))}</div><div class="grow"><h1>${esc(d ? d.name : p.name)}</h1>${code ? `<p>${esc(code)}</p>` : ''}</div>${langToggle()}</section>
+  <section class="kpisec">${kpiTitle(T('sqrName'), st.live)}${sqr}</section>
+  <section class="kpisec">${kpiTitle(T('tvName'), st.tv.live)}${tv}</section>`;
+}
+
+function viewTvDsr(code, opt) {
+  const t = st.tv.dsrs[code], sq = st.dsrs[code], p = st.profile;
+  const name = (t && t.name) || (sq && sq.name) || p.name;
+  const head = `${opt.back ? backBtn(opt.back) : ''}
+  <section class="hello"><div class="av">${esc(initials(name))}</div><div class="grow"><h1>${esc(name)}</h1><p>${esc(code || '')}</p></div>${langToggle()}</section>
+  ${kpiTitle(T('tvName'), st.tv.live)}`;
+  if (!t) return head + `<div class="card empty">${T('noTv')}</div>`;
+  const c = tvCalc(t), s2 = status(c.p2), it = st.tv.rets[code] || [];
+  return head + `
+  <article class="card hero tvh">
+    <div class="row1"><div><div class="lbl">${T('tvVisits')}</div><div class="small muted">${T('tvSub')}</div></div><span class="chip ${s2.c}">${T(s2.k)}</span></div>
+    <div class="main"><div><div class="small muted">${T('bothDone')}</div><div class="big num">${nf(t.v2)} <small>/ ${nf(t.pos)}</small></div></div>${ring(c.p2, s2.c)}</div>
+    ${visitRow(T('v1'), t.v1, t.pos, c.p1)}${visitRow(T('v2'), t.v2, t.pos, c.p2)}
+    <div class="facts f5">
+      <div><span>${T('pos')}</span><b class="num">${nf(t.pos)}</b></div>
+      <div><span>${T('v1')}</span><b class="num">${nf(t.v1)}</b></div>
+      <div><span>${T('v2')}</span><b class="num">${nf(t.v2)}</b></div>
+      <div class="rem"><span>${T('r1')}</span><b class="num">${nf(c.rem1)}</b></div>
+      <div class="rem"><span>${T('r2')}</span><b class="num">${nf(c.rem2)}</b></div>
+    </div>
+  </article>
+  <article class="card"><h3>${T('tvList')}</h3><p class="small muted" style="margin:2px 0 0">${T('tvLead')}</p>${tvRetailerList(it)}</article>`;
+}
+function tvRetailerList(all) {
+  if (!all.length) return `<div class="empty">${T('noRet')}</div>`;
+  const f = ui.tvFilter, cnt = { p: all.filter(r => r.st === 'p').length, f: all.filter(r => r.st === 'f').length, all: all.length };
+  const l = (f === 'all' ? all.slice() : all.filter(r => r.st === f)).sort((a, b) => (a.st === b.st ? 0 : a.st === 'p' ? -1 : 1) || natural(a.name, b.name));
+  const pills = [['p', 'needBoth'], ['f', 'need2'], ['all', 'fAll']].map(x => `<button class="pill" data-act="tf" data-v="${x[0]}" aria-pressed="${f === x[0]}">${T(x[1])} · ${cnt[x[0]]}</button>`).join('');
+  return `<div class="pills" style="margin-top:10px">${pills}</div><div class="list">${l.length ? l.map(r => `<div class="li"><div class="n">${esc(r.name)}</div><span class="chip ${r.st === 'p' ? 'bad' : 'warn'}">${T(r.st === 'p' ? 'st1' : 'st2')}</span>${r.id ? `<div class="s num">…${esc(r.id)}</div>` : ''}</div>`).join('') : `<div class="empty">${T('noRet')}</div>`}</div>`;
+}
+
+function tvTotals(list) {
+  const t = { pos: 0, v1: 0, v2: 0, n: 0, need2: 0 };
+  list.forEach(d => { t.pos += +d.pos || 0; t.v1 += +d.v1 || 0; t.v2 += +d.v2 || 0; t.n++; });
+  return t;
+}
+function tvTeamTiles(t) {
+  const p1 = t.pos ? t.v1 / t.pos : 0, p2 = t.pos ? t.v2 / t.pos : 0;
+  return `<div class="tiles">
+    <article class="card tile"><div class="lbl">${T('totPos')}</div><div class="v num">${nf(t.pos)}</div><p class="num">${nf(t.n)} DSRs · ${T('tvSub')}</p></article>
+    <article class="card tile"><div class="lbl">${T('v1')}</div><div class="v num">${nf(t.v1)} <small>/ ${nf(t.pos)}</small></div><div class="bar sm"><i class="${status(p1).c}" style="width:${barW(p1)}"></i></div><p class="num">${pf(p1)}</p></article>
+    <article class="card tile"><div class="lbl">${T('v2')}</div><div class="v num">${nf(t.v2)} <small>/ ${nf(t.pos)}</small></div><div class="bar sm"><i class="${status(p2).c}" style="width:${barW(p2)}"></i></div><p class="num">${pf(p2)}</p></article>
+    <article class="card tile"><div class="lbl">${T('posNeedBoth')}</div><div class="v num badv">${nf(t.pos - t.v1)}</div><p class="num">${T('needOnly2', { n: nf(t.v1 - t.v2) })}</p></article>
+  </div>`;
+}
+function tvRanking(rows, clickable) {
+  const p = st.profile;
+  const r = rows.map(d => ({ d, c: tvCalc(d) })).sort((a, b) => b.c.p2 - a.c.p2 || b.c.p1 - a.c.p1);
+  return `<article class="card"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap"><h2>DSR ranking</h2><span class="small muted">${T('tvRankBy')}${clickable ? ' · tap a DSR to open' : ''}</span></div>
+    <div class="list">${r.map((x, i) => {
+      const inner = `<span class="pos num">${i + 1}</span><span class="nm">${esc(x.d.name)}${p.role === 'dsr' && p.dsr_code === x.d.code ? ' <span class="chip good" style="font-size:11px;padding:1px 8px">You</span>' : ''}</span><span class="pc num">${pf(x.c.p2)}</span><span class="bar sm"><i class="${status(x.c.p2).c}" style="width:${barW(x.c.p2)}"></i></span><span class="meta num">${nf(x.d.pos)} POS · 1st ${nf(x.d.v1)} (${pf(x.c.p1)}) · 2nd ${nf(x.d.v2)}${x.c.rem1 ? ` · <span class="no">${nf(x.c.rem1)} need both visits</span>` : ''}</span>`;
+      return clickable ? `<button class="rank" data-act="open" data-v="${esc(x.d.code)}">${inner}</button>` : `<div class="rank">${inner}</div>`;
+    }).join('')}</div></article>`;
+}
+function viewTvTeam() {
+  if (!st.tv.live) return backBtn('Team overview') + `<div class="card empty">${T('noTv')}</div>`;
+  const l = tvList();
+  return `${backBtn('Team overview')}${kpiTitle(T('tvName'), st.tv.live)}${tvTeamTiles(tvTotals(l))}${tvRanking(l, true)}`;
+}
+function viewOverview() {
+  const sqr = st.live ? `${sqrTeamTiles(localTotals())}${moreBtn('sqr', 'See SQR details · DSR ranking')}` : emptyPublished();
+  const tv = st.tv.live ? `${tvTeamTiles(tvTotals(tvList()))}${moreBtn('tv', 'See Trade Visibility details · DSR ranking')}` : `<div class="card empty">${T('noTv')}${st.profile.role === 'admin' ? ' Upload the Trade Visibility file to add it.' : ''}</div>`;
+  return `<section><h1 style="font-size:24px">Team performance</h1></section>
+  <section class="kpisec">${kpiTitle(T('sqrName'), st.live)}${sqr}</section>
+  <section class="kpisec">${kpiTitle(T('tvName'), st.tv.live)}${tv}</section>`;
+}
+function viewTeamDsr() {
+  const tv = st.teamTv;
+  return `<section><h1 style="font-size:24px">${T('teamHead')}</h1></section>
+  <section class="kpisec">${viewTeam(true)}</section>
+  ${tv ? `<section class="kpisec">${kpiTitle(T('tvName'), st.tv.live)}${tvTeamTiles(Object.assign({ n: 0 }, tv.totals))}${tv.ranking ? tvRanking(tv.ranking, false) : ''}</section>` : ''}`;
 }
 
 /* ---------- admin: upload ---------- */
 function viewUpload() {
   if (ui.busy) return `<div class="card empty"><div class="spin"></div>Reading the file…</div>`;
   if (!pending) return `
-  <section><h1 style="font-size:24px">Upload SQR report</h1><p class="muted small" style="margin:4px 0 0">Nothing changes for DSRs until you press Publish.</p></section>
+  <section><h1 style="font-size:24px">Upload a KPI report</h1><p class="muted small" style="margin:4px 0 0">Nothing changes for DSRs until you press Publish.</p></section>
   <div class="steps"><div class="on">Choose file</div><div>Check columns</div><div>Fix issues</div><div>Preview and publish</div></div>
-  <label class="drop" id="drop" for="file">${ic('file')}<b>Choose the SQR Excel file</b><span class="muted small">or drag it here · .xlsx</span><input type="file" id="file" accept=".xlsx,.xls,.csv"></label>
-  <div class="banner info"><div><b>What gets read:</b> the summary sheet (e.g. "Summury") for each DSR's KPI figures and the retailer sheet for each DSR's profile code and retailer list. The older "DSR Wise" layout also works. Retailer EL phone numbers are skipped and never saved.</div></div>`;
+  <label class="drop" id="drop" for="file">${ic('file')}<b>Choose the SQR or Trade Visibility Excel file</b><span class="muted small">or drag it here · .xlsx</span><input type="file" id="file" accept=".xlsx,.xls,.csv"></label>
+  <div class="banner info"><div><b>What gets read:</b> the KPI is detected from the file. <b>SQR:</b> the summary sheet (e.g. "Summury") and the retailer sheet; the older "DSR Wise" layout also works. <b>Trade Visibility:</b> "DSR Summury" (BCD POS, 1st and 2nd visits) and "Retail Wise" (Pending / 1st Times Done), matched to DSRs by number. Phone numbers are never saved; retailer MSISDNs are cut to the last 4 digits.</div></div>`;
   const pd = pending, errs = pd.issues.filter(i => i.t === 'err');
   const rows = Object.values(pd.dsrs).sort((a, c) => natural(a.name, c.name));
   return `
@@ -378,9 +503,9 @@ function viewUpload() {
   <div class="steps"><div>Choose file</div><div class="on">Check columns</div><div class="on">Fix issues</div><div class="on">Preview and publish</div></div>
   <div class="grid2">
     <article class="card"><h3>What was found</h3>
-      <div class="issue ok"><span class="dot"></span><span>Report type: <b>SQR</b> · sheet "${esc(pd.sheetDsr || '-')}"</span></div>
-      <div class="issue ${pd.period ? 'ok' : 'warn'}"><span class="dot"></span><span>Period: <b>${esc(pd.period ? pd.period.from + ' to ' + pd.period.to : 'not found')}</b>${pd.period && pd.period.pulled ? ` · pulled ${esc(pd.period.pulled)}` : ''}</span></div>
-      <div class="issue ok"><span class="dot"></span><span><b>${rows.length}</b> DSRs · <b>${pd.retCount}</b> retailers${pd.sheetRet ? ` from "${esc(pd.sheetRet)}"` : ''}</span></div>
+      <div class="issue ok"><span class="dot"></span><span>Report type: <b>${esc(window.SQRParse.KPI_NAME[pd.kpi] || pd.kpi)}</b> · sheet "${esc(pd.sheetDsr || '-')}"</span></div>
+      <div class="issue ${pd.period ? 'ok' : pd.kpi === 'TV' ? 'ok' : 'warn'}"><span class="dot"></span><span>Period: <b>${esc(pd.period ? pd.period.from + ' to ' + pd.period.to : 'not found')}</b>${pd.period && pd.period.pulled ? ` · pulled ${esc(pd.period.pulled)}` : ''}</span></div>
+      <div class="issue ok"><span class="dot"></span><span><b>${rows.length}</b> DSRs · <b>${pd.retCount}</b> ${pd.kpi === 'TV' ? 'POS still to visit' : 'retailers'}${pd.sheetRet ? ` from "${esc(pd.sheetRet)}"` : ''}</span></div>
       ${pd.carried.length ? `<div class="issue warn"><span class="dot"></span><span>${pd.carried.length} DSR(s) are not in this file and will keep their current figures: ${pd.carried.map(esc).join(', ')}</span></div>` : ''}
     </article>
     <article class="card"><h3>Issues</h3>${pd.issues.length ? pd.issues.map(i => `<div class="issue ${i.t}"><span class="dot"></span><span>${esc(i.m)}</span></div>`).join('') : `<div class="issue ok"><span class="dot"></span><span>No problems found.</span></div>`}</article>
@@ -388,20 +513,23 @@ function viewUpload() {
   <article class="card"><h3>Column mapping</h3><p class="small muted" style="margin:2px 0 0">${pd.mapping.filter(m => m.col >= 0).length} of ${pd.mapping.length} KPI columns matched.</p>
     <div class="tbl"><table><thead><tr><th>KPI field</th><th>Excel column</th><th></th></tr></thead><tbody>${pd.mapping.map(m => `<tr><td>${esc(m.label)}</td><td class="muted">${m.col >= 0 ? esc(m.header) : '—'}</td><td>${m.col >= 0 ? '<span class="yes">Matched</span>' : m.req ? '<span class="no">Missing (required)</span>' : '<span class="muted">Not found</span>'}</td></tr>`).join('')}</tbody></table></div>
   </article>
-  <article class="card"><h3>Preview</h3><p class="small muted" style="margin:2px 0 0">Change is compared with what DSRs see now.</p>
-    <div class="tbl"><table><thead><tr><th>DSR</th><th class="r">Active / Target</th><th class="r">%</th><th class="r">Change</th><th class="r">QR vis.</th><th class="r">${pd.format === 'summary' ? 'Super QR Tk' : 'Incentive'}</th></tr></thead><tbody>
+  <article class="card"><h3>Preview</h3><p class="small muted" style="margin:2px 0 0">Change is compared with what DSRs see now${pd.kpi === 'TV' ? ' (2nd visits)' : ''}.</p>
+    <div class="tbl"><table>${pd.kpi === 'TV' ? `<thead><tr><th>DSR</th><th class="r">BCD POS</th><th class="r">1st visit</th><th class="r">2nd visit</th><th class="r">2nd visit %</th><th class="r">Change</th></tr></thead><tbody>
+    ${rows.map(d => { const c = tvCalc(d), o = st.tv.dsrs[d.code]; const dl = o ? d.v2 - o.v2 : null; return `<tr><td>${esc(d.name)}</td><td class="r num">${nf(d.pos)}</td><td class="r num">${nf(d.v1)} (${pf(c.p1)})</td><td class="r num">${nf(d.v2)}</td><td class="r num">${pf(c.p2)}</td><td class="r num">${dl == null ? '<span class="muted">new</span>' : dl > 0 ? `<span class="up">+${dl}</span>` : dl < 0 ? `<span class="down">${dl}</span>` : '<span class="muted">0</span>'}</td></tr>`; }).join('')}` : `<thead><tr><th>DSR</th><th class="r">Active / Target</th><th class="r">%</th><th class="r">Change</th><th class="r">QR vis.</th><th class="r">${pd.format === 'summary' ? 'Super QR Tk' : 'Incentive'}</th></tr></thead><tbody>
     ${rows.map(d => { const c = calc(d), o = st.dsrs[d.code]; const dl = o ? d.active - o.active : null; return `<tr><td>${esc(d.name)}</td><td class="r num">${nf(d.active)} / ${nf(d.target)}</td><td class="r num">${pf(c.pct)}</td><td class="r num">${dl == null ? '<span class="muted">new</span>' : dl > 0 ? `<span class="up">+${dl}</span>` : dl < 0 ? `<span class="down">${dl}</span>` : '<span class="muted">0</span>'}</td><td class="r num">${pf(c.vis)}</td><td class="r num">Tk ${nf(pd.format === 'summary' ? d.sqrAmt : d.incTotal)}</td></tr>`; }).join('')}
+`}
     </tbody></table></div>
   </article>
   <div class="actions"><button class="btn primary" data-act="publish" ${errs.length || ui.saving ? 'disabled' : ''}>${ui.saving ? 'Publishing…' : 'Publish update'}</button><button class="btn" data-act="discard" ${ui.saving ? 'disabled' : ''}>Discard</button>${errs.length ? '<span class="small no">Fix the required issues above first.</span>' : ''}</div>`;
 }
 
 function parseWorkbook(wb, fileName) {
-  const out = Object.assign(window.SQRParse.parse(wb, XLSX, fileName), { carried: [] });
-  if (st.live && !out.issues.some(i => i.t === 'err')) {
-    out.carried = Object.keys(st.dsrs).filter(k => !out.dsrs[k]).map(k => st.dsrs[k].name);
-    const nw = Object.keys(out.dsrs).filter(k => !st.dsrs[k]).map(k => out.dsrs[k].name);
-    if (nw.length) out.issues.push({ t: 'warn', m: `New DSR(s) not in the current data: ${nw.join(', ')}. Create their logins in People.` });
+  const out = Object.assign(window.SQRParse.parse(wb, XLSX, fileName, { dsrIndex: dsrList().map(d => ({ code: d.code, name: d.name })) }), { carried: [] });
+  const cur = kpiState(out.kpi);
+  if (cur.live && !out.issues.some(i => i.t === 'err')) {
+    out.carried = Object.keys(cur.dsrs).filter(k => !out.dsrs[k]).map(k => cur.dsrs[k].name);
+    const nw = Object.keys(out.dsrs).filter(k => !cur.dsrs[k]).map(k => out.dsrs[k].name);
+    if (nw.length && out.kpi === 'SQR') out.issues.push({ t: 'warn', m: `New DSR(s) not in the current data: ${nw.join(', ')}. Create their logins in People.` });
   }
   return out;
 }
@@ -416,15 +544,16 @@ function handleFile(f) {
 }
 async function publish() {
   const pd = pending; if (!pd || ui.saving) return;
-  const figs = Object.assign({}, st.dsrs, pd.dsrs);
-  const rets = Object.assign({}, st.rets, pd.retailers);
+  const cur = kpiState(pd.kpi);
+  const figs = Object.assign({}, cur.dsrs, pd.dsrs);
+  const rets = Object.assign({}, cur.rets, pd.retailers);
   const figures = Object.values(figs).map(d => { const data = Object.assign({}, d); delete data.code; delete data.name; return { code: d.code, name: d.name, data }; });
   const retailers = Object.keys(rets).filter(k => figs[k]).map(k => ({ code: k, items: rets[k] }));
   ui.saving = true; render();
-  const r = await sb.rpc('publish_batch', { p_kpi: 'SQR', p_file: pd.fileName, p_period: pd.period || (st.live && st.live.period) || null, p_carried: pd.carried, p_figures: figures, p_retailers: retailers });
+  const r = await sb.rpc('publish_batch', { p_kpi: pd.kpi, p_file: pd.fileName, p_period: pd.period || (pd.kpi === 'SQR' && st.live && st.live.period) || null, p_carried: pd.carried, p_figures: figures, p_retailers: retailers });
   ui.saving = false;
   if (r.error) { toast('Could not publish. ' + errText(r.error)); render(); return; }
-  pending = null; ui.imgs = {}; ui.tab = 'team';
+  pending = null; ui.imgs = {}; ui.tab = 'team'; ui.detail = null; ui.viewDsr = null;
   await refresh(`Published. ${figures.length} DSR dashboards updated.`);
 }
 
@@ -433,7 +562,7 @@ function viewReports() {
   if (!st.live) return emptyPublished();
   const l = dsrList(), have = Object.keys(ui.imgs).length;
   return `
-  <section><h1 style="font-size:24px">WhatsApp report images</h1><p class="muted small" style="margin:4px 0 0">One portrait image per DSR (1080 × 1350), from the published data.</p></section>
+  <section><h1 style="font-size:24px">SQR WhatsApp report images</h1><p class="muted small" style="margin:4px 0 0">One portrait image per DSR (1080 × 1350), from the published data.</p></section>
   <div class="actions"><button class="btn primary" data-act="genall">${ic('image')} ${have ? 'Refresh all images' : 'Make all ' + l.length + ' images'}</button>${have ? `<button class="btn" data-act="zip">Download all as ZIP</button>` : ''}</div>
   <div class="rgrid">${l.map(d => `<article class="card rcard">${ui.imgs[d.code] ? `<img src="${ui.imgs[d.code]}" alt="SQR report for ${esc(d.name)}">` : `<div style="aspect-ratio:1080/1350;border-radius:10px;background:var(--surface-2);display:grid;place-items:center" class="muted small">Not made yet</div>`}<b>${esc(d.name)}</b><div class="actions"><button class="btn" data-act="savepng" data-v="${esc(d.code)}">Download</button><button class="btn" data-act="copytext" data-v="${esc(d.code)}">Copy text</button></div></article>`).join('')}</div>`;
 }
@@ -504,7 +633,7 @@ function viewData() {
   const curVal = cc.code ? st.dsrs[cc.code][cc.k] : '';
   return `
   <section><h1 style="font-size:24px">Data</h1><p class="muted small" style="margin:4px 0 0">Every upload is kept as a version. Corrections are logged with who, when and why.</p></section>
-  ${st.live ? `<article class="card"><h2>Correct a figure</h2><p class="small muted" style="margin:2px 0 0">Changes the published data straight away, without a new upload.</p>
+  ${st.live ? `<article class="card"><h2>Correct an SQR figure</h2><p class="small muted" style="margin:2px 0 0">Changes the published data straight away, without a new upload.</p>
     <div class="form">
       <div class="field"><label for="c-dsr">DSR</label><select id="c-dsr" data-in="code">${l.map(d => `<option value="${esc(d.code)}" ${d.code === cc.code ? 'selected' : ''}>${esc(d.name)}</option>`).join('')}</select></div>
       <div class="field"><label for="c-k">Figure</label><select id="c-k" data-in="k">${EDITABLE.filter(k => k === cc.k || l.some(d => has(d, k))).map(k => `<option value="${k}" ${k === cc.k ? 'selected' : ''}>${esc(LABEL[k])}</option>`).join('')}</select></div>
@@ -514,8 +643,8 @@ function viewData() {
     </div>
     <div class="actions" style="margin-top:12px"><button class="btn primary" data-act="correct" ${ui.saving ? 'disabled' : ''}>Save correction</button></div>
   </article>` : emptyPublished()}
-  <article class="card"><h2>Published versions</h2>${st.batches.length ? `<div class="tbl"><table><thead><tr><th>Status</th><th>File</th><th>Period</th><th>Published</th><th></th></tr></thead><tbody>
-    ${st.batches.map(x => `<tr><td>${x.is_live ? '<span class="chip good">Live</span>' : '<span class="muted">Previous</span>'}</td><td>${esc(x.file_name)}${x.carried && x.carried.length ? ` <span class="muted small">(${x.carried.length} kept)</span>` : ''}</td><td>${esc(periodText(x))}</td><td class="num">${esc(fmtTime(x.published_at))}</td><td>${x.is_live ? '' : ui.confirm === x.id ? `<span class="actions"><button class="btn danger" data-act="rollback" data-v="${x.id}">Yes, make live</button><button class="btn" data-act="cancel">Cancel</button></span>` : `<button class="btn" data-act="askroll" data-v="${x.id}">Make live</button>`}</td></tr>`).join('')}
+  <article class="card"><h2>Published versions</h2>${st.batches.length ? `<div class="tbl"><table><thead><tr><th>Status</th><th>KPI</th><th>File</th><th>Period</th><th>Published</th><th></th></tr></thead><tbody>
+    ${st.batches.map(x => `<tr><td>${x.is_live ? '<span class="chip good">Live</span>' : '<span class="muted">Previous</span>'}</td><td>${esc(x.kpi === 'TV' ? 'Trade Visibility' : x.kpi)}</td><td>${esc(x.file_name)}${x.carried && x.carried.length ? ` <span class="muted small">(${x.carried.length} kept)</span>` : ''}</td><td>${esc(periodText(x))}</td><td class="num">${esc(fmtTime(x.published_at))}</td><td>${x.is_live ? '' : ui.confirm === x.id ? `<span class="actions"><button class="btn danger" data-act="rollback" data-v="${x.id}">Yes, make live</button><button class="btn" data-act="cancel">Cancel</button></span>` : `<button class="btn" data-act="askroll" data-v="${x.id}">Make live</button>`}</td></tr>`).join('')}
   </tbody></table></div>` : '<div class="empty">No versions yet.</div>'}</article>
   <article class="card"><h2>Correction log</h2>${st.edits.length ? `<div class="tbl"><table><thead><tr><th>When</th><th>DSR</th><th>Figure</th><th class="r">Old</th><th class="r">New</th><th>By</th><th>Reason</th></tr></thead><tbody>${st.edits.map(e => `<tr><td class="num">${esc(fmtTime(e.changed_at))}</td><td>${esc(e.dsr_name)}</td><td>${esc(LABEL[e.field] || e.field)}</td><td class="r num">${nf(e.old_value)}</td><td class="r num">${nf(e.new_value)}</td><td>${esc(e.changed_by_name)}</td><td style="white-space:normal;min-width:200px">${esc(e.reason)}</td></tr>`).join('')}</tbody></table></div>` : '<div class="empty">No corrections yet.</div>'}</article>`;
 }
@@ -597,9 +726,11 @@ async function rpcDo(name, args, okMsg) {
 
 /* ---------- events ---------- */
 const A = {
-  tab: v => { ui.tab = v; ui.viewDsr = null; ui.confirm = null; render(); window.scrollTo(0, 0); },
-  open: v => { ui.viewDsr = v; ui.retFilter = 'need'; render(); window.scrollTo(0, 0); },
-  back: () => { ui.viewDsr = null; render(); },
+  tab: v => { ui.tab = v; ui.viewDsr = null; ui.detail = null; ui.confirm = null; render(); window.scrollTo(0, 0); },
+  detail: v => { ui.detail = v; ui.viewDsr = null; ui.retFilter = 'need'; ui.tvFilter = 'p'; if (st.profile.role !== 'dsr') ui.tab = 'team'; render(); window.scrollTo(0, 0); },
+  open: v => { ui.viewDsr = v; ui.retFilter = 'need'; ui.tvFilter = 'p'; render(); window.scrollTo(0, 0); },
+  back: () => { if (ui.viewDsr) ui.viewDsr = null; else ui.detail = null; render(); window.scrollTo(0, 0); },
+  tf: v => { ui.tvFilter = v; render(); },
   lang: v => { st.lang = v; lsSet('aktl-lang', v); render(); },
   rf: v => { ui.retFilter = v; render(); },
   askout: () => { ui.modal = { type: 'signout' }; render(); },
