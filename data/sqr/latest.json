@@ -1,0 +1,4123 @@
+{
+ "kpi": "SQR",
+ "fileName": "SQR_update.xlsx",
+ "format": "summary",
+ "period": {
+  "from": "01-Nov",
+  "to": "09-Nov",
+  "pulled": "10-Nov"
+ },
+ "builtAt": "2026-11-10T06:20:27.622Z",
+ "issues": [],
+ "figures": [
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_1",
+   "name": "DSR-01",
+   "data": {
+    "retailers": 24,
+    "hasRequest": 17,
+    "active": 11,
+    "target": 10,
+    "qrTarget": 24,
+    "qrSuccess": 19,
+    "wrongQr": 1,
+    "outside100": 0,
+    "latePhoto": 1,
+    "sqrAmt": 12303,
+    "trxRet": 15,
+    "zeroTk": 9
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_2",
+   "name": "DSR-02",
+   "data": {
+    "retailers": 32,
+    "hasRequest": 8,
+    "active": 6,
+    "target": 10,
+    "qrTarget": 32,
+    "qrSuccess": 14,
+    "wrongQr": 0,
+    "outside100": 0,
+    "latePhoto": 2,
+    "sqrAmt": 3790,
+    "trxRet": 7,
+    "zeroTk": 25
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_3",
+   "name": "DSR-03",
+   "data": {
+    "retailers": 32,
+    "hasRequest": 16,
+    "active": 8,
+    "target": 10,
+    "qrTarget": 32,
+    "qrSuccess": 31,
+    "wrongQr": 0,
+    "outside100": 0,
+    "latePhoto": 0,
+    "sqrAmt": 7231,
+    "trxRet": 14,
+    "zeroTk": 18
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_4",
+   "name": "DSR-05",
+   "data": {
+    "retailers": 51,
+    "hasRequest": 15,
+    "active": 5,
+    "target": 16,
+    "qrTarget": 51,
+    "qrSuccess": 17,
+    "wrongQr": 1,
+    "outside100": 0,
+    "latePhoto": 1,
+    "sqrAmt": 3329,
+    "trxRet": 8,
+    "zeroTk": 43
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_5",
+   "name": "DSR-06",
+   "data": {
+    "retailers": 31,
+    "hasRequest": 1,
+    "active": 0,
+    "target": 10,
+    "qrTarget": 31,
+    "qrSuccess": 3,
+    "wrongQr": 1,
+    "outside100": 0,
+    "latePhoto": 0,
+    "sqrAmt": 20,
+    "trxRet": 1,
+    "zeroTk": 30
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_6",
+   "name": "DSR-07",
+   "data": {
+    "retailers": 25,
+    "hasRequest": 15,
+    "active": 11,
+    "target": 10,
+    "qrTarget": 25,
+    "qrSuccess": 15,
+    "wrongQr": 0,
+    "outside100": 0,
+    "latePhoto": 0,
+    "sqrAmt": 7518,
+    "trxRet": 14,
+    "zeroTk": 11
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_7",
+   "name": "DSR-08",
+   "data": {
+    "retailers": 20,
+    "hasRequest": 1,
+    "active": 0,
+    "target": 10,
+    "qrTarget": 20,
+    "qrSuccess": 2,
+    "wrongQr": 1,
+    "outside100": 0,
+    "latePhoto": 0,
+    "sqrAmt": 0,
+    "trxRet": 0,
+    "zeroTk": 20
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_8",
+   "name": "DSR-09",
+   "data": {
+    "retailers": 19,
+    "hasRequest": 0,
+    "active": 0,
+    "target": 10,
+    "qrTarget": 19,
+    "qrSuccess": 1,
+    "wrongQr": 0,
+    "outside100": 0,
+    "latePhoto": 0,
+    "sqrAmt": 0,
+    "trxRet": 0,
+    "zeroTk": 19
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_9",
+   "name": "DSR-11",
+   "data": {
+    "retailers": 32,
+    "hasRequest": 3,
+    "active": 1,
+    "target": 10,
+    "qrTarget": 32,
+    "qrSuccess": 10,
+    "wrongQr": 0,
+    "outside100": 0,
+    "latePhoto": 0,
+    "sqrAmt": 857,
+    "trxRet": 2,
+    "zeroTk": 30
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_10",
+   "name": "DSR-12",
+   "data": {
+    "retailers": 19,
+    "hasRequest": 16,
+    "active": 15,
+    "target": 10,
+    "qrTarget": 19,
+    "qrSuccess": 18,
+    "wrongQr": 0,
+    "outside100": 0,
+    "latePhoto": 1,
+    "sqrAmt": 14000,
+    "trxRet": 15,
+    "zeroTk": 4
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_11",
+   "name": "DSR-13",
+   "data": {
+    "retailers": 39,
+    "hasRequest": 9,
+    "active": 5,
+    "target": 12,
+    "qrTarget": 39,
+    "qrSuccess": 31,
+    "wrongQr": 0,
+    "outside100": 0,
+    "latePhoto": 0,
+    "sqrAmt": 4630,
+    "trxRet": 6,
+    "zeroTk": 33
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_12",
+   "name": "DSR-14",
+   "data": {
+    "retailers": 36,
+    "hasRequest": 7,
+    "active": 6,
+    "target": 12,
+    "qrTarget": 36,
+    "qrSuccess": 22,
+    "wrongQr": 1,
+    "outside100": 1,
+    "latePhoto": 0,
+    "sqrAmt": 8637,
+    "trxRet": 7,
+    "zeroTk": 29
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_13",
+   "name": "DSR-15",
+   "data": {
+    "retailers": 20,
+    "hasRequest": 1,
+    "active": 1,
+    "target": 10,
+    "qrTarget": 20,
+    "qrSuccess": 18,
+    "wrongQr": 0,
+    "outside100": 0,
+    "latePhoto": 0,
+    "sqrAmt": 600,
+    "trxRet": 1,
+    "zeroTk": 19
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_14",
+   "name": "DSR-16",
+   "data": {
+    "retailers": 34,
+    "hasRequest": 11,
+    "active": 4,
+    "target": 11,
+    "qrTarget": 34,
+    "qrSuccess": 8,
+    "wrongQr": 0,
+    "outside100": 0,
+    "latePhoto": 0,
+    "sqrAmt": 2635,
+    "trxRet": 9,
+    "zeroTk": 25
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_15",
+   "name": "DSR-17",
+   "data": {
+    "retailers": 27,
+    "hasRequest": 3,
+    "active": 2,
+    "target": 10,
+    "qrTarget": 27,
+    "qrSuccess": 0,
+    "wrongQr": 0,
+    "outside100": 0,
+    "latePhoto": 0,
+    "sqrAmt": 1594,
+    "trxRet": 2,
+    "zeroTk": 25
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_16",
+   "name": "DSR-18",
+   "data": {
+    "retailers": 25,
+    "hasRequest": 15,
+    "active": 14,
+    "target": 10,
+    "qrTarget": 25,
+    "qrSuccess": 20,
+    "wrongQr": 0,
+    "outside100": 0,
+    "latePhoto": 0,
+    "sqrAmt": 16016,
+    "trxRet": 14,
+    "zeroTk": 11
+   }
+  }
+ ],
+ "retailers": [
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_1",
+   "items": [
+    {
+     "code": "A106124",
+     "name": "Jononi Telecom-2",
+     "amt": 250,
+     "rem": 50,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R0383485",
+     "name": "Toslim Telecom",
+     "amt": 509,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R0438604",
+     "name": "B.K. Sohel Telecom",
+     "amt": 458,
+     "rem": 0,
+     "done": true,
+     "vis": false
+    },
+    {
+     "code": "R11629389",
+     "name": "Modina Telecom",
+     "amt": 2144,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R11646379",
+     "name": "Sopna Studio & computer park",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R11654039",
+     "name": "Jafar Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R11654425",
+     "name": "Bismillah Store",
+     "amt": 1745,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R12548347",
+     "name": "Ety Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12862491",
+     "name": "Sakil Tel",
+     "amt": 1447,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R12939032",
+     "name": "Sajid Mobile Banking",
+     "amt": 548,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R12991694",
+     "name": "Jahangir Telecom & stationary",
+     "amt": 388,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R13107665",
+     "name": "Hasen Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R13247499",
+     "name": "Aklima telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R13381767",
+     "name": "Ealish store",
+     "amt": 100,
+     "rem": 200,
+     "done": false,
+     "vis": false,
+     "wrong": true
+    },
+    {
+     "code": "RR11735012",
+     "name": "Odoy Farmache",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR11781214",
+     "name": "Rubel Store",
+     "amt": 916,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR20606831",
+     "name": "Salauddin Store",
+     "amt": 200,
+     "rem": 100,
+     "done": false,
+     "vis": false,
+     "late": true
+    },
+    {
+     "code": "RR42907481",
+     "name": "Hashem Store",
+     "amt": 1076,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR47925396",
+     "name": "Alok Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48623255",
+     "name": "Rahaman kornar",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48655239",
+     "name": "Four Star Telecom",
+     "amt": 1324,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR48719825",
+     "name": "Islam Store",
+     "amt": 1116,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR48719977",
+     "name": "Saiful",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR91118823",
+     "name": "Jonony Telecom",
+     "amt": 82,
+     "rem": 218,
+     "done": false,
+     "vis": true
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_2",
+   "items": [
+    {
+     "code": "A036071",
+     "name": "GULF TRAVELS & TELECOM",
+     "amt": 326,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "A036552",
+     "name": "FANTASY TELECOM",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A048744",
+     "name": "Alam Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A048746",
+     "name": "Mahin Telecom",
+     "amt": 599,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "A048758",
+     "name": "Fantasy Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A053485",
+     "name": "S.M. telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A118015",
+     "name": "B R B Department Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R0052622",
+     "name": "Ma-Baba Telecom",
+     "amt": 398,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R0054295",
+     "name": "Ananna Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R0331126",
+     "name": "Alam Traders",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0365325",
+     "name": "salam store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R0396710",
+     "name": "Abid Telecom-1",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0442126",
+     "name": "Suban telecom",
+     "amt": 879,
+     "rem": 0,
+     "done": true,
+     "vis": false,
+     "late": true
+    },
+    {
+     "code": "R1002157",
+     "name": "Madina Pharmacy",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R1007915",
+     "name": "Ma Kali Stor",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R1010713",
+     "name": "T.i Pharmecy",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R1011055",
+     "name": "S S Confectionery",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R11627970",
+     "name": "Brothers Gallery",
+     "amt": 398,
+     "rem": 0,
+     "done": true,
+     "vis": false
+    },
+    {
+     "code": "R11633537",
+     "name": "Shipon telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12548329",
+     "name": "Ma Baba Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12574031",
+     "name": "Jonal store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12688456",
+     "name": "Farhan Store",
+     "amt": 294,
+     "rem": 6,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12826782",
+     "name": "",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12942534",
+     "name": "Imam Telecom 3",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR11754162",
+     "name": "Jamal Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR47913101",
+     "name": "Joy Ma Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48122907",
+     "name": "Riaz Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48720030",
+     "name": "Sheba Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48720072",
+     "name": "Mustafiz Computer",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR91111603",
+     "name": "Jononi Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR91111749",
+     "name": "Rafiq Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR91118826",
+     "name": "RSE AKTL Sitakunda",
+     "amt": 896,
+     "rem": 0,
+     "done": true,
+     "vis": false,
+     "late": true
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_3",
+   "items": [
+    {
+     "code": "A045135",
+     "name": "Pritom Telecom",
+     "amt": 202,
+     "rem": 98,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A048725",
+     "name": "Showpno Computer",
+     "amt": 199,
+     "rem": 101,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A048757",
+     "name": "Hashem Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A106120",
+     "name": "Samiya Telecom",
+     "amt": 599,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "A110482",
+     "name": "Nur Uddin Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "A117104",
+     "name": "Jonnoni Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R0331121",
+     "name": "Jerin Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R0417051",
+     "name": "Sajjad Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R0430464",
+     "name": "HS Computer",
+     "amt": 248,
+     "rem": 52,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R1003544",
+     "name": "Tanisa store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R1006413",
+     "name": "Jisan Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R11628067",
+     "name": "J.T.M Telecom & Furniture",
+     "amt": 420,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R11628122",
+     "name": "Nur Telecom & Digital Studio",
+     "amt": 100,
+     "rem": 200,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R11646396",
+     "name": "Tarek Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R11828480",
+     "name": "PRIME TELECOM-2",
+     "amt": 598,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R12698005",
+     "name": "Sattar Electronics",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12735502",
+     "name": "Baker Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12825849",
+     "name": "Habib Tel",
+     "amt": 228,
+     "rem": 72,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12826604",
+     "name": "Harun Tel",
+     "amt": 518,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R12826742",
+     "name": "Mobile City And Servicing Center",
+     "amt": 637,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR11741281",
+     "name": "Nurjahn Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR20606069",
+     "name": "Mojamel Store",
+     "amt": 593,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR20607045",
+     "name": "Anan Telecom",
+     "amt": 100,
+     "rem": 200,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR20634158",
+     "name": "Rohim Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR28210283",
+     "name": "King",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48431397",
+     "name": "Shohag Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48460574",
+     "name": "Jinat Pharmacy",
+     "amt": 1910,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR48526778",
+     "name": "Pornima Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48719927",
+     "name": "Ma Telecom & Digital Studio",
+     "amt": 879,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR48719981",
+     "name": "Bismillah Hotel",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48719983",
+     "name": "Sohan Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR91111779",
+     "name": "Akbar Tel",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_4",
+   "items": [
+    {
+     "code": "A101636",
+     "name": "Shohid Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false,
+     "wrong": true
+    },
+    {
+     "code": "A105850",
+     "name": "Shopno Collection",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A107201",
+     "name": "Ibrahim Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "A107439",
+     "name": "S.B Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A109173",
+     "name": "Hasan Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "A120206",
+     "name": "GR14 Sharma Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0331104",
+     "name": "Asma Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0354199",
+     "name": "Tirthow telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0354406",
+     "name": "Haji Ahmodur Rahman Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0371096",
+     "name": "Special Promo code_BP02",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R0411864",
+     "name": "AKTL Mirsharai D - 11",
+     "amt": 396,
+     "rem": 0,
+     "done": true,
+     "vis": false
+    },
+    {
+     "code": "R0423301",
+     "name": "Foyja Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0431277",
+     "name": "Farbaz  Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R11628703",
+     "name": "Ovi Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R11828520",
+     "name": "S.B Telecom-2",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12570279",
+     "name": "Asraf Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12688100",
+     "name": "Rakib Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12856331",
+     "name": "Harun Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12866206",
+     "name": "Rhisul Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12939057",
+     "name": "dulal Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12939061",
+     "name": "Salam store",
+     "amt": 186,
+     "rem": 114,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R13161148",
+     "name": "Ashik Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R13180515",
+     "name": "Online Center",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R13192956",
+     "name": "GPH TV",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R13225802",
+     "name": "Halk Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false,
+     "late": true
+    },
+    {
+     "code": "RR11781058",
+     "name": "SORAV STORE",
+     "amt": 319,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR11781200",
+     "name": "Emon Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR11781230",
+     "name": "Sohel Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR13471670",
+     "name": "Tarek store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR20629484",
+     "name": "Hakkani Corporation",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR20634172",
+     "name": "Haroun Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR33655486",
+     "name": "Harun store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR47600618",
+     "name": "Arafath Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48109066",
+     "name": "Belal Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48180834",
+     "name": "Shilpi Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48180916",
+     "name": "Ema Enterprice",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48184909",
+     "name": "Shilpi Telecom",
+     "amt": 44,
+     "rem": 256,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48240698",
+     "name": "Alamgir Store",
+     "amt": 1338,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR48295799",
+     "name": "sovon telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48413875",
+     "name": "Kamal Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48507688",
+     "name": "Niloy telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48507743",
+     "name": "shohel store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48526735",
+     "name": "Jamal Store",
+     "amt": 499,
+     "rem": 0,
+     "done": true,
+     "vis": false
+    },
+    {
+     "code": "RR48600721",
+     "name": "Jakaria Masud",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48600795",
+     "name": "Alim Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48623269",
+     "name": "Bikash  Telecom",
+     "amt": 397,
+     "rem": 0,
+     "done": true,
+     "vis": false
+    },
+    {
+     "code": "RR48641395",
+     "name": "rabbani Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48719884",
+     "name": "All you need",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48719887",
+     "name": "Bismillah omeo",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48719928",
+     "name": "FNF Mobile Center",
+     "amt": 150,
+     "rem": 150,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR91111612",
+     "name": "Babor Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_5",
+   "items": [
+    {
+     "code": "A036504",
+     "name": "RASHA TELECOM",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "A101632",
+     "name": "Shilpi Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0347977",
+     "name": "Taspia Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0393420",
+     "name": "Iqbal Telecom Center",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false,
+     "wrong": true
+    },
+    {
+     "code": "R11586433",
+     "name": "Arfa Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R11598704",
+     "name": "Bismillah Telecom and Stationary",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R11628775",
+     "name": "Al Karim Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R11628879",
+     "name": "Ma Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R11628925",
+     "name": "Arafat & Brothers Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R11828529",
+     "name": "Iqbal Telecom Center-2",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12614147",
+     "name": "Bhundhu Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12625352",
+     "name": "Jafor Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12732760",
+     "name": "Shamim Enterprise",
+     "amt": 20,
+     "rem": 280,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12735598",
+     "name": "Jom Jom Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12788724",
+     "name": "Jonota Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R13186867",
+     "name": "University Engineering",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R13349182",
+     "name": "Rahul",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR11781032",
+     "name": "TIPU TEL",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR13479454",
+     "name": "Patama Tel",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR20628823",
+     "name": "MONSUR STORE",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR20634175",
+     "name": "PROMES TEL",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR22866757",
+     "name": "MULANA TEL",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR47604555",
+     "name": "Dot com",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR47671891",
+     "name": "Arafath Store Urban",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR47948293",
+     "name": "Noyan Tel",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48503086",
+     "name": "Kalam Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48549194",
+     "name": "Faria Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48600806",
+     "name": "Sohel teleco",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48617166",
+     "name": "Kopil Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48719889",
+     "name": "SABBIR",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48720035",
+     "name": "Sohid",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_6",
+   "items": [
+    {
+     "code": "A036540",
+     "name": "JARIN TELECOM",
+     "amt": 199,
+     "rem": 101,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A051093",
+     "name": "BL Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A101615",
+     "name": "Khokon Fashion",
+     "amt": 400,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "A110470",
+     "name": "SM Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "A112272",
+     "name": "JS Telecom & Computer",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A115721",
+     "name": "Faruk Telecom",
+     "amt": 281,
+     "rem": 19,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0354407",
+     "name": "NUR UDDIN STORE",
+     "amt": 397,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R11598702",
+     "name": "Smart Telecom",
+     "amt": 870,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R11633671",
+     "name": "Ibrahim Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R11646446",
+     "name": "Studio Point",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12485218",
+     "name": "ety telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12570615",
+     "name": "Jisan photo",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12688120",
+     "name": "Shakil Telecom and Mobile Servicing",
+     "amt": 100,
+     "rem": 200,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12703780",
+     "name": "Kamal Store",
+     "amt": 799,
+     "rem": 0,
+     "done": true,
+     "vis": false
+    },
+    {
+     "code": "R12703805",
+     "name": "Harun Tel",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12788639",
+     "name": "Umayer Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12788694",
+     "name": "Roju Store",
+     "amt": 310,
+     "rem": 0,
+     "done": true,
+     "vis": false
+    },
+    {
+     "code": "R12862959",
+     "name": "Rifath Tel",
+     "amt": 569,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R13027737",
+     "name": "Korim Computer",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R13061708",
+     "name": "Imam Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R13107273",
+     "name": "Sonameya Store",
+     "amt": 336,
+     "rem": 0,
+     "done": true,
+     "vis": false
+    },
+    {
+     "code": "R13147226",
+     "name": "Kamal And Brothers",
+     "amt": 815,
+     "rem": 0,
+     "done": true,
+     "vis": false
+    },
+    {
+     "code": "RR28223180",
+     "name": "Ridom Telecom",
+     "amt": 528,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR48220722",
+     "name": "K.B ENTERPRISE",
+     "amt": 739,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR48507716",
+     "name": "Shilpi Telecom",
+     "amt": 1175,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_7",
+   "items": [
+    {
+     "code": "A036530",
+     "name": "ASHRAF TELECOM",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "A036542",
+     "name": "NAZMUL TELECOM",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "A036546",
+     "name": "EVAN COOLING CORNER",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0396258",
+     "name": "Shilpe Mobile dot com - 2",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0417723",
+     "name": "T.R Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R11629557",
+     "name": "Alifa Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R11834533",
+     "name": "Karim Computer Zone",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false,
+     "wrong": true
+    },
+    {
+     "code": "R12643154",
+     "name": "Totul Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12732849",
+     "name": "Joshi Tel",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12869235",
+     "name": "Rakib Telcom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR20606632",
+     "name": "Sumon Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR20629480",
+     "name": "Towhid & Son's",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR47620328",
+     "name": "Parvez Tel",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR47620331",
+     "name": "Harun Cosmatic",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR47658666",
+     "name": "Modi Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48109059",
+     "name": "Rashid Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48465018",
+     "name": "Atik telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48489707",
+     "name": "Sumaiya Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48719933",
+     "name": "Mir Electronic",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR91118839",
+     "name": "Mahin Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_8",
+   "items": [
+    {
+     "code": "A101626",
+     "name": "Akbar Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "A104712",
+     "name": "Foyeza Electric",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R0331101",
+     "name": "Pushpo Telecom-2",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0331109",
+     "name": "Ishaq Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0417724",
+     "name": "Arfan Telecom 2",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R11828577",
+     "name": "Ishaq Store-2",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12645054",
+     "name": "Mahin Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R13221589",
+     "name": "Anan St",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR11735418",
+     "name": "SAYEM TEL",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR11781041",
+     "name": "Kalam Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR20634194",
+     "name": "NAZROUL STORE",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR28232989",
+     "name": "TISHA TELECOM",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR42907492",
+     "name": "Faruk Teleco",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR47616249",
+     "name": "Nobi Telacom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR47658641",
+     "name": "Hakim Store Urban",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48221970",
+     "name": "GR14 Ahamedia IT Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48256332",
+     "name": "Abdul al mamun",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48526768",
+     "name": "Joynal enter",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48719908",
+     "name": "Nizam",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_9",
+   "items": [
+    {
+     "code": "A036537",
+     "name": "SUKUMAR STORE",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "A036570",
+     "name": "TAMIM STORE",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A101627",
+     "name": "K.B Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A101628",
+     "name": "Mamun Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A107527",
+     "name": "MOBILE TOUCH",
+     "amt": 837,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "A111288",
+     "name": "Poshpho Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "A117106",
+     "name": "Barua Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0411211",
+     "name": "AKTL (Sitakunda)BP 7",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R1012674",
+     "name": "Vai Vai Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12645149",
+     "name": "Sazzasd Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R13061687",
+     "name": "Nuruddin Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R13147802",
+     "name": "Randy Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R13219139",
+     "name": "Dipok Sen",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R13270683",
+     "name": "Ujjal Store 17",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR11744272",
+     "name": "Chobi Colling",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR20607922",
+     "name": "MOHAMODEYA LIB",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR42916538",
+     "name": "Barun Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR47925422",
+     "name": "Electric vision",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR47948302",
+     "name": "Joynal Tel  poto",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR47948303",
+     "name": "Intercom Telecom",
+     "amt": 20,
+     "rem": 280,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR47948304",
+     "name": "Alam Depart Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48222838",
+     "name": "K.B ENTERPRISE",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48222979",
+     "name": "Bhai Bhai Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48526761",
+     "name": "Raj Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48549637",
+     "name": "Food Garden",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48582962",
+     "name": "Goni Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48623283",
+     "name": "Joynal Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48644441",
+     "name": "Safi Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48719852",
+     "name": "Antika Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48720040",
+     "name": "Kishan Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48720065",
+     "name": "Rifat Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48720067",
+     "name": "Saddam Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_10",
+   "items": [
+    {
+     "code": "A036562",
+     "name": "Prime telecom",
+     "amt": 1298,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "A104895",
+     "name": "Jewel Pharmachy",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A109179",
+     "name": "Sohel Store",
+     "amt": 897,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "A117103",
+     "name": "Orkhit telecom",
+     "amt": 1048,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "A119728",
+     "name": "Belal Store",
+     "amt": 1295,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "A120201",
+     "name": "Puspo Enterprice",
+     "amt": 717,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R0331100",
+     "name": "KB telecom",
+     "amt": 300,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R11628719",
+     "name": "M.K Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12485152",
+     "name": "Hamim Store",
+     "amt": 488,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R12485160",
+     "name": "Zakia Store",
+     "amt": 1490,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R12546217",
+     "name": "Sara Electronics",
+     "amt": 1312,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR11753761",
+     "name": "S K tel",
+     "amt": 399,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR42922796",
+     "name": "S. T Enterprise",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR47948310",
+     "name": "Jamal Larki",
+     "amt": 1430,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR47948311",
+     "name": "Any Store",
+     "amt": 1438,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR48180917",
+     "name": "Sen telecom",
+     "amt": 460,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR48465038",
+     "name": "Monihar photostat",
+     "amt": 659,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR48526767",
+     "name": "M.D Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48720009",
+     "name": "Munna",
+     "amt": 769,
+     "rem": 0,
+     "done": true,
+     "vis": false,
+     "late": true
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_11",
+   "items": [
+    {
+     "code": "A036510",
+     "name": "Redwan Store",
+     "amt": 1334,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "A045099",
+     "name": "RAFA  STORE",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A051098",
+     "name": "M/S Elias Enterprise",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "A053483",
+     "name": "Hares Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A118006",
+     "name": "Maa Telecom",
+     "amt": 397,
+     "rem": 0,
+     "done": true,
+     "vis": false
+    },
+    {
+     "code": "R0331112",
+     "name": "Sarwar Auto Pass",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R0347978",
+     "name": "Nimtola Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R0352136",
+     "name": "Bhaibon Telecom and Cosmetics",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R0395242",
+     "name": "S.S Enterprise",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R0404859",
+     "name": "Mobile Surgery",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R0404862",
+     "name": "Sohel Departmental",
+     "amt": 536,
+     "rem": 0,
+     "done": true,
+     "vis": false
+    },
+    {
+     "code": "R11629411",
+     "name": "R.R. A Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12548339",
+     "name": "Ovi Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12642906",
+     "name": "Habibi Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12664146",
+     "name": "Bismillah Traders",
+     "amt": 149,
+     "rem": 151,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12735660",
+     "name": "Tamim Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12795200",
+     "name": "Habib Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12913087",
+     "name": "Onik Tel",
+     "amt": 1331,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R12977699",
+     "name": "Taleb Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R13113325",
+     "name": "Salam Store",
+     "amt": 883,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R13272850",
+     "name": "Pankog Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR13471697",
+     "name": "Bismillah Pharmacy",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR13479449",
+     "name": "Mahmud Enterprise",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR20607932",
+     "name": "Sha Amant Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR20637491",
+     "name": "Tazu Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR42907529",
+     "name": "Shosi Enterprise",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR47913127",
+     "name": "Coton Tel",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR47948314",
+     "name": "Jononi Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48250434",
+     "name": "FARUQ TELECOM",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48295765",
+     "name": "Ripan Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48526807",
+     "name": "Emon Telec",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48582985",
+     "name": "Masum Tel",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48600746",
+     "name": "GR14 K.B ENTERPRISE",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48600767",
+     "name": "Redowan St",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48617169",
+     "name": "Nohan Tel",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48641418",
+     "name": "Kobir Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48644486",
+     "name": "Hasan Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48719985",
+     "name": "Munna",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48720070",
+     "name": "Helal Tel Md Helal Mia",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_12",
+   "items": [
+    {
+     "code": "A051104",
+     "name": "Shakil Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A101644",
+     "name": "Ma Hardware",
+     "amt": 529,
+     "rem": 0,
+     "done": true,
+     "vis": false
+    },
+    {
+     "code": "A120196",
+     "name": "GR14  Sujan Store",
+     "amt": 429,
+     "rem": 0,
+     "done": true,
+     "vis": false
+    },
+    {
+     "code": "R0399077",
+     "name": "DotCom Enterprice",
+     "amt": 499,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R0408609",
+     "name": "Hamdan Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R0411869",
+     "name": "AKTL Mirsharai D - 15",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R0440105",
+     "name": "Raju St.",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R1008354",
+     "name": "Bismillah Electronic",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R11657297",
+     "name": "FM Enterprise",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R11829176",
+     "name": "Ma Hardware-2",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12486446",
+     "name": "Arafat telecom Rb",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12570729",
+     "name": "Rakib Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12625515",
+     "name": "Deb Telecom",
+     "amt": 4634,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R12939063",
+     "name": "Masum Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R13089475",
+     "name": "Rakib Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R13180955",
+     "name": "Rakin Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R13247111",
+     "name": "Deb Telecom 2",
+     "amt": 1378,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR11735432",
+     "name": "EDRESS STORE",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR11753614",
+     "name": "MIZAN STORE",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR11753755",
+     "name": "Esa Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR11769729",
+     "name": "Shajan Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR20634217",
+     "name": "Salaudeen Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR27129471",
+     "name": "Sohel Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR27129473",
+     "name": "Sakib Telicom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR28232992",
+     "name": "Rofiq Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR47678218",
+     "name": "Kamal Store Urban",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR47913139",
+     "name": "Joy Baba Tel",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR47913140",
+     "name": "Ma  Baba Tel",
+     "amt": 869,
+     "rem": 0,
+     "done": true,
+     "vis": false,
+     "out": true
+    },
+    {
+     "code": "RR47948318",
+     "name": "Ma Tel",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48113013",
+     "name": "MamunST",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48256334",
+     "name": "Mohiuddin Stoor",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48526783",
+     "name": "Sabuj Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48600754",
+     "name": "Rony Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48719903",
+     "name": "ABBAS",
+     "amt": 299,
+     "rem": 1,
+     "done": false,
+     "vis": false,
+     "wrong": true
+    },
+    {
+     "code": "RR48720014",
+     "name": "Hrday",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48720060",
+     "name": "Rahim Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_13",
+   "items": [
+    {
+     "code": "A101650",
+     "name": "Tarek Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A101652",
+     "name": "Shahana Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A104716",
+     "name": "Selim Enterprice",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R11628134",
+     "name": "Arif Telecom and Mobile Service",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R11829188",
+     "name": "Shahana Store-2",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R11836181",
+     "name": "POLASH STORE",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12688352",
+     "name": "Jamshed Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12863090",
+     "name": "Nur Alam",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12866299",
+     "name": "Babar Dhowa",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12866321",
+     "name": "Sakl Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12866388",
+     "name": "RATUL Store",
+     "amt": 600,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R12866529",
+     "name": "Rakib Tel",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12977685",
+     "name": "Yasen Tel",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R13247545",
+     "name": "Babor  statinary",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR11781244",
+     "name": "SALIM STORE",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR20637497",
+     "name": "EKRAM STORE",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR47630356",
+     "name": "forhad telec",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR47913136",
+     "name": "Mahi Tel",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48617205",
+     "name": "Rashid Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48720018",
+     "name": "Aynal",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_14",
+   "items": [
+    {
+     "code": "A036599",
+     "name": "JASIM UDDIN & BROTHERS",
+     "amt": 230,
+     "rem": 70,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A036610",
+     "name": "SHOTORUPA ELECTRONICS",
+     "amt": 211,
+     "rem": 89,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "A051103",
+     "name": "Ripon  Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "A111291",
+     "name": "ST Telecom-3",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R0381697",
+     "name": "Post in center",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0386661",
+     "name": "Care Plus",
+     "amt": 400,
+     "rem": 0,
+     "done": true,
+     "vis": false
+    },
+    {
+     "code": "R0391528",
+     "name": "S.M.D Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0393419",
+     "name": "Adorsho Library",
+     "amt": 253,
+     "rem": 47,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0430465",
+     "name": "Sazzad Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0447738",
+     "name": "MEHEDI ENTERPRISE",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R11829393",
+     "name": "Shova Sajib Decorators",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12548302",
+     "name": "ARAFAT STORE",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12548311",
+     "name": "Famous Telecom",
+     "amt": 400,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R12573975",
+     "name": "TS  STORE",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12795227",
+     "name": "MIAJAN BHUIYAN STATIONARY",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R13089500",
+     "name": "JAHED STORE",
+     "amt": 199,
+     "rem": 101,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R13219119",
+     "name": "ISLAMIA LIBRARY",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R13246470",
+     "name": "Alok Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR11754183",
+     "name": "Noorudden Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR20628227",
+     "name": "Islam Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR20634180",
+     "name": "SAEID SAMIR AKSA",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR20634210",
+     "name": "Kanchon Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR42907510",
+     "name": "Towhid Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR42916553",
+     "name": "M Y TELECOM",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR47913143",
+     "name": "Alam Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48122863",
+     "name": "Khaja Store",
+     "amt": 599,
+     "rem": 0,
+     "done": true,
+     "vis": false
+    },
+    {
+     "code": "RR48221430",
+     "name": "Jasim Uddin Brother -2",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48295757",
+     "name": "ALI TELECOM",
+     "amt": 303,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR48422451",
+     "name": "Ifat  Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48526719",
+     "name": "Ramjan Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48549208",
+     "name": "Tanha Enterprise",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48549221",
+     "name": "Kobir Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48573418",
+     "name": "Siddiqe Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48623296",
+     "name": "PINKEY FASHION",
+     "amt": 40,
+     "rem": 260,
+     "done": false,
+     "vis": false
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_15",
+   "items": [
+    {
+     "code": "A111914",
+     "name": "Modina Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "A121348",
+     "name": "Zakir Store (2)",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0332449",
+     "name": "Faruk Mobile Center",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0383483",
+     "name": "Brother's Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R0395241",
+     "name": "Habib Store",
+     "amt": 749,
+     "rem": 0,
+     "done": true,
+     "vis": false
+    },
+    {
+     "code": "R12688153",
+     "name": "Habib Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R13033014",
+     "name": "Nuruddin Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R13383674",
+     "name": "Joy Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR11707931",
+     "name": "Abdur Rab",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR11735015",
+     "name": "Jononi Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR28222976",
+     "name": "MULANA TEL",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR28223154",
+     "name": "MOULANA  TEL",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR42907503",
+     "name": "Kobir Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48109063",
+     "name": "Almas Telecom",
+     "amt": 845,
+     "rem": 0,
+     "done": true,
+     "vis": false
+    },
+    {
+     "code": "RR48109074",
+     "name": "Atiqul Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48295775",
+     "name": "iQBALStore",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48295786",
+     "name": "jolil telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48549605",
+     "name": "Chobi Colling",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48582939",
+     "name": "Jononi Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48582974",
+     "name": "Rajon Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48600797",
+     "name": "Manik Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48719868",
+     "name": "Nabil",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48719869",
+     "name": "Mustafiz Computer",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48719870",
+     "name": "Student Library",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR91111758",
+     "name": "Ba14 Abu Taher",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR91117845",
+     "name": "Ma Jonony Telecome",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR91117846",
+     "name": "Jononi Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_16",
+   "items": [
+    {
+     "code": "A118548",
+     "name": "Bhuiyan Decorators",
+     "amt": 733,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R0331120",
+     "name": "Jonony Telecom",
+     "amt": 1199,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R0417725",
+     "name": "Jonony Telecom",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R1002819",
+     "name": "Rubel Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12642878",
+     "name": "Joshim Store",
+     "amt": 1180,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R12745120",
+     "name": "Habib Store",
+     "amt": 4114,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R12795176",
+     "name": "Tarek Store",
+     "amt": 499,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R12856410",
+     "name": "Rakib Tel",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12977761",
+     "name": "Hasan Stor",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "R12977767",
+     "name": "Mahin Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "R12977792",
+     "name": "Rony Stor",
+     "amt": 500,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R13027765",
+     "name": "Shakib Telecom",
+     "amt": 500,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "R13103229",
+     "name": "Helal store",
+     "amt": 499,
+     "rem": 0,
+     "done": true,
+     "vis": false
+    },
+    {
+     "code": "R13147666",
+     "name": "Kalam St",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR47624066",
+     "name": "Joy Telecom",
+     "amt": 1517,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR47913147",
+     "name": "Nuruddin Store",
+     "amt": 300,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR48112881",
+     "name": "Aminul Store",
+     "amt": 397,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR48422436",
+     "name": "Karim Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48431352",
+     "name": "Mamun Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48549222",
+     "name": "Joynal Store",
+     "amt": 454,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR48582967",
+     "name": "Ohona Mobile",
+     "amt": 1976,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    },
+    {
+     "code": "RR48600763",
+     "name": "Anower Store",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48720025",
+     "name": "Saiful",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": true
+    },
+    {
+     "code": "RR48720055",
+     "name": "Online Shop",
+     "amt": 0,
+     "rem": 300,
+     "done": false,
+     "vis": false
+    },
+    {
+     "code": "RR48720062",
+     "name": "Jononi Store",
+     "amt": 2148,
+     "rem": 0,
+     "done": true,
+     "vis": true
+    }
+   ]
+  }
+ ]
+}
