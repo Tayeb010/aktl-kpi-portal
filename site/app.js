@@ -38,8 +38,8 @@ const ROLE_LABEL = { admin: 'Admin', viewall: 'Manager / supervisor', dso: 'DSO'
 
 /* ---------- Bangla / English labels for DSR screens ---------- */
 const TX = {
-  en: { home: 'Home', retailersTab: 'Retailers', team: 'Team', trx: 'Transaction active retailers', trxSub: 'Retailers with 300 Tk+ C2S via Super QR, against your C2S target', achieved: 'Achieved', target: 'Target', remaining: 'Remaining', qr: 'QR visibility', share: 'Super QR share of C2S', hasReq: 'Retailers with a request', ofRet: 'of retailers', sqrAmt: 'Super QR amount', trxRetSub: '{n} retailers transacted', zeroTk: 'Retailers at 0 Tk', zeroSub: 'no completed Super QR yet', fWrong: 'Wrong QR', fOut: 'Outside 100m', fLate: 'Late photo', req: 'Requests completed', ticket: 'avg ticket', inc: 'SQR incentive', vis: 'Visibility', trxInc: 'Transaction', checks: 'QR photo checks', wrong: 'Wrong QR placed', outside: 'Placed outside 100m', late: 'Photo 15+ min after visit', split: 'Robi vs Cirkle', active: 'Active retailers', requests: 'Requests', sqr: 'Super QR Tk', c2s: 'C2S Tk', period: 'Period', updated: 'Updated', myReport: 'My report image', stA: 'Achieved', stP: 'In progress', stB: 'Behind', need: 'needs Tk {n} more', tdone: '300 Tk done', noqr: 'QR photo missing', fNeed: 'Need Tk', fQr: 'QR missing', fDone: 'Done', fAll: 'All', retHead: 'Retailers to push', retLead: 'Closest to the 300 Tk target first. Each one you finish adds 1 to your achievement.', teamHead: 'Team summary', dsrsDone: 'DSRs at target', noRet: 'No retailers in this list.', of: 'of', allRet: 'See all {n} retailers', notYet: 'Your figures are not published yet. Check again after the next update.', signOut: 'Sign out' },
-  bn: { home: 'হোম', retailersTab: 'রিটেইলার', team: 'টিম', trx: 'লেনদেন সক্রিয় রিটেইলার', trxSub: 'Super QR দিয়ে ৩০০ টাকা+ C2S করা রিটেইলার', achieved: 'অর্জন', target: 'টার্গেট', remaining: 'বাকি', qr: 'QR দৃশ্যমানতা', share: 'C2S-এ Super QR অংশ', hasReq: 'রিকোয়েস্ট করা রিটেইলার', ofRet: 'রিটেইলারের', sqrAmt: 'Super QR টাকা', trxRetSub: '{n} রিটেইলার লেনদেন করেছে', zeroTk: '০ টাকার রিটেইলার', zeroSub: 'এখনো Super QR সম্পন্ন হয়নি', fWrong: 'ভুল QR', fOut: '১০০ মি. বাইরে', fLate: 'দেরিতে ছবি', req: 'সম্পন্ন রিকোয়েস্ট', ticket: 'গড় টিকেট', inc: 'SQR ইনসেনটিভ', vis: 'দৃশ্যমানতা', trxInc: 'লেনদেন', checks: 'QR ছবি যাচাই', wrong: 'ভুল QR লাগানো', outside: '১০০ মিটারের বাইরে', late: 'ভিজিটের ১৫+ মিনিট পরে ছবি', split: 'Robi বনাম Cirkle', active: 'সক্রিয় রিটেইলার', requests: 'রিকোয়েস্ট', sqr: 'Super QR টাকা', c2s: 'C2S টাকা', period: 'সময়কাল', updated: 'আপডেট', myReport: 'আমার রিপোর্ট ছবি', stA: 'অর্জিত', stP: 'চলমান', stB: 'পিছিয়ে', need: 'আরও {n} টাকা দরকার', tdone: '৩০০ টাকা পূর্ণ', noqr: 'QR ছবি নেই', fNeed: 'টাকা বাকি', fQr: 'QR নেই', fDone: 'পূর্ণ', fAll: 'সব', retHead: 'যেসব রিটেইলারে কাজ বাকি', retLead: '৩০০ টাকার সবচেয়ে কাছের রিটেইলার আগে। প্রতিটি পূর্ণ হলে আপনার অর্জন ১ বাড়বে।', teamHead: 'টিম সারাংশ', dsrsDone: 'টার্গেট পূর্ণ DSR', noRet: 'এই তালিকায় কোনো রিটেইলার নেই।', of: 'এর মধ্যে', allRet: 'সব {n} রিটেইলার দেখুন', notYet: 'আপনার তথ্য এখনো প্রকাশ হয়নি। পরের আপডেটের পর আবার দেখুন।', signOut: 'সাইন আউট' }
+  en: { home: 'Home', retailersTab: 'Retailers', team: 'Team', trx: 'Transaction active retailers', trxSub: 'Retailers with 300 Tk+ C2S via Super QR, against your C2S target', achieved: 'Achieved', target: 'Target', remaining: 'Remaining', qr: 'QR visibility', share: 'Super QR share of C2S', hasReq: 'Retailers with a request', ofRet: 'of retailers', sqrAmt: 'Super QR amount', trxRetSub: '{n} retailers transacted', zeroTk: 'Retailers at 0 Tk', zeroSub: 'no completed Super QR yet', fWrong: 'Wrong QR', fOut: 'Outside 100m', fLate: 'Late photo', req: 'Requests completed', ticket: 'avg ticket', inc: 'SQR incentive', vis: 'Visibility', trxInc: 'Transaction', checks: 'QR Visibility checks', totRet: 'Total retailers', c2sT: '300 Tk C2S target', visDone: 'QR visibility done', visRem: 'Visibility remaining', visHead: 'QR visibility', visSub: 'QR visibility target = all your retailers', trxTot: 'Transaction vs total retailers', trxTotSub: '300 Tk+ retailers out of all retailers', trxC2s: 'Transaction vs C2S target', trxC2sSub: '300 Tk+ retailers against C2S target retailers', dsrAch: 'DSRs achieved C2S target', dsrAchSub: 'DSRs with transaction ≥ C2S target', vmLate: '15 min late photo', vmWrong: 'Wrong QR placed', vmOut: 'Placed outside 100m', wrong: 'Wrong QR placed', outside: 'Placed outside 100m', late: 'Photo 15+ min after visit', split: 'Robi vs Cirkle', active: 'Active retailers', requests: 'Requests', sqr: 'Super QR Tk', c2s: 'C2S Tk', period: 'Period', updated: 'Updated', myReport: 'My report image', stA: 'Achieved', stP: 'In progress', stB: 'Behind', need: 'needs Tk {n} more', tdone: '300 Tk done', noqr: 'QR Visibility missing', fNeed: 'Need Tk', fQr: 'QR Visibility missing', fDone: 'Done', fAll: 'All', retHead: 'Retailers to push', retLead: 'Closest to the 300 Tk target first. Each one you finish adds 1 to your achievement.', teamHead: 'Team summary', dsrsDone: 'DSRs at target', noRet: 'No retailers in this list.', of: 'of', allRet: 'See all {n} retailers', notYet: 'Your figures are not published yet. Check again after the next update.', signOut: 'Sign out' },
+  bn: { home: 'হোম', retailersTab: 'রিটেইলার', team: 'টিম', trx: 'লেনদেন সক্রিয় রিটেইলার', trxSub: 'Super QR দিয়ে ৩০০ টাকা+ C2S করা রিটেইলার', achieved: 'অর্জন', target: 'টার্গেট', remaining: 'বাকি', qr: 'QR দৃশ্যমানতা', share: 'C2S-এ Super QR অংশ', hasReq: 'রিকোয়েস্ট করা রিটেইলার', ofRet: 'রিটেইলারের', sqrAmt: 'Super QR টাকা', trxRetSub: '{n} রিটেইলার লেনদেন করেছে', zeroTk: '০ টাকার রিটেইলার', zeroSub: 'এখনো Super QR সম্পন্ন হয়নি', fWrong: 'ভুল QR', fOut: '১০০ মি. বাইরে', fLate: 'দেরিতে ছবি', req: 'সম্পন্ন রিকোয়েস্ট', ticket: 'গড় টিকেট', inc: 'SQR ইনসেনটিভ', vis: 'দৃশ্যমানতা', trxInc: 'লেনদেন', checks: 'QR দৃশ্যমানতা যাচাই', totRet: 'মোট রিটেইলার', c2sT: '৩০০ টাকা C2S টার্গেট', visDone: 'QR দৃশ্যমানতা সম্পন্ন', visRem: 'দৃশ্যমানতা বাকি', visHead: 'QR দৃশ্যমানতা', visSub: 'QR দৃশ্যমানতা টার্গেট = আপনার সব রিটেইলার', trxTot: 'মোট রিটেইলারের বিপরীতে লেনদেন', trxTotSub: 'সব রিটেইলারের মধ্যে ৩০০ টাকা+ রিটেইলার', trxC2s: 'C2S টার্গেটের বিপরীতে লেনদেন', trxC2sSub: 'C2S টার্গেট রিটেইলারের বিপরীতে ৩০০ টাকা+ রিটেইলার', dsrAch: 'C2S টার্গেট অর্জনকারী DSR', dsrAchSub: 'লেনদেন ≥ C2S টার্গেট', vmLate: '১৫ মিনিট দেরিতে ছবি', vmWrong: 'ভুল QR লাগানো', vmOut: '১০০ মিটারের বাইরে', wrong: 'ভুল QR লাগানো', outside: '১০০ মিটারের বাইরে', late: 'ভিজিটের ১৫+ মিনিট পরে ছবি', split: 'Robi বনাম Cirkle', active: 'সক্রিয় রিটেইলার', requests: 'রিকোয়েস্ট', sqr: 'Super QR টাকা', c2s: 'C2S টাকা', period: 'সময়কাল', updated: 'আপডেট', myReport: 'আমার রিপোর্ট ছবি', stA: 'অর্জিত', stP: 'চলমান', stB: 'পিছিয়ে', need: 'আরও {n} টাকা দরকার', tdone: '৩০০ টাকা পূর্ণ', noqr: 'QR দৃশ্যমানতা নেই', fNeed: 'টাকা বাকি', fQr: 'QR দৃশ্যমানতা নেই', fDone: 'পূর্ণ', fAll: 'সব', retHead: 'যেসব রিটেইলারে কাজ বাকি', retLead: '৩০০ টাকার সবচেয়ে কাছের রিটেইলার আগে। প্রতিটি পূর্ণ হলে আপনার অর্জন ১ বাড়বে।', teamHead: 'টিম সারাংশ', dsrsDone: 'টার্গেট পূর্ণ DSR', noRet: 'এই তালিকায় কোনো রিটেইলার নেই।', of: 'এর মধ্যে', allRet: 'সব {n} রিটেইলার দেখুন', notYet: 'আপনার তথ্য এখনো প্রকাশ হয়নি। পরের আপডেটের পর আবার দেখুন।', signOut: 'সাইন আউট' }
 };
 const T = (k, v) => { let s = (TX[st.lang] || TX.en)[k] || TX.en[k] || k; if (v) for (const x in v) s = s.replace('{' + x + '}', v[x]); return s; };
 
@@ -69,8 +69,8 @@ function calc(d) {
 }
 const status = p => p >= 1 ? { c: 'good', k: 'stA' } : p >= .5 ? { c: 'warn', k: 'stP' } : { c: 'bad', k: 'stB' };
 function localTotals() {
-  const t = { active: 0, target: 0, qrSuccess: 0, qrTarget: 0, sqrAmt: 0, c2sAmt: 0, n: 0, atTarget: 0 };
-  dsrList().forEach(d => { ['active', 'target', 'qrSuccess', 'qrTarget', 'sqrAmt', 'c2sAmt'].forEach(k => t[k] += +d[k] || 0); t.n++; if (d.target && d.active >= d.target) t.atTarget++; });
+  const t = { retailers: 0, active: 0, target: 0, qrSuccess: 0, qrTarget: 0, sqrAmt: 0, c2sAmt: 0, n: 0, atTarget: 0 };
+  dsrList().forEach(d => { ['retailers', 'active', 'target', 'qrSuccess', 'qrTarget', 'sqrAmt', 'c2sAmt'].forEach(k => t[k] += +d[k] || 0); t.n++; if (d.target && d.active >= d.target) t.atTarget++; });
   return t;
 }
 const periodText = b => { const p = (b && b.period) || {}; return p.from && p.to ? `${p.from} to ${p.to}` : 'Period not given'; };
@@ -272,14 +272,24 @@ function viewDsr(code, opt) {
     <div class="row1"><div><div class="lbl">${T('trx')}</div><div class="small muted">${T('trxSub')}</div></div><span class="chip ${stt.c}">${T(stt.k)}</span></div>
     <div class="main"><div class="big num">${nf(d.active)} <small>/ ${nf(d.target)}</small></div><div class="ring ${stt.c}" style="--p:${Math.min(100, c.pct * 100).toFixed(1)}"><b class="num">${pf(c.pct)}</b></div></div>
     <div class="bar" role="img" aria-label="${pf(c.pct)} of target"><i class="${stt.c}" style="width:${barW(c.pct)}"></i></div>
-    <div class="facts">
+    <div class="facts f5">
+      <div><span>${T('totRet')}</span><b class="num">${nf(d.retailers)}</b></div>
+      <div><span>${T('c2sT')}</span><b class="num">${nf(d.target)}</b></div>
       <div><span>${T('achieved')}</span><b class="num">${nf(d.active)}</b></div>
-      <div><span>${T('target')}</span><b class="num">${nf(d.target)}</b></div>
       <div class="rem"><span>${T('remaining')}</span><b class="num">${nf(c.rem)}</b></div>
       <div><span>%</span><b class="num">${pf(c.pct)}</b></div>
     </div>
   </article>
-  <div class="tiles">${kpiCards(d).map(k => `<article class="card tile"><div class="lbl">${esc(k.label)}</div><div class="v num${k.bad ? ' badv' : k.good ? ' goodv' : ''}">${esc(k.big)}</div>${k.pct != null ? `<div class="bar sm"><i class="${k.bar || ''}" style="width:${barW(k.pct)}"></i></div>` : ''}<p class="num">${esc(k.sub)}</p></article>`).join('')}</div>
+  <article class="card hero vis">
+    <div class="row1"><div><div class="lbl">${T('visHead')}</div><div class="small muted">${T('visSub')}</div></div><span class="chip ${status(c.vis / 0.9).c}">${pf(c.vis)}</span></div>
+    <div class="bar" role="img" aria-label="${pf(c.vis)} QR visibility"><i class="${status(c.vis / 0.9).c}" style="width:${barW(c.vis)}"></i></div>
+    <div class="facts f3">
+      <div><span>${T('totRet')}</span><b class="num">${nf(d.qrTarget)}</b></div>
+      <div><span>${T('visDone')}</span><b class="num">${nf(d.qrSuccess)}</b></div>
+      <div class="rem"><span>${T('visRem')}</span><b class="num">${nf(Math.max(0, (d.qrTarget || 0) - (d.qrSuccess || 0)))}</b></div>
+    </div>
+  </article>
+  <div class="tiles">${kpiCards(d).filter(k => k.id !== 'qr').map(k => `<article class="card tile"><div class="lbl">${esc(k.label)}</div><div class="v num${k.bad ? ' badv' : k.good ? ' goodv' : ''}">${esc(k.big)}</div>${k.pct != null ? `<div class="bar sm"><i class="${k.bar || ''}" style="width:${barW(k.pct)}"></i></div>` : ''}<p class="num">${esc(k.sub)}</p></article>`).join('')}</div>
   <div class="${hasSplit(d) ? 'grid2' : 'stack'}">
     <article class="card"><h3>${T('checks')}</h3><div class="flags">${flag(d.wrongQr, 'wrong')}${flag(d.outside100, 'outside')}${flag(d.latePhoto, 'late')}</div></article>
     ${hasSplit(d) ? `<article class="card"><h3>${T('split')}</h3><div class="tbl"><table><thead><tr><th></th><th class="r">Robi</th><th class="r">Cirkle</th></tr></thead><tbody>
@@ -294,8 +304,13 @@ function viewDsr(code, opt) {
 }
 const langToggle = () => `<div class="seg" role="group" aria-label="Language"><button data-act="lang" data-v="en" aria-pressed="${st.lang === 'en'}">EN</button><button data-act="lang" data-v="bn" aria-pressed="${st.lang === 'bn'}">বাং</button></div>`;
 
+function visNote(r) {
+  const why = [r.late && T('vmLate'), r.wrong && T('vmWrong'), r.out && T('vmOut')].filter(Boolean).join(', ');
+  if (r.vis && !why) return '';
+  return ` · <span class="no">${r.vis ? why : T('noqr') + (why ? ' - ' + why : '')}</span>`;
+}
 function retRow(r) {
-  return `<div class="li"><div class="n">${esc(r.name)}</div>${r.done ? `<div class="ok">${T('tdone')}</div>` : `<div class="need num">${T('need', { n: nf(r.rem) })}</div>`}<div class="s num">${esc(r.code)} · Tk ${nf(r.amt)} / 300${r.vis ? '' : ` · <span class="no">${T('noqr')}</span>`}${r.wrong ? ` · <span class="no">${T('fWrong')}</span>` : ''}${r.out ? ` · <span class="no">${T('fOut')}</span>` : ''}${r.late ? ` · <span class="no">${T('fLate')}</span>` : ''}</div>${r.done ? '' : `<div class="bar sm" style="grid-column:1/-1"><i style="width:${barW(r.amt / 300)}"></i></div>`}</div>`;
+  return `<div class="li"><div class="n">${esc(r.name)}</div>${r.done ? `<div class="ok">${T('tdone')}</div>` : `<div class="need num">${T('need', { n: nf(r.rem) })}</div>`}<div class="s num">${esc(r.code)} · Tk ${nf(r.amt)} / 300${visNote(r)}</div>${r.done ? '' : `<div class="bar sm" style="grid-column:1/-1"><i style="width:${barW(r.amt / 300)}"></i></div>`}</div>`;
 }
 function retailerList(code) {
   const all = st.rets[code] || [], f = ui.retFilter;
@@ -327,19 +342,20 @@ function viewTeam(forDsr) {
     t = localTotals(); ranking = dsrList().map(d => d);
   }
   const tp = t.target ? t.active / t.target : 0, p = st.profile;
+  if (!t.retailers) t = Object.assign({}, t, { retailers: t.qrTarget });   // QR target = number of retailers
   const rows = ranking ? ranking.map(d => ({ d, c: calc(d) })).sort((a, c) => c.c.pct - a.c.pct || (c.d.active || 0) - (a.d.active || 0)) : null;
   return `
   <section><h1 style="font-size:24px">${forDsr ? T('teamHead') : 'Team performance'}</h1><div style="margin-top:4px">${stampHtml()}</div></section>
   <div class="tiles">
-    <article class="card tile"><div class="lbl">${T('trx')}</div><div class="v num">${nf(t.active)} <small>/ ${nf(t.target)}</small></div><div class="bar sm"><i class="${status(tp).c}" style="width:${barW(tp)}"></i></div><p class="num">${pf(tp)}</p></article>
-    <article class="card tile"><div class="lbl">${T('dsrsDone')}</div><div class="v num">${nf(t.atTarget)} <small>/ ${nf(t.n)}</small></div></article>
+    ${t.retailers ? `<article class="card tile"><div class="lbl">${T('trxTot')}</div><div class="v num">${nf(t.active)} <small>/ ${nf(t.retailers)}</small></div><div class="bar sm"><i style="width:${barW(t.active / t.retailers)}"></i></div><p class="num">${pf(t.active / t.retailers)} · ${T('trxTotSub')}</p></article>` : ''}
+    <article class="card tile"><div class="lbl">${T('trxC2s')}</div><div class="v num">${nf(t.active)} <small>/ ${nf(t.target)}</small></div><div class="bar sm"><i class="${status(tp).c}" style="width:${barW(tp)}"></i></div><p class="num">${pf(tp)} · ${T('trxC2sSub')}</p></article>
     <article class="card tile"><div class="lbl">${T('qr')}</div><div class="v num">${pf(t.qrTarget ? t.qrSuccess / t.qrTarget : 0)}</div><p class="num">${nf(t.qrSuccess)} / ${nf(t.qrTarget)}</p></article>
-    ${t.c2sAmt ? `<article class="card tile"><div class="lbl">${T('share')}</div><div class="v num">${pf(t.sqrAmt / t.c2sAmt, 1)}</div><p class="num">Tk ${nf(t.sqrAmt)}</p></article>` : `<article class="card tile"><div class="lbl">${T('sqrAmt')}</div><div class="v num">Tk ${nf(t.sqrAmt)}</div><p class="num">${T('period')}: ${esc(periodText(st.live))}</p></article>`}
+    <article class="card tile"><div class="lbl">${T('dsrAch')}</div><div class="v num">${nf(t.atTarget)} <small>/ ${nf(t.n)}</small></div><div class="bar sm"><i class="${status(t.n ? t.atTarget / t.n : 0).c}" style="width:${barW(t.n ? t.atTarget / t.n : 0)}"></i></div><p class="num">${T('dsrAchSub')}</p></article>
   </div>
-  ${rows ? `<article class="card"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap"><h2>DSR ranking</h2><span class="small muted">By % of 300 Tk target${forDsr ? '' : ' · tap a DSR to open'}</span></div>
+  ${rows ? `<article class="card"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap"><h2>DSR ranking</h2><span class="small muted">By % of C2S target${forDsr ? '' : ' · tap a DSR to open'}</span></div>
     <div class="list">${rows.map((x, i) => {
       const s = status(x.c.pct);
-      const inner = `<span class="pos num">${i + 1}</span><span class="nm">${esc(x.d.name)}${p.role === 'dsr' && p.dsr_code === x.d.code ? ' <span class="chip good" style="font-size:11px;padding:1px 8px">You</span>' : ''}</span><span class="pc num">${pf(x.c.pct)}</span><span class="bar sm"><i class="${s.c}" style="width:${barW(x.c.pct)}"></i></span><span class="meta num">${nf(x.d.active)}/${nf(x.d.target)} active · QR ${pf(x.c.vis)}${forDsr ? '' : x.d.incTotal ? ` · Tk ${nf(x.d.incTotal)} incentive` : has(x.d, 'sqrAmt') ? ` · Tk ${nf(x.d.sqrAmt)} Super QR` : ''}${!forDsr && x.c.flags ? ` · <span class="no">${x.c.flags} photo flag${x.c.flags > 1 ? 's' : ''}</span>` : ''}</span>`;
+      const inner = `<span class="pos num">${i + 1}</span><span class="nm">${esc(x.d.name)}${p.role === 'dsr' && p.dsr_code === x.d.code ? ' <span class="chip good" style="font-size:11px;padding:1px 8px">You</span>' : ''}</span><span class="pc num">${pf(x.c.pct)}</span><span class="bar sm"><i class="${s.c}" style="width:${barW(x.c.pct)}"></i></span><span class="meta num">${nf(x.d.active)}/${nf(x.d.target)} active · QR ${pf(x.c.vis)}${forDsr ? '' : x.d.incTotal ? ` · Tk ${nf(x.d.incTotal)} incentive` : has(x.d, 'sqrAmt') ? ` · Tk ${nf(x.d.sqrAmt)} Super QR` : ''}${!forDsr && x.c.flags ? ` · <span class="no">${x.c.flags} QR visibility flag${x.c.flags > 1 ? "s" : ""}</span>` : ''}</span>`;
       return forDsr ? `<div class="rank">${inner}</div>` : `<button class="rank" data-act="open" data-v="${esc(x.d.code)}">${inner}</button>`;
     }).join('')}</div></article>` : ''}`;
 }

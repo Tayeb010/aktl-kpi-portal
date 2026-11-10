@@ -288,3 +288,9 @@ button.rank:hover,tr.click:hover td{background:rgba(255,255,255,.04)}
 .login h1{font-size:40px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .login form{padding:22px}
 .tile .v.badv{color:var(--bad)} .tile .v.goodv{color:var(--good)}
+.facts.f5{grid-template-columns:repeat(5,1fr)} .facts.f3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:560px){.facts.f5{grid-template-columns:repeat(6,1fr)} .facts.f5 div{grid-column:span 2} .facts.f5 div:nth-child(n+4){grid-column:span 3}}
+.hero.vis{background:linear-gradient(150deg,rgba(30,90,120,.55),rgba(16,26,52,.85) 55%,rgba(30,60,130,.55));border-color:rgba(62,232,154,.25)}
+.hero.vis::after{background:radial-gradient(circle,rgba(62,232,154,.25),transparent 70%)}
+.tiles:has(> :nth-child(3):last-child){grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.tiles:has(> :nth-child(3):last-child){grid-template-columns:repeat(2,1fr)} .tiles > :last-child:nth-child(odd){grid-column:1/-1}}
