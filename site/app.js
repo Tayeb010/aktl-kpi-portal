@@ -8,7 +8,7 @@
 
 const CFG = window.AKTL_CONFIG;
 const app = document.getElementById('app');
-if (!window.supabase || !CFG) {
+if (!window.supabase || !CFG || !window.SQRParse) {
   app.innerHTML = '<div class="loading"><div>The page could not load. Check your internet connection and reload.</div></div>';
   return;
 }
@@ -31,42 +31,15 @@ const errText = e => (e && (e.message || e.error_description)) || String(e || 'S
 const DEVICE = (() => { let d = lsGet('aktl-device-id'); if (!d) { d = 'dev-' + Date.now().toString(36) + Math.random().toString(36).slice(2, 10); lsSet('aktl-device-id', d); } return d; })();
 function deviceName() { const ua = navigator.userAgent; return /iPhone/.test(ua) ? 'iPhone' : /iPad/.test(ua) ? 'iPad' : /Android/.test(ua) ? 'Android phone' : /Windows/.test(ua) ? 'Windows PC' : /Mac/.test(ua) ? 'Mac' : 'Browser'; }
 
-/* ---------- KPI field map (header text in the SQR "DSR Wise" sheet) ---------- */
-const FIELDS = [
-  ['retailers', 'Retailers', 'Retailers', 1],
-  ['hasRequest', 'Retailer has Request', 'Retailers with a request', 0],
-  ['active', 'Retailer Trxn Active', 'Transaction active retailers', 1],
-  ['target', '300 tk c2s Target', '300 Tk C2S target', 1],
-  ['requests', 'Request Count', 'Requests', 0],
-  ['completed', 'COMPLETED Request Count', 'Completed requests', 0],
-  ['ticket', 'COMPLETED Ticket Size', 'Avg ticket size (Tk)', 0],
-  ['sqrAmt', 'Super QR COMPLETED Amount', 'Super QR amount (Tk)', 0],
-  ['c2sAmt', 'C2S Amount', 'C2S amount (Tk)', 0],
-  ['qrTarget', 'QR Target', 'QR visibility target', 0],
-  ['qrSuccess', 'QR Visibility Success', 'QR visibility success', 0],
-  ['wrongQr', 'Wrong QR Placed', 'Wrong QR placed', 0],
-  ['outside100', 'QR Place outside 100m', 'QR placed outside 100m', 0],
-  ['latePhoto', 'Photo > 15 min after visit', 'Photo >15 min after visit', 0],
-  ['robiActive', 'Retailer Trxn Active_Robi', 'Robi: active retailers', 0],
-  ['robiReq', 'Request Count_Robi', 'Robi: requests', 0],
-  ['robiSqr', 'Super QR COMPLETED Amount_Robi', 'Robi: Super QR Tk', 0],
-  ['robiC2s', 'C2S Amount_Robi', 'Robi: C2S Tk', 0],
-  ['cirActive', 'Retailer Trxn Active_Cirkle', 'Cirkle: active retailers', 0],
-  ['cirReq', 'Request Count_Cirkle', 'Cirkle: requests', 0],
-  ['cirSqr', 'Super QR COMPLETED Amount_Cirkle', 'Cirkle: Super QR Tk', 0],
-  ['cirC2s', 'C2S Amount_Cirkle', 'Cirkle: C2S Tk', 0],
-  ['incVis', 'Visibility Incentive', 'Visibility incentive (Tk)', 0],
-  ['incTrx', 'Transaction Incentive', 'Transaction incentive (Tk)', 0],
-  ['incTotal', 'SQR Incentive Total', 'SQR incentive total (Tk)', 0]
-];
-const LABEL = Object.fromEntries(FIELDS.map(f => [f[0], f[2]]));
-const EDITABLE = ['active', 'target', 'qrSuccess', 'qrTarget', 'requests', 'completed', 'sqrAmt', 'c2sAmt', 'incVis', 'incTrx', 'incTotal'];
+/* ---------- KPI fields (shared with the publisher, see sqr-parse.js) ---------- */
+const LABEL = window.SQRParse.LABEL;
+const EDITABLE = ['active', 'target', 'qrSuccess', 'qrTarget', 'hasRequest', 'requests', 'completed', 'sqrAmt', 'c2sAmt', 'incVis', 'incTrx', 'incTotal'];
 const ROLE_LABEL = { admin: 'Admin', viewall: 'Manager / supervisor', dso: 'DSO', dsr: 'DSR' };
 
 /* ---------- Bangla / English labels for DSR screens ---------- */
 const TX = {
-  en: { home: 'Home', retailersTab: 'Retailers', team: 'Team', trx: 'Transaction active retailers', trxSub: 'Retailers with 300 Tk+ C2S via Super QR', achieved: 'Achieved', target: 'Target', remaining: 'Remaining', qr: 'QR visibility', share: 'Super QR share of C2S', req: 'Requests completed', ticket: 'avg ticket', inc: 'SQR incentive', vis: 'Visibility', trxInc: 'Transaction', checks: 'QR photo checks', wrong: 'Wrong QR placed', outside: 'Placed outside 100m', late: 'Photo 15+ min after visit', split: 'Robi vs Cirkle', active: 'Active retailers', requests: 'Requests', sqr: 'Super QR Tk', c2s: 'C2S Tk', period: 'Period', updated: 'Updated', myReport: 'My report image', stA: 'Achieved', stP: 'In progress', stB: 'Behind', need: 'needs Tk {n} more', tdone: '300 Tk done', noqr: 'QR photo missing', fNeed: 'Need Tk', fQr: 'QR missing', fDone: 'Done', fAll: 'All', retHead: 'Retailers to push', retLead: 'Closest to the 300 Tk target first. Each one you finish adds 1 to your achievement.', teamHead: 'Team summary', dsrsDone: 'DSRs at target', noRet: 'No retailers in this list.', of: 'of', allRet: 'See all {n} retailers', notYet: 'Your figures are not published yet. Check again after the next update.', signOut: 'Sign out' },
-  bn: { home: 'হোম', retailersTab: 'রিটেইলার', team: 'টিম', trx: 'লেনদেন সক্রিয় রিটেইলার', trxSub: 'Super QR দিয়ে ৩০০ টাকা+ C2S করা রিটেইলার', achieved: 'অর্জন', target: 'টার্গেট', remaining: 'বাকি', qr: 'QR দৃশ্যমানতা', share: 'C2S-এ Super QR অংশ', req: 'সম্পন্ন রিকোয়েস্ট', ticket: 'গড় টিকেট', inc: 'SQR ইনসেনটিভ', vis: 'দৃশ্যমানতা', trxInc: 'লেনদেন', checks: 'QR ছবি যাচাই', wrong: 'ভুল QR লাগানো', outside: '১০০ মিটারের বাইরে', late: 'ভিজিটের ১৫+ মিনিট পরে ছবি', split: 'Robi বনাম Cirkle', active: 'সক্রিয় রিটেইলার', requests: 'রিকোয়েস্ট', sqr: 'Super QR টাকা', c2s: 'C2S টাকা', period: 'সময়কাল', updated: 'আপডেট', myReport: 'আমার রিপোর্ট ছবি', stA: 'অর্জিত', stP: 'চলমান', stB: 'পিছিয়ে', need: 'আরও {n} টাকা দরকার', tdone: '৩০০ টাকা পূর্ণ', noqr: 'QR ছবি নেই', fNeed: 'টাকা বাকি', fQr: 'QR নেই', fDone: 'পূর্ণ', fAll: 'সব', retHead: 'যেসব রিটেইলারে কাজ বাকি', retLead: '৩০০ টাকার সবচেয়ে কাছের রিটেইলার আগে। প্রতিটি পূর্ণ হলে আপনার অর্জন ১ বাড়বে।', teamHead: 'টিম সারাংশ', dsrsDone: 'টার্গেট পূর্ণ DSR', noRet: 'এই তালিকায় কোনো রিটেইলার নেই।', of: 'এর মধ্যে', allRet: 'সব {n} রিটেইলার দেখুন', notYet: 'আপনার তথ্য এখনো প্রকাশ হয়নি। পরের আপডেটের পর আবার দেখুন।', signOut: 'সাইন আউট' }
+  en: { home: 'Home', retailersTab: 'Retailers', team: 'Team', trx: 'Transaction active retailers', trxSub: 'Retailers with 300 Tk+ C2S via Super QR, against your C2S target', achieved: 'Achieved', target: 'Target', remaining: 'Remaining', qr: 'QR visibility', share: 'Super QR share of C2S', hasReq: 'Retailers with a request', ofRet: 'of retailers', sqrAmt: 'Super QR amount', trxRetSub: '{n} retailers transacted', zeroTk: 'Retailers at 0 Tk', zeroSub: 'no completed Super QR yet', fWrong: 'Wrong QR', fOut: 'Outside 100m', fLate: 'Late photo', req: 'Requests completed', ticket: 'avg ticket', inc: 'SQR incentive', vis: 'Visibility', trxInc: 'Transaction', checks: 'QR photo checks', wrong: 'Wrong QR placed', outside: 'Placed outside 100m', late: 'Photo 15+ min after visit', split: 'Robi vs Cirkle', active: 'Active retailers', requests: 'Requests', sqr: 'Super QR Tk', c2s: 'C2S Tk', period: 'Period', updated: 'Updated', myReport: 'My report image', stA: 'Achieved', stP: 'In progress', stB: 'Behind', need: 'needs Tk {n} more', tdone: '300 Tk done', noqr: 'QR photo missing', fNeed: 'Need Tk', fQr: 'QR missing', fDone: 'Done', fAll: 'All', retHead: 'Retailers to push', retLead: 'Closest to the 300 Tk target first. Each one you finish adds 1 to your achievement.', teamHead: 'Team summary', dsrsDone: 'DSRs at target', noRet: 'No retailers in this list.', of: 'of', allRet: 'See all {n} retailers', notYet: 'Your figures are not published yet. Check again after the next update.', signOut: 'Sign out' },
+  bn: { home: 'হোম', retailersTab: 'রিটেইলার', team: 'টিম', trx: 'লেনদেন সক্রিয় রিটেইলার', trxSub: 'Super QR দিয়ে ৩০০ টাকা+ C2S করা রিটেইলার', achieved: 'অর্জন', target: 'টার্গেট', remaining: 'বাকি', qr: 'QR দৃশ্যমানতা', share: 'C2S-এ Super QR অংশ', hasReq: 'রিকোয়েস্ট করা রিটেইলার', ofRet: 'রিটেইলারের', sqrAmt: 'Super QR টাকা', trxRetSub: '{n} রিটেইলার লেনদেন করেছে', zeroTk: '০ টাকার রিটেইলার', zeroSub: 'এখনো Super QR সম্পন্ন হয়নি', fWrong: 'ভুল QR', fOut: '১০০ মি. বাইরে', fLate: 'দেরিতে ছবি', req: 'সম্পন্ন রিকোয়েস্ট', ticket: 'গড় টিকেট', inc: 'SQR ইনসেনটিভ', vis: 'দৃশ্যমানতা', trxInc: 'লেনদেন', checks: 'QR ছবি যাচাই', wrong: 'ভুল QR লাগানো', outside: '১০০ মিটারের বাইরে', late: 'ভিজিটের ১৫+ মিনিট পরে ছবি', split: 'Robi বনাম Cirkle', active: 'সক্রিয় রিটেইলার', requests: 'রিকোয়েস্ট', sqr: 'Super QR টাকা', c2s: 'C2S টাকা', period: 'সময়কাল', updated: 'আপডেট', myReport: 'আমার রিপোর্ট ছবি', stA: 'অর্জিত', stP: 'চলমান', stB: 'পিছিয়ে', need: 'আরও {n} টাকা দরকার', tdone: '৩০০ টাকা পূর্ণ', noqr: 'QR ছবি নেই', fNeed: 'টাকা বাকি', fQr: 'QR নেই', fDone: 'পূর্ণ', fAll: 'সব', retHead: 'যেসব রিটেইলারে কাজ বাকি', retLead: '৩০০ টাকার সবচেয়ে কাছের রিটেইলার আগে। প্রতিটি পূর্ণ হলে আপনার অর্জন ১ বাড়বে।', teamHead: 'টিম সারাংশ', dsrsDone: 'টার্গেট পূর্ণ DSR', noRet: 'এই তালিকায় কোনো রিটেইলার নেই।', of: 'এর মধ্যে', allRet: 'সব {n} রিটেইলার দেখুন', notYet: 'আপনার তথ্য এখনো প্রকাশ হয়নি। পরের আপডেটের পর আবার দেখুন।', signOut: 'সাইন আউট' }
 };
 const T = (k, v) => { let s = (TX[st.lang] || TX.en)[k] || TX.en[k] || k; if (v) for (const x in v) s = s.replace('{' + x + '}', v[x]); return s; };
 
@@ -101,6 +74,22 @@ function localTotals() {
   return t;
 }
 const periodText = b => { const p = (b && b.period) || {}; return p.from && p.to ? `${p.from} to ${p.to}` : 'Period not given'; };
+
+/* ---------- KPI cards: one list used by the DSR page, report image and WhatsApp text ----------
+   Cards only appear for figures the published file actually has. */
+const has = (d, k) => d && d[k] != null;
+function kpiCards(d) {
+  const c = calc(d), out = [];
+  out.push({ id: 'qr', label: T('qr'), big: `${nf(d.qrSuccess)} / ${nf(d.qrTarget)}`, sub: pf(c.vis) + ' ' + T('ofRet'), pct: c.vis, bar: status(c.vis / 0.9).c, wa: `${d.qrSuccess}/${d.qrTarget} (${pf(c.vis)})` });
+  if (has(d, 'requests') && d.requests) out.push({ id: 'req', label: T('req'), big: `${nf(d.completed)} / ${nf(d.requests)}`, sub: `${T('ticket')} Tk ${nf(d.ticket)}`, wa: `${d.completed}/${d.requests}` });
+  else if (has(d, 'hasRequest')) { const p = d.retailers ? d.hasRequest / d.retailers : 0; out.push({ id: 'hreq', label: T('hasReq'), big: `${nf(d.hasRequest)} / ${nf(d.retailers)}`, sub: pf(p) + ' ' + T('ofRet'), pct: p, wa: `${d.hasRequest}/${d.retailers}` }); }
+  if (has(d, 'c2sAmt') && d.c2sAmt) out.push({ id: 'share', label: T('share'), big: pf(c.share, 1), sub: `Tk ${nf(d.sqrAmt)} ${T('of')} Tk ${nf(d.c2sAmt)}`, wa: pf(c.share, 1) });
+  else if (has(d, 'sqrAmt')) out.push({ id: 'sqr', label: T('sqrAmt'), big: 'Tk ' + nf(d.sqrAmt), sub: has(d, 'trxRet') ? T('trxRetSub', { n: nf(d.trxRet) }) : '', wa: 'Tk ' + nf(d.sqrAmt) });
+  if (has(d, 'incTotal') && (d.incTotal || d.incVis || d.incTrx)) out.push({ id: 'inc', label: T('inc'), big: 'Tk ' + nf(d.incTotal), sub: `${T('vis')} ${nf(d.incVis)} · ${T('trxInc')} ${nf(d.incTrx)}`, good: d.incTotal > 0, wa: 'Tk ' + nf(d.incTotal) });
+  else if (has(d, 'zeroTk')) out.push({ id: 'zero', label: T('zeroTk'), big: nf(d.zeroTk), sub: T('zeroSub'), bad: d.zeroTk > 0, wa: String(d.zeroTk) });
+  return out.slice(0, 4);
+}
+const hasSplit = d => has(d, 'robiActive') && (d.robiActive || d.cirActive || d.robiC2s || d.cirC2s);
 
 /* ---------- icons ---------- */
 const I = {
@@ -290,20 +279,15 @@ function viewDsr(code, opt) {
       <div><span>%</span><b class="num">${pf(c.pct)}</b></div>
     </div>
   </article>
-  <div class="tiles">
-    <article class="card tile"><div class="lbl">${T('qr')}</div><div class="v num">${nf(d.qrSuccess)} <small>/ ${nf(d.qrTarget)}</small></div><div class="bar sm"><i class="${status(c.vis / 0.9).c}" style="width:${barW(c.vis)}"></i></div><p>${pf(c.vis)}</p></article>
-    <article class="card tile"><div class="lbl">${T('share')}</div><div class="v num">${pf(c.share, 1)}</div><p class="num">Tk ${nf(d.sqrAmt)} ${T('of')} Tk ${nf(d.c2sAmt)}</p></article>
-    <article class="card tile"><div class="lbl">${T('req')}</div><div class="v num">${nf(d.completed)} <small>/ ${nf(d.requests)}</small></div><p class="num">${T('ticket')} Tk ${nf(d.ticket)}</p></article>
-    <article class="card tile"><div class="lbl">${T('inc')}</div><div class="v num">Tk ${nf(d.incTotal)}</div><p class="num">${T('vis')} ${nf(d.incVis)} · ${T('trxInc')} ${nf(d.incTrx)}</p></article>
-  </div>
-  <div class="grid2">
+  <div class="tiles">${kpiCards(d).map(k => `<article class="card tile"><div class="lbl">${esc(k.label)}</div><div class="v num${k.bad ? ' badv' : k.good ? ' goodv' : ''}">${esc(k.big)}</div>${k.pct != null ? `<div class="bar sm"><i class="${k.bar || ''}" style="width:${barW(k.pct)}"></i></div>` : ''}<p class="num">${esc(k.sub)}</p></article>`).join('')}</div>
+  <div class="${hasSplit(d) ? 'grid2' : 'stack'}">
     <article class="card"><h3>${T('checks')}</h3><div class="flags">${flag(d.wrongQr, 'wrong')}${flag(d.outside100, 'outside')}${flag(d.latePhoto, 'late')}</div></article>
-    <article class="card"><h3>${T('split')}</h3><div class="tbl"><table><thead><tr><th></th><th class="r">Robi</th><th class="r">Cirkle</th></tr></thead><tbody>
+    ${hasSplit(d) ? `<article class="card"><h3>${T('split')}</h3><div class="tbl"><table><thead><tr><th></th><th class="r">Robi</th><th class="r">Cirkle</th></tr></thead><tbody>
       <tr><td>${T('active')}</td><td class="r num">${nf(d.robiActive)}</td><td class="r num">${nf(d.cirActive)}</td></tr>
       <tr><td>${T('requests')}</td><td class="r num">${nf(d.robiReq)}</td><td class="r num">${nf(d.cirReq)}</td></tr>
       <tr><td>${T('sqr')}</td><td class="r num">${nf(d.robiSqr)}</td><td class="r num">${nf(d.cirSqr)}</td></tr>
       <tr><td>${T('c2s')}</td><td class="r num">${nf(d.robiC2s)}</td><td class="r num">${nf(d.cirC2s)}</td></tr>
-    </tbody></table></div></article>
+    </tbody></table></div></article>` : ''}
   </div>
   ${opt.back ? `<article class="card"><h3>${T('retHead')}</h3>${retailerList(code)}</article>` : retailerPreview(code)}
   <div class="actions"><button class="btn primary" data-act="myreport" data-v="${esc(code)}">${ic('image')} ${T('myReport')}</button>${p.role !== 'dsr' ? `<button class="btn" data-act="copytext" data-v="${esc(code)}">Copy WhatsApp text</button>` : ''}</div>`;
@@ -311,7 +295,7 @@ function viewDsr(code, opt) {
 const langToggle = () => `<div class="seg" role="group" aria-label="Language"><button data-act="lang" data-v="en" aria-pressed="${st.lang === 'en'}">EN</button><button data-act="lang" data-v="bn" aria-pressed="${st.lang === 'bn'}">বাং</button></div>`;
 
 function retRow(r) {
-  return `<div class="li"><div class="n">${esc(r.name)}</div>${r.done ? `<div class="ok">${T('tdone')}</div>` : `<div class="need num">${T('need', { n: nf(r.rem) })}</div>`}<div class="s num">${esc(r.code)} · Tk ${nf(r.amt)} / 300${r.vis ? '' : ` · <span class="no">${T('noqr')}</span>`}</div>${r.done ? '' : `<div class="bar sm" style="grid-column:1/-1"><i style="width:${barW(r.amt / 300)}"></i></div>`}</div>`;
+  return `<div class="li"><div class="n">${esc(r.name)}</div>${r.done ? `<div class="ok">${T('tdone')}</div>` : `<div class="need num">${T('need', { n: nf(r.rem) })}</div>`}<div class="s num">${esc(r.code)} · Tk ${nf(r.amt)} / 300${r.vis ? '' : ` · <span class="no">${T('noqr')}</span>`}${r.wrong ? ` · <span class="no">${T('fWrong')}</span>` : ''}${r.out ? ` · <span class="no">${T('fOut')}</span>` : ''}${r.late ? ` · <span class="no">${T('fLate')}</span>` : ''}</div>${r.done ? '' : `<div class="bar sm" style="grid-column:1/-1"><i style="width:${barW(r.amt / 300)}"></i></div>`}</div>`;
 }
 function retailerList(code) {
   const all = st.rets[code] || [], f = ui.retFilter;
@@ -350,12 +334,12 @@ function viewTeam(forDsr) {
     <article class="card tile"><div class="lbl">${T('trx')}</div><div class="v num">${nf(t.active)} <small>/ ${nf(t.target)}</small></div><div class="bar sm"><i class="${status(tp).c}" style="width:${barW(tp)}"></i></div><p class="num">${pf(tp)}</p></article>
     <article class="card tile"><div class="lbl">${T('dsrsDone')}</div><div class="v num">${nf(t.atTarget)} <small>/ ${nf(t.n)}</small></div></article>
     <article class="card tile"><div class="lbl">${T('qr')}</div><div class="v num">${pf(t.qrTarget ? t.qrSuccess / t.qrTarget : 0)}</div><p class="num">${nf(t.qrSuccess)} / ${nf(t.qrTarget)}</p></article>
-    <article class="card tile"><div class="lbl">${T('share')}</div><div class="v num">${pf(t.c2sAmt ? t.sqrAmt / t.c2sAmt : 0, 1)}</div><p class="num">Tk ${nf(t.sqrAmt)}</p></article>
+    ${t.c2sAmt ? `<article class="card tile"><div class="lbl">${T('share')}</div><div class="v num">${pf(t.sqrAmt / t.c2sAmt, 1)}</div><p class="num">Tk ${nf(t.sqrAmt)}</p></article>` : `<article class="card tile"><div class="lbl">${T('sqrAmt')}</div><div class="v num">Tk ${nf(t.sqrAmt)}</div><p class="num">${T('period')}: ${esc(periodText(st.live))}</p></article>`}
   </div>
   ${rows ? `<article class="card"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap"><h2>DSR ranking</h2><span class="small muted">By % of 300 Tk target${forDsr ? '' : ' · tap a DSR to open'}</span></div>
     <div class="list">${rows.map((x, i) => {
       const s = status(x.c.pct);
-      const inner = `<span class="pos num">${i + 1}</span><span class="nm">${esc(x.d.name)}${p.role === 'dsr' && p.dsr_code === x.d.code ? ' <span class="chip good" style="font-size:11px;padding:1px 8px">You</span>' : ''}</span><span class="pc num">${pf(x.c.pct)}</span><span class="bar sm"><i class="${s.c}" style="width:${barW(x.c.pct)}"></i></span><span class="meta num">${nf(x.d.active)}/${nf(x.d.target)} active · QR ${pf(x.c.vis)}${forDsr ? '' : ` · Tk ${nf(x.d.incTotal)} incentive`}${!forDsr && x.c.flags ? ` · <span class="no">${x.c.flags} photo flag${x.c.flags > 1 ? 's' : ''}</span>` : ''}</span>`;
+      const inner = `<span class="pos num">${i + 1}</span><span class="nm">${esc(x.d.name)}${p.role === 'dsr' && p.dsr_code === x.d.code ? ' <span class="chip good" style="font-size:11px;padding:1px 8px">You</span>' : ''}</span><span class="pc num">${pf(x.c.pct)}</span><span class="bar sm"><i class="${s.c}" style="width:${barW(x.c.pct)}"></i></span><span class="meta num">${nf(x.d.active)}/${nf(x.d.target)} active · QR ${pf(x.c.vis)}${forDsr ? '' : x.d.incTotal ? ` · Tk ${nf(x.d.incTotal)} incentive` : has(x.d, 'sqrAmt') ? ` · Tk ${nf(x.d.sqrAmt)} Super QR` : ''}${!forDsr && x.c.flags ? ` · <span class="no">${x.c.flags} photo flag${x.c.flags > 1 ? 's' : ''}</span>` : ''}</span>`;
       return forDsr ? `<div class="rank">${inner}</div>` : `<button class="rank" data-act="open" data-v="${esc(x.d.code)}">${inner}</button>`;
     }).join('')}</div></article>` : ''}`;
 }
@@ -370,7 +354,7 @@ function viewUpload() {
   <section><h1 style="font-size:24px">Upload SQR report</h1><p class="muted small" style="margin:4px 0 0">Nothing changes for DSRs until you press Publish.</p></section>
   <div class="steps"><div class="on">Choose file</div><div>Check columns</div><div>Fix issues</div><div>Preview and publish</div></div>
   <label class="drop" id="drop" for="file">${ic('file')}<b>Choose the SQR Excel file</b><span class="muted small">or drag it here · .xlsx</span><input type="file" id="file" accept=".xlsx,.xls,.csv"></label>
-  <div class="banner info"><div><b>What gets read:</b> the "DSR Wise" sheet for KPI figures and the "Retail Wise" sheet for each DSR's retailer list. Retailer EL phone numbers are skipped and never saved.</div></div>`;
+  <div class="banner info"><div><b>What gets read:</b> the summary sheet (e.g. "Summury") for each DSR's KPI figures and the retailer sheet for each DSR's profile code and retailer list. The older "DSR Wise" layout also works. Retailer EL phone numbers are skipped and never saved.</div></div>`;
   const pd = pending, errs = pd.issues.filter(i => i.t === 'err');
   const rows = Object.values(pd.dsrs).sort((a, c) => natural(a.name, c.name));
   return `
@@ -389,64 +373,16 @@ function viewUpload() {
     <div class="tbl"><table><thead><tr><th>KPI field</th><th>Excel column</th><th></th></tr></thead><tbody>${pd.mapping.map(m => `<tr><td>${esc(m.label)}</td><td class="muted">${m.col >= 0 ? esc(m.header) : '—'}</td><td>${m.col >= 0 ? '<span class="yes">Matched</span>' : m.req ? '<span class="no">Missing (required)</span>' : '<span class="muted">Not found</span>'}</td></tr>`).join('')}</tbody></table></div>
   </article>
   <article class="card"><h3>Preview</h3><p class="small muted" style="margin:2px 0 0">Change is compared with what DSRs see now.</p>
-    <div class="tbl"><table><thead><tr><th>DSR</th><th class="r">Active / Target</th><th class="r">%</th><th class="r">Change</th><th class="r">QR vis.</th><th class="r">Incentive</th></tr></thead><tbody>
-    ${rows.map(d => { const c = calc(d), o = st.dsrs[d.code]; const dl = o ? d.active - o.active : null; return `<tr><td>${esc(d.name)}</td><td class="r num">${nf(d.active)} / ${nf(d.target)}</td><td class="r num">${pf(c.pct)}</td><td class="r num">${dl == null ? '<span class="muted">new</span>' : dl > 0 ? `<span class="up">+${dl}</span>` : dl < 0 ? `<span class="down">${dl}</span>` : '<span class="muted">0</span>'}</td><td class="r num">${pf(c.vis)}</td><td class="r num">Tk ${nf(d.incTotal)}</td></tr>`; }).join('')}
+    <div class="tbl"><table><thead><tr><th>DSR</th><th class="r">Active / Target</th><th class="r">%</th><th class="r">Change</th><th class="r">QR vis.</th><th class="r">${pd.format === 'summary' ? 'Super QR Tk' : 'Incentive'}</th></tr></thead><tbody>
+    ${rows.map(d => { const c = calc(d), o = st.dsrs[d.code]; const dl = o ? d.active - o.active : null; return `<tr><td>${esc(d.name)}</td><td class="r num">${nf(d.active)} / ${nf(d.target)}</td><td class="r num">${pf(c.pct)}</td><td class="r num">${dl == null ? '<span class="muted">new</span>' : dl > 0 ? `<span class="up">+${dl}</span>` : dl < 0 ? `<span class="down">${dl}</span>` : '<span class="muted">0</span>'}</td><td class="r num">${pf(c.vis)}</td><td class="r num">Tk ${nf(pd.format === 'summary' ? d.sqrAmt : d.incTotal)}</td></tr>`; }).join('')}
     </tbody></table></div>
   </article>
   <div class="actions"><button class="btn primary" data-act="publish" ${errs.length || ui.saving ? 'disabled' : ''}>${ui.saving ? 'Publishing…' : 'Publish update'}</button><button class="btn" data-act="discard" ${ui.saving ? 'disabled' : ''}>Discard</button>${errs.length ? '<span class="small no">Fix the required issues above first.</span>' : ''}</div>`;
 }
 
 function parseWorkbook(wb, fileName) {
-  const out = { fileName, issues: [], mapping: [], period: null, dsrs: {}, retailers: {}, retCount: 0, sheetDsr: null, sheetRet: null, carried: [] };
-  let dS = null, rS = null;
-  for (const sn of wb.SheetNames) {
-    const rows = XLSX.utils.sheet_to_json(wb.Sheets[sn], { header: 1, defval: null, raw: true, blankrows: false });
-    const hi = rows.slice(0, 10).findIndex(r => r && r.some(c => norm(c) === 'dsr profile code'));
-    if (hi < 0) continue;
-    const H = rows[hi].map(norm);
-    if (!dS && H.includes('retailer trxn active')) dS = { sn, rows, hi, H, raw: rows[hi] };
-    else if (!rS && H.includes('retailer code')) rS = { sn, rows, hi, H };
-  }
-  if (!dS) { out.issues.push({ t: 'err', m: 'No DSR-wise sheet found. It needs a header row with "DSR Profile Code" and "Retailer Trxn Active".' }); return out; }
-  out.sheetDsr = dS.sn;
-  const txt = dS.rows.slice(0, dS.hi).flat().filter(c => typeof c === 'string').join(' | ');
-  const m1 = txt.match(/(\d{1,2}-[A-Za-z]{3})\s*to\s*(\d{1,2}-[A-Za-z]{3})/), m2 = txt.match(/pulled\s+(\d{1,2}-[A-Za-z]{3})/i);
-  if (m1) out.period = { from: m1[1], to: m1[2], pulled: m2 ? m2[1] : null };
-  else out.issues.push({ t: 'warn', m: 'Could not read the report period from the title row. Dashboards will show "Period not given".' });
-  out.mapping = FIELDS.map(f => { const col = dS.H.indexOf(norm(f[1])); return { k: f[0], label: f[2], req: !!f[3], col, header: col >= 0 ? dS.raw[col] : null }; });
-  const ci = dS.H.indexOf('dsr profile code'), ni = dS.H.indexOf('dsr name');
-  out.mapping.filter(m => m.req && m.col < 0).forEach(m => out.issues.push({ t: 'err', m: `Required column missing: "${FIELDS.find(f => f[0] === m.k)[1]}".` }));
-  if (out.issues.some(i => i.t === 'err')) return out;
-  let skipped = 0, bad = 0;
-  dS.rows.slice(dS.hi + 1).forEach((r, ix) => {
-    if (!r || r.every(c => c == null || c === '')) return;
-    const code = String(r[ci] == null ? '' : r[ci]).trim();
-    if (!code || /total/i.test(code) || /total/i.test(String(r[ni] || ''))) { skipped++; return; }
-    if (out.dsrs[code]) { out.issues.push({ t: 'err', m: `DSR ${code} appears twice (row ${dS.hi + ix + 2}).` }); return; }
-    const d = { code, name: String(r[ni] == null || r[ni] === '' ? code : r[ni]).trim() };
-    out.mapping.forEach(m => { let v = m.col >= 0 ? r[m.col] : 0; if (v == null || v === '') v = 0; if (typeof v !== 'number') { const n = parseFloat(String(v).replace(/,/g, '')); if (isNaN(n)) { bad++; v = 0; } else v = n; } d[m.k] = v; });
-    out.dsrs[code] = d;
-  });
-  if (skipped) out.issues.push({ t: 'warn', m: `${skipped} row(s) without a DSR code were skipped (for example a total row).` });
-  if (bad) out.issues.push({ t: 'warn', m: `${bad} cell(s) had text where a number was expected and were read as 0.` });
-  if (!Object.keys(out.dsrs).length) out.issues.push({ t: 'err', m: 'No DSR rows found under the header.' });
-  if (rS) {
-    out.sheetRet = rS.sn;
-    const ix = n => rS.H.indexOf(n);
-    const c = { dsr: ix('dsr profile code'), code: ix('retailer code'), name: ix('retailer name'), amt: ix('qr c2s amount'), rem: ix('remaining amount for target'), vis: ix('qr visibility') };
-    const yes = v => norm(v) === 'yes';
-    const orphan = new Set();
-    rS.rows.slice(rS.hi + 1).forEach(r => {
-      if (!r || r[c.dsr] == null) return;
-      const dc = String(r[c.dsr]).trim(); if (!out.dsrs[dc]) { orphan.add(dc); return; }
-      const amt = +r[c.amt] || 0, rv = c.rem >= 0 ? r[c.rem] : null;
-      const done = typeof rv === 'string' ? /done/i.test(rv) : (rv != null ? rv <= 0 : amt >= 300);
-      (out.retailers[dc] = out.retailers[dc] || []).push({ code: String(r[c.code] == null ? '' : r[c.code]), name: String(r[c.name] == null ? '' : r[c.name]), amt, rem: done ? 0 : (typeof rv === 'number' ? rv : Math.max(0, 300 - amt)), done, vis: yes(r[c.vis]) });
-      out.retCount++;
-    });
-    if (orphan.size) out.issues.push({ t: 'warn', m: `Retailers for ${orphan.size} DSR code(s) not in the DSR sheet were ignored.` });
-  } else out.issues.push({ t: 'warn', m: 'No retailer sheet found. DSRs will not see their retailer list.' });
-  if (st.live) {
+  const out = Object.assign(window.SQRParse.parse(wb, XLSX, fileName), { carried: [] });
+  if (st.live && !out.issues.some(i => i.t === 'err')) {
     out.carried = Object.keys(st.dsrs).filter(k => !out.dsrs[k]).map(k => st.dsrs[k].name);
     const nw = Object.keys(out.dsrs).filter(k => !st.dsrs[k]).map(k => out.dsrs[k].name);
     if (nw.length) out.issues.push({ t: 'warn', m: `New DSR(s) not in the current data: ${nw.join(', ')}. Create their logins in People.` });
@@ -489,34 +425,51 @@ function rr(x, X, Y, w, h, r, fill) { x.beginPath(); x.moveTo(X + r, Y); x.arcTo
 async function reportCanvas(d) {
   try { await Promise.all([document.fonts.load('800 100px "Bricolage Grotesque"'), document.fonts.load('700 40px "Bricolage Grotesque"'), document.fonts.load('500 30px "Hind Siliguri"'), document.fonts.load('600 30px "Hind Siliguri"')]); } catch (e) {}
   const W = 1080, H = 1350, cv = document.createElement('canvas'); cv.width = W; cv.height = H; const x = cv.getContext('2d');
-  const C = { bg: '#EEF2EF', ink: '#13201E', muted: '#5A6A66', track: '#E3E9E6', teal: '#0B6E5F', gold: '#C98316', good: '#1D8A4B', warn: '#B8740B', bad: '#BF3328', goodS: '#DDF3E5', warnS: '#FBEED6', badS: '#FBE3E0' };
+  const C = { ink: '#EAF0FF', muted: '#8C9BC0', card: 'rgba(22,34,68,.92)', line: 'rgba(140,170,255,.18)', track: 'rgba(255,255,255,.10)', cyan: '#4FD1FF', violet: '#8B7CFF', gold: '#FFC25C', good: '#3EE89A', warn: '#FFB547', bad: '#FF6B81' };
   const D = '"Bricolage Grotesque","Hind Siliguri",system-ui,sans-serif', B = '"Hind Siliguri",system-ui,sans-serif';
-  const c = calc(d), s = status(c.pct), sc = { good: [C.good, C.goodS], warn: [C.warn, C.warnS], bad: [C.bad, C.badS] }[s.c];
-  x.fillStyle = C.bg; x.fillRect(0, 0, W, H);
-  x.fillStyle = C.teal; x.fillRect(0, 0, W, 280);
-  x.fillStyle = 'rgba(255,255,255,.78)'; x.font = `600 28px ${B}`; x.fillText('AKTL SITAKUNDA   ·   SQR REPORT', 64, 82);
-  let fs = 100; x.font = `800 ${fs}px ${D}`; while (x.measureText(d.name).width > W - 128 && fs > 50) { fs -= 4; x.font = `800 ${fs}px ${D}`; }
-  x.fillStyle = '#fff'; x.fillText(d.name, 64, 192);
-  x.font = `500 30px ${B}`; x.fillStyle = 'rgba(255,255,255,.85)'; x.fillText(`${periodText(st.live)}   ·   Updated ${fmtTime(st.live && st.live.published_at)}`, 64, 244);
-  rr(x, 48, 316, W - 96, 400, 30, '#fff');
-  x.fillStyle = C.muted; x.font = `600 28px ${B}`; x.fillText('TRANSACTION ACTIVE RETAILERS (300 TK+)', 88, 376);
-  x.font = `800 150px ${D}`; x.fillStyle = C.ink; const a = nf(d.active); x.fillText(a, 84, 540); const aw = x.measureText(a).width;
-  x.font = `600 64px ${D}`; x.fillStyle = C.muted; x.fillText(' / ' + nf(d.target), 84 + aw, 540);
+  const c = calc(d), s = status(c.pct), col = { good: C.good, warn: C.warn, bad: C.bad }[s.c];
+  // background: navy gradient, glows, grid, target rings
+  let g = x.createLinearGradient(0, 0, 0, H); g.addColorStop(0, '#0A1638'); g.addColorStop(1, '#060B1A'); x.fillStyle = g; x.fillRect(0, 0, W, H);
+  const glow = (X, Y, R, rgba) => { const r = x.createRadialGradient(X, Y, 0, X, Y, R); r.addColorStop(0, rgba); r.addColorStop(1, 'rgba(0,0,0,0)'); x.fillStyle = r; x.fillRect(0, 0, W, H); };
+  glow(940, 40, 560, 'rgba(139,124,255,.45)'); glow(60, 520, 520, 'rgba(79,209,255,.22)'); glow(700, 1400, 640, 'rgba(46,92,255,.30)');
+  x.strokeStyle = 'rgba(255,255,255,.04)'; x.lineWidth = 1; for (let i = 0; i <= W; i += 54) { x.beginPath(); x.moveTo(i + .5, 0); x.lineTo(i + .5, H); x.stroke(); } for (let j = 0; j <= H; j += 54) { x.beginPath(); x.moveTo(0, j + .5); x.lineTo(W, j + .5); x.stroke(); }
+  x.strokeStyle = 'rgba(79,209,255,.16)'; [90, 150, 210].forEach((r, i) => { x.setLineDash(i === 1 ? [6, 12] : []); x.beginPath(); x.arc(960, 150, r, 0, Math.PI * 2); x.stroke(); }); x.setLineDash([]);
+  // header
+  const grad = (X0, X1) => { const q = x.createLinearGradient(X0, 0, X1, 0); q.addColorStop(0, C.cyan); q.addColorStop(1, C.violet); return q; };
+  rr(x, 64, 56, 64, 64, 18, grad(64, 128)); x.fillStyle = '#04122A'; x.font = `800 28px ${D}`; x.fillText('AK', 76, 99);
+  x.fillStyle = C.muted; x.font = `600 26px ${B}`; x.fillText('AKTL SITAKUNDA   ·   SQR REPORT', 148, 98);
+  let fs = 96; x.font = `800 ${fs}px ${D}`; while (x.measureText(d.name).width > W - 128 && fs > 50) { fs -= 4; x.font = `800 ${fs}px ${D}`; }
+  x.fillStyle = '#fff'; x.fillText(d.name, 64, 222);
+  x.font = `500 28px ${B}`; x.fillStyle = C.muted; x.fillText(`${periodText(st.live)}   ·   Updated ${fmtTime(st.live && st.live.published_at)}`, 64, 270);
+  // hero card
+  const card = (X, Y, w, h, r) => { rr(x, X, Y, w, h, r, C.card); x.strokeStyle = C.line; x.lineWidth = 2; x.beginPath(); x.moveTo(X + r, Y); x.arcTo(X + w, Y, X + w, Y + h, r); x.arcTo(X + w, Y + h, X, Y + h, r); x.arcTo(X, Y + h, X, Y, r); x.arcTo(X, Y, X + w, Y, r); x.closePath(); x.stroke(); };
+  card(48, 312, W - 96, 420, 32);
+  x.fillStyle = C.muted; x.font = `600 26px ${B}`; x.fillText('TRANSACTION ACTIVE RETAILERS (300 TK+)', 88, 370);
+  x.font = `500 24px ${B}`; x.fillText('Against C2S target', 88, 404);
+  x.font = `800 150px ${D}`; x.fillStyle = '#fff'; const a = nf(d.active); x.fillText(a, 84, 560); const aw = x.measureText(a).width;
+  x.font = `600 60px ${D}`; x.fillStyle = C.muted; x.fillText(' / ' + nf(d.target), 84 + aw, 560);
+  // progress ring
+  const cx = W - 190, cy = 488, R = 96; x.lineWidth = 22; x.lineCap = 'round';
+  x.strokeStyle = C.track; x.beginPath(); x.arc(cx, cy, R, 0, Math.PI * 2); x.stroke();
+  if (c.pct > 0) { x.strokeStyle = col; x.shadowColor = col; x.shadowBlur = 24; x.beginPath(); x.arc(cx, cy, R, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * Math.min(1, c.pct)); x.stroke(); x.shadowBlur = 0; }
+  x.lineCap = 'butt'; x.fillStyle = '#fff'; x.font = `800 46px ${D}`; const pt = pf(c.pct); x.fillText(pt, cx - x.measureText(pt).width / 2, cy + 16);
   const lab = ['Achieved', 'In progress', 'Behind'][['good', 'warn', 'bad'].indexOf(s.c)];
-  x.font = `700 30px ${B}`; const lw = x.measureText(lab).width + 48; rr(x, W - 88 - lw, 340, lw, 54, 27, sc[1]); x.fillStyle = sc[0]; x.fillText(lab, W - 88 - lw + 24, 377);
-  x.font = `800 64px ${D}`; x.fillStyle = sc[0]; const pt = pf(c.pct); x.fillText(pt, W - 88 - x.measureText(pt).width, 540);
-  rr(x, 88, 580, W - 176, 26, 13, C.track); if (c.pct > 0) rr(x, 88, 580, Math.max(26, (W - 176) * Math.min(1, c.pct)), 26, 13, sc[0]);
-  x.font = `600 32px ${B}`; x.fillStyle = C.muted; x.fillText('Remaining', 88, 672); const rlw = x.measureText('Remaining').width; x.fillStyle = C.gold; x.font = `800 40px ${D}`; x.fillText(nf(c.rem), 88 + rlw + 20, 674);
-  const tw = (W - 96 - 24) / 2, th = 196;
-  const tile = (X, Y, label, big, sub, col) => { rr(x, X, Y, tw, th, 26, '#fff'); x.fillStyle = C.muted; x.font = `600 24px ${B}`; x.fillText(label, X + 32, Y + 52); x.fillStyle = col || C.ink; let f = 64; x.font = `800 ${f}px ${D}`; while (x.measureText(big).width > tw - 64 && f > 36) { f -= 4; x.font = `800 ${f}px ${D}`; } x.fillText(big, X + 32, Y + 128); x.fillStyle = C.muted; x.font = `500 26px ${B}`; x.fillText(sub, X + 32, Y + 170); };
-  tile(48, 744, 'QR VISIBILITY', `${nf(d.qrSuccess)} / ${nf(d.qrTarget)}`, pf(c.vis) + ' of target');
-  tile(48 + tw + 24, 744, 'SUPER QR SHARE OF C2S', pf(c.share, 1), `Tk ${nf(d.sqrAmt)} of Tk ${nf(d.c2sAmt)}`);
-  tile(48, 744 + th + 20, 'REQUESTS COMPLETED', `${nf(d.completed)} / ${nf(d.requests)}`, `Avg ticket Tk ${nf(d.ticket)}`);
-  tile(48 + tw + 24, 744 + th + 20, 'SQR INCENTIVE', `Tk ${nf(d.incTotal)}`, `Visibility ${nf(d.incVis)} · Transaction ${nf(d.incTrx)}`, d.incTotal > 0 ? C.good : C.ink);
-  const y0 = 744 + th * 2 + 44; rr(x, 48, y0, W - 96, 84, 24, c.flags ? C.badS : '#fff');
+  x.font = `700 26px ${B}`; const lw = x.measureText(lab).width + 44; rr(x, cx - lw / 2, cy + R + 26, lw, 48, 24, 'rgba(255,255,255,.08)'); x.fillStyle = col; x.fillText(lab, cx - lw / 2 + 22, cy + R + 59);
+  rr(x, 88, 600, W - 176 - 260, 22, 11, C.track); if (c.pct > 0) rr(x, 88, 600, Math.max(22, (W - 176 - 260) * Math.min(1, c.pct)), 22, 11, col);
+  x.font = `600 30px ${B}`; x.fillStyle = C.muted; x.fillText('Remaining', 88, 684); const rlw = x.measureText('Remaining').width; x.fillStyle = C.gold; x.font = `800 40px ${D}`; x.fillText(nf(c.rem), 88 + rlw + 18, 686);
+  // KPI tiles (same list as the dashboard)
+  const tw = (W - 96 - 24) / 2, th = 196, strip = [[C.cyan, C.violet], ['#8B7CFF', '#E37CFF'], [C.good, C.cyan], [C.gold, '#FF8A3D']];
+  kpiCards(d).forEach((k, i) => {
+    const X = 48 + (i % 2) * (tw + 24), Y = 760 + Math.floor(i / 2) * (th + 20);
+    card(X, Y, tw, th, 26); const sg = x.createLinearGradient(X, 0, X + tw, 0); sg.addColorStop(0, strip[i][0]); sg.addColorStop(1, strip[i][1]); rr(x, X + 24, Y, tw - 48, 5, 2, sg);
+    x.fillStyle = C.muted; x.font = `600 24px ${B}`; x.fillText(k.label.toUpperCase(), X + 30, Y + 54);
+    x.fillStyle = k.bad ? C.bad : k.good ? C.good : '#fff'; let f = 62; x.font = `800 ${f}px ${D}`; while (x.measureText(k.big).width > tw - 60 && f > 34) { f -= 4; x.font = `800 ${f}px ${D}`; } x.fillText(k.big, X + 30, Y + 128);
+    x.fillStyle = C.muted; x.font = `500 26px ${B}`; x.fillText(k.sub, X + 30, Y + 170);
+  });
+  const y0 = 760 + (th + 20) * 2 + 8; card(48, y0, W - 96, 84, 24);
   x.font = `600 28px ${B}`; x.fillStyle = c.flags ? C.bad : C.muted;
   x.fillText(`Photo checks:  Wrong QR ${d.wrongQr || 0}   ·   Outside 100m ${d.outside100 || 0}   ·   Late photo ${d.latePhoto || 0}`, 80, y0 + 53);
-  x.font = `500 24px ${B}`; x.fillStyle = C.muted; x.fillText('AKTL Sitakunda KPI Portal', 64, H - 28);
+  x.font = `500 24px ${B}`; x.fillStyle = C.muted; x.fillText('AKTL Sitakunda KPI Portal', 64, H - 32);
   return cv;
 }
 async function makeImg(code) { const cv = await reportCanvas(st.dsrs[code]); ui.imgs[code] = cv.toDataURL('image/png'); return cv; }
@@ -525,7 +478,7 @@ function dataUrlToBlob(u) { const [, b64] = u.split(','); const bin = atob(b64);
 function download(name, blob) { const u = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = u; a.download = name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(u), 5000); }
 function waText(code) {
   const d = st.dsrs[code], c = calc(d);
-  return `*SQR update: ${d.name}*\nPeriod: ${periodText(st.live)} (updated ${fmtTime(st.live.published_at)})\n\nTrxn active retailers: ${d.active}/${d.target} (${pf(c.pct)})\nRemaining: ${c.rem}\nQR visibility: ${d.qrSuccess}/${d.qrTarget} (${pf(c.vis)})\nSuper QR share of C2S: ${pf(c.share, 1)}\nRequests completed: ${d.completed}/${d.requests}\nSQR incentive: Tk ${nf(d.incTotal)}` + (c.flags ? `\nPhoto flags: ${c.flags}` : '');
+  return `*SQR update: ${d.name}*\nPeriod: ${periodText(st.live)} (updated ${fmtTime(st.live.published_at)})\n\nTrxn active retailers (300 Tk+): ${d.active}/${d.target} (${pf(c.pct)})\nRemaining: ${c.rem}\n` + kpiCards(d).map(k => `${k.label}: ${k.wa}`).join('\n') + (c.flags ? `\nPhoto flags: ${c.flags}` : '');
 }
 
 /* ---------- admin: data (history + corrections) ---------- */
@@ -538,7 +491,7 @@ function viewData() {
   ${st.live ? `<article class="card"><h2>Correct a figure</h2><p class="small muted" style="margin:2px 0 0">Changes the published data straight away, without a new upload.</p>
     <div class="form">
       <div class="field"><label for="c-dsr">DSR</label><select id="c-dsr" data-in="code">${l.map(d => `<option value="${esc(d.code)}" ${d.code === cc.code ? 'selected' : ''}>${esc(d.name)}</option>`).join('')}</select></div>
-      <div class="field"><label for="c-k">Figure</label><select id="c-k" data-in="k">${EDITABLE.map(k => `<option value="${k}" ${k === cc.k ? 'selected' : ''}>${esc(LABEL[k])}</option>`).join('')}</select></div>
+      <div class="field"><label for="c-k">Figure</label><select id="c-k" data-in="k">${EDITABLE.filter(k => k === cc.k || l.some(d => has(d, k))).map(k => `<option value="${k}" ${k === cc.k ? 'selected' : ''}>${esc(LABEL[k])}</option>`).join('')}</select></div>
       <div class="field"><label for="c-cur">Current value</label><input value="${esc(nf(curVal))}" disabled id="c-cur"></div>
       <div class="field"><label for="c-val">New value</label><input id="c-val" type="number" inputmode="decimal" data-in="val" value="${esc(cc.val)}"></div>
       <div class="field wide"><label for="c-reason">Reason</label><input id="c-reason" data-in="reason" placeholder="For example: 2 retailers confirmed by Robi after the file was pulled" value="${esc(cc.reason)}"></div>

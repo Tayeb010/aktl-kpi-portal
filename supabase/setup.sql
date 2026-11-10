@@ -348,7 +348,8 @@ create or replace function public.publish_batch(
 ) returns uuid language plpgsql security definer set search_path = '' as $$
 declare v_id uuid; v_kpi text := coalesce(nullif(p_kpi, ''), 'SQR');
 begin
-  if not private.is_admin() then raise exception 'Only the admin can publish.'; end if;
+  -- The admin (website Upload page) or the GitHub publisher (secret/service_role key) may publish.
+  if not (private.is_admin() or coalesce(auth.role(), '') = 'service_role') then raise exception 'Only the admin can publish.'; end if;
   if jsonb_typeof(p_figures) <> 'array' or jsonb_array_length(p_figures) = 0 then
     raise exception 'No DSR figures to publish.';
   end if;
@@ -482,6 +483,7 @@ grant execute on function
   public.correct_figure(text, text, numeric, text),
   public.team_summary()
 to authenticated;
+grant execute on function public.publish_batch(text, text, jsonb, jsonb, jsonb, jsonb) to service_role;
 
 -- ---------------------------------------------------------------------
 -- Your admin account (created only once).

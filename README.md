@@ -16,7 +16,11 @@ Supabase, protected by row-level security rules in `supabase/setup.sql`.
 | File | What it is |
 |---|---|
 | `site/` | The website (no build step): `index.html`, `styles.css`, `app.js`, `config.js` |
+| `site/sqr-parse.js` | SQR Excel reader, shared by the Upload page and the publisher |
 | `supabase/setup.sql` | Database tables, security rules and admin functions |
+| `supabase/update-01-github-publisher.sql` | One-time update for databases set up before the publisher existed |
+| `tools/sqr.cjs` | Publisher: `build` turns the Excel into `data/sqr/latest.json`, `publish` sends it to Supabase |
+| `.github/workflows/publish-sqr.yml` | Publishes automatically when `data/sqr/latest.json` changes on `main` |
 | `site/_headers` | Security headers for Cloudflare Pages |
 
 ## One-time setup
@@ -33,3 +37,21 @@ Supabase, protected by row-level security rules in `supabase/setup.sql`.
    publish, then go to People and create the DSR logins.
 
 Every push to `main` updates the live site automatically.
+
+## Updating the KPIs
+
+**Option A: send the Excel to Claude.** Claude runs `node tools/sqr.cjs build <file.xlsx>`,
+checks the result, and pushes `data/sqr/latest.json`. The GitHub Action then publishes it.
+Only figures and retailer lists are stored; retailer EL phone numbers are never saved.
+
+**Option B: the website.** Sign in as admin > Upload > choose the file > Publish.
+
+Both read the file with the same `site/sqr-parse.js`. Supported layouts:
+a summary sheet (e.g. "Summury": DSR Name, Retailers, Retailer has Request,
+Retailer Trxn Active, C2S Target, QR Target, QR Visibility Success, photo checks)
+plus a retailer sheet (DSR Profile Code, DSR Name, Retailer Code, retail name,
+COMPLETED Amount, QR Visibility, photo checks), or the older "DSR Wise" layout.
+C2S target = retailers targeted for a 300 Tk+ transaction; QR target = number of retailers.
+
+Publisher setup (once): run `supabase/update-01-github-publisher.sql` in Supabase, then add
+the Supabase secret key as the GitHub Actions secret `SUPABASE_SECRET_KEY`.

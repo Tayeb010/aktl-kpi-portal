@@ -1,0 +1,9 @@
+{
+  "name": "aktl-kpi-tools",
+  "private": true,
+  "description": "SQR publisher for the AKTL KPI Portal",
+  "dependencies": {
+    "@supabase/supabase-js": "2.45.4",
+    "xlsx": "0.18.5"
+  }
+}

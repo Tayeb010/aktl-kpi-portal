@@ -287,3 +287,4 @@ button.rank:hover,tr.click:hover td{background:rgba(255,255,255,.04)}
 .login{max-width:440px;padding-top:6vh}
 .login h1{font-size:40px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .login form{padding:22px}
+.tile .v.badv{color:var(--bad)} .tile .v.goodv{color:var(--good)}
