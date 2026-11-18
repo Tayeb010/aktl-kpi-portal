@@ -61,6 +61,10 @@ a summary sheet (e.g. "Summury": DSR Name, Retailers, Retailer has Request,
 Retailer Trxn Active, C2S Target, QR Target, QR Visibility Success, photo checks)
 plus a retailer sheet (DSR Profile Code, DSR Name, Retailer Code, retail name,
 COMPLETED Amount, QR Visibility, photo checks), or the older "DSR Wise" layout.
+The summary may give "QR Visibility %" instead of a success count, and the retailer sheet
+may leave out "DSR Profile Code" (e.g. Sheet1/Sheet2 files): DSRs are then matched by name to
+the DSRs already on the portal, photo checks are counted from the retailer rows, and a missing
+period is taken from a file name like `SQR_11_18_2026.xlsx` (pulled 18-Nov, data 01-Nov to 17-Nov).
 C2S target = retailers targeted for a 300 Tk+ transaction; QR target = number of retailers.
 
 Publisher setup (once): run `supabase/update-01-github-publisher.sql` in Supabase, then add

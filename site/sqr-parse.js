@@ -66,7 +66,7 @@ const SUMMARY = [
   ['active', ['retailer trxn active'], 'Transaction active retailers', 1],
   ['target', ['c2s target', '300 tk c2s target'], 'C2S target (300 Tk+ retailers)', 1],
   ['qrTarget', ['qr target'], 'QR visibility target (= retailers)', 0],
-  ['qrSuccess', ['qr visibility success'], 'QR visibility success', 1],
+  ['qrSuccess', ['qr visibility success'], 'QR visibility success', 0],   // or derived from "QR Visibility %"
   ['wrongQr', ['wrong qr placed'], 'Wrong QR placed', 0],
   ['outside100', ['qr place outside 100m'], 'QR placed outside 100m', 0],
   ['latePhoto', ['photo > 15 min after visit'], 'Photo >15 min after visit', 0]
@@ -93,6 +93,17 @@ function readPeriod(texts) {
   return m1 ? { from: m1[1], to: m1[2], pulled: m2 ? m2[1] : null } : null;
 }
 const titleText = (rows, hi) => rows.slice(0, hi).flat().filter(c => typeof c === 'string');
+/* "SQR_11_18_2026.xlsx" (month_day_year, the day the data was pulled) -> 01-Nov to 17-Nov, pulled 18-Nov */
+const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+function periodFromFileName(fn) {
+  const m = String(fn || '').match(/(\d{1,2})[_\-.](\d{1,2})[_\-.](20\d{2})/);
+  if (!m) return null;
+  const mo = +m[1] - 1, day = +m[2];
+  if (mo < 0 || mo > 11 || day < 1 || day > 31) return null;
+  const dd = n => String(n).padStart(2, '0');
+  const prev = new Date(Date.UTC(+m[3], mo, day - 1));
+  return { from: `01-${MON[prev.getUTCMonth()]}`, to: `${dd(prev.getUTCDate())}-${MON[prev.getUTCMonth()]}`, pulled: `${dd(day)}-${MON[mo]}`, fromFile: true };
+}
 
 const dsrNo = s => { const m = String(s == null ? '' : s).match(/dsr\D{0,3}(\d+)\s*$/i) || String(s == null ? '' : s).match(/(\d+)\s*$/); return m ? +m[1] : null; };
 
@@ -105,37 +116,53 @@ function parse(wb, XLSX, fileName, opts) {
   const old = all.find(s => findHeader(s.rows, H => H.includes('dsr profile code') && H.includes('retailer trxn active')));
   if (old) return parseDsrWise(all, old, out);
   const sum = all.find(s => findHeader(s.rows, H => H.includes('dsr name') && H.includes('retailer trxn active') && !H.includes('dsr profile code')));
-  if (sum) return parseSummary(all, sum, out);
+  if (sum) return parseSummary(all, sum, out, (opts && opts.dsrIndex) || []);
   out.issues.push({ t: 'err', m: 'No SQR sheet found. It needs a header row with "Retailer Trxn Active" and either "DSR Profile Code" or "DSR Name".' });
   return out;
 }
 
 /* ---------- newer layout: Summury + retailer sheet ---------- */
-function parseSummary(all, sum, out) {
+function parseSummary(all, sum, out, index) {
   out.format = 'summary'; out.sheetDsr = sum.sn;
   const h = findHeader(sum.rows, H => H.includes('dsr name'));
   const col = names => { for (const n of names) { const i = h.H.indexOf(n); if (i >= 0) return i; } return -1; };
   out.mapping = SUMMARY.map(f => { const c = col(f[1]); return { k: f[0], label: f[2], req: !!f[3], col: c, header: c >= 0 ? h.raw[c] : null }; });
   out.mapping.filter(m => m.req && m.col < 0).forEach(m => out.issues.push({ t: 'err', m: `Required column missing in "${sum.sn}": "${SUMMARY.find(f => f[0] === m.k)[1][0]}".` }));
+  // QR visibility: either a "QR Visibility Success" count or a "QR Visibility %" share of retailers.
+  const qrPctCol = col(['qr visibility %', 'qr visibility%']);
+  if (out.mapping.find(m => m.k === 'qrSuccess').col < 0 && qrPctCol < 0) out.issues.push({ t: 'err', m: `Required column missing in "${sum.sn}": "QR Visibility Success" or "QR Visibility %".` });
 
-  // Retailer sheet gives each DSR's profile code (needed to match logins) and the retailer list.
-  const ret = all.find(s => s !== sum && findHeader(s.rows, H => H.includes('dsr profile code') && H.includes('retailer code')));
-  if (!ret) { out.issues.push({ t: 'err', m: 'No retailer sheet found. It needs "DSR Profile Code", "DSR Name" and "Retailer Code" columns, and is used to match each DSR to their login.' }); return out; }
+  // Retailer sheet: the retailer list, plus each DSR's profile code (needed to match logins).
+  // Files without "DSR Profile Code" are matched by DSR name to the DSRs already on the portal.
+  let ret = all.find(s => s !== sum && findHeader(s.rows, H => H.includes('dsr profile code') && H.includes('retailer code')));
+  const byName = !ret;
+  if (byName) ret = all.find(s => s !== sum && findHeader(s.rows, H => H.includes('dsr name') && H.includes('retailer code')));
+  if (!ret) { out.issues.push({ t: 'err', m: 'No retailer sheet found. It needs "DSR Name" and "Retailer Code" columns (and ideally "DSR Profile Code"), and is used to match each DSR to their login.' }); return out; }
   out.sheetRet = ret.sn;
-  const rh = findHeader(ret.rows, H => H.includes('dsr profile code'));
+  const rh = findHeader(ret.rows, H => H.includes('retailer code') && (H.includes('dsr profile code') || H.includes('dsr name')));
   const ix = n => rh.H.indexOf(n);
-  const c = { code: ix('dsr profile code'), dname: ix('dsr name'), rcode: ix('retailer code'), rname: ix('retailer name'), rname2: ix('retail name'), amt: ix('completed amount') >= 0 ? ix('completed amount') : ix('qr c2s amount'), vis: ix('qr visibility'), wrong: ix('wrong qr placed'), out: ix('qr place outside 100m'), late: ix('photo > 15 min after visit') };
+  const firstIx = (...ns) => { for (const n of ns) { const i = ix(n); if (i >= 0) return i; } return -1; };
+  const c = { code: ix('dsr profile code'), dname: ix('dsr name'), rcode: ix('retailer code'), rname: ix('retailer name'), rname2: ix('retail name'), amt: firstIx('completed amount', 'super qr completed amount', 'qr c2s amount'), vis: ix('qr visibility'), wrong: ix('wrong qr placed'), out: ix('qr place outside 100m'), late: ix('photo > 15 min after visit') };
   if (c.dname < 0) out.issues.push({ t: 'err', m: `"${ret.sn}" has no "DSR Name" column, so DSRs cannot be matched to the summary.` });
   if (c.amt < 0) out.issues.push({ t: 'err', m: `"${ret.sn}" has no "COMPLETED Amount" column.` });
-  out.period = readPeriod(titleText(ret.rows, rh.hi).concat(titleText(sum.rows, h.hi)));
+  // Name -> profile code from the live portal data, for files without "DSR Profile Code".
+  const known = {}, knownNo = {};
+  index.forEach(d => { known[norm(d.name)] = d.code; const n = dsrNo(d.name); if (n != null) knownNo[n] = d.code; });
+  const codeForName = dn => known[norm(dn)] || (dsrNo(dn) != null ? knownNo[dsrNo(dn)] : null) || null;
+  if (byName && !index.length) out.issues.push({ t: 'err', m: `"${ret.sn}" has no "DSR Profile Code" column and no DSRs are on the portal yet to match names against. Use a file with "DSR Profile Code" the first time.` });
+  out.period = readPeriod(titleText(ret.rows, rh.hi).concat(titleText(sum.rows, h.hi))) || periodFromFileName(out.fileName);
   if (!out.period) out.issues.push({ t: 'warn', m: 'Could not read the report period from the title row. Dashboards will show "Period not given".' });
+  else if (out.period.fromFile) { delete out.period.fromFile; out.issues.push({ t: 'warn', m: `No period in the title row; taken from the file name as ${out.period.from} to ${out.period.to} (pulled ${out.period.pulled}).` }); }
   if (out.issues.some(i => i.t === 'err')) return out;
 
-  const codeOf = {}, byCode = {}, conflict = new Set();
+  const codeOf = {}, byCode = {}, conflict = new Set(), unknownNames = new Set();
   let badAmt = 0;
   ret.rows.slice(rh.hi + 1).forEach(r => {
-    if (!r || r[c.code] == null || r[c.code] === '') return;
-    const code = String(r[c.code]).trim(), dn = String(r[c.dname] == null ? '' : r[c.dname]).trim();
+    if (!r) return;
+    const dn = String(r[c.dname] == null ? '' : r[c.dname]).trim();
+    let code;
+    if (byName) { if (!dn) return; code = codeForName(dn); if (!code) { unknownNames.add(dn); return; } }
+    else { if (r[c.code] == null || r[c.code] === '') return; code = String(r[c.code]).trim(); }
     if (dn) { if (codeOf[dn] && codeOf[dn] !== code) conflict.add(dn); codeOf[dn] = code; }
     let amt = num(r[c.amt]); if (isNaN(amt)) { badAmt++; amt = 0; }
     const pick = (a, b) => { const v = a >= 0 ? r[a] : null; return v != null && v !== '' ? v : (b >= 0 ? r[b] : null); };
@@ -146,6 +173,7 @@ function parseSummary(all, sum, out) {
     (byCode[code] = byCode[code] || []).push(it);
   });
   conflict.forEach(dn => out.issues.push({ t: 'err', m: `DSR name "${dn}" has more than one DSR Profile Code in "${ret.sn}".` }));
+  if (unknownNames.size) out.issues.push({ t: 'warn', m: `Retailers for ${[...unknownNames].join(', ')} were ignored: no DSR with that name is on the portal yet.` });
   if (badAmt) out.issues.push({ t: 'warn', m: `${badAmt} retailer amount cell(s) had text instead of a number and were read as 0.` });
 
   let skipped = 0, badNum = 0;
@@ -162,6 +190,14 @@ function parseSummary(all, sum, out) {
     const items = byCode[code] || [];
     if (d.retailers == null) d.retailers = items.length;
     if (d.qrTarget == null) d.qrTarget = d.retailers;               // QR target = number of retailers
+    if (d.qrSuccess == null && qrPctCol >= 0) {                       // "QR Visibility %" -> count of retailers
+      let p = num(r[qrPctCol]); if (isNaN(p)) { badNum++; p = 0; } if (p > 1.5) p /= 100;
+      d.qrSuccess = Math.round(p * d.qrTarget);
+    }
+    // Photo checks: count from the retailer rows when the summary has no such column.
+    if (d.wrongQr == null && c.wrong >= 0) d.wrongQr = items.filter(x => x.wrong).length;
+    if (d.outside100 == null && c.out >= 0) d.outside100 = items.filter(x => x.out).length;
+    if (d.latePhoto == null && c.late >= 0) d.latePhoto = items.filter(x => x.late).length;
     d.sqrAmt = items.reduce((s, x) => s + x.amt, 0);                  // Super QR completed Tk
     d.trxRet = items.filter(x => x.amt > 0).length;
     d.zeroTk = items.filter(x => x.amt <= 0).length;

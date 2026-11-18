@@ -1,31 +1,35 @@
 {
  "kpi": "SQR",
- "fileName": "SQR_update.xlsx",
+ "fileName": "SQR_11_18_2026.xlsx",
  "format": "summary",
  "period": {
   "from": "01-Nov",
-  "to": "09-Nov",
-  "pulled": "10-Nov"
+  "to": "17-Nov",
+  "pulled": "18-Nov"
  },
- "builtAt": "2026-11-10T06:20:27.622Z",
- "issues": [],
+ "builtAt": "2026-11-18T07:34:36.222Z",
+ "issues": [
+  {
+   "t": "warn",
+   "m": "No period in the title row; taken from the file name as 01-Nov to 17-Nov (pulled 18-Nov)."
+  }
+ ],
  "figures": [
   {
    "code": "Dsr_Aktl(sitakunda)_107484_1",
    "name": "DSR-01",
    "data": {
     "retailers": 24,
-    "hasRequest": 17,
-    "active": 11,
+    "active": 13,
     "target": 10,
     "qrTarget": 24,
-    "qrSuccess": 19,
-    "wrongQr": 1,
+    "qrSuccess": 24,
+    "wrongQr": 0,
     "outside100": 0,
-    "latePhoto": 1,
-    "sqrAmt": 12303,
-    "trxRet": 15,
-    "zeroTk": 9
+    "latePhoto": 0,
+    "sqrAmt": 15096,
+    "trxRet": 16,
+    "zeroTk": 8
    }
   },
   {
@@ -33,17 +37,16 @@
    "name": "DSR-02",
    "data": {
     "retailers": 32,
-    "hasRequest": 8,
-    "active": 6,
+    "active": 10,
     "target": 10,
     "qrTarget": 32,
-    "qrSuccess": 14,
+    "qrSuccess": 20,
     "wrongQr": 0,
     "outside100": 0,
-    "latePhoto": 2,
-    "sqrAmt": 3790,
-    "trxRet": 7,
-    "zeroTk": 25
+    "latePhoto": 1,
+    "sqrAmt": 9175,
+    "trxRet": 11,
+    "zeroTk": 21
    }
   },
   {
@@ -51,17 +54,16 @@
    "name": "DSR-03",
    "data": {
     "retailers": 32,
-    "hasRequest": 16,
-    "active": 8,
+    "active": 16,
     "target": 10,
     "qrTarget": 32,
-    "qrSuccess": 31,
+    "qrSuccess": 32,
     "wrongQr": 0,
     "outside100": 0,
     "latePhoto": 0,
-    "sqrAmt": 7231,
-    "trxRet": 14,
-    "zeroTk": 18
+    "sqrAmt": 13469,
+    "trxRet": 21,
+    "zeroTk": 11
    }
   },
   {
@@ -69,17 +71,16 @@
    "name": "DSR-05",
    "data": {
     "retailers": 51,
-    "hasRequest": 15,
-    "active": 5,
+    "active": 11,
     "target": 16,
     "qrTarget": 51,
-    "qrSuccess": 17,
-    "wrongQr": 1,
+    "qrSuccess": 27,
+    "wrongQr": 2,
     "outside100": 0,
-    "latePhoto": 1,
-    "sqrAmt": 3329,
-    "trxRet": 8,
-    "zeroTk": 43
+    "latePhoto": 0,
+    "sqrAmt": 11169,
+    "trxRet": 21,
+    "zeroTk": 30
    }
   },
   {
@@ -87,17 +88,16 @@
    "name": "DSR-06",
    "data": {
     "retailers": 31,
-    "hasRequest": 1,
-    "active": 0,
+    "active": 6,
     "target": 10,
     "qrTarget": 31,
-    "qrSuccess": 3,
+    "qrSuccess": 18,
     "wrongQr": 1,
-    "outside100": 0,
+    "outside100": 1,
     "latePhoto": 0,
-    "sqrAmt": 20,
-    "trxRet": 1,
-    "zeroTk": 30
+    "sqrAmt": 4431,
+    "trxRet": 6,
+    "zeroTk": 25
    }
   },
   {
@@ -105,17 +105,16 @@
    "name": "DSR-07",
    "data": {
     "retailers": 25,
-    "hasRequest": 15,
-    "active": 11,
+    "active": 16,
     "target": 10,
     "qrTarget": 25,
-    "qrSuccess": 15,
+    "qrSuccess": 21,
     "wrongQr": 0,
     "outside100": 0,
     "latePhoto": 0,
-    "sqrAmt": 7518,
-    "trxRet": 14,
-    "zeroTk": 11
+    "sqrAmt": 11558,
+    "trxRet": 18,
+    "zeroTk": 7
    }
   },
   {
@@ -123,17 +122,16 @@
    "name": "DSR-08",
    "data": {
     "retailers": 20,
-    "hasRequest": 1,
     "active": 0,
     "target": 10,
     "qrTarget": 20,
-    "qrSuccess": 2,
+    "qrSuccess": 6,
     "wrongQr": 1,
     "outside100": 0,
     "latePhoto": 0,
-    "sqrAmt": 0,
-    "trxRet": 0,
-    "zeroTk": 20
+    "sqrAmt": 270,
+    "trxRet": 1,
+    "zeroTk": 19
    }
   },
   {
@@ -141,17 +139,16 @@
    "name": "DSR-09",
    "data": {
     "retailers": 19,
-    "hasRequest": 0,
-    "active": 0,
+    "active": 5,
     "target": 10,
     "qrTarget": 19,
-    "qrSuccess": 1,
+    "qrSuccess": 7,
     "wrongQr": 0,
     "outside100": 0,
     "latePhoto": 0,
-    "sqrAmt": 0,
-    "trxRet": 0,
-    "zeroTk": 19
+    "sqrAmt": 4617,
+    "trxRet": 6,
+    "zeroTk": 13
    }
   },
   {
@@ -159,17 +156,16 @@
    "name": "DSR-11",
    "data": {
     "retailers": 32,
-    "hasRequest": 3,
-    "active": 1,
+    "active": 2,
     "target": 10,
     "qrTarget": 32,
     "qrSuccess": 10,
     "wrongQr": 0,
     "outside100": 0,
     "latePhoto": 0,
-    "sqrAmt": 857,
-    "trxRet": 2,
-    "zeroTk": 30
+    "sqrAmt": 1460,
+    "trxRet": 3,
+    "zeroTk": 29
    }
   },
   {
@@ -177,17 +173,16 @@
    "name": "DSR-12",
    "data": {
     "retailers": 19,
-    "hasRequest": 16,
     "active": 15,
     "target": 10,
     "qrTarget": 19,
-    "qrSuccess": 18,
+    "qrSuccess": 19,
     "wrongQr": 0,
     "outside100": 0,
-    "latePhoto": 1,
-    "sqrAmt": 14000,
-    "trxRet": 15,
-    "zeroTk": 4
+    "latePhoto": 0,
+    "sqrAmt": 16989,
+    "trxRet": 16,
+    "zeroTk": 3
    }
   },
   {
@@ -195,17 +190,16 @@
    "name": "DSR-13",
    "data": {
     "retailers": 39,
-    "hasRequest": 9,
-    "active": 5,
+    "active": 6,
     "target": 12,
     "qrTarget": 39,
-    "qrSuccess": 31,
+    "qrSuccess": 33,
     "wrongQr": 0,
     "outside100": 0,
     "latePhoto": 0,
-    "sqrAmt": 4630,
-    "trxRet": 6,
-    "zeroTk": 33
+    "sqrAmt": 10258,
+    "trxRet": 9,
+    "zeroTk": 30
    }
   },
   {
@@ -213,7 +207,6 @@
    "name": "DSR-14",
    "data": {
     "retailers": 36,
-    "hasRequest": 7,
     "active": 6,
     "target": 12,
     "qrTarget": 36,
@@ -221,7 +214,7 @@
     "wrongQr": 1,
     "outside100": 1,
     "latePhoto": 0,
-    "sqrAmt": 8637,
+    "sqrAmt": 11101,
     "trxRet": 7,
     "zeroTk": 29
    }
@@ -231,17 +224,16 @@
    "name": "DSR-15",
    "data": {
     "retailers": 20,
-    "hasRequest": 1,
-    "active": 1,
+    "active": 6,
     "target": 10,
     "qrTarget": 20,
     "qrSuccess": 18,
     "wrongQr": 0,
     "outside100": 0,
     "latePhoto": 0,
-    "sqrAmt": 600,
-    "trxRet": 1,
-    "zeroTk": 19
+    "sqrAmt": 4210,
+    "trxRet": 8,
+    "zeroTk": 12
    }
   },
   {
@@ -249,17 +241,16 @@
    "name": "DSR-16",
    "data": {
     "retailers": 34,
-    "hasRequest": 11,
-    "active": 4,
+    "active": 13,
     "target": 11,
     "qrTarget": 34,
-    "qrSuccess": 8,
+    "qrSuccess": 14,
     "wrongQr": 0,
     "outside100": 0,
     "latePhoto": 0,
-    "sqrAmt": 2635,
-    "trxRet": 9,
-    "zeroTk": 25
+    "sqrAmt": 8090,
+    "trxRet": 15,
+    "zeroTk": 19
    }
   },
   {
@@ -267,17 +258,16 @@
    "name": "DSR-17",
    "data": {
     "retailers": 27,
-    "hasRequest": 3,
-    "active": 2,
+    "active": 7,
     "target": 10,
     "qrTarget": 27,
-    "qrSuccess": 0,
+    "qrSuccess": 27,
     "wrongQr": 0,
     "outside100": 0,
     "latePhoto": 0,
-    "sqrAmt": 1594,
-    "trxRet": 2,
-    "zeroTk": 25
+    "sqrAmt": 3889,
+    "trxRet": 7,
+    "zeroTk": 20
    }
   },
   {
@@ -285,17 +275,16 @@
    "name": "DSR-18",
    "data": {
     "retailers": 25,
-    "hasRequest": 15,
     "active": 14,
     "target": 10,
     "qrTarget": 25,
-    "qrSuccess": 20,
+    "qrSuccess": 22,
     "wrongQr": 0,
     "outside100": 0,
     "latePhoto": 0,
-    "sqrAmt": 16016,
-    "trxRet": 14,
-    "zeroTk": 11
+    "sqrAmt": 28286,
+    "trxRet": 16,
+    "zeroTk": 9
    }
   }
  ],
@@ -306,15 +295,15 @@
     {
      "code": "A106124",
      "name": "Jononi Telecom-2",
-     "amt": 250,
-     "rem": 50,
-     "done": false,
+     "amt": 850,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
      "code": "R0383485",
      "name": "Toslim Telecom",
-     "amt": 509,
+     "amt": 709,
      "rem": 0,
      "done": true,
      "vis": true
@@ -322,15 +311,15 @@
     {
      "code": "R0438604",
      "name": "B.K. Sohel Telecom",
-     "amt": 458,
+     "amt": 944,
      "rem": 0,
      "done": true,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R11629389",
      "name": "Modina Telecom",
-     "amt": 2144,
+     "amt": 2541,
      "rem": 0,
      "done": true,
      "vis": true
@@ -341,7 +330,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R11654039",
@@ -354,7 +343,7 @@
     {
      "code": "R11654425",
      "name": "Bismillah Store",
-     "amt": 1745,
+     "amt": 1827,
      "rem": 0,
      "done": true,
      "vis": true
@@ -378,7 +367,7 @@
     {
      "code": "R12939032",
      "name": "Sajid Mobile Banking",
-     "amt": 548,
+     "amt": 752,
      "rem": 0,
      "done": true,
      "vis": true
@@ -394,9 +383,9 @@
     {
      "code": "R13107665",
      "name": "Hasen Store",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 400,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
@@ -410,11 +399,10 @@
     {
      "code": "R13381767",
      "name": "Ealish store",
-     "amt": 100,
-     "rem": 200,
+     "amt": 119,
+     "rem": 181,
      "done": false,
-     "vis": false,
-     "wrong": true
+     "vis": true
     },
     {
      "code": "RR11735012",
@@ -438,8 +426,7 @@
      "amt": 200,
      "rem": 100,
      "done": false,
-     "vis": false,
-     "late": true
+     "vis": true
     },
     {
      "code": "RR42907481",
@@ -463,12 +450,12 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48655239",
      "name": "Four Star Telecom",
-     "amt": 1324,
+     "amt": 1625,
      "rem": 0,
      "done": true,
      "vis": true
@@ -476,7 +463,7 @@
     {
      "code": "RR48719825",
      "name": "Islam Store",
-     "amt": 1116,
+     "amt": 1190,
      "rem": 0,
      "done": true,
      "vis": true
@@ -492,8 +479,8 @@
     {
      "code": "RR91118823",
      "name": "Jonony Telecom",
-     "amt": 82,
-     "rem": 218,
+     "amt": 112,
+     "rem": 188,
      "done": false,
      "vis": true
     }
@@ -505,7 +492,7 @@
     {
      "code": "A036071",
      "name": "GULF TRAVELS & TELECOM",
-     "amt": 326,
+     "amt": 2255,
      "rem": 0,
      "done": true,
      "vis": true
@@ -513,9 +500,9 @@
     {
      "code": "A036552",
      "name": "FANTASY TELECOM",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 1927,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
@@ -537,8 +524,8 @@
     {
      "code": "A048758",
      "name": "Fantasy Telecom",
-     "amt": 0,
-     "rem": 300,
+     "amt": 100,
+     "rem": 200,
      "done": false,
      "vis": true
     },
@@ -601,7 +588,7 @@
     {
      "code": "R0442126",
      "name": "Suban telecom",
-     "amt": 879,
+     "amt": 1057,
      "rem": 0,
      "done": true,
      "vis": false,
@@ -637,7 +624,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R11627970",
@@ -645,7 +632,7 @@
      "amt": 398,
      "rem": 0,
      "done": true,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R11633537",
@@ -674,10 +661,10 @@
     {
      "code": "R12688456",
      "name": "Farhan Store",
-     "amt": 294,
-     "rem": 6,
-     "done": false,
-     "vis": false
+     "amt": 541,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "R12826782",
@@ -690,10 +677,10 @@
     {
      "code": "R12942534",
      "name": "Imam Telecom 3",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
-     "vis": false
+     "amt": 417,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "RR11754162",
@@ -717,7 +704,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48720030",
@@ -746,19 +733,18 @@
     {
      "code": "RR91111749",
      "name": "Rafiq Store",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 511,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
      "code": "RR91118826",
      "name": "RSE AKTL Sitakunda",
-     "amt": 896,
+     "amt": 972,
      "rem": 0,
      "done": true,
-     "vis": false,
-     "late": true
+     "vis": true
     }
    ]
   },
@@ -768,9 +754,9 @@
     {
      "code": "A045135",
      "name": "Pritom Telecom",
-     "amt": 202,
-     "rem": 98,
-     "done": false,
+     "amt": 367,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
@@ -784,15 +770,15 @@
     {
      "code": "A048757",
      "name": "Hashem Telecom",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 319,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
      "code": "A106120",
      "name": "Samiya Telecom",
-     "amt": 599,
+     "amt": 883,
      "rem": 0,
      "done": true,
      "vis": true
@@ -800,17 +786,17 @@
     {
      "code": "A110482",
      "name": "Nur Uddin Store",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
-     "vis": false
+     "amt": 500,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "A117104",
      "name": "Jonnoni Telecom",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 703,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
@@ -832,9 +818,9 @@
     {
      "code": "R0430464",
      "name": "HS Computer",
-     "amt": 248,
-     "rem": 52,
-     "done": false,
+     "amt": 798,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
@@ -864,17 +850,17 @@
     {
      "code": "R11628122",
      "name": "Nur Telecom & Digital Studio",
-     "amt": 100,
-     "rem": 200,
-     "done": false,
+     "amt": 1099,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
      "code": "R11646396",
      "name": "Tarek Telecom",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 478,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
@@ -896,8 +882,8 @@
     {
      "code": "R12735502",
      "name": "Baker Store",
-     "amt": 0,
-     "rem": 300,
+     "amt": 80,
+     "rem": 220,
      "done": false,
      "vis": true
     },
@@ -928,15 +914,15 @@
     {
      "code": "RR11741281",
      "name": "Nurjahn Store",
-     "amt": 0,
-     "rem": 300,
+     "amt": 168,
+     "rem": 132,
      "done": false,
      "vis": true
     },
     {
      "code": "RR20606069",
      "name": "Mojamel Store",
-     "amt": 593,
+     "amt": 882,
      "rem": 0,
      "done": true,
      "vis": true
@@ -944,8 +930,8 @@
     {
      "code": "RR20607045",
      "name": "Anan Telecom",
-     "amt": 100,
-     "rem": 200,
+     "amt": 214,
+     "rem": 86,
      "done": false,
      "vis": true
     },
@@ -960,9 +946,9 @@
     {
      "code": "RR28210283",
      "name": "King",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 686,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
@@ -976,7 +962,7 @@
     {
      "code": "RR48460574",
      "name": "Jinat Pharmacy",
-     "amt": 1910,
+     "amt": 2813,
      "rem": 0,
      "done": true,
      "vis": true
@@ -1032,8 +1018,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false,
-     "wrong": true
+     "vis": true
     },
     {
      "code": "A105850",
@@ -1062,26 +1047,27 @@
     {
      "code": "A109173",
      "name": "Hasan Store",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
-     "vis": false
+     "amt": 436,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "A120206",
      "name": "GR14 Sharma Store",
-     "amt": 0,
-     "rem": 300,
+     "amt": 20,
+     "rem": 280,
      "done": false,
-     "vis": false
+     "vis": false,
+     "wrong": true
     },
     {
      "code": "R0331104",
      "name": "Asma Store",
-     "amt": 0,
-     "rem": 300,
+     "amt": 150,
+     "rem": 150,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R0354199",
@@ -1094,10 +1080,10 @@
     {
      "code": "R0354406",
      "name": "Haji Ahmodur Rahman Telecom",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
-     "vis": false
+     "amt": 310,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "R0371096",
@@ -1110,7 +1096,7 @@
     {
      "code": "R0411864",
      "name": "AKTL Mirsharai D - 11",
-     "amt": 396,
+     "amt": 1309,
      "rem": 0,
      "done": true,
      "vis": false
@@ -1121,13 +1107,13 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R0431277",
      "name": "Farbaz  Telecom",
-     "amt": 0,
-     "rem": 300,
+     "amt": 160,
+     "rem": 140,
      "done": false,
      "vis": false
     },
@@ -1174,8 +1160,8 @@
     {
      "code": "R12866206",
      "name": "Rhisul Store",
-     "amt": 0,
-     "rem": 300,
+     "amt": 50,
+     "rem": 250,
      "done": false,
      "vis": true
     },
@@ -1190,9 +1176,9 @@
     {
      "code": "R12939061",
      "name": "Salam store",
-     "amt": 186,
-     "rem": 114,
-     "done": false,
+     "amt": 756,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
@@ -1225,8 +1211,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false,
-     "late": true
+     "vis": true
     },
     {
      "code": "RR11781058",
@@ -1239,8 +1224,8 @@
     {
      "code": "RR11781200",
      "name": "Emon Telecom",
-     "amt": 0,
-     "rem": 300,
+     "amt": 20,
+     "rem": 280,
      "done": false,
      "vis": false
     },
@@ -1306,7 +1291,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48180916",
@@ -1327,7 +1312,7 @@
     {
      "code": "RR48240698",
      "name": "Alamgir Store",
-     "amt": 1338,
+     "amt": 2012,
      "rem": 0,
      "done": true,
      "vis": true
@@ -1346,7 +1331,8 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": false,
+     "wrong": true
     },
     {
      "code": "RR48507688",
@@ -1359,10 +1345,10 @@
     {
      "code": "RR48507743",
      "name": "shohel store",
-     "amt": 0,
-     "rem": 300,
+     "amt": 70,
+     "rem": 230,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48526735",
@@ -1383,9 +1369,9 @@
     {
      "code": "RR48600795",
      "name": "Alim Store",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 699,
+     "rem": 0,
+     "done": true,
      "vis": false
     },
     {
@@ -1399,26 +1385,26 @@
     {
      "code": "RR48641395",
      "name": "rabbani Store",
-     "amt": 0,
-     "rem": 300,
+     "amt": 220,
+     "rem": 80,
      "done": false,
      "vis": true
     },
     {
      "code": "RR48719884",
      "name": "All you need",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
-     "vis": false
+     "amt": 1618,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "RR48719887",
      "name": "Bismillah omeo",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
-     "vis": false
+     "amt": 1811,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "RR48719928",
@@ -1431,8 +1417,8 @@
     {
      "code": "RR91111612",
      "name": "Babor Store",
-     "amt": 0,
-     "rem": 300,
+     "amt": 119,
+     "rem": 181,
      "done": false,
      "vis": true
     }
@@ -1455,7 +1441,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R0347977",
@@ -1463,7 +1449,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R0393420",
@@ -1496,7 +1482,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R11628879",
@@ -1504,23 +1490,23 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R11628925",
      "name": "Arafat & Brothers Telecom",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 454,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
      "code": "R11828529",
      "name": "Iqbal Telecom Center-2",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
-     "vis": false
+     "amt": 396,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "R12614147",
@@ -1536,23 +1522,23 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R12732760",
      "name": "Shamim Enterprise",
-     "amt": 20,
-     "rem": 280,
-     "done": false,
-     "vis": false
+     "amt": 2083,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "R12735598",
      "name": "Jom Jom Telecom",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
-     "vis": false
+     "amt": 300,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "R12788724",
@@ -1573,10 +1559,10 @@
     {
      "code": "R13349182",
      "name": "Rahul",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
-     "vis": false
+     "amt": 599,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "RR11781032",
@@ -1584,7 +1570,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR13479454",
@@ -1608,15 +1594,15 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR22866757",
      "name": "MULANA TEL",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
-     "vis": false
+     "amt": 599,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "RR47604555",
@@ -1624,7 +1610,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR47671891",
@@ -1640,7 +1626,8 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": false,
+     "out": true
     },
     {
      "code": "RR48503086",
@@ -1656,7 +1643,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48600806",
@@ -1672,7 +1659,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48719889",
@@ -1698,9 +1685,9 @@
     {
      "code": "A036540",
      "name": "JARIN TELECOM",
-     "amt": 199,
-     "rem": 101,
-     "done": false,
+     "amt": 598,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
@@ -1725,7 +1712,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "A112272",
@@ -1738,10 +1725,10 @@
     {
      "code": "A115721",
      "name": "Faruk Telecom",
-     "amt": 281,
-     "rem": 19,
-     "done": false,
-     "vis": false
+     "amt": 469,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "R0354407",
@@ -1762,17 +1749,17 @@
     {
      "code": "R11633671",
      "name": "Ibrahim Telecom",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 519,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
      "code": "R11646446",
      "name": "Studio Point",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 780,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
@@ -1786,17 +1773,17 @@
     {
      "code": "R12570615",
      "name": "Jisan photo",
-     "amt": 0,
-     "rem": 300,
+     "amt": 220,
+     "rem": 80,
      "done": false,
      "vis": true
     },
     {
      "code": "R12688120",
      "name": "Shakil Telecom and Mobile Servicing",
-     "amt": 100,
-     "rem": 200,
-     "done": false,
+     "amt": 1290,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
@@ -1805,15 +1792,15 @@
      "amt": 799,
      "rem": 0,
      "done": true,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R12703805",
      "name": "Harun Tel",
-     "amt": 0,
-     "rem": 300,
+     "amt": 50,
+     "rem": 250,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R12788639",
@@ -1845,7 +1832,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R13061708",
@@ -1853,7 +1840,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R13107273",
@@ -1866,7 +1853,7 @@
     {
      "code": "R13147226",
      "name": "Kamal And Brothers",
-     "amt": 815,
+     "amt": 1112,
      "rem": 0,
      "done": true,
      "vis": false
@@ -1874,7 +1861,7 @@
     {
      "code": "RR28223180",
      "name": "Ridom Telecom",
-     "amt": 528,
+     "amt": 925,
      "rem": 0,
      "done": true,
      "vis": true
@@ -1968,8 +1955,8 @@
     {
      "code": "R12732849",
      "name": "Joshi Tel",
-     "amt": 0,
-     "rem": 300,
+     "amt": 270,
+     "rem": 30,
      "done": false,
      "vis": false
     },
@@ -1987,7 +1974,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR20629480",
@@ -2011,7 +1998,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR47658666",
@@ -2019,7 +2006,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48109059",
@@ -2043,7 +2030,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48719933",
@@ -2077,26 +2064,26 @@
     {
      "code": "A104712",
      "name": "Foyeza Electric",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 649,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
      "code": "R0331101",
      "name": "Pushpo Telecom-2",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 763,
+     "rem": 0,
+     "done": true,
      "vis": false
     },
     {
      "code": "R0331109",
      "name": "Ishaq Store",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
-     "vis": false
+     "amt": 847,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "R0417724",
@@ -2133,9 +2120,9 @@
     {
      "code": "RR11735418",
      "name": "SAYEM TEL",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 944,
+     "rem": 0,
+     "done": true,
      "vis": false
     },
     {
@@ -2160,7 +2147,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR42907492",
@@ -2176,7 +2163,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR47658641",
@@ -2184,7 +2171,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48221970",
@@ -2192,7 +2179,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48256332",
@@ -2205,17 +2192,17 @@
     {
      "code": "RR48526768",
      "name": "Joynal enter",
-     "amt": 0,
-     "rem": 300,
+     "amt": 20,
+     "rem": 280,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48719908",
      "name": "Nizam",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 1394,
+     "rem": 0,
+     "done": true,
      "vis": false
     }
    ]
@@ -2250,9 +2237,9 @@
     {
      "code": "A101628",
      "name": "Mamun Telecom",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 499,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
@@ -2378,8 +2365,8 @@
     {
      "code": "RR47948303",
      "name": "Intercom Telecom",
-     "amt": 20,
-     "rem": 280,
+     "amt": 124,
+     "rem": 176,
      "done": false,
      "vis": false
     },
@@ -2495,8 +2482,8 @@
     {
      "code": "A104895",
      "name": "Jewel Pharmachy",
-     "amt": 0,
-     "rem": 300,
+     "amt": 104,
+     "rem": 196,
      "done": false,
      "vis": true
     },
@@ -2519,7 +2506,7 @@
     {
      "code": "A119728",
      "name": "Belal Store",
-     "amt": 1295,
+     "amt": 1395,
      "rem": 0,
      "done": true,
      "vis": true
@@ -2559,7 +2546,7 @@
     {
      "code": "R12485160",
      "name": "Zakia Store",
-     "amt": 1490,
+     "amt": 3529,
      "rem": 0,
      "done": true,
      "vis": true
@@ -2567,7 +2554,7 @@
     {
      "code": "R12546217",
      "name": "Sara Electronics",
-     "amt": 1312,
+     "amt": 1332,
      "rem": 0,
      "done": true,
      "vis": true
@@ -2599,7 +2586,7 @@
     {
      "code": "RR47948311",
      "name": "Any Store",
-     "amt": 1438,
+     "amt": 2164,
      "rem": 0,
      "done": true,
      "vis": true
@@ -2634,8 +2621,7 @@
      "amt": 769,
      "rem": 0,
      "done": true,
-     "vis": false,
-     "late": true
+     "vis": true
     }
    ]
   },
@@ -2645,7 +2631,7 @@
     {
      "code": "A036510",
      "name": "Redwan Store",
-     "amt": 1334,
+     "amt": 2684,
      "rem": 0,
      "done": true,
      "vis": true
@@ -2677,7 +2663,7 @@
     {
      "code": "A118006",
      "name": "Maa Telecom",
-     "amt": 397,
+     "amt": 1397,
      "rem": 0,
      "done": true,
      "vis": false
@@ -2725,10 +2711,10 @@
     {
      "code": "R0404862",
      "name": "Sohel Departmental",
-     "amt": 536,
+     "amt": 1831,
      "rem": 0,
      "done": true,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R11629411",
@@ -2741,10 +2727,10 @@
     {
      "code": "R12548339",
      "name": "Ovi Store",
-     "amt": 0,
-     "rem": 300,
+     "amt": 50,
+     "rem": 250,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R12642906",
@@ -2757,9 +2743,9 @@
     {
      "code": "R12664146",
      "name": "Bismillah Traders",
-     "amt": 149,
-     "rem": 151,
-     "done": false,
+     "amt": 602,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
@@ -2773,15 +2759,15 @@
     {
      "code": "R12795200",
      "name": "Habib Store",
-     "amt": 0,
-     "rem": 300,
+     "amt": 155,
+     "rem": 145,
      "done": false,
      "vis": true
     },
     {
      "code": "R12913087",
      "name": "Onik Tel",
-     "amt": 1331,
+     "amt": 2636,
      "rem": 0,
      "done": true,
      "vis": true
@@ -2853,8 +2839,8 @@
     {
      "code": "RR47913127",
      "name": "Coton Tel",
-     "amt": 0,
-     "rem": 300,
+     "amt": 20,
+     "rem": 280,
      "done": false,
      "vis": false
     },
@@ -3058,7 +3044,7 @@
     {
      "code": "R12625515",
      "name": "Deb Telecom",
-     "amt": 4634,
+     "amt": 5931,
      "rem": 0,
      "done": true,
      "vis": true
@@ -3178,7 +3164,7 @@
     {
      "code": "RR47913140",
      "name": "Ma  Baba Tel",
-     "amt": 869,
+     "amt": 2036,
      "rem": 0,
      "done": true,
      "vis": false,
@@ -3257,9 +3243,9 @@
     {
      "code": "A101650",
      "name": "Tarek Telecom",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 318,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
@@ -3273,9 +3259,9 @@
     {
      "code": "A104716",
      "name": "Selim Enterprice",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 599,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
@@ -3297,9 +3283,9 @@
     {
      "code": "R11836181",
      "name": "POLASH STORE",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 599,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
@@ -3329,9 +3315,9 @@
     {
      "code": "R12866321",
      "name": "Sakl Store",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 1022,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
@@ -3393,24 +3379,24 @@
     {
      "code": "RR47913136",
      "name": "Mahi Tel",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 798,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
      "code": "RR48617205",
      "name": "Rashid Store",
-     "amt": 0,
-     "rem": 300,
+     "amt": 174,
+     "rem": 126,
      "done": false,
      "vis": true
     },
     {
      "code": "RR48720018",
      "name": "Aynal",
-     "amt": 0,
-     "rem": 300,
+     "amt": 100,
+     "rem": 200,
      "done": false,
      "vis": true
     }
@@ -3422,25 +3408,25 @@
     {
      "code": "A036599",
      "name": "JASIM UDDIN & BROTHERS",
-     "amt": 230,
-     "rem": 70,
-     "done": false,
+     "amt": 350,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
      "code": "A036610",
      "name": "SHOTORUPA ELECTRONICS",
-     "amt": 211,
-     "rem": 89,
-     "done": false,
+     "amt": 311,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
      "code": "A051103",
      "name": "Ripon  Telecom",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 663,
+     "rem": 0,
+     "done": true,
      "vis": false
     },
     {
@@ -3457,7 +3443,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R0386661",
@@ -3465,7 +3451,7 @@
      "amt": 400,
      "rem": 0,
      "done": true,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R0391528",
@@ -3513,7 +3499,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R12548311",
@@ -3534,48 +3520,48 @@
     {
      "code": "R12795227",
      "name": "MIAJAN BHUIYAN STATIONARY",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
-     "vis": false
+     "amt": 1147,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "R13089500",
      "name": "JAHED STORE",
-     "amt": 199,
-     "rem": 101,
-     "done": false,
+     "amt": 834,
+     "rem": 0,
+     "done": true,
      "vis": false
     },
     {
      "code": "R13219119",
      "name": "ISLAMIA LIBRARY",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 1394,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
      "code": "R13246470",
      "name": "Alok Telecom",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 350,
+     "rem": 0,
+     "done": true,
      "vis": true
     },
     {
      "code": "RR11754183",
      "name": "Noorudden Store",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
+     "amt": 550,
+     "rem": 0,
+     "done": true,
      "vis": false
     },
     {
      "code": "RR20628227",
      "name": "Islam Store",
-     "amt": 0,
-     "rem": 300,
+     "amt": 199,
+     "rem": 101,
      "done": false,
      "vis": false
     },
@@ -3625,7 +3611,7 @@
      "amt": 599,
      "rem": 0,
      "done": true,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48221430",
@@ -3665,7 +3651,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48549221",
@@ -3686,9 +3672,9 @@
     {
      "code": "RR48623296",
      "name": "PINKEY FASHION",
-     "amt": 40,
-     "rem": 260,
-     "done": false,
+     "amt": 337,
+     "rem": 0,
+     "done": true,
      "vis": false
     }
    ]
@@ -3702,15 +3688,15 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "A121348",
      "name": "Zakir Store (2)",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
-     "vis": false
+     "amt": 399,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "R0332449",
@@ -3718,7 +3704,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R0383483",
@@ -3726,7 +3712,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R0395241",
@@ -3734,7 +3720,7 @@
      "amt": 749,
      "rem": 0,
      "done": true,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R12688153",
@@ -3742,7 +3728,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R13033014",
@@ -3750,7 +3736,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "R13383674",
@@ -3758,7 +3744,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR11707931",
@@ -3766,15 +3752,15 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR11735015",
      "name": "Jononi Telecom",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
-     "vis": false
+     "amt": 437,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "RR28222976",
@@ -3782,7 +3768,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR28223154",
@@ -3790,15 +3776,15 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR42907503",
      "name": "Kobir Store",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
-     "vis": false
+     "amt": 419,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "RR48109063",
@@ -3806,7 +3792,7 @@
      "amt": 845,
      "rem": 0,
      "done": true,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48109074",
@@ -3814,7 +3800,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48295775",
@@ -3822,7 +3808,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48295786",
@@ -3830,7 +3816,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48549605",
@@ -3838,7 +3824,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48582939",
@@ -3846,7 +3832,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48582974",
@@ -3854,15 +3840,15 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48600797",
      "name": "Manik Telecom",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
-     "vis": false
+     "amt": 500,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "RR48719868",
@@ -3870,15 +3856,15 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48719869",
      "name": "Mustafiz Computer",
-     "amt": 0,
-     "rem": 300,
-     "done": false,
-     "vis": false
+     "amt": 540,
+     "rem": 0,
+     "done": true,
+     "vis": true
     },
     {
      "code": "RR48719870",
@@ -3886,7 +3872,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR91111758",
@@ -3894,7 +3880,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR91117845",
@@ -3902,7 +3888,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR91117846",
@@ -3910,7 +3896,7 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     }
    ]
   },
@@ -3928,7 +3914,7 @@
     {
      "code": "R0331120",
      "name": "Jonony Telecom",
-     "amt": 1199,
+     "amt": 1350,
      "rem": 0,
      "done": true,
      "vis": true
@@ -3952,7 +3938,7 @@
     {
      "code": "R12642878",
      "name": "Joshim Store",
-     "amt": 1180,
+     "amt": 2292,
      "rem": 0,
      "done": true,
      "vis": true
@@ -3960,7 +3946,7 @@
     {
      "code": "R12745120",
      "name": "Habib Store",
-     "amt": 4114,
+     "amt": 8366,
      "rem": 0,
      "done": true,
      "vis": true
@@ -3992,8 +3978,8 @@
     {
      "code": "R12977767",
      "name": "Mahin Store",
-     "amt": 0,
-     "rem": 300,
+     "amt": 169,
+     "rem": 131,
      "done": false,
      "vis": true
     },
@@ -4027,12 +4013,12 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR47624066",
      "name": "Joy Telecom",
-     "amt": 1517,
+     "amt": 3761,
      "rem": 0,
      "done": true,
      "vis": true
@@ -4080,7 +4066,7 @@
     {
      "code": "RR48582967",
      "name": "Ohona Mobile",
-     "amt": 1976,
+     "amt": 4686,
      "rem": 0,
      "done": true,
      "vis": true
@@ -4096,8 +4082,8 @@
     {
      "code": "RR48720025",
      "name": "Saiful",
-     "amt": 0,
-     "rem": 300,
+     "amt": 21,
+     "rem": 279,
      "done": false,
      "vis": true
     },
@@ -4107,12 +4093,12 @@
      "amt": 0,
      "rem": 300,
      "done": false,
-     "vis": false
+     "vis": true
     },
     {
      "code": "RR48720062",
      "name": "Jononi Store",
-     "amt": 2148,
+     "amt": 3759,
      "rem": 0,
      "done": true,
      "vis": true
