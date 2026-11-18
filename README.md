@@ -42,8 +42,9 @@ Every push to `main` updates the live site automatically.
 ## KPIs
 
 - **SQR · Super QR**: transaction-active retailers (300 Tk+) against the C2S target, QR visibility.
-- **Trade Visibility**: every BCD POS must be visited 2 times. The file's "Retail Wise" sheet lists
-  POS still to visit: "Pending" = needs 1st and 2nd visit, "1st Times Done" = needs 2nd visit only.
+- **Trade Visibility**: every BCD POS must be visited 2 times. The file's POS sheet ("Retail Wise" or
+  "POS Base", with a "TV Remarks" column): "Pending" = needs 1st and 2nd visit, "1st Times Done" =
+  needs 2nd visit only, "2nd Times Done" = both done (not listed on the portal).
   DSRs are matched by number ("AKTL (Sitakunda) DSR 01" = "DSR-01"); MSISDNs are cut to the last 4 digits.
 
 Each KPI has its own section on the home and team pages, with a "See details" button.

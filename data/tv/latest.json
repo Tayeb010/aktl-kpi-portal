@@ -1,9 +1,9 @@
 {
  "kpi": "TV",
- "fileName": "Trade_Visibility.xlsx",
+ "fileName": "Trade_Visibility_18_11_26.xlsx",
  "format": "tv",
  "period": null,
- "builtAt": "2026-11-10T08:06:05.281Z",
+ "builtAt": "2026-11-18T10:11:45.111Z",
  "issues": [],
  "figures": [
   {
@@ -11,10 +11,10 @@
    "name": "DSR-01",
    "data": {
     "pos": 45,
-    "v1": 41,
-    "v2": 10,
-    "rem1": 4,
-    "rem2": 35
+    "v1": 39,
+    "v2": 8,
+    "rem1": 6,
+    "rem2": 37
    }
   },
   {
@@ -23,9 +23,9 @@
    "data": {
     "pos": 65,
     "v1": 35,
-    "v2": 1,
+    "v2": 0,
     "rem1": 30,
-    "rem2": 64
+    "rem2": 65
    }
   },
   {
@@ -44,10 +44,10 @@
    "name": "DSR-05",
    "data": {
     "pos": 100,
-    "v1": 90,
-    "v2": 14,
-    "rem1": 10,
-    "rem2": 86
+    "v1": 89,
+    "v2": 13,
+    "rem1": 11,
+    "rem2": 87
    }
   },
   {
@@ -77,10 +77,10 @@
    "name": "DSR-08",
    "data": {
     "pos": 38,
-    "v1": 12,
-    "v2": 2,
-    "rem1": 26,
-    "rem2": 36
+    "v1": 4,
+    "v2": 1,
+    "rem1": 34,
+    "rem2": 37
    }
   },
   {
@@ -88,10 +88,10 @@
    "name": "DSR-09",
    "data": {
     "pos": 85,
-    "v1": 54,
-    "v2": 1,
-    "rem1": 31,
-    "rem2": 84
+    "v1": 1,
+    "v2": 0,
+    "rem1": 84,
+    "rem2": 85
    }
   },
   {
@@ -121,10 +121,10 @@
    "name": "DSR-13",
    "data": {
     "pos": 96,
-    "v1": 82,
-    "v2": 47,
-    "rem1": 14,
-    "rem2": 49
+    "v1": 80,
+    "v2": 43,
+    "rem1": 16,
+    "rem2": 53
    }
   },
   {
@@ -143,10 +143,10 @@
    "name": "DSR-15",
    "data": {
     "pos": 47,
-    "v1": 38,
-    "v2": 14,
-    "rem1": 9,
-    "rem2": 33
+    "v1": 35,
+    "v2": 11,
+    "rem1": 12,
+    "rem2": 36
    }
   },
   {
@@ -295,7 +295,7 @@
     {
      "name": "Modina Telecom",
      "id": "0577",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Sopna Studio & computer park",
@@ -328,6 +328,16 @@
      "st": "f"
     },
     {
+     "name": "Islam Store",
+     "id": "9825",
+     "st": "f"
+    },
+    {
+     "name": "Selim",
+     "id": "0029",
+     "st": "f"
+    },
+    {
      "name": "Joy Store",
      "id": "9605",
      "st": "f"
@@ -355,7 +365,7 @@
     {
      "name": "Aklima telecom",
      "id": "7718",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Sajid Mobile Banking",
@@ -641,6 +651,11 @@
      "name": "Mohon Tel",
      "id": "8072",
      "st": "p"
+    },
+    {
+     "name": "Ma Kali Stor",
+     "id": "5584",
+     "st": "f"
     },
     {
      "name": "S S Confectionery",
@@ -1140,7 +1155,7 @@
     {
      "name": "Salam store",
      "id": "0750",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Harun Store",
@@ -1215,6 +1230,11 @@
     {
      "name": "Rasel Telecom",
      "id": "0835",
+     "st": "f"
+    },
+    {
+     "name": "Shofi Telecom",
+     "id": "0836",
      "st": "f"
     },
     {
@@ -1575,12 +1595,17 @@
     {
      "name": "Liton Sowdagor",
      "id": "2470",
+     "st": "p"
+    },
+    {
+     "name": "Totul Store",
+     "id": "9495",
      "st": "f"
     },
     {
      "name": "Sumon Store",
      "id": "6632",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "GR14 Zia Store",
@@ -1590,17 +1615,17 @@
     {
      "name": "NAZMUL TELECOM",
      "id": "7919",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "EVAN COOLING CORNER",
      "id": "7926",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "ASHRAF TELECOM",
      "id": "7990",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Towhid & Son's",
@@ -1640,7 +1665,7 @@
     {
      "name": "siddik store",
      "id": "8671",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Rashid Store",
@@ -1680,7 +1705,7 @@
     {
      "name": "Sumaiya Telecom",
      "id": "9707",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "M/s Asraf Telecom",
@@ -1705,7 +1730,7 @@
     {
      "name": "Shilpe Mobile dot com - 2",
      "id": "7168",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Joydeb Store",
@@ -1750,12 +1775,12 @@
     {
      "name": "ALFA STORE",
      "id": "4671",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Ishaq Store",
      "id": "5404",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "GR14 Shahabuddin Store",
@@ -1770,12 +1795,12 @@
     {
      "name": "Mainoul Store",
      "id": "5424",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Rana Store",
      "id": "5437",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "S K Tel",
@@ -1785,12 +1810,12 @@
     {
      "name": "Nizame Tel",
      "id": "9716",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Kalam Store",
      "id": "1041",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Ali Agger Store",
@@ -1800,22 +1825,22 @@
     {
      "name": "Jononi Store",
      "id": "9457",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Didar talecom",
      "id": "7921",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Nizam Store",
      "id": "7948",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Arfan Telecom 2",
      "id": "8827",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "NIZAM TEL",
@@ -1830,32 +1855,37 @@
     {
      "name": "NAZROUL STORE",
      "id": "4194",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Paharika Store",
      "id": "3164",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Salim Coling corner-2",
      "id": "9456",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "LITON STORE",
      "id": "5056",
+     "st": "p"
+    },
+    {
+     "name": "Foyeza Electric",
+     "id": "5069",
      "st": "f"
     },
     {
      "name": "Akbar Store",
      "id": "3182",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Zia Store",
      "id": "2987",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "TISHA TELECOM",
@@ -1870,17 +1900,17 @@
     {
      "name": "Rafa Teleco",
      "id": "5487",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Mahin Store",
      "id": "1067",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "White Halk",
      "id": "0881",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Mahin Store",
@@ -1890,7 +1920,7 @@
     {
      "name": "Faruk Teleco",
      "id": "7492",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Jononi Store",
@@ -1900,12 +1930,12 @@
     {
      "name": "Jononi Store",
      "id": "2808",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Nobi Telacom",
      "id": "6249",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Hakim Store Urban",
@@ -1915,17 +1945,17 @@
     {
      "name": "Ma Ar Dowa Stl Jony Dey",
      "id": "5054",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Alam Depart Store Joshim hossain",
      "id": "5055",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Helal Tel  Gift",
      "id": "3121",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Mahin Telecom",
@@ -1935,7 +1965,7 @@
     {
      "name": "Helal Store  Pho",
      "id": "8300",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Helal Tel  Gift",
@@ -1945,17 +1975,17 @@
     {
      "name": "KarimST",
      "id": "3006",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Shilpi Telecom",
      "id": "3025",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Jahid Store",
      "id": "3034",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Shawon Telecom",
@@ -1965,42 +1995,42 @@
     {
      "name": "Milon Telecom",
      "id": "0988",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Salim Coling corner",
      "id": "1177",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Jal Pari Digital Gallery",
      "id": "4999",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "GR14 Jahangir Telecom",
      "id": "0620",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "F1 Telecom",
      "id": "0720",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "GR14 Ahamedia IT Store",
      "id": "1970",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Amdad Store",
      "id": "0653",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Abdul al mamun",
      "id": "6332",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Mahir t.com01",
@@ -2010,12 +2040,12 @@
     {
      "name": "Shosi Enterpris",
      "id": "5761",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Shamim Store",
      "id": "0673",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Mosaraf Store",
@@ -2045,7 +2075,7 @@
     {
      "name": "Chaya Nir",
      "id": "7172",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Rasha Teleco",
@@ -2060,12 +2090,12 @@
     {
      "name": "Fashion Fair",
      "id": "9848",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "ARFIN",
      "id": "9898",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Nizam",
@@ -2075,7 +2105,7 @@
     {
      "name": "Nishat",
      "id": "9909",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Ishaq Store-2",
@@ -2085,7 +2115,7 @@
     {
      "name": "Azmir Talecom",
      "id": "0063",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Mahin Telecom",
@@ -2105,22 +2135,22 @@
     {
      "name": "Ovi Mobile Dot Com",
      "id": "7998",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Hanif pharmecy",
      "id": "7831",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Alim Store",
      "id": "6400",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Jony Telecome",
      "id": "6401",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Arfan Telecom",
@@ -2130,7 +2160,7 @@
     {
      "name": "Mohammad Store",
      "id": "0505",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Tanisha Store",
@@ -2140,7 +2170,7 @@
     {
      "name": "Safiul Store",
      "id": "7418",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Arafat photo",
@@ -2150,17 +2180,17 @@
     {
      "name": "Amzad store",
      "id": "1592",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Anan St",
      "id": "0839",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Mahin St",
      "id": "0863",
-     "st": "f"
+     "st": "p"
     }
    ]
   },
@@ -2488,6 +2518,11 @@
      "st": "f"
     },
     {
+     "name": "M/S Elias Enterprise",
+     "id": "7929",
+     "st": "f"
+    },
+    {
      "name": "ZAKIR STORE",
      "id": "8819",
      "st": "f"
@@ -2500,6 +2535,11 @@
     {
      "name": "Rubel Store",
      "id": "9465",
+     "st": "f"
+    },
+    {
+     "name": "Tazu Store",
+     "id": "7491",
      "st": "f"
     },
     {
@@ -2640,7 +2680,7 @@
     {
      "name": "GR14 K.B ENTERPRISE",
      "id": "0746",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "MAMON STOOR",
@@ -2675,12 +2715,22 @@
     {
      "name": "Shamim Store",
      "id": "0010",
+     "st": "p"
+    },
+    {
+     "name": "Tamim Store",
+     "id": "5566",
      "st": "f"
     },
     {
      "name": "Korim Store",
      "id": "8545",
      "st": "p"
+    },
+    {
+     "name": "Habibi Store",
+     "id": "4500",
+     "st": "f"
     },
     {
      "name": "Salam Store",
@@ -3000,6 +3050,11 @@
     {
      "name": "Mamun  Story",
      "id": "6461",
+     "st": "p"
+    },
+    {
+     "name": "Tech Fountain",
+     "id": "9481",
      "st": "f"
     },
     {
@@ -3018,6 +3073,11 @@
      "st": "f"
     },
     {
+     "name": "EKRAM STORE",
+     "id": "7497",
+     "st": "f"
+    },
+    {
      "name": "forhad telec",
      "id": "0356",
      "st": "f"
@@ -3030,12 +3090,12 @@
     {
      "name": "Harun Store",
      "id": "8820",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Almas Telecom",
      "id": "9072",
-     "st": "f"
+     "st": "p"
     },
     {
      "name": "Shilpi Telecom",
@@ -3080,6 +3140,11 @@
     {
      "name": "Rashid Store",
      "id": "7205",
+     "st": "f"
+    },
+    {
+     "name": "Joinal Store",
+     "id": "3291",
      "st": "f"
     },
     {

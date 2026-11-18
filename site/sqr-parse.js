@@ -3,9 +3,9 @@
  * (tools/sqr.mjs, Node), so both read a file exactly the same way.
  *
  * Trade Visibility ("TV"): a "DSR Summury" sheet (BCD POS, 1st Time Visit RT,
- *   2 Times Visit Retail) plus a "Retail Wise" sheet listing the POS still to visit:
- *   "Pending" = needs 1st and 2nd visit, "1st Times Done" = needs 2nd visit only.
- *   POS with both visits done are removed from that sheet. Each POS must be visited twice.
+ *   2 Times Visit Retail) plus a POS sheet with a "TV Remarks" column ("Retail Wise" or
+ *   "POS Base"): "Pending" = needs 1st and 2nd visit, "1st Times Done" = needs 2nd visit only,
+ *   "2nd Times Done" = both visits done (not listed). Each POS must be visited twice.
  *   DSRs are matched to logins by DSR number (e.g. "AKTL (Sitakunda) DSR 01" = "DSR-01").
  *   Retailer MSISDNs are cut to the last 4 digits.
  *
@@ -234,7 +234,7 @@ function parseTv(all, sum, out, index) {
   const byNo = {}; index.forEach(d => { const n = dsrNo(d.name); if (n != null) byNo[n] = d; });
   if (!index.length) out.issues.push({ t: 'err', m: 'Publish an SQR file first: Trade Visibility rows are matched to DSR logins through the SQR DSR list.' });
   const ret = all.find(s => s !== sum && findHeader(s.rows, H => H.includes('tv remarks')));
-  if (!ret) out.issues.push({ t: 'warn', m: 'No "Retail Wise" sheet with a "TV Remarks" column found. DSRs will not see which POS to visit.' });
+  if (!ret) out.issues.push({ t: 'warn', m: 'No POS sheet with a "TV Remarks" column found. DSRs will not see which POS to visit.' });
   if (out.issues.some(i => i.t === 'err')) return out;
 
   const nameToCode = {};
@@ -262,7 +262,7 @@ function parseTv(all, sum, out, index) {
     out.sheetRet = ret.sn;
     const rh = findHeader(ret.rows, H => H.includes('tv remarks'));
     const ix = n => rh.H.indexOf(n);
-    const c = { dsr: ix('dsr no') >= 0 ? ix('dsr no') : ix('dsr name'), name: ix('retailer name'), msisdn: ix('ret_msisdn') >= 0 ? ix('ret_msisdn') : ix('retailer code'), rem: ix('tv remarks') };
+    const c = { dsr: ix('dsr no') >= 0 ? ix('dsr no') : ix('dsr name'), name: ix('retailer name') >= 0 ? ix('retailer name') : ix('retailer'), msisdn: ix('ret_msisdn') >= 0 ? ix('ret_msisdn') : ix('retailer code'), rem: ix('tv remarks') };
     const orphan = new Set(), odd = new Set();
     ret.rows.slice(rh.hi + 1).forEach(r => {
       if (!r || r[c.dsr] == null || r[c.dsr] === '') return;
@@ -270,6 +270,7 @@ function parseTv(all, sum, out, index) {
       const code = nameToCode[norm(raw)] || (byNo[dsrNo(raw)] && out.dsrs[byNo[dsrNo(raw)].code] ? byNo[dsrNo(raw)].code : null);
       if (!code) { orphan.add(raw); return; }
       const rem = norm(r[c.rem]);
+      if (/2nd/.test(rem)) return; // both visits done: not listed
       const st = /pending/.test(rem) ? 'p' : /1st/.test(rem) ? 'f' : null;
       if (!st) { odd.add(String(r[c.rem])); return; }
       const ms = String(r[c.msisdn] == null ? '' : r[c.msisdn]).replace(/\D/g, '');
