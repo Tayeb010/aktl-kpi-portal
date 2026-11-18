@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* AKTL KPI Portal: KPI publisher (SQR, Trade Visibility).
+/* AKTL KPI Portal: KPI publisher (SQR, Trade Visibility, GA).
  *
  *   node tools/kpi.cjs build <file.xlsx> [out.json]
  *     Reads the Excel with the same reader as the website (site/sqr-parse.js),
@@ -40,6 +40,17 @@ function build(xlsxPath, outPath) {
   outPath = outPath || jsonFor(r.kpi);
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
   fs.writeFileSync(outPath, JSON.stringify(out, null, 1) + '\n');
+  if (r.kpi === 'GA') {
+    const p = r.period, proj = d => (d.target && p.day ? (d.ga / d.target) * (p.days / p.day) : 0);
+    console.log(`Day ${p.day} of ${p.days}${p.asOf ? ' · data till ' + p.asOf : ''}`);
+    console.log(`\n${'Person'.padEnd(12)} ${'GA/Target'.padStart(10)} ${'Achv'.padStart(5)} ${'Proj'.padStart(5)} ${'Robi'.padStart(8)} ${'Airtel'.padStart(7)} ${'Today'.padStart(6)} ${'LastD'.padStart(6)} ${'Sup'.padStart(7)} ${'Ret'.padStart(4)}`);
+    let G = 0, T = 0;
+    figures.forEach(f => { const d = f.data; G += d.ga; T += d.target;
+      console.log(`${(f.name + (d.person ? ' ' + d.person : '')).slice(0, 12).padEnd(12)} ${(d.ga + '/' + d.target).padStart(10)} ${pct(d.ga, d.target).padStart(5)} ${(Math.round(proj(d) * 100) + '%').padStart(5)} ${(d.robiGa + '/' + d.tgtRobi).padStart(8)} ${(d.atGa + '/' + d.tgtAt).padStart(7)} ${String(d.today).padStart(6)} ${String(d.lastDay).padStart(6)} ${String(d.sup || '-').padStart(7)} ${String((r.retailers[f.code] || []).length).padStart(4)}`); });
+    console.log(`${'TOTAL'.padEnd(12)} ${(G + '/' + T).padStart(10)} ${pct(G, T).padStart(5)} ${(Math.round(proj({ ga: G, target: T }) * 100) + '%').padStart(5)}`);
+    console.log(`\n${figures.length} people, ${r.retCount} retailers -> ${path.relative(ROOT, outPath)}`);
+    return;
+  }
   if (r.kpi === 'TV') {
     console.log(`\n${'DSR'.padEnd(10)} ${'POS'.padStart(5)} ${'1st done'.padStart(9)} ${'2nd done'.padStart(9)} ${'need both'.padStart(10)} ${'need 2nd'.padStart(9)}`);
     let P = 0, V1 = 0, V2 = 0;

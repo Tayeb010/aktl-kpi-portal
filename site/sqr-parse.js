@@ -1,4 +1,5 @@
-/* AKTL KPI Portal: KPI Excel reader (SQR and Trade Visibility).
+/* AKTL KPI Portal: KPI Excel reader (SQR, Trade Visibility and GA).
+ * GA ("GA"): see parseGa() below ("MTD GA" sheet + optional Daywise FF / Retail Wise).
  * Shared by the website's Upload page (browser) and the GitHub publisher
  * (tools/sqr.mjs, Node), so both read a file exactly the same way.
  *
@@ -77,7 +78,7 @@ const LABEL = Object.assign(
   Object.fromEntries(SUMMARY.map(f => [f[0], f[2]])),
   { trxRet: 'Retailers with a completed transaction', zeroTk: 'Retailers with no completed transaction' }
 );
-const KPI_NAME = { SQR: 'SQR · Super QR', TV: 'Trade Visibility' };
+const KPI_NAME = { SQR: 'SQR · Super QR', TV: 'Trade Visibility', GA: 'GA · Gross Add' };
 
 function sheets(wb, XLSX) {
   return wb.SheetNames.map(sn => ({ sn, rows: XLSX.utils.sheet_to_json(wb.Sheets[sn], { header: 1, defval: null, raw: true, blankrows: false }) }));
@@ -110,6 +111,8 @@ const dsrNo = s => { const m = String(s == null ? '' : s).match(/dsr\D{0,3}(\d+)
 /* opts.dsrIndex: [{ code, name }] of DSRs already known (from the live SQR data); used to match Trade Visibility rows. */
 function parse(wb, XLSX, fileName, opts) {
   const all = sheets(wb, XLSX);
+  const ga = all.find(s => findHeader(s.rows, H => H.includes('dsr/dso') && H.includes('mco tgt') && H.includes('mtd ga')));
+  if (ga) return parseGa(all, ga, { fileName, kpi: 'GA', format: 'ga', issues: [], mapping: [], period: null, dsrs: {}, retailers: {}, retCount: 0, sheetDsr: null, sheetRet: null }, (opts && opts.dsrIndex) || []);
   const tv = all.find(s => findHeader(s.rows, H => H.includes('bcd pos') && H.some(h => h.startsWith('1st time visit'))));
   if (tv) return parseTv(all, tv, { fileName, kpi: 'TV', format: 'tv', issues: [], mapping: [], period: null, dsrs: {}, retailers: {}, retCount: 0, sheetDsr: null, sheetRet: null }, (opts && opts.dsrIndex) || []);
   const out = { fileName, kpi: 'SQR', format: null, issues: [], mapping: [], period: null, dsrs: {}, retailers: {}, retCount: 0, sheetDsr: null, sheetRet: null };
@@ -289,6 +292,152 @@ function parseTv(all, sum, out, index) {
   return out;
 }
 
+/* ---------- GA (Gross Add): MTD GA + Daywise FF + Retail Wise ---------- */
+/* "MTD GA" sheet: one row per DSR/DSO with Robi/Airtel targets (MCO TGT = total), MTD GA,
+ * retail vs assist GA, today and last day. Title row "GA Update till:" gives the data date.
+ * Optional extras: a day-wise sheet ("Daywise FF" or the "Day-wise GA" block of "DSR Dashboard"),
+ * a retailer sheet ("Retail Wise": Retail Name, Retail Code, AKD TGT, MTD Achievement, slab),
+ * and a sheet with a "Supervisor" column. DSRs are matched to logins by number; DSOs get
+ * their own rows (code "DSO-<name>"). DSR and retailer phone numbers are never read. */
+const GA_FIELDS = [
+  ['target', ['mco tgt', 'total tgt'], 'Target (Robi + Airtel)', 1],
+  ['ga', ['mtd ga', 'total ga'], 'MTD GA', 1],
+  ['tgtRobi', ['ga : robi', 'robi tgt'], 'Robi target', 0],
+  ['tgtAt', ['ga : at', 'airtel tgt', 'cirkle tgt'], 'Airtel target', 0],
+  ['robiGa', ['robi ga'], 'Robi GA', 0],
+  ['atGa', ['airtel ga', 'cirkle ga'], 'Airtel GA', 0],
+  ['retailGa', ['mtd retail ga'], 'Retail GA', 0],
+  ['assistGa', ['mtd assist ga'], 'Assist GA', 0],
+  ['today', ['todays ttl ga', "today's ttl ga", 'today ga'], 'Today GA', 0],
+  ['todayAssist', ['todays assist'], 'Today assist GA', 0],
+  ['lastDay', ['last day ga'], 'Last day GA', 0],
+  ['lastAssist', ['last day assist'], 'Last day assist GA', 0]
+];
+const gaNo = s => { const m = String(s == null ? '' : s).match(/\bdsr\D{0,3}(\d+)/i); return m ? +m[1] : null; };
+const isDso = s => /\bdso\b/i.test(String(s || ''));
+const dsoKey = s => norm(String(s || '').replace(/\bdso\b/i, '')).split(' ')[0] || norm(s);
+const serialDate = v => typeof v === 'number' && v > 40000 && v < 60000 ? new Date(Math.round((Math.floor(v) - 25569) * 86400000)) : (v instanceof Date ? v : null);
+/* Columns whose header cells are dates in the data month: { col: day } */
+function dayCols(rows, upto, y, m) {
+  let best = null;
+  for (let i = Math.max(0, upto - 3); i <= upto; i++) {
+    const r = rows[i] || [], map = {};
+    r.forEach((v, c) => { const d = serialDate(v); if (d && d.getUTCFullYear() === y && d.getUTCMonth() === m) map[c] = d.getUTCDate(); });
+    if (!best || Object.keys(map).length > Object.keys(best).length) best = map;
+  }
+  return best && Object.keys(best).length >= 7 ? best : null;
+}
+function parseGa(all, sh, out, index) {
+  out.sheetDsr = sh.sn;
+  const h = findHeader(sh.rows, H => H.includes('dsr/dso') && H.includes('mco tgt'));
+  const col = names => { for (const n of names) { const i = h.H.indexOf(n); if (i >= 0) return i; } return -1; };
+  out.mapping = GA_FIELDS.map(f => { const c = col(f[1]); return { k: f[0], label: f[2], req: !!f[3], col: c, header: c >= 0 ? String(h.raw[c]).replace(/\s+/g, ' ').trim() : null }; });
+  out.mapping.filter(m => m.req && m.col < 0).forEach(m => out.issues.push({ t: 'err', m: `Required column missing in "${sh.sn}": "${GA_FIELDS.find(f => f[0] === m.k)[1][0]}".` }));
+  const byNo = {}; index.forEach(d => { const n = dsrNo(d.name); if (n != null) byNo[n] = d; });
+  if (!index.length) out.issues.push({ t: 'err', m: 'Publish an SQR file first: GA rows are matched to DSR logins through the SQR DSR list.' });
+
+  // Data date: "GA Update till:" in the title rows (date, then time), else the file name.
+  let when = null, time = null;
+  sh.rows.slice(0, h.hi).forEach(r => { if (!r || when) return; const i = r.findIndex(v => /update till|data till|data date/i.test(String(v || ''))); if (i < 0) return; for (let j = i + 1; j < r.length; j++) { const d = serialDate(r[j]); if (d) { when = d; const t = r[j + 1]; if (typeof t === 'number' && t > 0 && t < 1) time = t; else if (r[j] % 1) time = r[j] % 1; break; } } });
+  if (!when) { const p = periodFromFileName(out.fileName); if (p) { const mo = MON.indexOf(p.pulled.slice(3)); const y = (String(out.fileName).match(/20\d{2}/) || [new Date().getUTCFullYear()])[0]; when = new Date(Date.UTC(+y, mo, +p.pulled.slice(0, 2))); } }
+  if (!when) { out.issues.push({ t: 'err', m: `Could not find the data date ("GA Update till:") at the top of "${sh.sn}".` }); return out; }
+  const Y = when.getUTCFullYear(), M = when.getUTCMonth(), day = when.getUTCDate(), days = new Date(Date.UTC(Y, M + 1, 0)).getUTCDate();
+  const dd = n => String(n).padStart(2, '0');
+  let asOf = null;
+  if (time != null) { const mins = Math.floor(time * 1440 + 1e-6), hh = Math.floor(mins / 60), mi = mins % 60; asOf = `${hh % 12 || 12}:${dd(mi)} ${hh < 12 ? 'AM' : 'PM'}`; }
+  out.period = { from: `01-${MON[M]}`, to: `${dd(day)}-${MON[M]}`, pulled: `${dd(day)}-${MON[M]}`, day, days };
+  if (asOf) out.period.asOf = asOf;
+  if (out.issues.some(i => i.t === 'err')) return out;
+
+  // Person rows, until the "Total" row.
+  const ni = 0, rcCol = h.H.indexOf('robi retail code');
+  let badNum = 0, fileTotal = null;
+  const people = [];
+  for (let k = h.hi + 1; k < sh.rows.length; k++) {
+    const r = sh.rows[k]; if (!r || r.every(v => v == null || v === '')) continue;
+    const raw = String(r[ni] == null ? '' : r[ni]).trim();
+    if (/^total/i.test(raw)) { fileTotal = num(r[col(['mtd ga', 'total ga'])]); for (let q = k + 1; q < sh.rows.length; q++) { const z = sh.rows[q]; if (z && /not found/i.test(String(z[0])) && /mtd|dsr not found/i.test(String(z[0])) && out.period.notFound == null) { const v = z.find((x, i) => i > 0 && typeof x === 'number'); if (v != null) out.period.notFound = v; } } break; }
+    if (!raw) continue;
+    const d = {};
+    out.mapping.forEach(m => { if (m.col < 0 || r[m.col] == null || r[m.col] === '') return; let v = num(r[m.col]); if (isNaN(v)) { badNum++; v = 0; } d[m.k] = v; });
+    if (!d.target && !d.ga) continue;
+    d.target = d.target || 0; d.ga = d.ga || 0;
+    if (isDso(raw)) { d.kind = 'dso'; people.push({ code: 'DSO-' + raw.replace(/\s*\bdso\b\s*/i, '').trim().replace(/\s+/g, '-'), name: raw, d, rc: rcCol >= 0 ? String(sh.rows[k][rcCol] || '').trim() : '' }); continue; }
+    const n = gaNo(raw), known = n != null ? byNo[n] : null;
+    if (!known) { out.issues.push({ t: 'warn', m: `"${raw}" does not match any DSR in the SQR data, so it was skipped.` }); continue; }
+    if (people.some(p => p.code === known.code)) { out.issues.push({ t: 'err', m: `${raw} appears twice in "${sh.sn}" (row ${k + 1}).` }); continue; }
+    people.push({ code: known.code, name: known.name, d, no: n, raw });
+  }
+  if (badNum) out.issues.push({ t: 'warn', m: `${badNum} cell(s) had text where a number was expected and were read as 0.` });
+  if (!people.length) { out.issues.push({ t: 'err', m: `No DSR or DSO rows found in "${sh.sn}".` }); return out; }
+  const sum = people.reduce((s, p) => s + (p.d.ga || 0), 0);
+  if (out.period.notFound) out.issues.push({ t: 'warn', m: `${out.period.notFound} GA in the file are not linked to any DSR or DSO ("Not Found"). They count in the file's total (${fileTotal}) but not on anyone's dashboard.` });
+  else if (fileTotal != null && fileTotal !== sum) out.issues.push({ t: 'warn', m: `The file's Total row says ${fileTotal} GA, the DSR and DSO rows add up to ${sum}.` });
+  const findP = (name, extra) => { const n = gaNo(name); if (n != null && !isDso(name)) return people.find(p => p.no === n); if (isDso(name)) return people.find(p => p.d.kind === 'dso' && (dsoKey(p.name) === dsoKey(name) || (extra && p.rc && p.rc === String(extra).trim()))); return null; };
+
+  // Supervisor per person (optional): any sheet with "DSR / DSO" + "Supervisor" columns.
+  all.forEach(s => {
+    s.rows.forEach((r, i) => {
+      if (!r) return; const H = r.map(norm); const si = H.indexOf('supervisor');
+      if (si < 0 || !/^dsr ?\/ ?dso/.test(H[0] || '')) return;
+      for (let k = i + 1; k < s.rows.length; k++) { const z = s.rows[k]; if (!z || !z[0] || /^total/i.test(String(z[0]))) break; const p = findP(String(z[0])); if (p && z[si] && !p.d.sup) p.d.sup = String(z[si]).trim(); }
+    });
+  });
+
+  // Day-wise GA (optional): rows keyed by DSR/DSO with one column per day of the month.
+  let daySheet = null;
+  for (const s of all) {
+    if (s === sh || daySheet) continue;
+    for (let i = 0; i < s.rows.length && !daySheet; i++) {
+      const r = s.rows[i]; if (!r || !/^dsr ?\/ ?dso/.test(norm(r[0]))) continue;
+      const map = dayCols(s.rows, i, Y, M); if (!map) continue;
+      let got = 0;
+      for (let k = i + 1; k < s.rows.length; k++) {
+        const z = s.rows[k]; if (!z || !z[0] || /^total/i.test(String(z[0]))) break;
+        const p = findP(String(z[0]), z[1]); if (!p || p.d.days) continue;
+        const arr = new Array(day).fill(0); Object.keys(map).forEach(c => { const dn = map[c]; if (dn <= day) arr[dn - 1] = +z[c] || 0; });
+        p.d.days = arr; got++;
+        const nm = String(z[0]).match(/dsr\D{0,3}\d+\s*-\s*(.+)$/i); if (nm && !/vacant/i.test(nm[1])) p.d.person = nm[1].trim();
+      }
+      if (got) daySheet = s.sn;
+    }
+  }
+  if (!daySheet) out.issues.push({ t: 'warn', m: 'No day-wise GA sheet found. Dashboards will not show the daily chart.' });
+  else people.forEach(p => { if (p.d.days) { const t = p.d.days.reduce((a, b) => a + b, 0); if (t !== p.d.ga) out.issues.push({ t: 'warn', m: `${p.name}: day-wise GA in "${daySheet}" adds up to ${t}, "${sh.sn}" says ${p.d.ga}.` }); } });
+
+  // Retailer-wise GA (optional): "Retail Wise" with DSR Name, Retail Name, Retail Code, MTD Achievement.
+  const ret = all.find(s => s !== sh && findHeader(s.rows, H => H.includes('dsr name') && H.includes('retail code') && H.includes('mtd achievement')));
+  people.forEach(p => { out.retailers[p.code] = []; });
+  if (ret) {
+    out.sheetRet = ret.sn;
+    const rh = findHeader(ret.rows, H => H.includes('dsr name') && H.includes('retail code'));
+    const ix = n => rh.H.indexOf(n);
+    const c = { dsr: ix('dsr name'), name: ix('retail name') >= 0 ? ix('retail name') : ix('retailer name'), code: ix('retail code'), akd: ix('is akd?'), tgt: ix('akd tgt'), ga: ix('mtd achievement'), slab: ix('slab based winner') };
+    const map = dayCols(ret.rows, rh.hi, Y, M) || {};
+    const colOf = dn => { const k = Object.keys(map).find(x => map[x] === dn); return k == null ? -1 : +k; };
+    const cT = colOf(day), cL = colOf(day - 1);
+    let na = 0; const orphan = new Set();
+    ret.rows.slice(rh.hi + 1).forEach(r => {
+      if (!r) return;
+      const raw = String(r[c.dsr] == null ? '' : r[c.dsr]).trim();
+      if (!raw || /^#n\/a$/i.test(raw)) { if (r[c.code]) na++; return; }
+      const p = findP(raw); if (!p) { orphan.add(raw); return; }
+      const nm = raw.match(/dsr\D{0,3}\d+\s*-\s*(.+)$/i); if (nm && !p.d.person && !/vacant/i.test(nm[1])) p.d.person = nm[1].trim();
+      const it = { name: String(r[c.name] == null ? '' : r[c.name]).trim(), code: String(r[c.code] == null ? '' : r[c.code]).trim(), ga: +num(r[c.ga]) || 0 };
+      if (c.akd >= 0 && /akd/i.test(String(r[c.akd] || ''))) { it.akd = true; const t = num(r[c.tgt]); if (t > 0) it.tgt = t; }
+      if (c.slab >= 0 && r[c.slab] && !/^no slab$/i.test(String(r[c.slab]).trim())) it.slab = String(r[c.slab]).trim();
+      if (cT >= 0) it.td = +r[cT] || 0;
+      if (cL >= 0) it.ld = +r[cL] || 0;
+      out.retailers[p.code].push(it); out.retCount++;
+    });
+    if (na) out.issues.push({ t: 'warn', m: `${na} retailer row(s) in "${ret.sn}" have no DSR ("#N/A") and were skipped.` });
+    if (orphan.size) out.issues.push({ t: 'warn', m: `Retailer rows for ${[...orphan].join(', ')} did not match a DSR and were ignored.` });
+  } else out.issues.push({ t: 'warn', m: 'No retailer sheet ("Retail Wise") found. DSRs will not see their retailer-wise GA.' });
+
+  people.forEach(p => { out.dsrs[p.code] = Object.assign({ code: p.code, name: p.name }, p.d); });
+  return out;
+}
+
 /* ---------- older layout: DSR Wise + Retail Wise ---------- */
 function parseDsrWise(all, dSheet, out) {
   out.format = 'dsrwise'; out.sheetDsr = dSheet.sn;
@@ -332,5 +481,5 @@ function parseDsrWise(all, dSheet, out) {
   return out;
 }
 
-return { parse, dsrNo, FIELDS, SUMMARY, TV_FIELDS, LABEL, KPI_NAME, MIN_TK };
+return { parse, dsrNo, FIELDS, SUMMARY, TV_FIELDS, GA_FIELDS, LABEL, KPI_NAME, MIN_TK };
 });

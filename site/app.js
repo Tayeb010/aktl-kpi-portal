@@ -41,18 +41,21 @@ const TX = {
   en: { home: 'Home', retailersTab: 'Retailers', team: 'Team', trx: 'Transaction active retailers', trxSub: 'Retailers with 300 Tk+ C2S via Super QR, against your C2S target', achieved: 'Achieved', target: 'Target', remaining: 'Remaining', qr: 'QR visibility', share: 'Super QR share of C2S', hasReq: 'Retailers with a request', ofRet: 'of retailers', sqrAmt: 'Super QR amount', trxRetSub: '{n} retailers transacted', zeroTk: 'Retailers at 0 Tk', zeroSub: 'no completed Super QR yet', fWrong: 'Wrong QR', fOut: 'Outside 100m', fLate: 'Late photo', req: 'Requests completed', ticket: 'avg ticket', inc: 'SQR incentive', vis: 'Visibility', trxInc: 'Transaction', checks: 'QR Visibility checks', allKpi: 'All KPIs', kpi: 'KPI', sqrName: 'SQR · Super QR', tvName: 'Trade Visibility', seeSqr: 'See SQR details', seeTv: 'See Trade Visibility details', tvVisits: 'POS visits', tvSub: 'Every BCD POS must be visited 2 times', pos: 'BCD POS', v1: '1st visit done', v2: '2nd visit done', r1: '1st visit remaining', r2: '2nd visit remaining', bothDone: 'POS with both visits done', needBoth: 'Need 1st + 2nd visit', need2: 'Need 2nd visit', tvList: 'POS to visit', tvLead: 'Pending POS need both visits. POS with both visits done are not listed.', st1: '1st + 2nd visit pending', st2: '2nd visit pending', noTv: 'Trade Visibility figures are not published yet.', noSqr: 'SQR figures are not published yet.', tvRankBy: 'By % of POS with 2nd visit done', totPos: 'Total BCD POS', posNeedBoth: 'POS needing both visits', needOnly2: '{n} need only the 2nd visit', totRet: 'Total retailers', c2sT: '300 Tk C2S target', visDone: 'QR visibility done', visRem: 'Visibility remaining', visHead: 'QR visibility', visSub: 'QR visibility target = all your retailers', trxTot: 'Transaction vs total retailers', trxTotSub: '300 Tk+ retailers out of all retailers', trxC2s: 'Transaction vs C2S target', trxC2sSub: '300 Tk+ retailers against C2S target retailers', dsrAch: 'DSRs achieved C2S target', dsrAchSub: 'DSRs with transaction ≥ C2S target', vmLate: '15 min late photo', vmWrong: 'Wrong QR placed', vmOut: 'Placed outside 100m', wrong: 'Wrong QR placed', outside: 'Placed outside 100m', late: 'Photo 15+ min after visit', split: 'Robi vs Cirkle', active: 'Active retailers', requests: 'Requests', sqr: 'Super QR Tk', c2s: 'C2S Tk', period: 'Period', updated: 'Updated', myReport: 'My report image', stA: 'Achieved', stP: 'In progress', stB: 'Behind', need: 'needs Tk {n} more', tdone: '300 Tk done', noqr: 'QR Visibility missing', fNeed: 'Need Tk', fQr: 'QR Visibility missing', fDone: 'Done', fAll: 'All', retHead: 'Retailers to push', retLead: 'Closest to the 300 Tk target first. Each one you finish adds 1 to your achievement.', teamHead: 'Team summary', dsrsDone: 'DSRs at target', noRet: 'No retailers in this list.', of: 'of', allRet: 'See all {n} retailers', notYet: 'Your figures are not published yet. Check again after the next update.', signOut: 'Sign out' },
   bn: { home: 'হোম', retailersTab: 'রিটেইলার', team: 'টিম', trx: 'লেনদেন সক্রিয় রিটেইলার', trxSub: 'Super QR দিয়ে ৩০০ টাকা+ C2S করা রিটেইলার', achieved: 'অর্জন', target: 'টার্গেট', remaining: 'বাকি', qr: 'QR দৃশ্যমানতা', share: 'C2S-এ Super QR অংশ', hasReq: 'রিকোয়েস্ট করা রিটেইলার', ofRet: 'রিটেইলারের', sqrAmt: 'Super QR টাকা', trxRetSub: '{n} রিটেইলার লেনদেন করেছে', zeroTk: '০ টাকার রিটেইলার', zeroSub: 'এখনো Super QR সম্পন্ন হয়নি', fWrong: 'ভুল QR', fOut: '১০০ মি. বাইরে', fLate: 'দেরিতে ছবি', req: 'সম্পন্ন রিকোয়েস্ট', ticket: 'গড় টিকেট', inc: 'SQR ইনসেনটিভ', vis: 'দৃশ্যমানতা', trxInc: 'লেনদেন', checks: 'QR দৃশ্যমানতা যাচাই', allKpi: 'সব KPI', kpi: 'KPI', sqrName: 'SQR · Super QR', tvName: 'ট্রেড ভিজিবিলিটি', seeSqr: 'SQR বিস্তারিত দেখুন', seeTv: 'ট্রেড ভিজিবিলিটি বিস্তারিত দেখুন', tvVisits: 'POS ভিজিট', tvSub: 'প্রতিটি BCD POS-এ ২ বার ভিজিট করতে হবে', pos: 'BCD POS', v1: '১ম ভিজিট সম্পন্ন', v2: '২য় ভিজিট সম্পন্ন', r1: '১ম ভিজিট বাকি', r2: '২য় ভিজিট বাকি', bothDone: 'দুই ভিজিট সম্পন্ন POS', needBoth: '১ম + ২য় ভিজিট দরকার', need2: '২য় ভিজিট দরকার', tvList: 'যেসব POS-এ ভিজিট বাকি', tvLead: 'পেন্ডিং POS-এ দুই ভিজিটই দরকার। দুই ভিজিট সম্পন্ন POS তালিকায় নেই।', st1: '১ম + ২য় ভিজিট বাকি', st2: '২য় ভিজিট বাকি', noTv: 'ট্রেড ভিজিবিলিটির তথ্য এখনো প্রকাশ হয়নি।', noSqr: 'SQR তথ্য এখনো প্রকাশ হয়নি।', tvRankBy: '২য় ভিজিট সম্পন্ন POS-এর % অনুযায়ী', totPos: 'মোট BCD POS', posNeedBoth: 'দুই ভিজিট দরকার এমন POS', needOnly2: '{n}টিতে শুধু ২য় ভিজিট দরকার', totRet: 'মোট রিটেইলার', c2sT: '৩০০ টাকা C2S টার্গেট', visDone: 'QR দৃশ্যমানতা সম্পন্ন', visRem: 'দৃশ্যমানতা বাকি', visHead: 'QR দৃশ্যমানতা', visSub: 'QR দৃশ্যমানতা টার্গেট = আপনার সব রিটেইলার', trxTot: 'মোট রিটেইলারের বিপরীতে লেনদেন', trxTotSub: 'সব রিটেইলারের মধ্যে ৩০০ টাকা+ রিটেইলার', trxC2s: 'C2S টার্গেটের বিপরীতে লেনদেন', trxC2sSub: 'C2S টার্গেট রিটেইলারের বিপরীতে ৩০০ টাকা+ রিটেইলার', dsrAch: 'C2S টার্গেট অর্জনকারী DSR', dsrAchSub: 'লেনদেন ≥ C2S টার্গেট', vmLate: '১৫ মিনিট দেরিতে ছবি', vmWrong: 'ভুল QR লাগানো', vmOut: '১০০ মিটারের বাইরে', wrong: 'ভুল QR লাগানো', outside: '১০০ মিটারের বাইরে', late: 'ভিজিটের ১৫+ মিনিট পরে ছবি', split: 'Robi বনাম Cirkle', active: 'সক্রিয় রিটেইলার', requests: 'রিকোয়েস্ট', sqr: 'Super QR টাকা', c2s: 'C2S টাকা', period: 'সময়কাল', updated: 'আপডেট', myReport: 'আমার রিপোর্ট ছবি', stA: 'অর্জিত', stP: 'চলমান', stB: 'পিছিয়ে', need: 'আরও {n} টাকা দরকার', tdone: '৩০০ টাকা পূর্ণ', noqr: 'QR দৃশ্যমানতা নেই', fNeed: 'টাকা বাকি', fQr: 'QR দৃশ্যমানতা নেই', fDone: 'পূর্ণ', fAll: 'সব', retHead: 'যেসব রিটেইলারে কাজ বাকি', retLead: '৩০০ টাকার সবচেয়ে কাছের রিটেইলার আগে। প্রতিটি পূর্ণ হলে আপনার অর্জন ১ বাড়বে।', teamHead: 'টিম সারাংশ', dsrsDone: 'টার্গেট পূর্ণ DSR', noRet: 'এই তালিকায় কোনো রিটেইলার নেই।', of: 'এর মধ্যে', allRet: 'সব {n} রিটেইলার দেখুন', notYet: 'আপনার তথ্য এখনো প্রকাশ হয়নি। পরের আপডেটের পর আবার দেখুন।', signOut: 'সাইন আউট' }
 };
+/* GA (Gross Add) labels */
+Object.assign(TX.en, { gaName: 'GA · Gross Add', seeGa: 'See GA details', gaHead: 'MTD GA vs target', gaSub: 'Robi + Airtel SIM activations this month', noGa: 'GA figures are not published yet.', proj: 'Projected', projSub: 'month-end at the current pace', reqDay: 'Needed per day', daysLeft: '{n} days left', dayOf: 'Day {d} of {n}', today: 'Today', tillT: 'till {t}', lastDay: 'Last day', opSplit: 'Robi and Airtel', retAss: 'Retail and assist GA', retailGa: 'Retail GA', assistGa: 'Assist GA', ofGa: 'of GA', daily: 'Day-wise GA', dailySub: 'Dashed line = GA needed per day to reach the target', gaRet: 'Retailer-wise GA', gaRetLead: 'Your retailers this month. Retailers with 0 GA are listed first.', f0: '0 GA', fAkd: 'AKD POS', akdT: 'AKD target {t}', onTrack: 'On track', close: 'Close', behind: 'Behind', done100: 'Target done', gaRankBy: 'By achievement % of target', dsoHead: 'DSO ranking', supHead: 'Supervisor summary', terrT: 'Territory GA vs target', notFound: '{n} GA in the file are not linked to anyone', todayLast: 'Today / last day', remDay: 'Remaining GA', perDay: '{n} per day', ga: 'GA', noRetGa: 'No retailer-wise GA in the file for this person.' });
+Object.assign(TX.bn, { gaName: 'GA · গ্রস অ্যাড', seeGa: 'GA বিস্তারিত দেখুন', gaHead: 'টার্গেটের বিপরীতে MTD GA', gaSub: 'এই মাসে Robi + Airtel সিম অ্যাক্টিভেশন', noGa: 'GA তথ্য এখনো প্রকাশ হয়নি।', proj: 'সম্ভাব্য', projSub: 'এই গতিতে মাস শেষে', reqDay: 'প্রতিদিন দরকার', daysLeft: 'আর {n} দিন বাকি', dayOf: '{n} দিনের মধ্যে {d}তম দিন', today: 'আজ', tillT: '{t} পর্যন্ত', lastDay: 'গতকাল', opSplit: 'Robi ও Airtel', retAss: 'রিটেইল ও অ্যাসিস্ট GA', retailGa: 'রিটেইল GA', assistGa: 'অ্যাসিস্ট GA', ofGa: 'GA-এর', daily: 'দিনভিত্তিক GA', dailySub: 'ড্যাশ লাইন = টার্গেট পূরণে প্রতিদিন যত GA দরকার', gaRet: 'রিটেইলারভিত্তিক GA', gaRetLead: 'এই মাসে আপনার রিটেইলার। ০ GA রিটেইলার আগে দেখানো হয়েছে।', f0: '০ GA', fAkd: 'AKD POS', akdT: 'AKD টার্গেট {t}', onTrack: 'ঠিক পথে', close: 'কাছাকাছি', behind: 'পিছিয়ে', done100: 'টার্গেট পূর্ণ', gaRankBy: 'টার্গেট অর্জনের % অনুযায়ী', dsoHead: 'DSO র‍্যাংকিং', supHead: 'সুপারভাইজার সারাংশ', terrT: 'টেরিটরি GA বনাম টার্গেট', notFound: 'ফাইলের {n}টি GA কারো সাথে যুক্ত নয়', todayLast: 'আজ / গতকাল', remDay: 'বাকি GA', perDay: 'প্রতিদিন {n}', ga: 'GA', noRetGa: 'ফাইলে এই ব্যক্তির রিটেইলারভিত্তিক GA নেই।' });
 const T = (k, v) => { let s = (TX[st.lang] || TX.en)[k] || TX.en[k] || k; if (v) for (const x in v) s = s.replace('{' + x + '}', v[x]); return s; };
 
 /* ---------- state ---------- */
 const st = {
   booting: true, profile: null, loginErr: null, loginId: '',
   settings: { summary: false, mode: 'totals' },
-  live: null, dsrs: {}, rets: {}, team: null, tv: { live: null, dsrs: {}, rets: {} }, teamTv: null,
+  live: null, dsrs: {}, rets: {}, team: null, tv: { live: null, dsrs: {}, rets: {} }, teamTv: null, ga: { live: null, dsrs: {}, rets: {} }, teamGa: null,
   batches: [], accounts: [], devices: {}, edits: [],
   lang: lsGet('aktl-lang') || 'en', loadedAt: 0
 };
 const ui = {
-  tab: null, viewDsr: null, detail: null, retFilter: 'need', tvFilter: 'p', confirm: null,
+  tab: null, viewDsr: null, detail: null, retFilter: 'need', tvFilter: 'p', gaFilter: null, confirm: null,
   corr: { code: '', k: 'active', val: '', reason: '' },
   imgs: {}, modal: null, busy: false, saving: false,
   editAcct: null, creds: null, newRole: 'dsr'
@@ -61,7 +64,9 @@ let pending = null;
 
 const dsrList = () => Object.values(st.dsrs).sort((a, c) => natural(a.name, c.name));
 const tvList = () => Object.values(st.tv.dsrs).sort((a, c) => natural(a.name, c.name));
-const kpiState = k => k === 'TV' ? st.tv : st;   // { live, dsrs, rets }
+const kpiState = k => k === 'GA' ? st.ga : k === 'TV' ? st.tv : st;   // { live, dsrs, rets }
+const gaList = () => Object.values(st.ga.dsrs).filter(d => d.kind !== 'dso').sort((a, c) => natural(a.name, c.name));
+const gaDsoList = () => Object.values(st.ga.dsrs).filter(d => d.kind === 'dso').sort((a, c) => natural(a.name, c.name));
 const initials = n => { const m = String(n).match(/(\d+)\s*$/); if (m) return m[1].slice(-2); return String(n).split(/\s+/).map(w => w[0] || '').join('').slice(0, 2).toUpperCase(); };
 
 /* ---------- calculations ---------- */
@@ -152,7 +157,7 @@ async function afterSignIn() {
 async function signOutWith(msg) {
   st.profile = null;   // clear first so the SIGNED_OUT listener below does not run this again
   try { await sb.auth.signOut(); } catch (e) {}
-  st.live = null; st.dsrs = {}; st.rets = {}; st.team = null;
+  st.live = null; st.dsrs = {}; st.rets = {}; st.team = null; st.ga = { live: null, dsrs: {}, rets: {} }; st.teamGa = null;
   st.batches = []; st.accounts = []; st.devices = {}; st.edits = [];
   ui.tab = null; ui.viewDsr = null; ui.modal = null; ui.imgs = {}; pending = null;
   st.loginErr = msg; st.booting = false; render();
@@ -173,8 +178,9 @@ async function loadData() {
   const L = must(lives) || [];
   st.live = L.find(b => b.kpi === 'SQR') || null;
   st.tv = { live: L.find(b => b.kpi === 'TV') || null, dsrs: {}, rets: {} };
+  st.ga = { live: L.find(b => b.kpi === 'GA') || null, dsrs: {}, rets: {} };
   st.dsrs = {}; st.rets = {};
-  const byId = {}; if (st.live) byId[st.live.id] = st; if (st.tv.live) byId[st.tv.live.id] = st.tv;
+  const byId = {}; if (st.live) byId[st.live.id] = st; if (st.tv.live) byId[st.tv.live.id] = st.tv; if (st.ga.live) byId[st.ga.live.id] = st.ga;
   const ids = Object.keys(byId);
   if (ids.length) {
     const [f, r] = await Promise.all([
@@ -184,11 +190,13 @@ async function loadData() {
     (must(f) || []).forEach(x => { byId[x.batch_id].dsrs[x.dsr_code] = Object.assign({}, x.data, { code: x.dsr_code, name: x.dsr_name }); });
     (must(r) || []).forEach(x => { byId[x.batch_id].rets[x.dsr_code] = x.items || []; });
   }
-  st.team = null; st.teamTv = null;
+  st.team = null; st.teamTv = null; st.teamGa = null;
   if (p.role === 'dsr' && st.settings.summary) {
-    const [t, v] = await Promise.all([sb.rpc('team_summary'), st.tv.live ? sb.rpc('team_summary', { p_kpi: 'TV' }) : Promise.resolve({ data: null })]);
+    const none = Promise.resolve({ data: null });
+    const [t, v, g] = await Promise.all([sb.rpc('team_summary'), st.tv.live ? sb.rpc('team_summary', { p_kpi: 'TV' }) : none, st.ga.live ? sb.rpc('team_summary', { p_kpi: 'GA' }) : none]);
     if (!t.error) st.team = t.data;
     if (!v.error && v.data && v.data.totals && v.data.totals.pos != null) st.teamTv = v.data;   // needs supabase/update-02
+    if (!g.error && g.data && g.data.totals && g.data.totals.ga != null) st.teamGa = g.data;   // needs supabase/update-03
   }
   if (p.role === 'admin') await loadAdmin();
   st.loadedAt = Date.now();
@@ -226,16 +234,16 @@ function render() {
   let body = '';
   if (p.role === 'dsr') {
     if (ui.tab === 'team') body = viewTeamDsr();
-    else body = ui.detail === 'sqr' ? viewDsr(p.dsr_code, { back: T('home') }) : ui.detail === 'tv' ? viewTvDsr(p.dsr_code, { back: T('home') }) : viewDsrHome(p.dsr_code);
+    else body = ui.detail === 'sqr' ? viewDsr(p.dsr_code, { back: T('home') }) : ui.detail === 'tv' ? viewTvDsr(p.dsr_code, { back: T('home') }) : ui.detail === 'ga' ? viewGaDsr(p.dsr_code, { back: T('home') }) : viewDsrHome(p.dsr_code);
   } else if (ui.tab === 'team') {
-    if (ui.viewDsr) body = ui.detail === 'tv' ? viewTvDsr(ui.viewDsr, { back: 'Trade Visibility ranking', staff: true }) : viewDsr(ui.viewDsr, { back: 'SQR ranking', staff: true });
-    else body = ui.detail === 'sqr' ? viewTeam(false) : ui.detail === 'tv' ? viewTvTeam(false) : viewOverview();
+    if (ui.viewDsr) body = ui.detail === 'tv' ? viewTvDsr(ui.viewDsr, { back: 'Trade Visibility ranking', staff: true }) : ui.detail === 'ga' ? viewGaDsr(ui.viewDsr, { back: 'GA ranking', staff: true }) : viewDsr(ui.viewDsr, { back: 'SQR ranking', staff: true });
+    else body = ui.detail === 'sqr' ? viewTeam(false) : ui.detail === 'tv' ? viewTvTeam(false) : ui.detail === 'ga' ? viewGaTeam() : viewOverview();
   } else {
     body = ({ upload: viewUpload, reports: viewReports, data: viewData, people: viewPeople }[ui.tab] || viewOverview)();
   }
   app.innerHTML = `
   <header class="top"><div class="wrap">
-    <div class="brand"><div class="mark">AK</div><div style="min-width:0"><b>AKTL Sitakunda</b><small>KPI Portal · SQR · Trade Visibility</small></div></div>
+    <div class="brand"><div class="mark">AK</div><div style="min-width:0"><b>AKTL Sitakunda</b><small>KPI Portal · SQR · Trade Visibility · GA</small></div></div>
     ${kpiNav()}
     <button class="who" data-act="askout" title="${T('signOut')}"><span class="av">${esc(initials(p.name))}</span><span>${esc(p.name)}</span></button>
   </div></header>
@@ -247,7 +255,7 @@ function render() {
 function kpiNav() {
   const home = st.profile.role === 'dsr' ? 'home' : 'team';
   const cur = ui.tab === home ? (ui.detail || 'all') : null;
-  return `<nav class="kpinav" aria-label="KPIs">${[['all', T('allKpi')], ['sqr', 'SQR'], ['tv', T('tvName')]].map(k => `<button data-act="kpi" data-v="${k[0]}" ${cur === k[0] ? 'aria-current="page"' : ''}>${esc(k[1])}</button>`).join('')}</nav>`;
+  return `<nav class="kpinav" aria-label="KPIs">${[['all', T('allKpi')], ['sqr', 'SQR'], ['tv', T('tvName')], ['ga', 'GA']].map(k => `<button data-act="kpi" data-v="${k[0]}" ${cur === k[0] ? 'aria-current="page"' : ''}>${esc(k[1])}</button>`).join('')}</nav>`;
 }
 function viewLogin() {
   return `<main><div class="wrap"><div class="login stack">
@@ -267,7 +275,7 @@ function stampHtml(b) {
   b = b === undefined ? st.live : b;
   if (!b) return '';
   const p = b.period || {};
-  return `<div class="stamp">${p.from && p.to ? `<span>${T('period')}: <b>${esc(periodText(b))}</b></span>` : ''}<span>${T('updated')}: <b>${esc(fmtTime(b.published_at))}</b></span></div>`;
+  return `<div class="stamp">${p.from && p.to ? `<span>${T('period')}: <b>${esc(periodText(b))}${p.asOf ? ' · ' + esc(T('tillT', { t: p.asOf })) : ''}</b></span>` : ''}<span>${T('updated')}: <b>${esc(fmtTime(b.published_at))}</b></span></div>`;
 }
 const backBtn = label => `<div><button class="btn ghost" data-act="back">${ic('back')} ${esc(label)}</button></div>`;
 const kpiTitle = (name, b) => `<div class="kpititle"><span class="kpitag">${T('kpi')}</span><h2>${esc(name)}</h2>${stampHtml(b)}</div>`;
@@ -415,10 +423,14 @@ function viewDsrHome(code) {
       ${moreBtn('tv', T('seeTv'))}
     </article>`;
   }
+  const g = st.ga.dsrs[code];
+  let ga = `<div class="card empty">${T('noGa')}</div>`;
+  if (g) ga = gaHero(g, st.ga.live, true);
   return `
-  <section class="hello"><div class="av">${esc(initials(d ? d.name : p.name))}</div><div class="grow"><h1>${esc(d ? d.name : p.name)}</h1>${code ? `<p>${esc(code)}</p>` : ''}</div>${langToggle()}</section>
+  <section class="hello"><div class="av">${esc(initials(d ? d.name : p.name))}</div><div class="grow"><h1>${esc(d ? d.name : p.name)}</h1>${code ? `<p>${g && g.person ? esc(g.person) + ' · ' : ''}${esc(code)}</p>` : ''}</div>${langToggle()}</section>
   <section class="kpisec">${kpiTitle(T('sqrName'), st.live)}${sqr}</section>
-  <section class="kpisec">${kpiTitle(T('tvName'), st.tv.live)}${tv}</section>`;
+  <section class="kpisec">${kpiTitle(T('tvName'), st.tv.live)}${tv}</section>
+  <section class="kpisec">${kpiTitle(T('gaName'), st.ga.live)}${ga}</section>`;
 }
 
 function viewTvDsr(code, opt) {
@@ -483,15 +495,156 @@ function viewTvTeam() {
 function viewOverview() {
   const sqr = st.live ? `${sqrTeamTiles(localTotals())}${moreBtn('sqr', 'See SQR details · DSR ranking')}` : emptyPublished();
   const tv = st.tv.live ? `${tvTeamTiles(tvTotals(tvList()))}${moreBtn('tv', 'See Trade Visibility details · DSR ranking')}` : `<div class="card empty">${T('noTv')}${st.profile.role === 'admin' ? ' Upload the Trade Visibility file to add it.' : ''}</div>`;
+  const ga = st.ga.live ? `${gaTeamTiles(gaTotals(Object.values(st.ga.dsrs)), st.ga.live)}${moreBtn('ga', 'See GA details · DSR and DSO ranking')}` : `<div class="card empty">${T('noGa')}${st.profile.role === 'admin' ? ' Upload the MTD GA file to add it.' : ''}</div>`;
   return `<section><h1 style="font-size:24px">Team performance</h1></section>
   <section class="kpisec">${kpiTitle(T('sqrName'), st.live)}${sqr}</section>
-  <section class="kpisec">${kpiTitle(T('tvName'), st.tv.live)}${tv}</section>`;
+  <section class="kpisec">${kpiTitle(T('tvName'), st.tv.live)}${tv}</section>
+  <section class="kpisec">${kpiTitle(T('gaName'), st.ga.live)}${ga}</section>`;
 }
 function viewTeamDsr() {
   const tv = st.teamTv;
   return `<section><h1 style="font-size:24px">${T('teamHead')}</h1></section>
   <section class="kpisec">${viewTeam(true)}</section>
-  ${tv ? `<section class="kpisec">${kpiTitle(T('tvName'), st.tv.live)}${tvTeamTiles(Object.assign({ n: 0 }, tv.totals))}${tv.ranking ? tvRanking(tv.ranking, false) : ''}</section>` : ''}`;
+  ${tv ? `<section class="kpisec">${kpiTitle(T('tvName'), st.tv.live)}${tvTeamTiles(Object.assign({ n: 0 }, tv.totals))}${tv.ranking ? tvRanking(tv.ranking, false) : ''}</section>` : ''}
+  ${st.teamGa ? `<section class="kpisec">${kpiTitle(T('gaName'), st.ga.live)}${gaTeamTiles(st.teamGa.totals, st.ga.live)}${st.teamGa.ranking ? gaRanking(st.teamGa.ranking.filter(d => d.kind !== 'dso'), false, 'DSR ranking') : ''}</section>` : ''}`;
+}
+
+/* =====================================================================
+   GA (Gross Add): DSR/DSO page, team page
+   period has day (days passed, counted like the Excel) and days (in month).
+   ===================================================================== */
+function gaCalc(d, b) {
+  const p = (b && b.period) || {}, day = +p.day || 0, days = +p.days || 0;
+  const pct = d.target ? (d.ga || 0) / d.target : 0;
+  const rem = Math.max(0, (d.target || 0) - (d.ga || 0)), left = Math.max(0, days - day);
+  return { pct, proj: day && days ? pct * days / day : pct, rem, left, req: left ? rem / left : rem, need: days ? (d.target || 0) / days : 0, day, days };
+}
+const gaStatus = c => c.pct >= 1 ? { c: 'good', k: 'done100' } : c.proj >= 1 ? { c: 'good', k: 'onTrack' } : c.proj >= 0.9 ? { c: 'warn', k: 'close' } : { c: 'bad', k: 'behind' };
+const fx1 = n => (Math.round((+n || 0) * 10) / 10).toLocaleString('en-IN');
+function gaTotals(list) {
+  const t = { target: 0, ga: 0, today: 0, lastDay: 0, tgtRobi: 0, tgtAt: 0, robiGa: 0, atGa: 0, n: 0, days: null };
+  list.forEach(d => {
+    ['target', 'ga', 'today', 'lastDay', 'tgtRobi', 'tgtAt', 'robiGa', 'atGa'].forEach(k => t[k] += +d[k] || 0); t.n++;
+    if (d.days) { t.days = t.days || []; d.days.forEach((v, i) => { t.days[i] = (t.days[i] || 0) + (+v || 0); }); }
+  });
+  return t;
+}
+const gaName = d => `${esc(d.name)}${d.person ? ` <span class="muted" style="font-weight:500">· ${esc(d.person)}</span>` : ''}`;
+
+function dayChart(days, target, b) {
+  const p = (b && b.period) || {}, n = +p.days || days.length, need = n ? target / n : 0;
+  const max = Math.max(need * 1.25, ...days, 1);
+  const bars = Array.from({ length: n }, (_, i) => i < days.length
+    ? `<div class="b${need && days[i] >= need ? ' hit' : ''}" style="height:${(days[i] / max * 100).toFixed(1)}%" title="Day ${i + 1}: ${days[i]} GA"><span>${days[i] || ''}</span></div>`
+    : '<div class="b fut"></div>').join('');
+  const labs = Array.from({ length: n }, (_, i) => `<span>${i === 0 || (i + 1) % 5 === 0 ? i + 1 : ''}</span>`).join('');
+  return `<div class="dchart" style="--n:${n}" role="img" aria-label="${esc(T('daily'))}">${bars}${need ? `<i class="need" style="bottom:${(need / max * 100).toFixed(1)}%"><em>${fx1(need)}</em></i>` : ''}</div><div class="dlab" style="--n:${n}">${labs}</div>`;
+}
+
+function gaHero(g, b, withMore) {
+  const c = gaCalc(g, b), s = gaStatus(c), p = (b && b.period) || {};
+  return `<article class="card hero gah">
+    <div class="row1"><div><div class="lbl">${T('gaHead')}</div><div class="small muted">${T('gaSub')}${c.day ? ' · ' + T('dayOf', { d: c.day, n: c.days }) : ''}</div></div><span class="chip ${s.c}">${T(s.k)}</span></div>
+    <div class="main"><div class="big num">${nf(g.ga)} <small>/ ${nf(g.target)}</small></div>${ring(c.pct, s.c)}</div>
+    <div class="bar" role="img" aria-label="${pf(c.pct)} of target"><i class="${s.c}" style="width:${barW(c.pct)}"></i></div>
+    <div class="facts ${withMore ? 'f3' : 'f5'}">
+      ${withMore ? '' : `<div><span>${T('target')}</span><b class="num">${nf(g.target)}</b></div><div><span>${T('achieved')}</span><b class="num">${nf(g.ga)}</b></div>`}
+      <div class="rem"><span>${T('remaining')}</span><b class="num">${nf(c.rem)}</b></div>
+      <div><span>${T('reqDay')}</span><b class="num">${c.rem ? fx1(c.req) : '0'}</b></div>
+      <div><span>${T('proj')}</span><b class="num" style="color:var(--${s.c})">${pf(c.proj)}</b></div>
+    </div>
+    ${g.today != null || g.lastDay != null ? `<div class="facts f2" style="margin-top:8px">
+      <div><span>${T('today')}${p.asOf ? ' · ' + esc(T('tillT', { t: p.asOf })) : ''}</span><b class="num">${nf(g.today)}</b></div>
+      <div><span>${T('lastDay')}</span><b class="num">${nf(g.lastDay)}</b></div>
+    </div>` : ''}
+    ${withMore ? moreBtn('ga', T('seeGa')) : ''}
+  </article>`;
+}
+
+function viewGaDsr(code, opt) {
+  const g = code && st.ga.dsrs[code], sq = st.dsrs[code], p = st.profile;
+  const name = (g && g.name) || (sq && sq.name) || p.name;
+  const head = `${opt.back ? backBtn(opt.back) : ''}
+  <section class="hello"><div class="av">${esc(initials(name))}</div><div class="grow"><h1>${esc(name)}</h1><p>${g && g.person ? esc(g.person) + ' · ' : ''}${g && g.sup ? 'Supervisor ' + esc(g.sup) + ' · ' : ''}${esc(g && g.kind === 'dso' ? 'DSO' : code || '')}</p></div>${langToggle()}</section>
+  ${kpiTitle(T('gaName'), st.ga.live)}`;
+  if (!g) return head + `<div class="card empty">${p.role === 'dsr' ? T('noGa') : 'This person is not in the published GA data.'}</div>`;
+  const b = st.ga.live, it = st.ga.rets[code] || [];
+  const split = g.tgtRobi != null || g.robiGa != null;
+  const ra = g.retailGa != null || g.assistGa != null;
+  return head + `
+  ${gaHero(g, b, false)}
+  <div class="${split && ra ? 'grid2' : 'stack'}">
+    ${split ? `<article class="card"><h3>${T('opSplit')}</h3>
+      ${visitRow('Robi', g.robiGa || 0, g.tgtRobi || 0, g.tgtRobi ? (g.robiGa || 0) / g.tgtRobi : 0)}
+      ${visitRow('Airtel', g.atGa || 0, g.tgtAt || 0, g.tgtAt ? (g.atGa || 0) / g.tgtAt : 0)}</article>` : ''}
+    ${ra ? `<article class="card"><h3>${T('retAss')}</h3><div class="facts f2">
+      <div><span>${T('retailGa')}</span><b class="num">${nf(g.retailGa)}</b><span>${g.ga ? pf((g.retailGa || 0) / g.ga) + ' ' + T('ofGa') : ''}</span></div>
+      <div><span>${T('assistGa')}</span><b class="num">${nf(g.assistGa)}</b><span>${g.ga ? pf((g.assistGa || 0) / g.ga) + ' ' + T('ofGa') : ''}</span></div>
+    </div>${g.todayAssist != null || g.lastAssist != null ? `<p class="small muted" style="margin:10px 0 0">${T('assistGa')}: ${T('today').toLowerCase()} ${nf(g.todayAssist)} · ${T('lastDay').toLowerCase()} ${nf(g.lastAssist)}</p>` : ''}</article>` : ''}
+  </div>
+  ${g.days ? `<article class="card"><h3>${T('daily')}</h3><p class="small muted" style="margin:2px 0 0">${T('dailySub')}</p>${dayChart(g.days, g.target, b)}</article>` : ''}
+  ${g.kind === 'dso' && !it.length ? '' : `<article class="card"><h3>${T('gaRet')}</h3><p class="small muted" style="margin:2px 0 0">${T('gaRetLead')}</p>${gaRetList(it)}</article>`}`;
+}
+
+function gaRetList(all) {
+  if (!all.length) return `<div class="empty">${T('noRetGa')}</div>`;
+  const cnt = { zero: all.filter(r => !r.ga).length, akd: all.filter(r => r.akd).length, all: all.length };
+  const f = ui.gaFilter || (cnt.zero ? 'zero' : 'all');
+  const l = (f === 'zero' ? all.filter(r => !r.ga) : f === 'akd' ? all.filter(r => r.akd) : all.slice()).sort((a, c) => (f === 'akd' ? (c.tgt ? c.ga / c.tgt : 0) - (a.tgt ? a.ga / a.tgt : 0) : 0) || c.ga - a.ga || natural(a.name, c.name));
+  const pills = [['zero', 'f0'], ['akd', 'fAkd'], ['all', 'fAll']].filter(x => x[0] !== 'akd' || cnt.akd).map(x => `<button class="pill" data-act="gf" data-v="${x[0]}" aria-pressed="${f === x[0]}">${T(x[1])} · ${cnt[x[0]]}</button>`).join('');
+  return `<div class="pills" style="margin-top:10px">${pills}</div><div class="list">${l.length ? l.map(r => `<div class="li">
+    <div class="n">${esc(r.name)}${r.akd ? ' <span class="chip" style="font-size:11px;padding:1px 8px;color:var(--accent)">AKD</span>' : ''}${r.slab ? ` <span class="chip good" style="font-size:11px;padding:1px 8px">${esc(r.slab)}</span>` : ''}</div>
+    <div class="${r.ga ? 'ok' : 'need'} num" style="font-size:16px">${nf(r.ga)} ${T('ga')}</div>
+    <div class="s num">${esc(r.code)}${r.td != null ? ` · ${T('today')} ${nf(r.td)}` : ''}${r.ld != null ? ` · ${T('lastDay')} ${nf(r.ld)}` : ''}${r.akd && r.tgt ? ` · ${T('akdT', { t: nf(r.tgt) })} (${pf(r.ga / r.tgt)})` : ''}</div>
+    ${r.akd && r.tgt ? `<div class="bar sm" style="grid-column:1/-1"><i class="${status(r.ga / r.tgt).c}" style="width:${barW(r.ga / r.tgt)}"></i></div>` : ''}
+  </div>`).join('') : `<div class="empty">${T('noRet')}</div>`}</div>`;
+}
+
+function gaTeamTiles(t, b) {
+  const c = gaCalc(t, b), s = gaStatus(c), p = (b && b.period) || {};
+  return `<div class="tiles">
+    <article class="card tile"><div class="lbl">${T('terrT')}</div><div class="v num">${nf(t.ga)} <small>/ ${nf(t.target)}</small></div><div class="bar sm"><i class="${s.c}" style="width:${barW(c.pct)}"></i></div><p class="num">${pf(c.pct)}${c.day ? ' · ' + T('dayOf', { d: c.day, n: c.days }) : ''}</p></article>
+    <article class="card tile"><div class="lbl">${T('proj')}</div><div class="v num${s.c === 'good' ? ' goodv' : s.c === 'bad' ? ' badv' : ''}">${pf(c.proj)}</div><p>${T('projSub')}</p></article>
+    <article class="card tile"><div class="lbl">${T('remDay')}</div><div class="v num">${nf(c.rem)}</div><p class="num">${T('perDay', { n: fx1(c.req) })} · ${T('daysLeft', { n: c.left })}</p></article>
+    <article class="card tile"><div class="lbl">${T('todayLast')}</div><div class="v num">${nf(t.today)} <small>/ ${nf(t.lastDay)}</small></div><p class="num">${p.asOf ? esc(T('tillT', { t: p.asOf })) : ''}${p.notFound && st.profile.role !== 'dsr' ? `${p.asOf ? ' · ' : ''}<span class="no">${esc(T('notFound', { n: p.notFound }))}</span>` : ''}</p></article>
+  </div>`;
+}
+
+function gaRanking(rows, clickable, title) {
+  const p = st.profile, b = st.ga.live;
+  const r = rows.map(d => ({ d, c: gaCalc(d, b) })).sort((a, c) => c.c.pct - a.c.pct || (c.d.ga || 0) - (a.d.ga || 0));
+  return `<article class="card"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap"><h2>${esc(title)}</h2><span class="small muted">${T('gaRankBy')}${clickable ? ' · tap to open' : ''}</span></div>
+    <div class="list">${r.map((x, i) => {
+      const s = gaStatus(x.c);
+      const inner = `<span class="pos num">${i + 1}</span><span class="nm">${gaName(x.d)}${p.role === 'dsr' && p.dsr_code === x.d.code ? ' <span class="chip good" style="font-size:11px;padding:1px 8px">You</span>' : ''}</span><span class="pc num">${pf(x.c.pct)}</span><span class="bar sm"><i class="${s.c}" style="width:${barW(x.c.pct)}"></i></span><span class="meta num">${nf(x.d.ga)}/${nf(x.d.target)} GA · ${T('proj').toLowerCase()} <span style="color:var(--${s.c})">${pf(x.c.proj)}</span>${x.d.today != null ? ` · ${T('today').toLowerCase()} ${nf(x.d.today)}` : ''}${x.d.lastDay != null ? ` · ${T('lastDay').toLowerCase()} ${nf(x.d.lastDay)}` : ''}${x.c.rem ? ` · ${nf(x.c.rem)} to go` : ''}</span>`;
+      return clickable ? `<button class="rank" data-act="open" data-v="${esc(x.d.code)}">${inner}</button>` : `<div class="rank">${inner}</div>`;
+    }).join('')}</div></article>`;
+}
+
+function supTable(list, b) {
+  const by = {};
+  list.forEach(d => { if (!d.sup) return; (by[d.sup] = by[d.sup] || []).push(d); });
+  const names = Object.keys(by); if (!names.length) return '';
+  const rows = names.map(n => ({ n, t: gaTotals(by[n]), k: by[n].length })).map(x => Object.assign(x, { c: gaCalc(x.t, b) })).sort((a, c) => c.c.pct - a.c.pct);
+  return `<article class="card"><h2>${T('supHead')}</h2><div class="tbl"><table><thead><tr><th>Supervisor</th><th class="r">People</th><th class="r">GA / Target</th><th class="r">Achv %</th><th class="r">${T('proj')}</th><th class="r">${T('today')}</th><th class="r">${T('lastDay')}</th></tr></thead><tbody>
+    ${rows.map(x => `<tr><td>${esc(x.n)}</td><td class="r num">${x.k}</td><td class="r num">${nf(x.t.ga)} / ${nf(x.t.target)}</td><td class="r num">${pf(x.c.pct)}</td><td class="r num" style="color:var(--${gaStatus(x.c).c})">${pf(x.c.proj)}</td><td class="r num">${nf(x.t.today)}</td><td class="r num">${nf(x.t.lastDay)}</td></tr>`).join('')}
+  </tbody></table></div></article>`;
+}
+
+function viewGaTeam() {
+  if (!st.ga.live) return backBtn('Team overview') + `<div class="card empty">${T('noGa')}</div>`;
+  const all = Object.values(st.ga.dsrs), dsrs = gaList(), dsos = gaDsoList(), t = gaTotals(all), b = st.ga.live;
+  const ds = gaTotals(dsrs), dso = gaTotals(dsos);
+  return `${backBtn('Team overview')}${kpiTitle(T('gaName'), b)}${gaTeamTiles(t, b)}
+  ${dsos.length ? `<div class="grid2">
+    <article class="card"><h3>DSRs (${dsrs.length})</h3>${visitRow('MTD GA', ds.ga, ds.target, gaCalc(ds, b).pct)}<p class="small muted num" style="margin:8px 0 0">${T('proj')} ${pf(gaCalc(ds, b).proj)} · ${T('today').toLowerCase()} ${nf(ds.today)} · ${T('lastDay').toLowerCase()} ${nf(ds.lastDay)}</p></article>
+    <article class="card"><h3>DSOs (${dsos.length})</h3>${visitRow('MTD GA', dso.ga, dso.target, gaCalc(dso, b).pct)}<p class="small muted num" style="margin:8px 0 0">${T('proj')} ${pf(gaCalc(dso, b).proj)} · ${T('today').toLowerCase()} ${nf(dso.today)} · ${T('lastDay').toLowerCase()} ${nf(dso.lastDay)}</p></article>
+  </div>` : ''}
+  ${t.tgtRobi ? `<article class="card"><h3>${T('opSplit')}</h3>${visitRow('Robi', t.robiGa, t.tgtRobi, t.robiGa / t.tgtRobi)}${visitRow('Airtel', t.atGa, t.tgtAt, t.tgtAt ? t.atGa / t.tgtAt : 0)}</article>` : ''}
+  ${t.days ? `<article class="card"><h3>${T('daily')} · team</h3><p class="small muted" style="margin:2px 0 0">${T('dailySub')}</p>${dayChart(t.days, t.target, b)}</article>` : ''}
+  ${supTable(all, b)}
+  ${dsrs.length ? gaRanking(dsrs, true, 'DSR ranking') : ''}
+  ${dsos.length ? gaRanking(dsos, true, T('dsoHead')) : ''}`;
 }
 
 /* ---------- admin: upload ---------- */
@@ -500,8 +653,8 @@ function viewUpload() {
   if (!pending) return `
   <section><h1 style="font-size:24px">Upload a KPI report</h1><p class="muted small" style="margin:4px 0 0">Nothing changes for DSRs until you press Publish.</p></section>
   <div class="steps"><div class="on">Choose file</div><div>Check columns</div><div>Fix issues</div><div>Preview and publish</div></div>
-  <label class="drop" id="drop" for="file">${ic('file')}<b>Choose the SQR or Trade Visibility Excel file</b><span class="muted small">or drag it here · .xlsx</span><input type="file" id="file" accept=".xlsx,.xls,.csv"></label>
-  <div class="banner info"><div><b>What gets read:</b> the KPI is detected from the file. <b>SQR:</b> the summary sheet (e.g. "Summury") and the retailer sheet; the older "DSR Wise" layout also works. <b>Trade Visibility:</b> "DSR Summury" (BCD POS, 1st and 2nd visits) and "Retail Wise" (Pending / 1st Times Done), matched to DSRs by number. Phone numbers are never saved; retailer MSISDNs are cut to the last 4 digits.</div></div>`;
+  <label class="drop" id="drop" for="file">${ic('file')}<b>Choose the SQR, Trade Visibility or MTD GA Excel file</b><span class="muted small">or drag it here · .xlsx</span><input type="file" id="file" accept=".xlsx,.xls,.csv"></label>
+  <div class="banner info"><div><b>What gets read:</b> the KPI is detected from the file. <b>SQR:</b> the summary sheet (e.g. "Summury") and the retailer sheet; the older "DSR Wise" layout also works. <b>Trade Visibility:</b> "DSR Summury" (BCD POS, 1st and 2nd visits) and "Retail Wise" (Pending / 1st Times Done), matched to DSRs by number. <b>GA:</b> "MTD GA" (targets, MTD GA, today, last day), plus "Daywise FF" and "Retail Wise" when present; DSOs get their own rows. Phone numbers are never saved; retailer MSISDNs are cut to the last 4 digits.</div></div>`;
   const pd = pending, errs = pd.issues.filter(i => i.t === 'err');
   const rows = Object.values(pd.dsrs).sort((a, c) => natural(a.name, c.name));
   return `
@@ -510,8 +663,8 @@ function viewUpload() {
   <div class="grid2">
     <article class="card"><h3>What was found</h3>
       <div class="issue ok"><span class="dot"></span><span>Report type: <b>${esc(window.SQRParse.KPI_NAME[pd.kpi] || pd.kpi)}</b> · sheet "${esc(pd.sheetDsr || '-')}"</span></div>
-      <div class="issue ${pd.period ? 'ok' : pd.kpi === 'TV' ? 'ok' : 'warn'}"><span class="dot"></span><span>Period: <b>${esc(pd.period ? pd.period.from + ' to ' + pd.period.to : 'not found')}</b>${pd.period && pd.period.pulled ? ` · pulled ${esc(pd.period.pulled)}` : ''}</span></div>
-      <div class="issue ok"><span class="dot"></span><span><b>${rows.length}</b> DSRs · <b>${pd.retCount}</b> ${pd.kpi === 'TV' ? 'POS still to visit' : 'retailers'}${pd.sheetRet ? ` from "${esc(pd.sheetRet)}"` : ''}</span></div>
+      <div class="issue ${pd.period ? 'ok' : pd.kpi === 'TV' ? 'ok' : 'warn'}"><span class="dot"></span><span>Period: <b>${esc(pd.period ? pd.period.from + ' to ' + pd.period.to : 'not found')}</b>${pd.period && pd.period.asOf ? ` · data till ${esc(pd.period.asOf)}` : pd.period && pd.period.pulled ? ` · pulled ${esc(pd.period.pulled)}` : ''}${pd.period && pd.period.day ? ` · day ${pd.period.day} of ${pd.period.days}` : ''}</span></div>
+      <div class="issue ok"><span class="dot"></span><span><b>${pd.kpi === 'GA' ? rows.filter(d => d.kind !== 'dso').length : rows.length}</b> DSRs${pd.kpi === 'GA' ? ` · <b>${rows.filter(d => d.kind === 'dso').length}</b> DSOs` : ''} · <b>${pd.retCount}</b> ${pd.kpi === 'TV' ? 'POS still to visit' : 'retailers'}${pd.sheetRet ? ` from "${esc(pd.sheetRet)}"` : ''}</span></div>
       ${pd.carried.length ? `<div class="issue warn"><span class="dot"></span><span>${pd.carried.length} DSR(s) are not in this file and will keep their current figures: ${pd.carried.map(esc).join(', ')}</span></div>` : ''}
     </article>
     <article class="card"><h3>Issues</h3>${pd.issues.length ? pd.issues.map(i => `<div class="issue ${i.t}"><span class="dot"></span><span>${esc(i.m)}</span></div>`).join('') : `<div class="issue ok"><span class="dot"></span><span>No problems found.</span></div>`}</article>
@@ -519,8 +672,9 @@ function viewUpload() {
   <article class="card"><h3>Column mapping</h3><p class="small muted" style="margin:2px 0 0">${pd.mapping.filter(m => m.col >= 0).length} of ${pd.mapping.length} KPI columns matched.</p>
     <div class="tbl"><table><thead><tr><th>KPI field</th><th>Excel column</th><th></th></tr></thead><tbody>${pd.mapping.map(m => `<tr><td>${esc(m.label)}</td><td class="muted">${m.col >= 0 ? esc(m.header) : '—'}</td><td>${m.col >= 0 ? '<span class="yes">Matched</span>' : m.req ? '<span class="no">Missing (required)</span>' : '<span class="muted">Not found</span>'}</td></tr>`).join('')}</tbody></table></div>
   </article>
-  <article class="card"><h3>Preview</h3><p class="small muted" style="margin:2px 0 0">Change is compared with what DSRs see now${pd.kpi === 'TV' ? ' (2nd visits)' : ''}.</p>
-    <div class="tbl"><table>${pd.kpi === 'TV' ? `<thead><tr><th>DSR</th><th class="r">BCD POS</th><th class="r">1st visit</th><th class="r">2nd visit</th><th class="r">2nd visit %</th><th class="r">Change</th></tr></thead><tbody>
+  <article class="card"><h3>Preview</h3><p class="small muted" style="margin:2px 0 0">Change is compared with what DSRs see now${pd.kpi === 'TV' ? ' (2nd visits)' : pd.kpi === 'GA' ? ' (MTD GA)' : ''}.</p>
+    <div class="tbl"><table>${pd.kpi === 'GA' ? `<thead><tr><th>DSR / DSO</th><th class="r">MTD GA / Target</th><th class="r">Achv %</th><th class="r">Projected</th><th class="r">Today</th><th class="r">Change</th></tr></thead><tbody>
+    ${rows.map(d => { const c = gaCalc(d, pd), o = st.ga.dsrs[d.code]; const dl = o ? d.ga - o.ga : null; return `<tr><td>${esc(d.name)}${d.person ? ` <span class="muted small">${esc(d.person)}</span>` : ''}</td><td class="r num">${nf(d.ga)} / ${nf(d.target)}</td><td class="r num">${pf(c.pct)}</td><td class="r num">${pf(c.proj)}</td><td class="r num">${d.today == null ? '-' : nf(d.today)}</td><td class="r num">${dl == null ? '<span class="muted">new</span>' : dl > 0 ? `<span class="up">+${dl}</span>` : dl < 0 ? `<span class="down">${dl}</span>` : '<span class="muted">0</span>'}</td></tr>`; }).join('')}` : pd.kpi === 'TV' ? `<thead><tr><th>DSR</th><th class="r">BCD POS</th><th class="r">1st visit</th><th class="r">2nd visit</th><th class="r">2nd visit %</th><th class="r">Change</th></tr></thead><tbody>
     ${rows.map(d => { const c = tvCalc(d), o = st.tv.dsrs[d.code]; const dl = o ? d.v2 - o.v2 : null; return `<tr><td>${esc(d.name)}</td><td class="r num">${nf(d.pos)}</td><td class="r num">${nf(d.v1)} (${pf(c.p1)})</td><td class="r num">${nf(d.v2)}</td><td class="r num">${pf(c.p2)}</td><td class="r num">${dl == null ? '<span class="muted">new</span>' : dl > 0 ? `<span class="up">+${dl}</span>` : dl < 0 ? `<span class="down">${dl}</span>` : '<span class="muted">0</span>'}</td></tr>`; }).join('')}` : `<thead><tr><th>DSR</th><th class="r">Active / Target</th><th class="r">%</th><th class="r">Change</th><th class="r">QR vis.</th><th class="r">${pd.format === 'summary' ? 'Super QR Tk' : 'Incentive'}</th></tr></thead><tbody>
     ${rows.map(d => { const c = calc(d), o = st.dsrs[d.code]; const dl = o ? d.active - o.active : null; return `<tr><td>${esc(d.name)}</td><td class="r num">${nf(d.active)} / ${nf(d.target)}</td><td class="r num">${pf(c.pct)}</td><td class="r num">${dl == null ? '<span class="muted">new</span>' : dl > 0 ? `<span class="up">+${dl}</span>` : dl < 0 ? `<span class="down">${dl}</span>` : '<span class="muted">0</span>'}</td><td class="r num">${pf(c.vis)}</td><td class="r num">Tk ${nf(pd.format === 'summary' ? d.sqrAmt : d.incTotal)}</td></tr>`; }).join('')}
 `}
@@ -650,7 +804,7 @@ function viewData() {
     <div class="actions" style="margin-top:12px"><button class="btn primary" data-act="correct" ${ui.saving ? 'disabled' : ''}>Save correction</button></div>
   </article>` : emptyPublished()}
   <article class="card"><h2>Published versions</h2>${st.batches.length ? `<div class="tbl"><table><thead><tr><th>Status</th><th>KPI</th><th>File</th><th>Period</th><th>Published</th><th></th></tr></thead><tbody>
-    ${st.batches.map(x => `<tr><td>${x.is_live ? '<span class="chip good">Live</span>' : '<span class="muted">Previous</span>'}</td><td>${esc(x.kpi === 'TV' ? 'Trade Visibility' : x.kpi)}</td><td>${esc(x.file_name)}${x.carried && x.carried.length ? ` <span class="muted small">(${x.carried.length} kept)</span>` : ''}</td><td>${esc(periodText(x))}</td><td class="num">${esc(fmtTime(x.published_at))}</td><td>${x.is_live ? '' : ui.confirm === x.id ? `<span class="actions"><button class="btn danger" data-act="rollback" data-v="${x.id}">Yes, make live</button><button class="btn" data-act="cancel">Cancel</button></span>` : `<button class="btn" data-act="askroll" data-v="${x.id}">Make live</button>`}</td></tr>`).join('')}
+    ${st.batches.map(x => `<tr><td>${x.is_live ? '<span class="chip good">Live</span>' : '<span class="muted">Previous</span>'}</td><td>${esc(x.kpi === 'TV' ? 'Trade Visibility' : x.kpi === 'GA' ? 'GA' : x.kpi)}</td><td>${esc(x.file_name)}${x.carried && x.carried.length ? ` <span class="muted small">(${x.carried.length} kept)</span>` : ''}</td><td>${esc(periodText(x))}</td><td class="num">${esc(fmtTime(x.published_at))}</td><td>${x.is_live ? '' : ui.confirm === x.id ? `<span class="actions"><button class="btn danger" data-act="rollback" data-v="${x.id}">Yes, make live</button><button class="btn" data-act="cancel">Cancel</button></span>` : `<button class="btn" data-act="askroll" data-v="${x.id}">Make live</button>`}</td></tr>`).join('')}
   </tbody></table></div>` : '<div class="empty">No versions yet.</div>'}</article>
   <article class="card"><h2>Correction log</h2>${st.edits.length ? `<div class="tbl"><table><thead><tr><th>When</th><th>DSR</th><th>Figure</th><th class="r">Old</th><th class="r">New</th><th>By</th><th>Reason</th></tr></thead><tbody>${st.edits.map(e => `<tr><td class="num">${esc(fmtTime(e.changed_at))}</td><td>${esc(e.dsr_name)}</td><td>${esc(LABEL[e.field] || e.field)}</td><td class="r num">${nf(e.old_value)}</td><td class="r num">${nf(e.new_value)}</td><td>${esc(e.changed_by_name)}</td><td style="white-space:normal;min-width:200px">${esc(e.reason)}</td></tr>`).join('')}</tbody></table></div>` : '<div class="empty">No corrections yet.</div>'}</article>`;
 }
@@ -733,11 +887,12 @@ async function rpcDo(name, args, okMsg) {
 /* ---------- events ---------- */
 const A = {
   tab: v => { ui.tab = v; ui.viewDsr = null; ui.detail = null; ui.confirm = null; render(); window.scrollTo(0, 0); },
-  detail: v => { ui.detail = v; ui.viewDsr = null; ui.retFilter = 'need'; ui.tvFilter = 'p'; if (st.profile.role !== 'dsr') ui.tab = 'team'; render(); window.scrollTo(0, 0); },
-  open: v => { ui.viewDsr = v; ui.retFilter = 'need'; ui.tvFilter = 'p'; render(); window.scrollTo(0, 0); },
+  detail: v => { ui.detail = v; ui.viewDsr = null; ui.retFilter = 'need'; ui.tvFilter = 'p'; ui.gaFilter = null; if (st.profile.role !== 'dsr') ui.tab = 'team'; render(); window.scrollTo(0, 0); },
+  open: v => { ui.viewDsr = v; ui.retFilter = 'need'; ui.tvFilter = 'p'; ui.gaFilter = null; render(); window.scrollTo(0, 0); },
   back: () => { if (ui.viewDsr) ui.viewDsr = null; else ui.detail = null; render(); window.scrollTo(0, 0); },
   tf: v => { ui.tvFilter = v; render(); },
-  kpi: v => { ui.tab = st.profile.role === 'dsr' ? 'home' : 'team'; ui.viewDsr = null; ui.detail = v === 'all' ? null : v; ui.retFilter = 'need'; ui.tvFilter = 'p'; render(); window.scrollTo(0, 0); },
+  gf: v => { ui.gaFilter = v; render(); },
+  kpi: v => { ui.tab = st.profile.role === 'dsr' ? 'home' : 'team'; ui.viewDsr = null; ui.detail = v === 'all' ? null : v; ui.retFilter = 'need'; ui.tvFilter = 'p'; ui.gaFilter = null; render(); window.scrollTo(0, 0); },
   lang: v => { st.lang = v; lsSet('aktl-lang', v); render(); },
   rf: v => { ui.retFilter = v; render(); },
   askout: () => { ui.modal = { type: 'signout' }; render(); },

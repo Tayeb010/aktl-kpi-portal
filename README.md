@@ -22,6 +22,7 @@ Supabase, protected by row-level security rules in `supabase/setup.sql`.
 | `tools/kpi.cjs` | Publisher: `build` turns an Excel into `data/<kpi>/latest.json`, `publish` sends it to Supabase |
 | `.github/workflows/publish-kpi.yml` | Publishes automatically when a `data/<kpi>/latest.json` changes on `main` |
 | `supabase/update-02-trade-visibility.sql` | Optional update: Trade Visibility in the DSRs' Team tab |
+| `supabase/update-03-ga.sql` | Optional update: GA in the DSRs' Team tab (includes update 02) |
 | `site/_headers` | Security headers for Cloudflare Pages |
 
 ## One-time setup
@@ -46,6 +47,15 @@ Every push to `main` updates the live site automatically.
   "POS Base", with a "TV Remarks" column): "Pending" = needs 1st and 2nd visit, "1st Times Done" =
   needs 2nd visit only, "2nd Times Done" = both done (not listed on the portal).
   DSRs are matched by number ("AKTL (Sitakunda) DSR 01" = "DSR-01"); MSISDNs are cut to the last 4 digits.
+
+- **GA · Gross Add**: MTD GA (Robi + Airtel SIM activations) against the MCO target, read from the
+  "MTD GA" sheet (header "DSR/DSO", "MCO TGT", "MTD GA"; data date from "GA Update till:").
+  Shows achievement %, projected month-end % (achievement × days in month ÷ days passed, same as the
+  Excel), remaining and GA needed per day, Robi vs Airtel, retail vs assist, today and last day.
+  Optional sheets: day-wise GA ("Daywise FF" or the "Day-wise GA" block in "DSR Dashboard"),
+  retailer-wise GA ("Retail Wise": MTD GA, AKD target, slab) and supervisor ("DSR Dashboard").
+  DSRs are matched by number ("DSR 1" = "DSR-01"); DSOs get their own rows (code `DSO-<name>`),
+  visible to staff. DSR and retailer phone numbers are never read.
 
 Each KPI has its own section on the home and team pages, with a "See details" button.
 

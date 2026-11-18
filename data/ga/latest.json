@@ -1,0 +1,2575 @@
+{
+ "kpi": "GA",
+ "fileName": "MTD_GA_Dashboard_Nov.xlsx",
+ "format": "ga",
+ "period": {
+  "from": "01-Nov",
+  "to": "18-Nov",
+  "pulled": "18-Nov",
+  "day": 18,
+  "days": 30,
+  "asOf": "2:56 PM",
+  "notFound": 3
+ },
+ "builtAt": "2026-11-18T10:20:40.268Z",
+ "issues": [
+  {
+   "t": "warn",
+   "m": "3 GA in the file are not linked to any DSR or DSO (\"Not Found\"). They count in the file's total (1618) but not on anyone's dashboard."
+  },
+  {
+   "t": "warn",
+   "m": "28 retailer row(s) in \"Retail Wise\" have no DSR (\"#N/A\") and were skipped."
+  }
+ ],
+ "figures": [
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_1",
+   "name": "DSR-01",
+   "data": {
+    "target": 82,
+    "ga": 45,
+    "tgtRobi": 66,
+    "tgtAt": 16,
+    "robiGa": 30,
+    "atGa": 15,
+    "retailGa": 24,
+    "assistGa": 21,
+    "today": 0,
+    "todayAssist": 0,
+    "lastDay": 4,
+    "lastAssist": 4,
+    "sup": "Minhaj",
+    "days": [
+     3,
+     2,
+     3,
+     3,
+     1,
+     4,
+     1,
+     2,
+     5,
+     5,
+     5,
+     0,
+     0,
+     3,
+     2,
+     2,
+     4,
+     0
+    ],
+    "person": "Hridoy"
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_2",
+   "name": "DSR-02",
+   "data": {
+    "target": 149,
+    "ga": 97,
+    "tgtRobi": 119,
+    "tgtAt": 30,
+    "robiGa": 84,
+    "atGa": 13,
+    "retailGa": 73,
+    "assistGa": 24,
+    "today": 1,
+    "todayAssist": 0,
+    "lastDay": 6,
+    "lastAssist": 0,
+    "sup": "Minhaj",
+    "days": [
+     5,
+     6,
+     4,
+     1,
+     8,
+     2,
+     3,
+     13,
+     10,
+     10,
+     10,
+     6,
+     2,
+     1,
+     3,
+     6,
+     6,
+     1
+    ],
+    "person": "Rubel"
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_3",
+   "name": "DSR-03",
+   "data": {
+    "target": 157,
+    "ga": 90,
+    "tgtRobi": 126,
+    "tgtAt": 31,
+    "robiGa": 79,
+    "atGa": 11,
+    "retailGa": 72,
+    "assistGa": 18,
+    "today": 2,
+    "todayAssist": 0,
+    "lastDay": 7,
+    "lastAssist": 2,
+    "sup": "Minhaj",
+    "days": [
+     4,
+     3,
+     5,
+     6,
+     0,
+     8,
+     4,
+     11,
+     8,
+     5,
+     7,
+     2,
+     4,
+     3,
+     6,
+     5,
+     7,
+     2
+    ],
+    "person": "Touhid"
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_4",
+   "name": "DSR-05",
+   "data": {
+    "target": 75,
+    "ga": 50,
+    "tgtRobi": 60,
+    "tgtAt": 15,
+    "robiGa": 41,
+    "atGa": 9,
+    "retailGa": 27,
+    "assistGa": 23,
+    "today": 11,
+    "todayAssist": 8,
+    "lastDay": 5,
+    "lastAssist": 0,
+    "sup": "Minhaj",
+    "days": [
+     5,
+     3,
+     3,
+     5,
+     0,
+     0,
+     0,
+     2,
+     0,
+     2,
+     3,
+     2,
+     1,
+     3,
+     3,
+     2,
+     5,
+     11
+    ],
+    "person": "Harun"
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_5",
+   "name": "DSR-06",
+   "data": {
+    "target": 125,
+    "ga": 71,
+    "tgtRobi": 100,
+    "tgtAt": 25,
+    "robiGa": 61,
+    "atGa": 10,
+    "retailGa": 36,
+    "assistGa": 35,
+    "today": 15,
+    "todayAssist": 14,
+    "lastDay": 5,
+    "lastAssist": 4,
+    "sup": "Minhaj",
+    "days": [
+     2,
+     2,
+     3,
+     4,
+     1,
+     5,
+     3,
+     2,
+     4,
+     2,
+     8,
+     3,
+     1,
+     3,
+     3,
+     5,
+     5,
+     15
+    ],
+    "person": "Shamol"
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_6",
+   "name": "DSR-07",
+   "data": {
+    "target": 203,
+    "ga": 158,
+    "tgtRobi": 162,
+    "tgtAt": 41,
+    "robiGa": 146,
+    "atGa": 12,
+    "retailGa": 137,
+    "assistGa": 21,
+    "today": 6,
+    "todayAssist": 0,
+    "lastDay": 8,
+    "lastAssist": 5,
+    "sup": "Minhaj",
+    "days": [
+     10,
+     11,
+     8,
+     9,
+     9,
+     8,
+     10,
+     14,
+     11,
+     7,
+     12,
+     5,
+     6,
+     5,
+     8,
+     11,
+     8,
+     6
+    ],
+    "person": "Joy"
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_7",
+   "name": "DSR-08",
+   "data": {
+    "target": 68,
+    "ga": 30,
+    "tgtRobi": 54,
+    "tgtAt": 14,
+    "robiGa": 28,
+    "atGa": 2,
+    "retailGa": 25,
+    "assistGa": 5,
+    "today": 1,
+    "todayAssist": 0,
+    "lastDay": 1,
+    "lastAssist": 0,
+    "sup": "Minhaj",
+    "days": [
+     8,
+     0,
+     1,
+     1,
+     1,
+     2,
+     2,
+     1,
+     2,
+     1,
+     2,
+     2,
+     0,
+     0,
+     3,
+     2,
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_8",
+   "name": "DSR-09",
+   "data": {
+    "target": 75,
+    "ga": 47,
+    "tgtRobi": 60,
+    "tgtAt": 15,
+    "robiGa": 45,
+    "atGa": 2,
+    "retailGa": 19,
+    "assistGa": 28,
+    "today": 0,
+    "todayAssist": 0,
+    "lastDay": 21,
+    "lastAssist": 20,
+    "sup": "Shakil",
+    "days": [
+     2,
+     1,
+     3,
+     1,
+     2,
+     0,
+     3,
+     1,
+     0,
+     0,
+     2,
+     0,
+     0,
+     3,
+     1,
+     7,
+     21,
+     0
+    ],
+    "person": "Mahin"
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_9",
+   "name": "DSR-11",
+   "data": {
+    "target": 243,
+    "ga": 202,
+    "tgtRobi": 194,
+    "tgtAt": 49,
+    "robiGa": 171,
+    "atGa": 31,
+    "retailGa": 144,
+    "assistGa": 58,
+    "today": 21,
+    "todayAssist": 14,
+    "lastDay": 19,
+    "lastAssist": 9,
+    "sup": "Shakil",
+    "days": [
+     9,
+     3,
+     6,
+     8,
+     10,
+     6,
+     9,
+     13,
+     12,
+     16,
+     22,
+     16,
+     2,
+     16,
+     10,
+     4,
+     19,
+     21
+    ],
+    "person": "Anik"
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_10",
+   "name": "DSR-12",
+   "data": {
+    "target": 216,
+    "ga": 140,
+    "tgtRobi": 173,
+    "tgtAt": 43,
+    "robiGa": 120,
+    "atGa": 20,
+    "retailGa": 85,
+    "assistGa": 55,
+    "today": 6,
+    "todayAssist": 3,
+    "lastDay": 15,
+    "lastAssist": 10,
+    "sup": "Shakil",
+    "days": [
+     2,
+     8,
+     6,
+     5,
+     12,
+     4,
+     10,
+     8,
+     7,
+     4,
+     9,
+     17,
+     5,
+     7,
+     7,
+     8,
+     15,
+     6
+    ],
+    "person": "Saymon"
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_11",
+   "name": "DSR-13",
+   "data": {
+    "target": 84,
+    "ga": 50,
+    "tgtRobi": 67,
+    "tgtAt": 17,
+    "robiGa": 38,
+    "atGa": 12,
+    "retailGa": 34,
+    "assistGa": 16,
+    "today": 0,
+    "todayAssist": 0,
+    "lastDay": 6,
+    "lastAssist": 1,
+    "sup": "Shakil",
+    "days": [
+     2,
+     4,
+     2,
+     1,
+     1,
+     6,
+     2,
+     7,
+     2,
+     4,
+     2,
+     6,
+     3,
+     0,
+     1,
+     1,
+     6,
+     0
+    ],
+    "person": "Juboraj"
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_12",
+   "name": "DSR-14",
+   "data": {
+    "target": 72,
+    "ga": 76,
+    "tgtRobi": 58,
+    "tgtAt": 14,
+    "robiGa": 65,
+    "atGa": 11,
+    "retailGa": 48,
+    "assistGa": 28,
+    "today": 3,
+    "todayAssist": 0,
+    "lastDay": 22,
+    "lastAssist": 14,
+    "sup": "Shakil",
+    "days": [
+     2,
+     2,
+     0,
+     0,
+     2,
+     1,
+     1,
+     0,
+     2,
+     3,
+     6,
+     6,
+     7,
+     6,
+     7,
+     6,
+     22,
+     3
+    ],
+    "person": "Rakib"
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_13",
+   "name": "DSR-15",
+   "data": {
+    "target": 98,
+    "ga": 86,
+    "tgtRobi": 78,
+    "tgtAt": 20,
+    "robiGa": 72,
+    "atGa": 14,
+    "retailGa": 73,
+    "assistGa": 13,
+    "today": 12,
+    "todayAssist": 1,
+    "lastDay": 32,
+    "lastAssist": 8,
+    "sup": "Shakil",
+    "days": [
+     2,
+     2,
+     3,
+     3,
+     1,
+     3,
+     3,
+     1,
+     1,
+     1,
+     5,
+     1,
+     5,
+     6,
+     3,
+     2,
+     32,
+     12
+    ],
+    "person": "Ayon"
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_14",
+   "name": "DSR-16",
+   "data": {
+    "target": 148,
+    "ga": 135,
+    "tgtRobi": 118,
+    "tgtAt": 30,
+    "robiGa": 116,
+    "atGa": 19,
+    "retailGa": 123,
+    "assistGa": 12,
+    "today": 6,
+    "todayAssist": 0,
+    "lastDay": 11,
+    "lastAssist": 0,
+    "sup": "Shakil",
+    "days": [
+     6,
+     6,
+     8,
+     4,
+     1,
+     7,
+     3,
+     3,
+     5,
+     9,
+     13,
+     14,
+     7,
+     5,
+     18,
+     9,
+     11,
+     6
+    ],
+    "person": "Farhan"
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_15",
+   "name": "DSR-17",
+   "data": {
+    "target": 91,
+    "ga": 81,
+    "tgtRobi": 73,
+    "tgtAt": 18,
+    "robiGa": 57,
+    "atGa": 24,
+    "retailGa": 60,
+    "assistGa": 21,
+    "today": 1,
+    "todayAssist": 0,
+    "lastDay": 5,
+    "lastAssist": 0,
+    "sup": "Minhaj",
+    "days": [
+     5,
+     1,
+     2,
+     4,
+     3,
+     0,
+     5,
+     15,
+     14,
+     3,
+     11,
+     7,
+     2,
+     1,
+     2,
+     0,
+     5,
+     1
+    ],
+    "person": "Tuhin"
+   }
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_16",
+   "name": "DSR-18",
+   "data": {
+    "target": 70,
+    "ga": 70,
+    "tgtRobi": 56,
+    "tgtAt": 14,
+    "robiGa": 61,
+    "atGa": 9,
+    "retailGa": 44,
+    "assistGa": 26,
+    "today": 16,
+    "todayAssist": 3,
+    "lastDay": 25,
+    "lastAssist": 12,
+    "sup": "Shakil",
+    "days": [
+     1,
+     0,
+     1,
+     3,
+     0,
+     0,
+     2,
+     3,
+     1,
+     0,
+     3,
+     5,
+     0,
+     2,
+     5,
+     3,
+     25,
+     16
+    ],
+    "person": "Mohon"
+   }
+  },
+  {
+   "code": "DSO-Jihad",
+   "name": "Jihad DSO",
+   "data": {
+    "target": 80,
+    "ga": 25,
+    "tgtRobi": 64,
+    "tgtAt": 16,
+    "robiGa": 19,
+    "atGa": 6,
+    "today": 0,
+    "lastDay": 14,
+    "kind": "dso",
+    "sup": "Tanvir",
+    "days": [
+     2,
+     2,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     2,
+     3,
+     1,
+     14,
+     0
+    ]
+   }
+  },
+  {
+   "code": "DSO-Rajib",
+   "name": "Rajib DSO",
+   "data": {
+    "target": 120,
+    "ga": 62,
+    "tgtRobi": 96,
+    "tgtAt": 24,
+    "robiGa": 43,
+    "atGa": 19,
+    "today": 4,
+    "lastDay": 3,
+    "kind": "dso",
+    "sup": "Tanvir",
+    "days": [
+     4,
+     4,
+     5,
+     3,
+     5,
+     3,
+     4,
+     5,
+     5,
+     3,
+     4,
+     0,
+     0,
+     3,
+     4,
+     3,
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "code": "DSO-Tamim",
+   "name": "Tamim DSO",
+   "data": {
+    "target": 130,
+    "ga": 72,
+    "tgtRobi": 104,
+    "tgtAt": 26,
+    "robiGa": 66,
+    "atGa": 6,
+    "today": 0,
+    "lastDay": 5,
+    "kind": "dso",
+    "sup": "Tanvir",
+    "days": [
+     4,
+     3,
+     2,
+     0,
+     7,
+     3,
+     13,
+     7,
+     15,
+     7,
+     2,
+     0,
+     0,
+     0,
+     1,
+     3,
+     5,
+     0
+    ]
+   }
+  },
+  {
+   "code": "DSO-Tausif",
+   "name": "Tausif DSO",
+   "data": {
+    "target": 100,
+    "ga": 28,
+    "tgtRobi": 80,
+    "tgtAt": 20,
+    "robiGa": 23,
+    "atGa": 5,
+    "today": 0,
+    "lastDay": 3,
+    "kind": "dso",
+    "sup": "Tanvir",
+    "days": [
+     0,
+     0,
+     1,
+     5,
+     2,
+     1,
+     1,
+     3,
+     5,
+     0,
+     1,
+     1,
+     0,
+     0,
+     2,
+     3,
+     3,
+     0
+    ]
+   }
+  }
+ ],
+ "retailers": [
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_1",
+   "items": [
+    {
+     "name": "Toslim Telecom",
+     "code": "R0383485",
+     "ga": 7,
+     "akd": true,
+     "tgt": 18,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Bismillah Store",
+     "code": "R11654425",
+     "ga": 4,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Jononi Telecom-2",
+     "code": "A106124",
+     "ga": 6,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Jahangir Telecom & stationary",
+     "code": "R12991694",
+     "ga": 6,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Nisat Telecom",
+     "code": "R0442862",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "B.K. Sohel Telecom",
+     "code": "R0438604",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Roufa Telecom and Electronics",
+     "code": "R0442861",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Sopna Studio & computer park",
+     "code": "R11646379",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Modina Telecom",
+     "code": "R11629389",
+     "ga": 1,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Rowfa Telecom & Electronics",
+     "code": "R11628373",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Ali Telecom",
+     "code": "R11828462",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_2",
+   "items": [
+    {
+     "name": "Mahin Telecom",
+     "code": "A048746",
+     "ga": 11,
+     "akd": true,
+     "tgt": 23,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Fantasy Telecom",
+     "code": "A048758",
+     "ga": 19,
+     "akd": true,
+     "tgt": 20,
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "Sheba Telecom",
+     "code": "RR48720030",
+     "ga": 0,
+     "akd": true,
+     "tgt": 6,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "S.M. telecom",
+     "code": "A053485",
+     "ga": 9,
+     "slab": "10 Taka Slab",
+     "td": 1,
+     "ld": 1
+    },
+    {
+     "name": "Shipon telecom",
+     "code": "R11633537",
+     "ga": 7,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "Islam Telecom",
+     "code": "R0347980",
+     "ga": 3,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "RUSHNI TELECOM",
+     "code": "A036069",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Alam Store",
+     "code": "A048744",
+     "ga": 6,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 2
+    },
+    {
+     "name": "Ananna Telecom",
+     "code": "R0054295",
+     "ga": 1,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Ma-Baba Telecom",
+     "code": "R0052622",
+     "ga": 1,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Suparna telecom",
+     "code": "A053478",
+     "ga": 13,
+     "slab": "30 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Abid Telecom-1",
+     "code": "R0396710",
+     "ga": 3,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Suban telecom",
+     "code": "R0442126",
+     "ga": 1,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Purobi Telecom",
+     "code": "R0053678",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "RB Traders",
+     "code": "R0331108",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Alif Telecom",
+     "code": "R11633628",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Khaja Telecom",
+     "code": "R11627994",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Jaifa Store",
+     "code": "RR20628242",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Alam Store",
+     "code": "R12743075",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_3",
+   "items": [
+    {
+     "name": "Lucky Telecom",
+     "code": "A048733",
+     "ga": 10,
+     "akd": true,
+     "tgt": 12,
+     "td": 0,
+     "ld": 2
+    },
+    {
+     "name": "Pritom Telecom",
+     "code": "A045135",
+     "ga": 14,
+     "akd": true,
+     "tgt": 25,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Showpno Computer",
+     "code": "A048725",
+     "ga": 7,
+     "akd": true,
+     "tgt": 13,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Samiya Telecom",
+     "code": "A106120",
+     "ga": 3,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "Hashem Telecom",
+     "code": "A048757",
+     "ga": 14,
+     "slab": "30 Taka Slab",
+     "td": 2,
+     "ld": 0
+    },
+    {
+     "name": "Jerin Telecom",
+     "code": "R0331121",
+     "ga": 4,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Mobile City And Servicing Center",
+     "code": "R12826742",
+     "ga": 1,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Nur Telecom & Digital Studio",
+     "code": "R11628122",
+     "ga": 12,
+     "slab": "30 Taka Slab",
+     "td": 0,
+     "ld": 2
+    },
+    {
+     "name": "Jonnoni Telecom",
+     "code": "A117104",
+     "ga": 1,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "PRIME TELECOM-2",
+     "code": "R11828480",
+     "ga": 3,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Juwel Teleecom",
+     "code": "R11638011",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Sajjad Store",
+     "code": "R0417051",
+     "ga": 3,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Brothers Telecom & Stationary",
+     "code": "R0347976",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Jononi  Telecom",
+     "code": "R11633494",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Tarek Telecom",
+     "code": "R11646396",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "J.T.M Telecom & Furniture",
+     "code": "R11628067",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Pritom Telecom(2)",
+     "code": "R11842009",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_4",
+   "items": [
+    {
+     "name": "Emon Telecom",
+     "code": "RR11781200",
+     "ga": 3,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Farbaz  Telecom",
+     "code": "R0431277",
+     "ga": 3,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "Asma Store",
+     "code": "R0331104",
+     "ga": 5,
+     "slab": "10 Taka Slab",
+     "td": 3,
+     "ld": 0
+    },
+    {
+     "name": "Shopno Collection",
+     "code": "A105850",
+     "ga": 3,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 2
+    },
+    {
+     "name": "S.B Telecom",
+     "code": "A107439",
+     "ga": 1,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Shohid Store",
+     "code": "A101636",
+     "ga": 5,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Roshni Telecom",
+     "code": "R0396709",
+     "ga": 1,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Foyja Telecom",
+     "code": "R0423301",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Ovi Telecom",
+     "code": "R11628703",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Ashik Telecom",
+     "code": "R11628627",
+     "ga": 1,
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "Taltola Store",
+     "code": "R11628549",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Haji Ahmodur Rahman Telecom",
+     "code": "R0354406",
+     "ga": 1,
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "S.B Telecom-2",
+     "code": "R11828520",
+     "ga": 3,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Nahid Enterprise",
+     "code": "RR48719899",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "All you need",
+     "code": "RR48719884",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Bismillah omeo",
+     "code": "RR48719887",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_5",
+   "items": [
+    {
+     "name": "Iqbal Telecom Center",
+     "code": "R0393420",
+     "ga": 11,
+     "akd": true,
+     "tgt": 24,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Ma Telecom",
+     "code": "R11628879",
+     "ga": 4,
+     "akd": true,
+     "tgt": 13,
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "Taspia Telecom",
+     "code": "R0347977",
+     "ga": 7,
+     "slab": "10 Taka Slab",
+     "td": 1,
+     "ld": 0
+    },
+    {
+     "name": "Shamim Enterprise",
+     "code": "R12732760",
+     "ga": 5,
+     "akd": true,
+     "tgt": 12,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Shilpi Telecom",
+     "code": "A101632",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Al Karim Telecom",
+     "code": "R11628775",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Arafat & Brothers Telecom",
+     "code": "R11628925",
+     "ga": 4,
+     "akd": true,
+     "tgt": 8,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Jom Jom Telecom",
+     "code": "R12735598",
+     "ga": 1,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Iqbal Telecom Center-2",
+     "code": "R11828529",
+     "ga": 3,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "RASHA TELECOM",
+     "code": "A036504",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Nishika Telecom",
+     "code": "R0051171",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Bismillah Telecom and Stationary",
+     "code": "R11598704",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Afra Telecom",
+     "code": "R11633386",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Arfa Telecom",
+     "code": "R11586433",
+     "ga": 2,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Jonota Store",
+     "code": "R12788724",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_6",
+   "items": [
+    {
+     "name": "JARIN TELECOM",
+     "code": "A036540",
+     "ga": 43,
+     "akd": true,
+     "tgt": 38,
+     "td": 0,
+     "ld": 2
+    },
+    {
+     "name": "NUR UDDIN STORE",
+     "code": "R0354407",
+     "ga": 16,
+     "slab": "25 Taka Slab",
+     "td": 1,
+     "ld": 0
+    },
+    {
+     "name": "Studio Point",
+     "code": "R11646446",
+     "ga": 8,
+     "akd": true,
+     "tgt": 18,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Shakil Telecom and Mobile Servicing",
+     "code": "R12688120",
+     "ga": 23,
+     "akd": true,
+     "tgt": 22,
+     "td": 3,
+     "ld": 0
+    },
+    {
+     "name": "Faruk Telecom",
+     "code": "A115721",
+     "ga": 9,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Smart Telecom",
+     "code": "R11598702",
+     "ga": 5,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Studio Point And Telecom",
+     "code": "R13033002",
+     "ga": 9,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "JS Telecom & Computer",
+     "code": "A112272",
+     "ga": 9,
+     "slab": "10 Taka Slab",
+     "td": 1,
+     "ld": 0
+    },
+    {
+     "name": "BL Telecom",
+     "code": "A051093",
+     "ga": 7,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Umayer Store",
+     "code": "R12788639",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "SM Telecom",
+     "code": "A110470",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Roni Telecom",
+     "code": "A051092",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Farhad Telecom and Servicing",
+     "code": "A101618",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Khokon Fashion",
+     "code": "A101615",
+     "ga": 4,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Ibrahim Telecom",
+     "code": "R11633671",
+     "ga": 2,
+     "td": 1,
+     "ld": 0
+    },
+    {
+     "name": "BL Telecom-2",
+     "code": "R11828555",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Umayer Store",
+     "code": "RR48719931",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_7",
+   "items": [
+    {
+     "name": "NAZMUL TELECOM",
+     "code": "A036542",
+     "ga": 10,
+     "akd": true,
+     "tgt": 12,
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "ASHRAF TELECOM",
+     "code": "A036530",
+     "ga": 4,
+     "slab": "10 Taka Slab",
+     "td": 1,
+     "ld": 0
+    },
+    {
+     "name": "Karim Computer Zone",
+     "code": "R11834533",
+     "ga": 5,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "M/s Asraf Telecom",
+     "code": "R0354405",
+     "ga": 2,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "EVAN COOLING CORNER",
+     "code": "A036546",
+     "ga": 2,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Shilpe Mobile dot com - 2",
+     "code": "R0396258",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Saifa Telecom",
+     "code": "R0383486",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "M/s Ma Telecom and Electric",
+     "code": "R0438605",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "S.M.D Store",
+     "code": "R11629577",
+     "ga": 1,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Alifa Telecom",
+     "code": "R11629557",
+     "ga": 1,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "ASHRAF TELECOM-2",
+     "code": "R11828559",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_8",
+   "items": [
+    {
+     "name": "Ishaq Store-2",
+     "code": "R11828577",
+     "ga": 3,
+     "akd": true,
+     "tgt": 19,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Salim Coling corner",
+     "code": "R0391527",
+     "ga": 5,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "Foyeza Electric",
+     "code": "A104712",
+     "ga": 5,
+     "akd": true,
+     "tgt": 9,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Akbar Store",
+     "code": "A101626",
+     "ga": 5,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Nazim & Brother's",
+     "code": "R0417722",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Rubel Telecom",
+     "code": "A121213",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "DR Trading",
+     "code": "R0331130",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Ishaq Store",
+     "code": "R0331109",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Pushpo Telecom-2",
+     "code": "R0331101",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Arfan Telecom",
+     "code": "R11657351",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "BTL BP-01",
+     "code": "R12996725",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "BTL BP-02",
+     "code": "R12996737",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Supervisor Assist code 02",
+     "code": "R13008267",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Supervisor Assist Code 01",
+     "code": "R12915849",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_9",
+   "items": [
+    {
+     "name": "MOBILE TOUCH",
+     "code": "A107527",
+     "ga": 33,
+     "akd": true,
+     "tgt": 48,
+     "td": 0,
+     "ld": 2
+    },
+    {
+     "name": "Barua Store",
+     "code": "A117106",
+     "ga": 16,
+     "akd": true,
+     "tgt": 24,
+     "td": 0,
+     "ld": 2
+    },
+    {
+     "name": "Mamun Telecom",
+     "code": "A101628",
+     "ga": 28,
+     "akd": true,
+     "tgt": 55,
+     "td": 1,
+     "ld": 2
+    },
+    {
+     "name": "Poshpho Telecom",
+     "code": "A111288",
+     "ga": 2,
+     "akd": true,
+     "tgt": 7,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "K.B Telecom",
+     "code": "A101627",
+     "ga": 40,
+     "akd": true,
+     "tgt": 40,
+     "td": 6,
+     "ld": 4
+    },
+    {
+     "name": "TAMIM STORE",
+     "code": "A036570",
+     "ga": 10,
+     "slab": "30 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Antika Store",
+     "code": "RR48719852",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Goni Store",
+     "code": "RR48582962",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Kumira Store",
+     "code": "A119778",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Mokka Mobile Servicing Centre",
+     "code": "R11829091",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Kishan Store",
+     "code": "RR48720040",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Raj Telecom",
+     "code": "RR48720068",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Red eye Telecom",
+     "code": "R12614227",
+     "ga": 14,
+     "slab": "30 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Dipok Sen",
+     "code": "R13219139",
+     "ga": 0,
+     "akd": true,
+     "tgt": 16,
+     "td": 0,
+     "ld": 0
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_10",
+   "items": [
+    {
+     "name": "Orkhit telecom",
+     "code": "A117103",
+     "ga": 30,
+     "akd": true,
+     "tgt": 66,
+     "td": 2,
+     "ld": 2
+    },
+    {
+     "name": "Prime telecom",
+     "code": "A036562",
+     "ga": 14,
+     "slab": "30 Taka Slab",
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "Puspo Enterprice",
+     "code": "A120201",
+     "ga": 10,
+     "akd": true,
+     "tgt": 17,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "KB telecom",
+     "code": "R0331100",
+     "ga": 7,
+     "akd": true,
+     "tgt": 18,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "PRIDE TELECOM",
+     "code": "A045102",
+     "ga": 9,
+     "slab": "10 Taka Slab",
+     "td": 1,
+     "ld": 1
+    },
+    {
+     "name": "m.k telecom",
+     "code": "A051096",
+     "ga": 5,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "M.K Telecom",
+     "code": "R11628719",
+     "ga": 6,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Sara Electronics",
+     "code": "R12546217",
+     "ga": 2,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Jewel Pharmachy",
+     "code": "A104895",
+     "ga": 1,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "SHUVO MOBILE MEDIA",
+     "code": "A036560",
+     "ga": 1,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Saif Telecom",
+     "code": "A119727",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Rumi Store",
+     "code": "A101646",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Alok Telecom",
+     "code": "R11829107",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Zakia Store",
+     "code": "R12485160",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Noori Enterprise",
+     "code": "R13033055",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_11",
+   "items": [
+    {
+     "name": "Sohel Departmental",
+     "code": "R0404862",
+     "ga": 4,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "S.S Enterprise",
+     "code": "R0395242",
+     "ga": 5,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "Hares Store",
+     "code": "A053483",
+     "ga": 2,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Mahmud Enterprise",
+     "code": "RR13479449",
+     "ga": 8,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "Nimtola Store",
+     "code": "R0347978",
+     "ga": 6,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Bhaibon Telecom and Cosmetics",
+     "code": "R0352136",
+     "ga": 4,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "M.S Mobile Care",
+     "code": "R12659909",
+     "ga": 2,
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "R. R. Enterprise",
+     "code": "R0381699",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Mobile Surgery",
+     "code": "R0404859",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Redwan Store",
+     "code": "A036510",
+     "ga": 1,
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "M/S Elias Enterprise",
+     "code": "A051098",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Maa Telecom",
+     "code": "A118006",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "M/s Hashem Store",
+     "code": "R0331106",
+     "ga": 1,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Sarwar Auto Pass",
+     "code": "R0331112",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Lucky Enterprise",
+     "code": "R11629495",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "R.R. A Telecom",
+     "code": "R11629411",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Nazim & Brothers",
+     "code": "R11628822",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Sarwar Auto Pass-2",
+     "code": "R11829163",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Shamim Store",
+     "code": "RR48720010",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Bismillah Pharmacy",
+     "code": "RR13471697",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_12",
+   "items": [
+    {
+     "name": "Deb Telecom",
+     "code": "R12625515",
+     "ga": 18,
+     "slab": "25 Taka Slab",
+     "td": 1,
+     "ld": 2
+    },
+    {
+     "name": "Shakil Telecom",
+     "code": "A051104",
+     "ga": 6,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "Hamdan Store",
+     "code": "R0408609",
+     "ga": 11,
+     "slab": "30 Taka Slab",
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "Ma Hardware-2",
+     "code": "R11829176",
+     "ga": 4,
+     "slab": "10 Taka Slab",
+     "td": 1,
+     "ld": 0
+    },
+    {
+     "name": "Ma Hardware",
+     "code": "A101644",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "FM Enterprise",
+     "code": "R11657297",
+     "ga": 8,
+     "slab": "10 Taka Slab",
+     "td": 1,
+     "ld": 4
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_13",
+   "items": [
+    {
+     "name": "Tarek Telecom",
+     "code": "A101650",
+     "ga": 36,
+     "akd": true,
+     "tgt": 31,
+     "td": 8,
+     "ld": 15
+    },
+    {
+     "name": "Shahana Store",
+     "code": "A101652",
+     "ga": 25,
+     "akd": true,
+     "tgt": 23,
+     "td": 0,
+     "ld": 4
+    },
+    {
+     "name": "POLASH STORE-2",
+     "code": "A036573",
+     "ga": 8,
+     "slab": "10 Taka Slab",
+     "td": 3,
+     "ld": 3
+    },
+    {
+     "name": "Imam Enterprize",
+     "code": "R0386662",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Salauddin Store",
+     "code": "R0411816",
+     "ga": 1,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Selim Enterprice",
+     "code": "A104716",
+     "ga": 1,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Nonachara Store",
+     "code": "R0461566",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Evrahim Store",
+     "code": "R11575480",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Arman Electronic",
+     "code": "R11628345",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Arif Telecom and Mobile Service",
+     "code": "R11628134",
+     "ga": 2,
+     "td": 0,
+     "ld": 2
+    },
+    {
+     "name": "Shahana Store-2",
+     "code": "R11829188",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Mohon Telecom",
+     "code": "RR20629494",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_14",
+   "items": [
+    {
+     "name": "Alok Telecom",
+     "code": "R13246470",
+     "ga": 37,
+     "akd": true,
+     "tgt": 20,
+     "td": 0,
+     "ld": 6
+    },
+    {
+     "name": "Post in center",
+     "code": "R0381697",
+     "ga": 6,
+     "akd": true,
+     "tgt": 15,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "ST Telecom-3",
+     "code": "A111291",
+     "ga": 24,
+     "akd": true,
+     "tgt": 30,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "JASIM UDDIN & BROTHERS",
+     "code": "A036599",
+     "ga": 9,
+     "akd": true,
+     "tgt": 11,
+     "td": 1,
+     "ld": 0
+    },
+    {
+     "name": "Tanha Enterprise",
+     "code": "RR48549208",
+     "ga": 4,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Alok Telecom",
+     "code": "R0402583",
+     "ga": 14,
+     "slab": "30 Taka Slab",
+     "td": 3,
+     "ld": 0
+    },
+    {
+     "name": "Care Plus",
+     "code": "R0386661",
+     "ga": 4,
+     "akd": true,
+     "tgt": 10,
+     "td": 0,
+     "ld": 2
+    },
+    {
+     "name": "Ripon  Telecom",
+     "code": "A051103",
+     "ga": 4,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Fentashi Telecom-2",
+     "code": "R11828474",
+     "ga": 1,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Adorsho Library",
+     "code": "R0393419",
+     "ga": 3,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "SHOTORUPA ELECTRONICS",
+     "code": "A036610",
+     "ga": 6,
+     "akd": true,
+     "tgt": 11,
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "S.M.D Store",
+     "code": "R0391528",
+     "ga": 2,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Shova Decorators",
+     "code": "R0331097",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Shova Sajib Decorators",
+     "code": "R11829393",
+     "ga": 10,
+     "slab": "30 Taka Slab",
+     "td": 2,
+     "ld": 2
+    },
+    {
+     "name": "Adorsho Library",
+     "code": "R11834504",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_15",
+   "items": [
+    {
+     "name": "Brother's Telecom",
+     "code": "R0383483",
+     "ga": 11,
+     "akd": true,
+     "tgt": 13,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Zakir Store (2)",
+     "code": "A121348",
+     "ga": 38,
+     "slab": "40 Taka Slab",
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "Habib Store",
+     "code": "R0395241",
+     "ga": 2,
+     "td": 0,
+     "ld": 2
+    },
+    {
+     "name": "Modina Telecom",
+     "code": "A111914",
+     "ga": 5,
+     "slab": "10 Taka Slab",
+     "td": 1,
+     "ld": 1
+    },
+    {
+     "name": "Faruk Mobile Center",
+     "code": "R0332449",
+     "ga": 4,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "Belal Store",
+     "code": "R11629355",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Nobi Telecom",
+     "code": "R11629314",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Brother's Telecom-2",
+     "code": "R11829349",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    }
+   ]
+  },
+  {
+   "code": "Dsr_Aktl(sitakunda)_107484_16",
+   "items": [
+    {
+     "name": "Jonony Telecom",
+     "code": "R0331120",
+     "ga": 14,
+     "akd": true,
+     "tgt": 25,
+     "td": 1,
+     "ld": 1
+    },
+    {
+     "name": "Ratry Telecom",
+     "code": "R0054782",
+     "ga": 3,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 2
+    },
+    {
+     "name": "Online Shop",
+     "code": "RR48720055",
+     "ga": 4,
+     "slab": "10 Taka Slab",
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "S.I. Telecom",
+     "code": "R0402584",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Khaza Store",
+     "code": "A107529",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    },
+    {
+     "name": "Sharmin Telecom",
+     "code": "A107441",
+     "ga": 1,
+     "td": 1,
+     "ld": 0
+    },
+    {
+     "name": "Ismail Store",
+     "code": "R0354200",
+     "ga": 21,
+     "slab": "25 Taka Slab",
+     "td": 11,
+     "ld": 9
+    },
+    {
+     "name": "Nazim and Brothers",
+     "code": "R11628896",
+     "ga": 1,
+     "td": 0,
+     "ld": 1
+    },
+    {
+     "name": "Alifa Telecom",
+     "code": "R11829379",
+     "ga": 0,
+     "td": 0,
+     "ld": 0
+    }
+   ]
+  },
+  {
+   "code": "DSO-Jihad",
+   "items": []
+  },
+  {
+   "code": "DSO-Rajib",
+   "items": []
+  },
+  {
+   "code": "DSO-Tamim",
+   "items": []
+  },
+  {
+   "code": "DSO-Tausif",
+   "items": []
+  }
+ ]
+}

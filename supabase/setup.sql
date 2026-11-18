@@ -451,6 +451,24 @@ begin
     return jsonb_build_object('totals', v_tot, 'ranking', v_rank, 'mode', v_mode);
   end if;
 
+  -- GA (Gross Add): MTD GA against target, DSRs and DSOs
+  if p_kpi = 'GA' then
+    select jsonb_build_object(
+      'target',  coalesce(sum((data->>'target')::numeric), 0),
+      'ga',      coalesce(sum((data->>'ga')::numeric), 0),
+      'today',   coalesce(sum((data->>'today')::numeric), 0),
+      'lastDay', coalesce(sum((data->>'lastDay')::numeric), 0),
+      'n',       count(*)
+    ) into v_tot from public.dsr_figures where batch_id = v_batch;
+    if v_role <> 'dsr' or v_mode = 'ranked' then
+      select jsonb_agg(jsonb_build_object('code', dsr_code, 'name', dsr_name,
+        'kind', data->'kind', 'person', data->'person', 'target', data->'target',
+        'ga', data->'ga', 'today', data->'today', 'lastDay', data->'lastDay'))
+      into v_rank from public.dsr_figures where batch_id = v_batch;
+    end if;
+    return jsonb_build_object('totals', v_tot, 'ranking', v_rank, 'mode', v_mode);
+  end if;
+
   select jsonb_build_object(
     'active',    coalesce(sum((data->>'active')::numeric), 0),
     'target',    coalesce(sum((data->>'target')::numeric), 0),
